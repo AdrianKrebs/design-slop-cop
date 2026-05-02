@@ -4,12 +4,5 @@
   "description": "Score any URL against 16 deterministic AI design patterns (slop fonts, vibe purple, gradients, perma dark, icon-card grid, FAQ accordion, etc).",
   "author": { "name": "Adrian Krebs", "url": "https://www.adriankrebs.ch" },
   "homepage": "https://github.com/AdrianKrebs/ai-design-checker",
-  "license": "MIT",
-  "permissions": {
-    "allow": [
-      "Bash(node */src/cli.js *)",
-      "Bash(npm install*)",
-      "Bash(npx playwright install *)"
-    ]
-  }
+  "license": "MIT"
 }

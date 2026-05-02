@@ -1,5 +1,8 @@
 ---
-description: Score a URL for the 16 AI design patterns common to AI-generated landing pages (slop fonts, vibe purple, gradients, perma dark, icon-card grid, numbered steps, FAQ accordion, glassmorphism, etc). Use when the user asks "score this site", "is this site templated/AI-generated?", "check for AI design patterns", "run ai-design-checker", or pastes a URL and asks how AI-templated it looks.
+description: Score a URL for the 16 AI design patterns common to AI-generated landing pages (templated fonts, vibe purple, gradients, perma dark, icon-card grid, numbered steps, FAQ accordion, glassmorphism, etc). Use when the user asks "score this site", "is this site templated/AI-generated?", "check for AI design patterns", "run ai-design-checker", or pastes a URL and asks how AI-templated it looks.
+when_to_use: "score example.com", "is this site templated?", "check for AI design patterns", "run ai-design-checker on https://...", "how AI-generated does this look?"
+argument-hint: <url>
+allowed-tools: Bash(node */src/cli.js *) Bash(cd *) Bash(npm install*) Bash(npx playwright install *)
 ---
 
 # AI Design Checker
@@ -13,20 +16,21 @@ When the user asks to score, check, or analyze a URL for AI design patterns:
 1. **First-run setup** — only needed once per machine, ~200 MB Chromium download:
 
    ```bash
-   cd "${CLAUDE_PLUGIN_ROOT}" && [ -d node_modules ] || npm install
+   cd "${CLAUDE_SKILL_DIR}/../.." && [ -d node_modules ] || npm install
    npx playwright install chromium
    ```
 
-   If you've already run a scan on this machine before, skip both.
+   If the user has already used this skill on this machine, skip both lines.
 
 2. **Run the CLI in JSON mode** for parseable output:
 
    ```bash
-   node "${CLAUDE_PLUGIN_ROOT}/src/cli.js" <url> --json
+   node "${CLAUDE_SKILL_DIR}/../../src/cli.js" $ARGUMENTS --json
    ```
 
+   - `$ARGUMENTS` is the URL the user provided.
    - Each scan takes ~7 seconds. Don't fan out parallel runs.
-   - If the CLI exits with `Could not launch Chromium`, run the playwright install line above first.
+   - If the CLI exits with `Could not launch Chromium`, run the playwright install line in step 1 first.
 
 3. **Parse the returned JSON.** Shape:
 
