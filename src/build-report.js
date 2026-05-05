@@ -76,8 +76,10 @@ const html = `<!doctype html>
   @media (max-width: 760px) { .stats { grid-template-columns: 1fr; } }
 
   .tiers { display: flex; gap: 8px; align-items: stretch; }
-  .tier-card { flex: 1; padding: 14px; border-radius: 6px; cursor: pointer; border: 2px solid transparent; transition: border-color 0.1s; }
-  .tier-card.active { border-color: #111; }
+  .tier-card { flex: 1; padding: 14px; border-radius: 6px; cursor: pointer; border: 2px solid transparent; transition: opacity 0.1s, border-color 0.1s; opacity: 0.45; }
+  .tier-card.active { border-color: #111; opacity: 1; box-shadow: 0 1px 2px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.08); }
+  #tiers:hover .tier-card { opacity: 0.7; }
+  #tiers:hover .tier-card.active { opacity: 1; }
   .tier-card.heavy { background: #fdecec; }
   .tier-card.mild  { background: #fff3c4; }
   .tier-card.clean { background: #e6f3e1; }
@@ -130,7 +132,7 @@ const html = `<!doctype html>
   <div>
     <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:#666;margin-bottom:8px;">Tier · click to filter</div>
     <div class="tiers" id="tiers">
-      <div class="tier-card heavy" data-tier="Heavy">
+      <div class="tier-card heavy active" data-tier="Heavy">
         <div class="label">Heavy · 5+ patterns</div>
         <div class="count">${tierCount.Heavy}</div>
         <div class="pct">${(100 * tierCount.Heavy / total).toFixed(1)}%</div>
@@ -163,7 +165,7 @@ const html = `<!doctype html>
 <script>
 const data = ${JSON.stringify(data)};
 const patternLabel = Object.fromEntries(data.patternMeta.map(p => [p.id, p.shortLabel || p.label || p.id]));
-let activeTier = null;  // null = All, otherwise 'Heavy' | 'Mild' | 'Clean'
+let activeTier = 'Heavy';  // default filter on load · null = All, otherwise 'Heavy' | 'Mild' | 'Clean'
 let query = '';
 
 function renderFreq() {
