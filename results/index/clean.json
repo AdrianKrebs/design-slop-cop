@@ -1,0 +1,3890 @@
+[
+  {
+    "id": "47956840",
+    "url": "https://git.sr.ht/~cmt/serra",
+    "title": "Show HN: Serra – A Magic: The Gathering life counter using DRM/KMS",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47954074",
+    "url": "https://simdrive.xyz/",
+    "title": "Show HN: SimDrive – a browser racing game with your phone as the controller:D",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47949793",
+    "url": "https://indieapps.space/@Retcon/116482957501196309",
+    "title": "Show HN: Commit cherry-picking by copy-and-paste in a Mac GUI",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47949376",
+    "url": "https://isopusok.today/",
+    "title": "Show HN: Is Opus Ok Today?",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47946847",
+    "url": "https://despatch-demo.vercel.app",
+    "title": "Show HN: Despatch – Project management for systems thinking, not just software",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47945955",
+    "url": "https://rip.so",
+    "title": "Show HN: Rip.so – a graveyard for dead internet things",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 172,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47945828",
+    "url": "https://kanbauser.gumroad.com/l/shopifyleads",
+    "title": "SHOW HN: 50k+ Shopify Store Database Leads with Niche Segmentation",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47944106",
+    "url": "https://plonk.world/",
+    "title": "Show HN: Plonk.world – Daily Geography Game",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47944044",
+    "url": "https://petercsauer.github.io/docktor-releases/",
+    "title": "Show HN: Docktor – I put live window previews and widgets on the macOS 26 Dock",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47941987",
+    "url": "https://theinterviewden.com/",
+    "title": "Show HN: InterviewDen – Free voice AI mock interviews for SWE, IB, quant, more",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47938666",
+    "url": "https://fuelfox.uk/regional",
+    "title": "Show HN: I mapped the latest UK fuel prices by county",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 20,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47936034",
+    "url": "https://cv-mirror-web.vercel.app/",
+    "title": "Show HN: CV Mirror – see what 5 ATS parsers do to your CV",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47934718",
+    "url": "https://givemesearch.com/",
+    "title": "Show HN: Givemesearch: live web search grounding for coding agents (free alpha)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47934521",
+    "url": "https://hahooh.xyz/download",
+    "title": "Show HN: Hahooh – Give AI agents the power to build their own MCP tools",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47934349",
+    "url": "https://www.biovista.com/vizit/",
+    "title": "Show HN: Extract Biomedical Knowledge from Multi-Modal Data Using Biovista Vizit",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47872500",
+    "url": "https://abrahamjuliot.github.io/creepjs/",
+    "title": "Show HN: CreepJS Browser Fingerprinting",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47922796",
+    "url": "https://adamf.github.io/rebass/",
+    "title": "Show HN: Music from Your Git History",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47730322",
+    "url": "https://www.adribyte-studio.com/mobile-apps/focusscape",
+    "title": "Show HN: An offline, privacy-first Pomodoro timer with 18 ambient soundscapes",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47778627",
+    "url": "https://afterplay.io/play/store",
+    "title": "Show HN: Afterplay Store – buy new retro games and play instantly in the browser",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47783938",
+    "url": "https://ai-lab-azure-pi.vercel.app",
+    "title": "Show HN: I built a browser idle game about training AI models",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47804215",
+    "url": "https://aicw.io/aicw-summarize",
+    "title": "Show HN: AICW Summarize – widget for asking AI about current page (open-source)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47858442",
+    "url": "https://aideassistant.com/",
+    "title": "Show HN: Aide – A customizable Android assistant (voice, choose your provider)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 8,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47756892",
+    "url": "https://aiexplr.com/post/gemma-4-e2b-benchmark",
+    "title": "Show HN: I benchmarked Gemma 4 E2B – the 2B model beat the 12B on multi-turn",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 8,
+    "flagged": [
+      "hero_eyebrow_pill"
+    ]
+  },
+  {
+    "id": "47721796",
+    "url": "https://akashyap.ai/pyre-agents-an-elixir-orchestrated-runtime-for-python-agents/",
+    "title": "Show HN: Pyre Agents – An Elixir-Orchestrated Runtime for Python Agents",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47932680",
+    "url": "https://www.aljazeera.com/economy/2026/4/27/elon-musk-trial-against-sam-altman-to-reveal-openai-power-struggle",
+    "title": "Show HN: Elon Musk trial against Sam Altman to reveal OpenAI power struggle",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "accent_stripe"
+    ]
+  },
+  {
+    "id": "47913089",
+    "url": "https://ananthb.github.io/cutout/",
+    "title": "Show HN: Cutout is an email alias proxy built on Cloudflare Workers",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47731535",
+    "url": "https://animeshchouhan.com/time/",
+    "title": "Show HN: When Clocks Drift Apart",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47859347",
+    "url": "https://aperturasdeajedrez.com.ar/en/",
+    "title": "Show HN: Minimal visual chess openings explorer",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47766479",
+    "url": "https://apipulse.app/",
+    "title": "Show HN: API Changelog Tracker",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47864411",
+    "url": "https://app.heytangent.com/momentum/tangent",
+    "title": "Show HN: Momentum – showcase what you're shipping",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47862115",
+    "url": "https://app.respublica.media/",
+    "title": "Show HN: Res.Publica democracy dashboard, Germany's political data as React app",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "stat_banner_row"
+    ]
+  },
+  {
+    "id": "47803684",
+    "url": "https://app.soforce.ai",
+    "title": "Show HN: Soforce – Describe a process, get a free automation plan from our team",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47716947",
+    "url": "https://app.zenovay.com/share/a1d7d3e7aeb24437871562f463eada27",
+    "title": "Show HN: Zenovay, Web analytics with performance monitoring and revenue insights",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47757527",
+    "url": "https://www.appblit.com/scribe",
+    "title": "Show HN: YouTube and Apple Podcast Transcripts",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47887755",
+    "url": "https://apps.weichart.de",
+    "title": "Show HN: My New Projects Website",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47899665",
+    "url": "https://askyumi.app",
+    "title": "Show HN: Yumi - All-in-one workspace OS for thinking, ideating, and daily work",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47756943",
+    "url": "https://ballotguessr.com/",
+    "title": "Show HN: BallotGuessr – Guess the 2024 election margin from a Street View photo",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47865778",
+    "url": "https://barrasso.me/posts/2026-04-22-text-to-bash-with-shell-talk/",
+    "title": "Show HN: ShellTalk brings deterministic text-to-bash",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 9,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47862557",
+    "url": "https://beats.softwaresoftware.dev",
+    "title": "Show HN: Infinite Lofi Radio Station Composed Live by Claude Code",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47775750",
+    "url": "https://bentbrainstudio.com/friday-deploy/game/",
+    "title": "Show HN: Friday Deploy – a browser-based SIM you probably won't survive",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47792924",
+    "url": "https://blog.jaystuart.dev/agentpulse-a-real-time-dashboard-for-claude-code-and-codex-sessions/",
+    "title": "Show HN: AgentPulse: Real-Time Observability Dashboard for Claude Code and Codex",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47876071",
+    "url": "https://blog.playcanvas.com/turning-a-gaussian-splat-into-a-videogame/",
+    "title": "Show HN: Turning a Gaussian Splat into a videogame",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 236,
+    "flagged": [
+      "accent_stripe"
+    ]
+  },
+  {
+    "id": "47914928",
+    "url": "https://bojan.social",
+    "title": "Show HN: I built a 2010s microblogging site with SolidJS and .NET Core",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47733510",
+    "url": "https://bone-conduction-imitator.vercel.app/",
+    "title": "Show HN: Share how you hear yourself (on-device)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47777233",
+    "url": "https://borrowdesk.org",
+    "title": "Show HN: Borrowdesk.org – An ecosystem landscape for DeFi / Crypto borrowing",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47805167",
+    "url": "https://bower.sh/zmx-ai-portal",
+    "title": "Show HN: Zmx – run local code agents on remote machines",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47732960",
+    "url": "https://brasilia-phi.vercel.app",
+    "title": "Show HN: A living Vancouver. Connor is walking dogs at the SPCA this morning",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47850688",
+    "url": "https://brettkoonce.github.io/lean4-mlir/blueprint/",
+    "title": "Show HN: Verified Deep Learning with Lean 4",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 6,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47743339",
+    "url": "https://buildermark.dev",
+    "title": "Show HN: Buildermark – See how much code is by your agents (open source, local)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47932720",
+    "url": "https://building-an-agent.pagey.site/",
+    "title": "Show HN: Building a Real Agent, Step-by-Step",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "hero_eyebrow_pill"
+    ]
+  },
+  {
+    "id": "47791750",
+    "url": "https://bunnylogs.com/",
+    "title": "Show HN: BunnyLogs – Logs Collector",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47729938",
+    "url": "https://bunqueue.dev/guide/workflow/",
+    "title": "Show HN: Bunqueue – Saga workflow engine for Bun with embedded SQLite",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "accent_stripe"
+    ]
+  },
+  {
+    "id": "47880377",
+    "url": "https://www.butterhost.ing/visage",
+    "title": "Show HN: Visage, privacy-friendly web analytics for self-hosters",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47755853",
+    "url": "https://bytecalculators.com/rag-cost-calculator",
+    "title": "Show HN: A calculator to expose the hidden infrastructural costs behind RAG",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "accent_stripe"
+    ]
+  },
+  {
+    "id": "47716201",
+    "url": "https://calendar-architect.pages.dev",
+    "title": "Show HN: Creating OCD versions of a yearly calendar",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47764864",
+    "url": "https://www.careervectorhq.com/book/get-hired-with-ai.html",
+    "title": "Show HN: Get Hired with AI, a free book I wrote on using LLMs for a job search",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47866461",
+    "url": "https://cbprstar.com/",
+    "title": "Show HN: A Swift Payment message validator built from Swift Standard rules",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47850907",
+    "url": "https://charlielabs.ai/",
+    "title": "Show HN: Daemons – we pivoted from building agents to cleaning up after them",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 70,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47917834",
+    "url": "https://chatform.000ooo.ooo/",
+    "title": "Show HN: ChatForm – Create an AI chat form in 1 minute",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47892766",
+    "url": "https://chico.dev/Mirror-Bridge-Open3D-71-Lines/",
+    "title": "Show HN: Porting Open3D to Python without writing a LoC",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47757085",
+    "url": "https://claudedumb.com/",
+    "title": "Show HN: Claude Code vibes from around the world",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47931266",
+    "url": "https://community.computer/",
+    "title": "Show HN: An Agent-First Collaboration Platform Inspired by Karpathy's AgentHub",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47932372",
+    "url": "https://console.zeroquarry.com/",
+    "title": "Show HN: Scan your OSS projects for vulnerabilities",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47808016",
+    "url": "https://corvi.careers/",
+    "title": "Show HN: Corvi Careers – privacy first job search with resume matching",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "glassmorphism"
+    ]
+  },
+  {
+    "id": "47916180",
+    "url": "https://crabpdf.com/",
+    "title": "Show HN: CrabPDF – privacy-first PDF editor that edits real text",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 10,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47847848",
+    "url": "https://ctf.demo.lorikeetcx.ai/",
+    "title": "Show HN: Flight Risk: Can you break an AI agent?",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47750827",
+    "url": "https://cubismcat.damjanski.com/",
+    "title": "Show HN: Turn your cat into a Cubism Cat via an app",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47738922",
+    "url": "https://databook.oifi.org",
+    "title": "Show HN: OIFI Databook: An intelligence database of Iran's power structure",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47757351",
+    "url": "https://deconflict.pages.dev",
+    "title": "Show HN: Deconflict – Open-source WiFi planner with physics-based walls",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47828144",
+    "url": "https://developerpod.com/",
+    "title": "Show HN: Developerpod, K-Cups for Code",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47853007",
+    "url": "https://docs.datafrey.ai",
+    "title": "Show HN: DataFrey – MCP server for Snowflake with text-to-SQL agent",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47891655",
+    "url": "https://down.artemistarot.app/tarot-down-detector",
+    "title": "Show HN: Tarot Down Detector – a status page as a tarot reading",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47878307",
+    "url": "https://dualcondition.com/analyze",
+    "title": "Show HN: Dual Condition – a cognitive theory of why prompts work",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "hero_eyebrow_pill"
+    ]
+  },
+  {
+    "id": "47791344",
+    "url": "https://duodegen.vercel.app",
+    "title": "Show HN: I built this to help me learn Duo in Crimson Desert",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47826926",
+    "url": "https://eidwtimes.xyz/",
+    "title": "Show HN: EIDWTimes – Predicting airport wait times with ML for a school project",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47922406",
+    "url": "https://eli.voxos.ai/",
+    "title": "Show HN: Explain Like I'm Five for ArXiv Papers",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47861659",
+    "url": "https://elytro.com",
+    "title": "Show NH: Elytro – self-custodial agent wallet",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "icon_card_grid"
+    ]
+  },
+  {
+    "id": "47826103",
+    "url": "https://embedlite.com/",
+    "title": "Show HN: A drop-in, open-source replacement for YouTube embed iframes",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47933913",
+    "url": "https://www.emergentmind.com/hybridarium",
+    "title": "Show HN: Photorealistic GPT Image 2 animal hybrids",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47766493",
+    "url": "https://entrevue.app/try/",
+    "title": "Show HN: One-click code review interview",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47839798",
+    "url": "https://explainthelaw.com/",
+    "title": "Show HN: Explain The Law – Simplified legislation and executive orders using AI",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47849681",
+    "url": "https://f0rtune500.app/",
+    "title": "Show HN: F0rtune500 – No one can prove you *didn't* work at these companies",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47747093",
+    "url": "https://factverse2.gumroad.com/l/arrlsk",
+    "title": "Show HN: What worked for me with AI prompts",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47735418",
+    "url": "https://fastsleep.app/",
+    "title": "Show HN: Fastsleep.app (Dark UI)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "glassmorphism"
+    ]
+  },
+  {
+    "id": "47772986",
+    "url": "https://financialwebtools.com/",
+    "title": "Show HN: Financial Web Tools – decision-focused calculators",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47847743",
+    "url": "https://fittohire.com",
+    "title": "Show HN: We replaced 5 ML models with 1 shared encoder on an $11/month VPS",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47842551",
+    "url": "https://www.frisson-labs.com/mimi-codec",
+    "title": "Show HN: Mimi in the browser – hear the semantic/acoustic split",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "accent_stripe"
+    ]
+  },
+  {
+    "id": "47784163",
+    "url": "https://frontpedia.com",
+    "title": "Show HN: Frontpedia, an open source front end resource site",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47849521",
+    "url": "https://gabidev.gumroad.com/l/grasshopper",
+    "title": "Show HN: An AI workflow to automate your LinkedIn job search",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47808041",
+    "url": "https://gamevibe.us/2-hangman",
+    "title": "Show HN: Vibe-coding video games with Claude",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47920991",
+    "url": "https://www.getchimerical.com/",
+    "title": "Show HN: PM tool where you describe your project and the workspace builds itself",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47805078",
+    "url": "https://getmycursive.com/",
+    "title": "Show HN: Generate a realistic handwriting animation from any text",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47923457",
+    "url": "https://getslatewave.com/",
+    "title": "Show HN: Slatewave – a single color palette across terminals, editors, and apps",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "icon_card_grid"
+    ]
+  },
+  {
+    "id": "47721469",
+    "url": "https://www.givedirection.com/",
+    "title": "Show HN: Direction – a 4-week course for people afraid of shipping AI slop",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47718639",
+    "url": "https://hackerbuddy.dev/launch",
+    "title": "Show HN: HackerBuddy – security breach alerts in 2 sentences",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47874981",
+    "url": "https://haiker.app/en",
+    "title": "Show HN: An elegant HN client with built-in translation",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47807269",
+    "url": "https://hckrnight.com/",
+    "title": "Show HN: Dark Mode for Hacker News",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47742490",
+    "url": "https://hemesh.tech/builds/summer-ai.html",
+    "title": "Show HN: A proactive AI agent on iMessage that texts you before you even ask",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47873966",
+    "url": "https://hisorty.app/",
+    "title": "Show HN: Built a daily game where you sort historical events chronologically",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 74,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47799791",
+    "url": "https://hmx.dev",
+    "title": "Show HN: Honeymux, a TUI wrapper for tmux that simplifies agent-driven workflows",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47766149",
+    "url": "https://hn.brae.workers.dev/",
+    "title": "Show HN: Mobile Hacker News Reader – real time, dark mode",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "glassmorphism"
+    ]
+  },
+  {
+    "id": "47781289",
+    "url": "https://hormuztrail.com/",
+    "title": "Show HN: Hormuz Trail - Oregon Trail parody/black-box AI coding exercise",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47752687",
+    "url": "https://hyperscript.org/posts/2026-03-29-hyperscript-0.9.90-is-released/",
+    "title": "Show HN: _hyperscript 0.9.90",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "accent_stripe"
+    ]
+  },
+  {
+    "id": "47750975",
+    "url": "http://infinitetolkien.com/",
+    "title": "Show HN: The Infinite Tolkien – endless narration of Middle-earth",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "colored_glows"
+    ]
+  },
+  {
+    "id": "47793322",
+    "url": "https://www.isoldex.ai/",
+    "title": "Show HN: Sentinel – LLM browser automation using 10x fewer tokens",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47829018",
+    "url": "https://www.ispyai.io/",
+    "title": "Show HN: I Spy AI – Detect AI-Generated Images, with an MCP Server",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47814937",
+    "url": "https://itlinks.me",
+    "title": "Show HN: Link Shortener – Itlinks.me",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "purple_accent"
+    ]
+  },
+  {
+    "id": "47764383",
+    "url": "https://jfrog.com/fly/",
+    "title": "Show HN: Host, share, promote and track release artifacts via your coding agent",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 12,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47848510",
+    "url": "https://jiggle.conradgodfrey.com/",
+    "title": "Show HN: Jiggle: speed up the download by jiggling the mouse",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47820485",
+    "url": "https://jitterdone.com/",
+    "title": "Show HN: Jitter Done – a simple tool to understand your caffeine metabolism",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47878624",
+    "url": "https://justfyi.app",
+    "title": "Show HN: JustFYI – a paywall detector for \"free\" online tools",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47825112",
+    "url": "https://karriero.net/",
+    "title": "Show HN: Find jobs and know your fit before you apply",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "purple_accent"
+    ]
+  },
+  {
+    "id": "47718819",
+    "url": "https://kern-ai.com/?release=v0.25.0",
+    "title": "Show HN: Agents that do the work and show it – kern",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47780622",
+    "url": "https://l6e.ai",
+    "title": "Show HN: MCP server gives your agent a budget (save tokens, get smarter results)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 6,
+    "flagged": [
+      "hero_eyebrow_pill"
+    ]
+  },
+  {
+    "id": "47920008",
+    "url": "https://labs.montevive.ai/openai-privacy-demo/",
+    "title": "Show HN: OpenAI Privacy Filter running 100% locally in the browser WebGPU",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47876116",
+    "url": "https://leftium.github.io/nimble.css/",
+    "title": "Show HN: Nimble.css minimal classless CSS library for great-looking default HTML",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47787491",
+    "url": "https://letaigamble.com/",
+    "title": "Show HN: Gave Claude a casino bankroll – it gambles till it's too broke to think",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 40,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47896163",
+    "url": "https://lightwhale.asklandd.dk/",
+    "title": "Show HN: I've built a nice home server OS",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 193,
+    "flagged": [
+      "faq_accordion"
+    ]
+  },
+  {
+    "id": "47780234",
+    "url": "https://loudreader.io",
+    "title": "Show HN: I built on-device TTS app because I run out of audiobooks on a flight",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "icon_card_grid"
+    ]
+  },
+  {
+    "id": "47779762",
+    "url": "https://www.lovespreadsheets.com",
+    "title": "Show HN: Love Spreadsheets – App Builder for Your Excel and Google Sheets",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47774393",
+    "url": "https://lumon-live.netlify.app",
+    "title": "Show HN: Lumon, browser agents as interactive sprites",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47873004",
+    "url": "https://map.rezi.ai/index.html",
+    "title": "Show HN: We made 3M jobs searchable on a globe to visualize labor markets",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47893644",
+    "url": "https://markant.md/",
+    "title": "Show HN: Markant – A Dedicated Markdown Reader",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 6,
+    "flagged": [
+      "hero_eyebrow_pill"
+    ]
+  },
+  {
+    "id": "47852111",
+    "url": "https://marketplace.visualstudio.com/items?itemName=AhmedRakan.structura-v2",
+    "title": "Show HN: New way to explore code in vs. code ( vs. code extension)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "faq_accordion"
+    ]
+  },
+  {
+    "id": "47868032",
+    "url": "https://matthartman.github.io/ghost-pepper/",
+    "title": "Show HN: Ghost Pepper Meet local meeting transcription and diarization",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 27,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47771448",
+    "url": "https://mattitude8861.gumroad.com/l/QuantStrategyTemplatesBundle",
+    "title": "Show HN: Three backtested quant strategies as Jupyter notebooks",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47773437",
+    "url": "https://mcp.undisk.app",
+    "title": "Show HN: An edge MCP file system with a 50ms undo button for AI agents",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "colored_glows"
+    ]
+  },
+  {
+    "id": "47835411",
+    "url": "https://mediator.ai/",
+    "title": "Show HN: Mediator.ai – Using Nash bargaining and LLMs to systematize fairness",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 160,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47791628",
+    "url": "https://mercurialsolo.github.io/claudectl/",
+    "title": "Show HN: Claudectl-local LLM brain that learns to auto-pilot ClaudeCode sessions",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47764735",
+    "url": "https://mljar.com/analysis/",
+    "title": "Show HN: Which AI model is best for real data analysis?",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "icon_card_grid"
+    ]
+  },
+  {
+    "id": "47859244",
+    "url": "https://model-x.up.railway.app/",
+    "title": "Show HN: ModelX – Prediction Exchange for LLMs",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47778156",
+    "url": "https://www.monogate.dev/",
+    "title": "Show HN: Monogate – EML operator family, hybrid framework, 108-node sin(x)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47925469",
+    "url": "https://mymood.tools/",
+    "title": "Show HN: MyMood.tools, a 3 axis mood tracker",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47779308",
+    "url": "https://netscopeapp.com",
+    "title": "Show HN: Netscope – Inspect HAR Files on Your Desktop",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47740777",
+    "url": "https://no2.libmap.org/",
+    "title": "Show HN: 7 Years of Tropospheric NO₂",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "glassmorphism"
+    ]
+  },
+  {
+    "id": "47765454",
+    "url": "https://nobulex.com/playground",
+    "title": "Show HN: Nobulex – Prove what your AI agent did, cryptographically (live demo)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47837161",
+    "url": "https://noise.widgita.xyz/",
+    "title": "Show HN: Noise.widgita.xyz – a zero-back end noise map for anywhere in the world",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47805647",
+    "url": "https://noodl.ist/",
+    "title": "Show HN: Noodlist – Letterboxd for Instant Ramen",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 9,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47873593",
+    "url": "https://nova.civai.co/",
+    "title": "Show HN: Nova by civai, a platform for managed AI agents",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47767392",
+    "url": "https://paircare.love/",
+    "title": "Show HN: A Birth Control Pill Reminder for Couples",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47857376",
+    "url": "https://www.payclaw.me/",
+    "title": "Show HN: PayClaw – Give your AI agent a wallet it can spend",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47853228",
+    "url": "https://photon.codes/spectrum",
+    "title": "Show HN: Spectrum – Deploy AI Agents to iMessage, WhatsApp, Telegram, and More",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 8,
+    "flagged": [
+      "glassmorphism"
+    ]
+  },
+  {
+    "id": "47733597",
+    "url": "https://planefeed.app/",
+    "title": "Show HN: PlaneFeed – scroll live flights like TikTok",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47921283",
+    "url": "https://plate.to",
+    "title": "Show HN: Plate – The fastest way to run projects without becoming a PM tool",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 6,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47863906",
+    "url": "https://platform.newscatcherapi.com/catchall/try",
+    "title": "Show HN: CatchAll – slowest web search API that outperforms everything on recall",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 7,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47774359",
+    "url": "https://playra-app.vercel.app",
+    "title": "Show HN: Playra 2026 link",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "icon_card_grid"
+    ]
+  },
+  {
+    "id": "47813346",
+    "url": "https://podads.yet-to-be.com/",
+    "title": "Show HN: Podads – An Ad Blocker for Your Podcasts",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47819271",
+    "url": "https://www.polivora.com",
+    "title": "Show HN: I built a tool that reads 2000 health studies a day so you dont have to",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "faq_accordion"
+    ]
+  },
+  {
+    "id": "47914821",
+    "url": "https://polynya.dev/",
+    "title": "Show HN: Polynya – Turn your Postgres into workspaces for AI",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47740358",
+    "url": "https://pricepage.lol/",
+    "title": "Show HN: Millions of websites crawled for LLMs to rebuild the pricing pages",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47796109",
+    "url": "https://prode.ai/blogs/we-benchmarked-ai-code-documentation-tools-prode-scored-highest",
+    "title": "Show HN: We beat Google, Cognition, Claude Code at codebase docs generation",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "stat_banner_row"
+    ]
+  },
+  {
+    "id": "47823575",
+    "url": "https://proposly.org",
+    "title": "Show HN: Proposly – AI-generated client proposals for freelancers",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47759116",
+    "url": "https://proximafitness.com/",
+    "title": "Show HN: Skill files made this AI Workout Builder Good",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47829518",
+    "url": "https://quiz.neuralrad.com",
+    "title": "Show HN: A free, offline-capable math quiz app",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47792341",
+    "url": "https://randomdailyurls.com/25-projects/",
+    "title": "Show HN: Projects in 25 Weeks Challenge",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47868925",
+    "url": "https://rbtms.github.io/gemini_map/",
+    "title": "Show HN: I built a map of the GeminiNet",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47829395",
+    "url": "https://read.erictyrrell.com/",
+    "title": "Show HN: I built a spaced-repetition vocab app tied to the books you read",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47826529",
+    "url": "https://redactpdf.net",
+    "title": "Show HN: Free PDF redactor that runs client-side",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47791449",
+    "url": "https://reindernijhoff.net/2026/04/eigen-six-months-later/",
+    "title": "Show HN: I'm building Eigen, a self-hosted Google Workspace alternative",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47751824",
+    "url": "https://remy.msagent.ai/",
+    "title": "Show HN: Remy, an AI agent that compiles annotated Markdown into full-stack apps",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "glassmorphism"
+    ]
+  },
+  {
+    "id": "47801309",
+    "url": "https://repscontact.com/",
+    "title": "Show HN: Free API and widget to look up US representatives",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47931937",
+    "url": "https://retired.today/log",
+    "title": "Show HN: A free crypto trade journal with cycle support and CSV import",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47866438",
+    "url": "https://ric03uec.github.io/clawrium/",
+    "title": "Show HN: Clawrium – A CLI for managing AI agent fleet across multiple instances",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47794678",
+    "url": "https://rlvrbook.com",
+    "title": "Show HN: rlvrbook",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47739883",
+    "url": "https://rocketplace.org/reverseyc",
+    "title": "Show HN: ReverseYC",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47805834",
+    "url": "https://rufilla.com/the-mlforge-proof-of-concept/",
+    "title": "Show HN: Using an AI agent to refine a ML model for Zephyr RTOS",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47724793",
+    "url": "https://saminloes.com/one-chart/",
+    "title": "Show HN: The Universe in One Chart",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 8,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47769214",
+    "url": "https://sansword.github.io/sans_cube/#solve--2",
+    "title": "Show HN: Rubik's Cube solve analyzer – Bluetooth and CFOP/Roux phase breakdown",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47901503",
+    "url": "https://shielddeskhq.com/checker",
+    "title": "Show HN: I built a free email security checker for small businesses",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47761449",
+    "url": "https://shlokartha.in/",
+    "title": "Show HN: Shloka Artha [Word-by-Word Meanings for Shlokas]",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47901737",
+    "url": "https://sig-ai.app",
+    "title": "Show HN: Sig – personal & team knowledge base built from your work conversations",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "icon_card_grid"
+    ]
+  },
+  {
+    "id": "47723010",
+    "url": "https://www.signomy.xyz/",
+    "title": "Show HN: Economy AI agents form teams, run missions, earn commissions",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47770400",
+    "url": "https://skillmd.discourse.group/",
+    "title": "Show HN: Sk.illmd.com, a forum for talking about and showing off agent skills",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47717687",
+    "url": "https://skillstui.sh",
+    "title": "Show HN: I build skillstui – TUI to search-install agent skills from skills.sh",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47737288",
+    "url": "https://soham-saha.github.io/",
+    "title": "Show HN: Attempting to Design a Minimalistic Website",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47772806",
+    "url": "https://spectrelang.org",
+    "title": "Show HN: Spectre: A systems design-by-contract language, self hosted compiler",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47784814",
+    "url": "https://sports.errors.garden",
+    "title": "Show HN: sports.errors.garden",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47850715",
+    "url": "https://starikov.co/academia-notes/",
+    "title": "Show HN: Four years of my CS degree, typeset in LaTeX (850 pages)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 7,
+    "flagged": [
+      "sidebar_emoji"
+    ]
+  },
+  {
+    "id": "47813403",
+    "url": "https://stopnoslop.com/",
+    "title": "Show HN: A site for stopping work slop",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47881677",
+    "url": "https://storage.mixpeek.com",
+    "title": "Show HN: Object Storage Vendors – Compared",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47870432",
+    "url": "https://string-loom.pages.dev",
+    "title": "Show HN: Algorithmic String Art, accessible to all",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 15,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47830779",
+    "url": "https://sublimated.com/sublimated/landing.md",
+    "title": "Show HN: Real time Apple Notes sync to cloud",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47875182",
+    "url": "https://suparagent.ai/",
+    "title": "Show HN: Suparagent AI- Alternative to Manus and Genspark",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47923916",
+    "url": "https://sverklo.com/research/",
+    "title": "Show HN: Sverklo – local-first MCP code intelligence (and the runs we lose)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47790607",
+    "url": "https://synapsekit.github.io/synapsekit-docs/",
+    "title": "Show HN: Stop Using LangChain",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47922781",
+    "url": "https://tangled.org/dunkirk.sh/pear",
+    "title": "Show HN: I made a website to clean up recipe websites",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 7,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47850337",
+    "url": "https://technically.kakwalab.ovh/posts/silly-sun-server-intro/",
+    "title": "Show HN: My Silly Sun Server",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47873473",
+    "url": "https://www.terencegrover.com/section/physicalart/4",
+    "title": "Show HN: Autonomous coin-flipping machine with on-device CV",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47920219",
+    "url": "https://termtomd.com/",
+    "title": "Show HN: TermToMD past in choppy terminal output get clean Markdown",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47794057",
+    "url": "https://the-designengineer.com/model-cost-estimator/",
+    "title": "Show HN: A tool to calculate LLM model API costs when coding",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 4,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47798958",
+    "url": "https://thepublictab.com/",
+    "title": "Show HN: The Public Tab – See every federal dollar flowing through your district",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47859759",
+    "url": "https://thornwood.bsct.so/",
+    "title": "Show HN: Vibe Coding Games in Minutes",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47889317",
+    "url": "https://timexo.gumroad.com/l/playlistplayer",
+    "title": "Show HN: A standalone YouTube Music popup for OBS (no plugins required)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "shadcn_signature"
+    ]
+  },
+  {
+    "id": "47763748",
+    "url": "https://tmux-grid.itzami.com/",
+    "title": "Show HN: Tmux-grid – a visual layout builder for tmux",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47733479",
+    "url": "https://tomclancy.info/pages/abi-a-better-internet.html",
+    "title": "Show HN: A Better Internet",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 10,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47926128",
+    "url": "https://toolkit.whysonil.dev/how-it-works/internet-timeline/",
+    "title": "Show HN: What happens when you load a webpage (Interactive)",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47760032",
+    "url": "https://ttxt.org",
+    "title": "Show HN: teletext, a ceefax-inspired live news ticker",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47920028",
+    "url": "https://tunemark.app",
+    "title": "Show HN: Tunemark – Bookmark moments in songs on Android",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "faq_accordion"
+    ]
+  },
+  {
+    "id": "47870690",
+    "url": "https://usedeckweaver.com/login",
+    "title": "Show HN: DeckWeaver – Create AI-powered Google Slides presentations in minutes",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47895093",
+    "url": "https://usenimbus.app/",
+    "title": "Show HN: Nimbus – Browser with Claude Code UX",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 22,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47720349",
+    "url": "https://vaidikv.github.io/deconstructing-a-black-hole/",
+    "title": "Show HN: Deconstructing a Black Hole in a Fragment Shader",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47730540",
+    "url": "https://varlog.in/posts/uscis-who-is-watching/",
+    "title": "Show HN: We scanned uscis.gov for third-party trackers. The results are jarring",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 7,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47732461",
+    "url": "https://vedgupta.in/projects/whisper-api/",
+    "title": "Show HN: Self-hostable STT service with a Deepgram-compatible listen API",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47901865",
+    "url": "https://veerhost.com/llms-txt-generator/",
+    "title": "Show HN: I built a free LLMs.txt generator",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47812341",
+    "url": "https://victorpoughon.github.io/interval-calculator/",
+    "title": "Show HN: I made a calculator that works over disjoint sets of intervals",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 314,
+    "flagged": [
+      "center_aligned_hero"
+    ]
+  },
+  {
+    "id": "47906759",
+    "url": "https://vidzert.com/draw-together",
+    "title": "Show HN: Draw Together Online",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 10,
+    "flagged": [
+      "purple_accent"
+    ]
+  },
+  {
+    "id": "47719667",
+    "url": "https://viermal.be/cortex/",
+    "title": "Show HN: I made a clicker game about the PKM rabbit hole",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47800548",
+    "url": "https://virev.ai/instagram-email-finder",
+    "title": "Show HN: A free Instagram email downloader",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47872628",
+    "url": "https://vmpixel.com/",
+    "title": "Show HN: Linux Desktops in the Browser",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "slop_fonts"
+    ]
+  },
+  {
+    "id": "47917600",
+    "url": "https://websationflow.com/",
+    "title": "Show HN: Vibe Check – Client-side invisible Unicode steganography scanner",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47865594",
+    "url": "https://weejur.com",
+    "title": "Show HN: A free tool for non-technical folks to easily publish a website",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 5,
+    "flagged": [
+      "perma_dark_mode"
+    ]
+  },
+  {
+    "id": "47745144",
+    "url": "https://wefumevapes.com/",
+    "title": "Show HN: Vapephone",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 2,
+    "flagged": [
+      "all_caps_headings"
+    ]
+  },
+  {
+    "id": "47722850",
+    "url": "https://whirligig.live",
+    "title": "Show HN: Whirligig",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "numbered_steps"
+    ]
+  },
+  {
+    "id": "47765420",
+    "url": "https://www.whostudios.com/",
+    "title": "Show HN: Who'Studios – A Social Design Platform",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "gradients"
+    ]
+  },
+  {
+    "id": "47764277",
+    "url": "https://zenodo.org/records/19538276",
+    "title": "Show HN: Voight-Kampff Machine: Diagnostics of the \"Is\" vs. \"Wish\" Clash",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 1,
+    "flagged": [
+      "hero_eyebrow_pill"
+    ]
+  },
+  {
+    "id": "47765226",
+    "url": "https://zuver.cc",
+    "title": "Show HN: The opensource, reliable, scalable Agentic AI framework under 10MB",
+    "score": 6,
+    "patternsFlagged": 1,
+    "points": 3,
+    "flagged": [
+      "icon_card_grid"
+    ]
+  },
+  {
+    "id": "47953540",
+    "url": "https://dominionlist.com",
+    "title": "Show HN: The Dominion List – an open-source db of Canadian founders in the US",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 7,
+    "flagged": []
+  },
+  {
+    "id": "47953428",
+    "url": "https://aithoughtsarenotalwaysstraightlines.vercel.app/",
+    "title": "Show HN: I Built a Guide to the Manifold Shift in Mechanistic Interpretability",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47952323",
+    "url": "https://www.baywhales.org/",
+    "title": "Show HN: Bay Whale Strandings – interactive map of whale strandings in SF Bay",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47950902",
+    "url": "https://imbue-ai.github.io/gp-treemap/gallery/",
+    "title": "Show HN: GrandPerspective-style treemaps for the web and disk usage visualizer",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47950752",
+    "url": "https://agentport.sh/",
+    "title": "Show HN: AgentPort – Open-source Security Gateway For Agents",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47946616",
+    "url": "https://doudou-chinese.com/",
+    "title": "Show HN: I built a Chinese learning app that teaches through sentence patterns",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 9,
+    "flagged": []
+  },
+  {
+    "id": "47939767",
+    "url": "https://mdee.bkh.dev",
+    "title": "Show HN: A TUI for Markdown view an editing",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 20,
+    "flagged": []
+  },
+  {
+    "id": "47939096",
+    "url": "https://slopit.io/",
+    "title": "Show HN: SlopIt – A dead-simple CMS for your AI agent",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47939056",
+    "url": "https://nlessard.online/projects/2040listener/",
+    "title": "Show HN: A DIY, MITM Keyboard Sniffer Built Around an RP2040",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47938679",
+    "url": "https://algotutor.ai/",
+    "title": "Show HN: Algotutor – Practice Go with spaced repetition in your AI agent",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47937449",
+    "url": "https://claude.ai/public/artifacts/98750067-546b-4c9e-ab62-68cae2941329",
+    "title": "Show HN: I built a dating SIM that prepares you for your date",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47936445",
+    "url": "https://world.gjlmotea.com/",
+    "title": "Show HN: Mvndvs TERRARUM – A Renaissance-style 3D world map",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47934425",
+    "url": "https://www.tombradley.dev/",
+    "title": "Show HN: Pretext powered portfolio recycling letters",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47889777",
+    "url": "https://12ui.com",
+    "title": "Show HN: 12ui – Image to Code",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47855927",
+    "url": "https://www.1clicklinux.org/",
+    "title": "Show HN: Linux installer .exe without pendrives (secure-boot compatible)",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47819452",
+    "url": "https://adamsohn.com/reliably-incorrect/",
+    "title": "Show HN: Reliably Incorrect – explore LLM reliability with data visualizations",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47716007",
+    "url": "https://alitagpt.com",
+    "title": "Show HN: Alita – Your Virtual Professional AI Assistant",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47849132",
+    "url": "https://andycappdev.github.io/stet/",
+    "title": "Show HN: Stet – PostScript Level 3 interpreter and PDF toolkit in Rust",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47770547",
+    "url": "https://api.melonpost.com/SKILL.md",
+    "title": "Show HN: Send physical postcards from your coding harness",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47927996",
+    "url": "https://apoorvkulkarni.com/trending-screensaver/",
+    "title": "Show HN: macOS screensaver that displays Google Trends as fish in a deep-ocean",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47753093",
+    "url": "https://app.maniok.io",
+    "title": "Show HN: Git-native solution for documenting software architecture",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47838836",
+    "url": "https://apps.microsoft.com/detail/9nsd7jd58g17?hl=en-US&gl=US",
+    "title": "Show HN: A document snapshot solution to counter backups with name \"Final_final\"",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47738013",
+    "url": "https://arthur-ficial.github.io/tictactoe-3d/",
+    "title": "Show HN: 3D Tik Tak Toe (Hard)",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47778203",
+    "url": "https://astral-os.org/posts/2026/04/03/wine-on-astral.html",
+    "title": "Show HN: Porting Wine to My Hobby OS",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47859540",
+    "url": "https://bacist.com/german-irregular-verbs-app/",
+    "title": "Show HN: Irregular German Verbs – a simple app, no ads or tracking",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 6,
+    "flagged": []
+  },
+  {
+    "id": "47747795",
+    "url": "https://bad-apple-on-oscilloscope.pages.dev/",
+    "title": "Show HN: Bad Apple (Oscilloscope-Like) – one stroke per frame",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47913519",
+    "url": "https://www.bbc.com/future/article/20260421-your-bad-habits-are-destroying-your-charging-cables",
+    "title": "Show HN: Stop Destroying Your Charging Cables",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 11,
+    "flagged": []
+  },
+  {
+    "id": "47844391",
+    "url": "https://benlirio.com/petty-small-claims/",
+    "title": "Show HN: A fake small claims court for petty complaints",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 6,
+    "flagged": []
+  },
+  {
+    "id": "47916958",
+    "url": "https://bets.bernikins.com/",
+    "title": "Show HN: Friendly prediction markets to turn trips into a running tournament",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47781923",
+    "url": "https://bhave.sh/how-cheap-agent-dev-server/",
+    "title": "Show HN: I built a dev server that runs on half a lightbulb",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47813990",
+    "url": "https://bizlect.com",
+    "title": "Show HN: I made a self-employed expense keeper",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47871810",
+    "url": "https://blog.firetiger.com/firetiger-change-monitors/",
+    "title": "Show HN: Firetiger Change Monitors: does your PR do what it says on the tin?",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47876804",
+    "url": "https://blog.vulnetic.ai/how-sable-found-a-sql-injection-in-a-legacy-financial-portal-58a329b96b0b",
+    "title": "Show HN: Sable Found a SQL Injection in a Legacy Financial Portal",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47929386",
+    "url": "https://blotter.fm",
+    "title": "Show HN: Blotter, a live map of LAPD radio activity",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 8,
+    "flagged": []
+  },
+  {
+    "id": "47765331",
+    "url": "https://buyanopenpilotcar.today/",
+    "title": "Show HN: I built a site to find cars compatible with open source ADAS software",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47791775",
+    "url": "https://camminady.dev/abiturnoten/",
+    "title": "Show HN: German Abitur: More good grades, fewer bad grades",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 8,
+    "flagged": []
+  },
+  {
+    "id": "47718612",
+    "url": "https://capalent.com",
+    "title": "Show HN: Kaggle x Duolingo x Codecrafters",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47731250",
+    "url": "https://www.chaaga.com",
+    "title": "Show HN: Chaaga – A tiny platform to ship and share small web apps faster",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47825276",
+    "url": "https://www.chesster.eu",
+    "title": "Show HN: A chess playground that lets you share board configurations",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47747311",
+    "url": "https://www.chipmunkify.com/",
+    "title": "Show HN: Chipmunkify – I used ML to solve audio's dumbest problem",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47859608",
+    "url": "https://cloud.doshare.me/auth/signup",
+    "title": "Show HN: DoShare Personal Cloud",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47903426",
+    "url": "https://code.sailorslog.io/quay",
+    "title": "Show HN: Quay – Menu-bar Git sync",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47755064",
+    "url": "https://curation-509629088134.us-west1.run.app/",
+    "title": "Show HN: Curation: Share Podcast Recommendations",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47791769",
+    "url": "https://dashboard.silverfishsoftware.com/",
+    "title": "Show HN: Silverfish IDP – a low cost, language‑first Internal Developer Portal\"",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47770704",
+    "url": "https://davkap92.github.io/crowdscale/",
+    "title": "Show HN: Visualize any population as a grid of 100K-capacity stadiums (Three.js)",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47882601",
+    "url": "https://dcfoundation.io/containing-ai-agents-the-endo-familiar-demo/",
+    "title": "Show HN: Endo Familiar, an O-cap based JavaScript agent sandbox",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 13,
+    "flagged": []
+  },
+  {
+    "id": "47772268",
+    "url": "https://demo.gizmosauce.com/demos/little-caesars/",
+    "title": "Show HN: GizmoSauce – no-code website widgets",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47797721",
+    "url": "https://denismarkelov.codeberg.page/crates/",
+    "title": "Show HN: Compiler outputs HTML for code display",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47781933",
+    "url": "https://descriptinc.github.io/dependicus/",
+    "title": "Show HN: Dependicus, a dashboard for your monorepo's dependencies",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 6,
+    "flagged": []
+  },
+  {
+    "id": "47716617",
+    "url": "https://www.doallthethings.app/",
+    "title": "Show HN: Do All the Things",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 27,
+    "flagged": []
+  },
+  {
+    "id": "47876489",
+    "url": "https://docs.hmx.dev/features/buffer-zoom/",
+    "title": "Show HN: Buffer zoom, adds OS-native scrollback, copy, and find to any tmux pane",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47860738",
+    "url": "https://docs.kimlikdao.org",
+    "title": "Show HN: Kdts, an optimization-first TypeScript compiler",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47806490",
+    "url": "https://easylang.online/sorting",
+    "title": "Show HN: Interactive demos of sorting algorithms with runtime comparisons",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47720333",
+    "url": "https://electricminds.org",
+    "title": "Show HN: Electric Minds Reborn: pioneering virtual community, on a new platform",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47901892",
+    "url": "https://emmanuel326.github.io/blogs/sheriffdb.html",
+    "title": "Show HN: SherifDB, a databe written in Golang under 500 LOC",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47925427",
+    "url": "https://eran.sandler.co.il/post/2026-04-27-batch-api-is-terrible-for-one-agent/",
+    "title": "Show HN: I ran every Claude agent turn through the Batch API",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47866997",
+    "url": "https://everestdrive.io/",
+    "title": "Show HN: Everest Drive – a multiplayer spaceship crew simulator in the browser",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 15,
+    "flagged": []
+  },
+  {
+    "id": "47848659",
+    "url": "https://family-tree-maker.mnapoli.fr/",
+    "title": "Show HN: Family Tree Maker",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47888312",
+    "url": "https://figpack.org",
+    "title": "Show HN: Figpack science viz – Python script → Shareable HTML Bundle in cloud",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47786116",
+    "url": "https://flickrgraveyard.com/",
+    "title": "Show HN: Browsing forgotten digicam photos from early Flickr (2000–2012)",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47873807",
+    "url": "https://floors.music/",
+    "title": "Show HN: Floors – DJ mix discovery built around a music knowledge graph",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47920007",
+    "url": "https://forkle.co.uk/",
+    "title": "Show HN: I built a dual crossword puzzle where two crosswords share one grid",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 20,
+    "flagged": []
+  },
+  {
+    "id": "47869016",
+    "url": "https://www.fourthspace.vip",
+    "title": "Show HN: FourthSpace – Bridging Social Media with Your Social Life",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47838023",
+    "url": "https://freelava.neocities.org",
+    "title": "Show HN: Freelava – Lava Lamp in an HTML Page",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47774659",
+    "url": "https://fz.ax",
+    "title": "Show HN: Fz.ax – Four thousand weeks of your life, as hexagons",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47807518",
+    "url": "https://galleryanonima.com/",
+    "title": "Show HN: I made a anonymous gallery / Anti Social Media",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47734804",
+    "url": "https://gascraft.ai",
+    "title": "Show HN: I visualized Wasteland as an RTS game",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47748973",
+    "url": "https://gitbalance.com",
+    "title": "Show HN: GitBalance – a GitHub-style graph to balance work and health",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47745300",
+    "url": "https://www.grateful.so/",
+    "title": "Show HN: A social feed with no strangers",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 9,
+    "flagged": []
+  },
+  {
+    "id": "47772707",
+    "url": "https://hergimuci.gumroad.com/l/ai-agent-blueprint",
+    "title": "Show HN: I built a self-improving autonomous AI agent that runs 24/7",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47780474",
+    "url": "https://hn.tin-sever.de/",
+    "title": "Show HN: Lazy-HN, a faster Hacker News front end you probably don't need",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47729477",
+    "url": "https://www.hormuz-havoc.com/",
+    "title": "Show HN: Hormuz Havoc, a satirical game that got overrun by AI bots in 24 hours",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 54,
+    "flagged": []
+  },
+  {
+    "id": "47920844",
+    "url": "https://humansmap.com/",
+    "title": "Show HN: HumansMap, Leaderboards,interactive graphs on 1M+ Wikidata entities",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47776380",
+    "url": "https://www.ibanforge.com/en",
+    "title": "Show HN: IBANforge – $6/mo alternative to $9,500/yr IBAN validation APIs",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47808473",
+    "url": "http://www.inpatientpress.net/inpatient-interactive/2026/4/16/ex-libris",
+    "title": "Show HN: EX LIBRIS – a library-crawling RPG made with a 2000s engine",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47927407",
+    "url": "https://isitartstudio.com",
+    "title": "Show HN: Is it art? An art project for AI agents",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47778646",
+    "url": "https://www.jimmont.com/hwt/",
+    "title": "Show HN: HWT (Hash Web Tokens) – minimalist protocol for auth state",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47736568",
+    "url": "https://jointherevolution.today/emergence",
+    "title": "Show HN: I visualized how AI agent systems accidentally become org charts",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47828968",
+    "url": "https://juanpabloaj.com/2026/04/16/a-lightweight-way-to-make-agents-talk-without-paying-for-api-usage/",
+    "title": "Show HN: A lightweight way to make agents talk without paying for API usage",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 58,
+    "flagged": []
+  },
+  {
+    "id": "47921222",
+    "url": "https://www.kaggle.com/datasets/neutralnewsai/nnai-news-metadata-dataset-7k",
+    "title": "Show HN: News metadata dataset for media bias research",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47729925",
+    "url": "https://kampfinsel.com/",
+    "title": "Show HN: I rebuilt a 2000s browser strategy game on Cloudflare's edge",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 38,
+    "flagged": []
+  },
+  {
+    "id": "47795941",
+    "url": "https://kouh.me/arrow",
+    "title": "Show HN: Arrow. Point your phone, walk where it says, find out where",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47872083",
+    "url": "https://kraa.io/kraa/trees",
+    "title": "Show HN: Real-Real-Time Chat",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 10,
+    "flagged": []
+  },
+  {
+    "id": "47801347",
+    "url": "https://labelcompass.pages.dev/",
+    "title": "Show HN: LabelCompass, a new website to check for record labels",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47781682",
+    "url": "https://labs.tiffzhang.com/count/",
+    "title": "Show HN: Count Me In, a metronome that counts numbers for you",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47805219",
+    "url": "https://www.lawruk.com/boston-marathon",
+    "title": "Show HN: Boston Marathon Course Map with T and Rail Stations",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47857777",
+    "url": "https://leaderboard.atella.ai/code-security.html",
+    "title": "Show HN: Benchmarking how AI models write vulnerable code under pressure",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47850446",
+    "url": "https://lennyfighter.com",
+    "title": "Show HN: LennyFighter: A multiplayer fighting game on Cloudflare Durable Objects",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47817565",
+    "url": "https://liminal-dwsw5.ondigitalocean.app/",
+    "title": "Show HN: WebGL Liminal Space",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47915285",
+    "url": "https://logic-designer.github.io/logic-designer-main/",
+    "title": "Show HN: Logic Designer – Webapp",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 6,
+    "flagged": []
+  },
+  {
+    "id": "47904369",
+    "url": "https://loredata.orchidfiles.com/",
+    "title": "Show HN: LoreData – generate lore-accurate personas from pop culture universes",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47751985",
+    "url": "https://lovinghate.com/",
+    "title": "Show HN: Lovinghate – Share what you love and hate",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47750470",
+    "url": "https://lyfe.ninja/news/#know-your-agent-with-blkbolt",
+    "title": "Show HN: AI Content Attestation & Verification w/ Revocable Signatures",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47766773",
+    "url": "https://marinecharts.io/tools/vector-tile-inspector",
+    "title": "Show HN: Free browser-based vector tile inspector – paste any MVT/PBF URL",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47834580",
+    "url": "https://markmnl.github.io/fmsg/show-hn.html",
+    "title": "Show HN: fmsg – An open distributed messaging protocol",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47784900",
+    "url": "https://mdview.io/",
+    "title": "Show HN: Mdview.io – online md viewer with responsive tables",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47789231",
+    "url": "https://menggg.me/vibes/week-15",
+    "title": "Show HN: I made a weekly editorial on what HN was feeling and building",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47738461",
+    "url": "https://minnow.social/",
+    "title": "Show HN: Minnow – minimal now pages via chat",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47739049",
+    "url": "https://modolap.com",
+    "title": "Show HN: Real-Time OLAP Infrastructure",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47794003",
+    "url": "https://morebooksplease.com",
+    "title": "Show HN: Morebooksplease – SF Signal flowchart as a survey",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47764685",
+    "url": "https://mushroam.xyz/",
+    "title": "Show HN: Mushroam – Turn any URL into a promo video",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47829127",
+    "url": "https://myfinance-vitals.streamlit.app/",
+    "title": "Show HN: Vitals – Score your financial health and explain what the numbers mean",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47750779",
+    "url": "https://myown.news/",
+    "title": "Show HN: A web newspaper that looks like a newspaper",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47866218",
+    "url": "https://netlify.ai",
+    "title": "Show HN: Netlify for Agents",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 13,
+    "flagged": []
+  },
+  {
+    "id": "47858379",
+    "url": "https://www.neuroplusgbrain.net/",
+    "title": "Show HN: GBrain, an AI tool for diagnosis and therapy for neurodivergents",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47827621",
+    "url": "https://www.newsmaps.io/",
+    "title": "Show HN: Newsmaps.io a map of how news topics are covered by different countries",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 19,
+    "flagged": []
+  },
+  {
+    "id": "47739860",
+    "url": "https://nezha.hanshutx.com/en/",
+    "title": "Show HN: NeZha – An Open-Source Agentic Development Environment (ADE)",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47878137",
+    "url": "https://www.noemica.io/",
+    "title": "Show HN: Noemica – personas that use your product and tell you why they left",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47855826",
+    "url": "https://nojs.club/",
+    "title": "Show HN: No JavaScript Club",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 10,
+    "flagged": []
+  },
+  {
+    "id": "47837829",
+    "url": "https://nullonerror.org/2025/07/29/poor-s-man-shaders/",
+    "title": "Show HN: Poor's Man Shaders",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47827033",
+    "url": "https://nycguessr.vercel.app/",
+    "title": "Show HN: NYC Guessr – GeoGuessr for NYC but with live video cam footage",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47892168",
+    "url": "https://onthisday-theta.vercel.app",
+    "title": "Show HN: #1 On This Day",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 18,
+    "flagged": []
+  },
+  {
+    "id": "47926567",
+    "url": "https://openseo.so/",
+    "title": "Show HN: Open-source Semrush alternative just passed 1.6k stars",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47899407",
+    "url": "https://pascar.run",
+    "title": "Show HN: A faithful offline recreation of the classic MS-DOS Editor",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47800094",
+    "url": "https://www.perplexity.ai/computer/a/us-olympiad-tracker-__5Gzx3tQaKOInGlalN8sQ",
+    "title": "Show HN: Tracking Top US Science Olympiad Alumni over Last 25 Years",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 6,
+    "flagged": []
+  },
+  {
+    "id": "47805289",
+    "url": "https://planedrift.app/",
+    "title": "Show HN: Planedrift – Play Infocom games in the browser",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47767797",
+    "url": "https://plotline.care/",
+    "title": "Show HN: Plotline, an open-source initiative to help you own your health data",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47839426",
+    "url": "https://ppomes.github.io/myanon/",
+    "title": "Show HN: Myanon – fast, deterministic MySQL dump anonymizer",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47929978",
+    "url": "https://preprompt.org/",
+    "title": "Show HN: PrePrompt – rewrites vague prompts before they reach the LLM",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 23,
+    "flagged": []
+  },
+  {
+    "id": "47891569",
+    "url": "https://privateclaw.dev",
+    "title": "Show HN: PrivateClaw – AI agents running in confidential VMs you can verify",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 6,
+    "flagged": []
+  },
+  {
+    "id": "47872996",
+    "url": "https://protovoters.org",
+    "title": "Show HN: Protovoters -- Free, accessible voter files for democracy",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47770792",
+    "url": "https://quant.kadoa.com/",
+    "title": "Show HN: Quant Job Market Visualizer",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47829271",
+    "url": "https://qwelian.com/posts/FINE_SHYT_Intelligent_Curation_Tagging_for_Creative_Workflows",
+    "title": "Show HN: I built a local Elixir/Python pipeline to curate 14,000 RAW photos",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47849472",
+    "url": "https://readplace.com/view",
+    "title": "Show HN: Read.place/view – Reader view for any article and TL;DR summary",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47806413",
+    "url": "https://www.recroomgrads.com",
+    "title": "Show HN: recroomgrads.com – Celebrating Rec Room's Talented Team",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47802211",
+    "url": "https://resolved.sh/",
+    "title": "Show HN: Ask your AI to start a business for you, resolved.sh",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47776939",
+    "url": "https://www.rezi.ai/rezi-docs/resume-mcp-server",
+    "title": "Show HN: Resume MCP",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47753560",
+    "url": "https://ricardomonteirosimoes.github.io/behavioural-dashboard/",
+    "title": "Show HN: Behavioural-dashboard, framework agnostic library for living dashboards",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47796840",
+    "url": "https://www.sansparsh.art/modulo",
+    "title": "Show HN: Modulo – A daily spatial reasoning puzzle",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47778255",
+    "url": "https://sdocs.dev/",
+    "title": "Show HN: SDocs – A CLI and webapp for private Markdown reading and sharing",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47898568",
+    "url": "https://www.sentensus.com/",
+    "title": "Show HN: Collaborative sentence builder with real-time voting",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 14,
+    "flagged": []
+  },
+  {
+    "id": "47783061",
+    "url": "https://shar-wasm.cjoseph.workers.dev/?skipmovie",
+    "title": "Show HN: The Simpsons Hit and Run Running in the Browser (WASM/WebGL)",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47861189",
+    "url": "https://sidebearing-trim.js.org/",
+    "title": "Show HN: Sidebearing-trim – align text to visible ink, not the glyph box",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47905913",
+    "url": "https://sigmalifting.app/",
+    "title": "Show HN: SigmaLifting CLI – helping agents understand strength training",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47875222",
+    "url": "https://sklad.dev/",
+    "title": "Show HN: Sklad, a key-value database in Zig",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47736696",
+    "url": "https://snorb.lol",
+    "title": "Show HN: Snorb.lol",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47787580",
+    "url": "https://springboards.ai/models/flint-alpha",
+    "title": "Show HN: Flint – A 30B model fine-tuned for less repetition",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 6,
+    "flagged": []
+  },
+  {
+    "id": "47926998",
+    "url": "https://sqlprotocol.com",
+    "title": "Show HN: SQL Protocol – a SQL game that's now an MMO-lite",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47757131",
+    "url": "https://subralabs.com/lab/on-device-vs-cloud-llm.html",
+    "title": "Show HN: On-Device vs. Cloud LLMs for Agentic Tool Calling in a Real iOS App",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47899395",
+    "url": "https://sun.mikolajmocek.com/",
+    "title": "Show HN: I fixed sleep schedule by tracking solar time, so I built an app for it",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47752590",
+    "url": "https://supereasy.tools/en",
+    "title": "Show HN: I made simple tools for things people ask me to do for them",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47741064",
+    "url": "https://superhq.ai/",
+    "title": "Show HN: Run AI coding agents in real, local sandboxes, not Git worktrees",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 6,
+    "flagged": []
+  },
+  {
+    "id": "47906764",
+    "url": "https://suprastructure.net",
+    "title": "Show HN: deterministic oracle for hardware designs with replayable proofs",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47822571",
+    "url": "https://sysinfo.theden.sh/",
+    "title": "Show HN: Browser Sysinfo – See everything a webpage can learn about you",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47845592",
+    "url": "https://tapfi.uno/",
+    "title": "Show HN: TapFi – Join any WiFi just by scanning the details with your camera",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47764292",
+    "url": "https://technokick.com",
+    "title": "Show HN: Techno Kick",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47832544",
+    "url": "https://the-ton.vercel.app/login",
+    "title": "Show HN: Bridgerton Inspired Social Network",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47734433",
+    "url": "https://www.the2048league.com/",
+    "title": "Show HN: 2048 with a Leaderboard",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 4,
+    "flagged": []
+  },
+  {
+    "id": "47839191",
+    "url": "https://theguesthouse.app/",
+    "title": "Show HN: The Guesthouse – A quiet place to begin the day",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47845748",
+    "url": "https://tiagosimoes.github.io/tiltbump/",
+    "title": "Show HN: Tiltbump – another game in a single HTML file",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47865127",
+    "url": "https://timleland.com/live-speech-translator/",
+    "title": "Show HN: Free Live Speech Translator",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47867503",
+    "url": "https://tinylvt.com/auction-guide",
+    "title": "Show HN: Interactive Guide to Cooperative Auctions",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47782894",
+    "url": "https://tkmx.odio.dev",
+    "title": "Show HN: HN Tokenmaxxing Leaderboard",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 3,
+    "flagged": []
+  },
+  {
+    "id": "47724749",
+    "url": "https://tofl.github.io",
+    "title": "Show HN: A free study guide for the AWS DVA-C02, built from my own exam notes",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47722023",
+    "url": "https://tortured-metaphor.github.io/Gravity-Garden/",
+    "title": "Show HN: Gravity Garden, an Interactive Simulator",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47778306",
+    "url": "https://tracksuccession.com/explore",
+    "title": "Show HN: Every CEO and CFO change at US public companies, live from SEC",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 191,
+    "flagged": []
+  },
+  {
+    "id": "47838469",
+    "url": "https://troubleshooting.sh/",
+    "title": "Show HN: troubleshooting.sh – paste a error, get a fix with root cause explained",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47923695",
+    "url": "https://unusualwiki.nk412.com/",
+    "title": "Show HN: Unusual Wikipedia",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 38,
+    "flagged": []
+  },
+  {
+    "id": "47826104",
+    "url": "https://www.vincentgregoire.com/faceoff/",
+    "title": "Show HN: Faceoff – A terminal UI for following NHL games",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 136,
+    "flagged": []
+  },
+  {
+    "id": "47759858",
+    "url": "https://vizulation.com/brightenup.html",
+    "title": "Show HN: I Created a Web Version of My First App Game",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47864509",
+    "url": "https://vrroom.github.io/tokenlight/",
+    "title": "Show HN: Move Lights in a Photograph in 3D",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47808554",
+    "url": "https://waputer.app",
+    "title": "Show HN: Waputer – The WebAssembly Computer",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 7,
+    "flagged": []
+  },
+  {
+    "id": "47886780",
+    "url": "https://webflow.com/apps/detail/sheetflow",
+    "title": "Show HN: Sheetflow – Manage Webflow CMS Directly from Google Sheets",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 2,
+    "flagged": []
+  },
+  {
+    "id": "47852011",
+    "url": "https://wreflecto.com/mirror",
+    "title": "Show HN: Wreflecto – word puzzle inspired by the ancient SATOR Square",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47729558",
+    "url": "https://xxyzz.github.io/wiktionary_stardict/",
+    "title": "Show HN: Wiktionary StarDict Files",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47920666",
+    "url": "https://yubiclicker.com/",
+    "title": "Show HN: YubiClicker, a clicker game that requires a physical security key",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 5,
+    "flagged": []
+  },
+  {
+    "id": "47719774",
+    "url": "https://yynn.app/swipe",
+    "title": "Show HN: Tinder Swipe Everything in Wikidata",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  },
+  {
+    "id": "47762958",
+    "url": "https://zippy-starlight-f6f3cf.netlify.app",
+    "title": "Show HN: How unique is your combination of interests among 8B people?",
+    "score": 0,
+    "patternsFlagged": 0,
+    "points": 1,
+    "flagged": []
+  }
+]

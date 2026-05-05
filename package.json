@@ -1,0 +1,30 @@
+{
+  "name": "ai-design-checker",
+  "version": "0.1.0",
+  "description": "Score landing pages against 16 deterministic AI design patterns",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/AdrianKrebs/ai-design-checker",
+  "repository": { "type": "git", "url": "https://github.com/AdrianKrebs/ai-design-checker.git" },
+  "bin": {
+    "ai-design-checker": "./cli.js"
+  },
+  "files": [
+    "cli.js",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "analyze":     "node src/run.js",
+    "fetch":       "node src/fetch-showhn.js",
+    "report":      "node src/build-report.js",
+    "label":       "node tools/label/server.mjs",
+    "scan":        "node tools/scan/server.mjs",
+    "eval":        "node tools/eval.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Design Checker · labeling</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; color: #111; background: #fafafa; }
+  header { display: flex; gap: 10px; align-items: center; padding: 8px 14px; border-bottom: 1px solid #ddd; background: #fff; flex-wrap: wrap; }
+  header button { font: inherit; padding: 4px 8px; border: 1px solid #ccc; background: #fff; cursor: pointer; border-radius: 3px; }
+  header button:hover { background: #f0f0f0; }
+  #pos, #progress { font-variant-numeric: tabular-nums; }
+  #pos { min-width: 80px; }
+  #progress { color: #666; min-width: 110px; }
+  #status { color: #666; }
+  #status.labeled { color: #2c7a3a; font-weight: 600; }
+  .help { color: #666; font-size: 12px; margin-left: auto; line-height: 1.6; }
+  kbd { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 11px; background: #eee; padding: 1px 5px; border-radius: 2px; border: 1px solid #ccc; }
+
+  .layout { display: grid; grid-template-columns: minmax(300px, 1fr) minmax(420px, 1fr); gap: 10px; padding: 10px; height: calc(100vh - 50px); }
+  .shot { background: #f5f5f5; border: 1px solid #ddd; overflow: auto; cursor: zoom-in; position: relative; }
+  .shot img { width: 100%; display: block; }
+  .panel { display: flex; flex-direction: column; background: #fff; border: 1px solid #ddd; }
+  .panel-head { padding: 10px 14px; border-bottom: 1px solid #eee; }
+  .panel-body { padding: 10px 14px; flex: 1; overflow: auto; }
+  .panel-foot { padding: 10px 14px; border-top: 1px solid #eee; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+  .url { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 12px; word-break: break-all; }
+  .url a { color: #1a4dba; }
+  .meta { color: #666; font-size: 12px; margin: 4px 0 0; }
+  .meta strong { color: #111; }
+  .agree-bar { display: flex; gap: 6px; align-items: center; margin: 10px 0 0; padding: 8px 10px; background: #f4f7f5; border: 1px solid #cfe1c9; border-radius: 4px; }
+  .agree-bar button { font: inherit; padding: 4px 10px; border: 1px solid #2c7a3a; background: #2c7a3a; color: white; cursor: pointer; border-radius: 3px; font-weight: 500; }
+  .agree-bar button:hover { background: #225f2a; }
+  .agree-bar .agree-help { color: #555; font-size: 12px; }
+
+  .pattern { padding: 7px 10px; border-radius: 4px; margin-bottom: 4px; border: 1px solid transparent; cursor: pointer; }
+  .pattern.focused { border-color: #1a4dba; background: #f0f5ff; }
+  .pattern.disagrees { background: #fff8e1; border-color: #e0c060; }
+  .pattern.disagrees.focused { background: #fff3c4; border-color: #1a4dba; }
+  .pattern h3 { margin: 0; font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+  .pattern .det-flag { font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 2px; }
+  .pattern .det-flag.on { background: #fdecec; color: #8b1a1a; }
+  .pattern .det-flag.off { background: #eee; color: #777; }
+  .pattern .ev { color: #555; font-size: 12px; margin: 3px 0 4px; font-style: italic; }
+  .pattern .actions { display: flex; gap: 4px; }
+  .pattern .actions button { font: inherit; font-size: 12px; padding: 2px 8px; border: 1px solid #ccc; background: #fff; cursor: pointer; border-radius: 3px; }
+  .pattern .actions button:hover { background: #f0f0f0; }
+  .pattern .actions button.active.btn-yes { background: #d0f0d0; border-color: #2c7a3a; }
+  .pattern .actions button.active.btn-no { background: #f0d0d0; border-color: #b03a2e; }
+  .pattern .actions button.active.btn-skip { background: #f0f0d0; border-color: #a07b00; }
+
+  textarea { width: 100%; min-height: 50px; font: inherit; padding: 6px; border: 1px solid #ccc; border-radius: 3px; resize: vertical; }
+  .save { padding: 6px 14px; font: inherit; background: #111; color: white; border: none; border-radius: 3px; cursor: pointer; font-weight: 500; }
+  .save:hover { background: #333; }
+  .draft-note { color: #888; font-size: 11px; margin-left: auto; }
+
+  /* Zoom overlay for screenshot */
+  .zoom-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: none; align-items: center; justify-content: center; z-index: 100; cursor: zoom-out; padding: 20px; }
+  .zoom-overlay.open { display: flex; }
+  .zoom-overlay img { max-width: 100%; max-height: 100%; display: block; }
+</style>
+</head>
+<body>
+<header>
+  <button id="prev" title="Previous (←)">‹ prev</button>
+  <button id="next" title="Next (→)">next ›</button>
+  <button id="next-unlabeled" title="Next unlabeled (n)">→ next unlabeled</button>
+  <span id="pos">…</span>
+  <span id="progress">…</span>
+  <span id="status"></span>
+  <span class="help">
+    <kbd>←</kbd> <kbd>→</kbd> nav · <kbd>n</kbd> next unlabeled · <kbd>j</kbd> <kbd>k</kbd> focus pattern ·
+    <kbd>1</kbd> present <kbd>2</kbd> not <kbd>3</kbd> skip · <kbd>a</kbd> agree-all · <kbd>s</kbd> save
+  </span>
+</header>
+<div class="layout">
+  <div class="shot" id="shot-wrap"><img id="shot" alt="screenshot"></div>
+  <div class="panel">
+    <div class="panel-head">
+      <div class="url" id="url"></div>
+      <div class="meta" id="meta"></div>
+      <div class="agree-bar">
+        <button id="agree-all" title="Mark every pattern matching the detector's verdict (a)">Agree with detector on all</button>
+        <span class="agree-help">use when the detector got every pattern right</span>
+      </div>
+    </div>
+    <div class="panel-body" id="patterns"></div>
+    <div class="panel-foot">
+      <textarea id="notes" placeholder="optional notes — e.g. 'intentional retro theme'"></textarea>
+      <button class="save" id="save" title="Save & advance to next unlabeled (s)">Save & next →</button>
+      <span class="draft-note" id="draft-note"></span>
+    </div>
+  </div>
+</div>
+<div class="zoom-overlay" id="zoom"><img id="zoom-img" alt=""></div>
+
+<script>
+let sites = [];
+let i = 0;
+let current = null;
+let labels = {};
+let focused = -1;     // index of currently focused pattern row
+let dirty = false;    // unsaved changes since last save / load
+
+function escapeHtml(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+}
+
+// Per-pattern evidence renderer. Returns a 1-line summary for the labeler.
+function evidenceLine(p) {
+  const e = p.evidence;
+  if (!e) return '';
+  const r = (n) => Math.round(n * 100);
+  switch (p.id) {
+    case 'slop_fonts':         return (e.fonts && e.fonts[0]) || e.heading || '';
+    case 'purple_accent':      return e.elementsWithPurple + ' purple elems, ' + (e.purpleOnButtonsOrLinks || 0) + ' on CTAs';
+    case 'gradients':          return e.gradientBackgrounds + ' bg gradients, ' + (e.gradientText || 0) + ' text' + (e.heroHasGradientText ? ' (hero)' : '');
+    case 'shadcn_signature':   return [e.cssVars + ' CSS vars', e.lucide && 'lucide', e.dataSlot && 'data-slot', e.radix && 'radix'].filter(Boolean).join(' · ');
+    case 'accent_stripe':      return e.count + ' stripe(s)' + (e.samples && e.samples[0] ? ': ' + (e.samples[0].kind || '') + ' ' + (e.samples[0].color || '') : '');
+    case 'glassmorphism':      return e.count + ' translucent backdrop-blur card(s)';
+    case 'colored_glows':      return e.count + ' colored box-shadow glow(s)';
+    case 'sidebar_emoji':      return e.sidebarPattern ? 'sidebar with emoji links' : (e.emojiInNavOrButtons || 0) + ' emoji in nav/buttons';
+    case 'center_aligned_hero': return (e.headingFont || '?') + ', ' + (e.heroH1Centered ? 'H1 centered' : 'H1 not centered') + ', ' + r(e.aboveFoldCenterRatio || 0) + '% above-fold centered';
+    case 'all_caps_headings':  return e.allCapsHeadings + ' all-caps headings (' + r(e.ratio) + '%)';
+    case 'perma_dark_mode':    return e.pctBelowAAA + '% body text below AAA contrast' + (e.examples && e.examples[0] ? ' · "' + e.examples[0].sample.slice(0, 40) + '"' : '');
+    case 'icon_card_grid':     return e.gridCount + ' grid(s)' + (e.samples && e.samples[0] ? ', e.g. ' + e.samples[0].cards + ' cards @ ' + e.samples[0].cardWidth + 'px' : '');
+    case 'numbered_steps':     return 'run of ' + e.runLength + ' ascending numbers';
+    case 'stat_banner_row':    return e.count + ' row(s)' + (e.samples && e.samples[0] ? ': ' + (e.samples[0].values || []).join(' · ') : '');
+    case 'hero_eyebrow_pill':  return e.samples && e.samples[0] ? '"' + e.samples[0].text + '" (' + e.samples[0].bg + ')' : '';
+    case 'faq_accordion':      return (e.count || 0) + ' Q/A items' + (e.heading ? ' under "' + e.heading + '"' : '') + ' (' + (e.mode || '') + ')';
+    default: return '';
+  }
+}
+
+async function loadSites() {
+  // Pass through ?focus=<file> from the page URL so the server can filter.
+  const focus = new URLSearchParams(location.search).get('focus');
+  const url = '/api/sites' + (focus ? '?focus=' + encodeURIComponent(focus) : '');
+  sites = await fetch(url).then(r => r.json());
+  const labeled = sites.filter(s => s.labeled).length;
+  const pct = sites.length ? (100 * labeled / sites.length).toFixed(1) : '0';
+  document.getElementById('progress').textContent = labeled + ' / ' + sites.length + ' labeled (' + pct + '%)';
+}
+
+function draftKey(slug) { return 'draft:' + slug; }
+
+function saveDraft() {
+  if (!current) return;
+  const draft = { labels, notes: document.getElementById('notes').value, savedAt: Date.now() };
+  localStorage.setItem(draftKey(current.slug), JSON.stringify(draft));
+  document.getElementById('draft-note').textContent = 'draft saved ' + new Date().toLocaleTimeString();
+  dirty = false;
+}
+
+function loadDraft(slug) {
+  const t = localStorage.getItem(draftKey(slug));
+  if (!t) return null;
+  try { return JSON.parse(t); } catch { return null; }
+}
+
+function clearDraft(slug) {
+  localStorage.removeItem(draftKey(slug));
+}
+
+function renderPatterns() {
+  const html = (current.patterns || []).map((p, idx) => {
+    const detTriggered = p.triggered;
+    const userLabel = labels[p.id];
+    // Disagreement: detector says X, user says different.
+    const userPresent = userLabel === 'present';
+    const userNot = userLabel === 'not_present';
+    const disagrees = (detTriggered && userNot) || (!detTriggered && userPresent);
+    const ev = evidenceLine(p);
+    return '<div class="pattern' + (idx === focused ? ' focused' : '') + (disagrees ? ' disagrees' : '') + '"' +
+      ' data-id="' + escapeHtml(p.id) + '" data-idx="' + idx + '">' +
+      '<h3>' +
+        '<span class="det-flag ' + (detTriggered ? 'on' : 'off') + '">' + (detTriggered ? 'detected' : 'not detected') + '</span>' +
+        ' ' + escapeHtml(p.label || p.id) +
+      '</h3>' +
+      (ev ? '<div class="ev">' + escapeHtml(ev) + '</div>' : '') +
+      '<div class="actions">' +
+        '<button class="btn-yes' + (userLabel === 'present' ? ' active' : '') + '" data-v="present">Present</button>' +
+        '<button class="btn-no' + (userLabel === 'not_present' ? ' active' : '') + '" data-v="not_present">Not present</button>' +
+        '<button class="btn-skip' + (userLabel === 'skip' ? ' active' : '') + '" data-v="skip">Skip</button>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+  document.getElementById('patterns').innerHTML = html;
+
+  document.querySelectorAll('.pattern').forEach(el => {
+    el.addEventListener('click', e => {
+      const idx = +el.dataset.idx;
+      focused = idx;
+      const btn = e.target.closest('button');
+      if (btn) {
+        labels[el.dataset.id] = btn.dataset.v;
+        dirty = true;
+        saveDraft();
+      }
+      renderPatterns();
+      // Keep the focused row visible
+      const row = document.querySelector('.pattern.focused');
+      if (row) row.scrollIntoView({ block: 'nearest' });
+    });
+  });
+}
+
+async function show() {
+  const site = sites[i];
+  if (!site) return;
+  document.getElementById('pos').textContent = (i + 1) + ' / ' + sites.length;
+  const status = document.getElementById('status');
+  status.textContent = site.labeled ? 'labeled ✓' : 'not labeled';
+  status.className = site.labeled ? 'labeled' : '';
+  current = await fetch('/api/site/' + encodeURIComponent(site.slug)).then(r => r.json());
+  document.getElementById('shot').src = '/screenshots/' + site.slug + '.png';
+  const urlEl = document.getElementById('url');
+  urlEl.replaceChildren();
+  const a = document.createElement('a');
+  a.href = current.url;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.textContent = current.url;
+  urlEl.appendChild(a);
+  document.getElementById('meta').replaceChildren();
+  const meta = document.getElementById('meta');
+  meta.append('Tier: ');
+  const tierEl = document.createElement('strong');
+  tierEl.textContent = current.tierLabel || '?';
+  meta.appendChild(tierEl);
+  meta.append(' · ' + (current.patternsFlagged || 0) + '/' + (current.patternsTotal || 0) + ' detected · Heading: ');
+  const headingEl = document.createElement('strong');
+  headingEl.textContent = current.raw?.fonts?.headingFont || '?';
+  meta.appendChild(headingEl);
+  meta.append(' · Dark: ');
+  const darkEl = document.createElement('strong');
+  darkEl.textContent = current.raw?.meta?.isDarkMode ? 'yes' : 'no';
+  meta.appendChild(darkEl);
+
+  // Load order: localStorage draft (most recent) > previous server label > empty.
+  labels = {};
+  const draft = loadDraft(site.slug);
+  if (draft) {
+    Object.assign(labels, draft.labels || {});
+    document.getElementById('notes').value = draft.notes || '';
+    document.getElementById('draft-note').textContent = 'draft from ' + new Date(draft.savedAt).toLocaleTimeString();
+  } else if (current.previousLabels) {
+    Object.assign(labels, current.previousLabels.labels || {});
+    document.getElementById('notes').value = current.previousLabels.notes || '';
+    document.getElementById('draft-note').textContent = 'loaded saved label from ' + new Date(current.previousLabels.timestamp).toLocaleString();
+  } else {
+    document.getElementById('notes').value = '';
+    document.getElementById('draft-note').textContent = '';
+  }
+  focused = 0;
+  dirty = false;
+  renderPatterns();
+}
+
+async function save() {
+  if (!current) return;
+  const rec = {
+    slug: sites[i].slug,
+    url: current.url,
+    labels: { ...labels },
+    notes: document.getElementById('notes').value
+  };
+  const r = await fetch('/api/labels', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify(rec)
+  });
+  if (!r.ok) { alert('save failed: ' + r.status); return; }
+  clearDraft(sites[i].slug);
+  await loadSites();
+  // Jump to next unlabeled, else just advance.
+  for (let k = 1; k <= sites.length; k++) {
+    const j = (i + k) % sites.length;
+    if (!sites[j].labeled) { i = j; await show(); return; }
+  }
+  i = (i + 1) % sites.length;
+  await show();
+}
+
+function agreeAll() {
+  if (!current) return;
+  for (const p of current.patterns) {
+    labels[p.id] = p.triggered ? 'present' : 'not_present';
+  }
+  dirty = true;
+  saveDraft();
+  renderPatterns();
+}
+
+document.getElementById('prev').onclick = async () => { i = (i - 1 + sites.length) % sites.length; await show(); };
+document.getElementById('next').onclick = async () => { i = (i + 1) % sites.length; await show(); };
+document.getElementById('next-unlabeled').onclick = async () => {
+  for (let k = 1; k <= sites.length; k++) {
+    const j = (i + k) % sites.length;
+    if (!sites[j].labeled) { i = j; await show(); return; }
+  }
+};
+document.getElementById('save').onclick = save;
+document.getElementById('agree-all').onclick = agreeAll;
+
+// Notes auto-saves drafts on blur
+document.getElementById('notes').addEventListener('input', () => { dirty = true; saveDraft(); });
+
+// Click-to-zoom screenshot
+const zoom = document.getElementById('zoom');
+const zoomImg = document.getElementById('zoom-img');
+document.getElementById('shot-wrap').addEventListener('click', () => {
+  zoomImg.src = document.getElementById('shot').src;
+  zoom.classList.add('open');
+});
+zoom.addEventListener('click', () => zoom.classList.remove('open'));
+
+// Keyboard shortcuts
+window.addEventListener('keydown', e => {
+  if (e.target?.matches?.('textarea, input')) return;
+  if (e.key === 'Escape') { zoom.classList.remove('open'); return; }
+  if (e.key === 'ArrowRight') { i = (i + 1) % sites.length; show(); return; }
+  if (e.key === 'ArrowLeft')  { i = (i - 1 + sites.length) % sites.length; show(); return; }
+  if (e.key === 'n') {
+    for (let k = 1; k <= sites.length; k++) {
+      const j = (i + k) % sites.length;
+      if (!sites[j].labeled) { i = j; show(); return; }
+    }
+    return;
+  }
+  if (e.key === 'a') { agreeAll(); return; }
+  if (e.key === 's') { e.preventDefault(); save(); return; }
+  if (e.key === 'j' || e.key === 'ArrowDown') {
+    focused = Math.min((current?.patterns?.length || 1) - 1, focused + 1);
+    renderPatterns();
+    document.querySelector('.pattern.focused')?.scrollIntoView({ block: 'nearest' });
+    e.preventDefault();
+    return;
+  }
+  if (e.key === 'k' || e.key === 'ArrowUp') {
+    focused = Math.max(0, focused - 1);
+    renderPatterns();
+    document.querySelector('.pattern.focused')?.scrollIntoView({ block: 'nearest' });
+    e.preventDefault();
+    return;
+  }
+  if ((e.key === '1' || e.key === '2' || e.key === '3') && current?.patterns?.[focused]) {
+    const p = current.patterns[focused];
+    const v = e.key === '1' ? 'present' : e.key === '2' ? 'not_present' : 'skip';
+    labels[p.id] = v;
+    dirty = true;
+    saveDraft();
+    renderPatterns();
+    return;
+  }
+});
+
+(async () => { await loadSites(); await show(); })();
+</script>
+</body>
+</html>

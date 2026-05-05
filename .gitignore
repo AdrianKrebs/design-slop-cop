@@ -1,0 +1,10 @@
+node_modules/
+results/raw/
+results/screenshots/
+results/all-results.json
+results/fetch-log.json
+*.log
+.DS_Store
+.env
+.idea/
+.vscode/
