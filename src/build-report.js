@@ -84,7 +84,7 @@ const html = `<!doctype html>
   .wrap { max-width: 1100px; margin: 0 auto; background: #f6f6ef; }
 
   /* Topbar — HN orange */
-  .topbar { background: #ff6600; padding: 2px 4px; }
+  .topbar { background: #ff6600; padding: 2px 8px; }
   .topbar-inner { display: flex; align-items: baseline; gap: 0; flex-wrap: wrap; line-height: 1.4; }
   .topbar a { color: #000; font-weight: 400; font-size: 10.5pt; padding: 0 5px; }
   .topbar a:visited { color: #000; }
@@ -97,7 +97,7 @@ const html = `<!doctype html>
   .subline {
     color: #828282;
     font-size: 9pt;
-    padding: 6px 4px 4px;
+    padding: 6px 8px 4px;
     line-height: 1.6;
   }
   .subline a { color: #000; text-decoration: underline; }
@@ -113,7 +113,7 @@ const html = `<!doctype html>
 
   /* Pattern frequency — also a filter UI */
   .freq {
-    padding: 4px 4px 10px;
+    padding: 4px 8px 10px;
     font-size: 9pt;
     color: #828282;
   }
@@ -143,7 +143,7 @@ const html = `<!doctype html>
   .freq-row .pct { text-align: right; color: #828282; font-variant-numeric: tabular-nums; font-size: 9pt; }
 
   /* Active-pattern banner (replaces search row when pattern is set) */
-  .active-banner { padding: 6px 4px; font-size: 9pt; color: #828282; display: flex; align-items: baseline; gap: 8px; min-height: 1.6em; }
+  .active-banner { padding: 6px 8px; font-size: 9pt; color: #828282; display: flex; align-items: baseline; gap: 8px; min-height: 1.6em; }
   .active-banner .label { color: #828282; }
   .active-banner .pat-name { color: #c64a00; font-weight: 700; }
   .active-banner .clear-btn { color: #828282; cursor: pointer; padding-left: 4px; }
@@ -152,7 +152,7 @@ const html = `<!doctype html>
 
   /* List — HN-style ranked rows */
   .list { padding: 2px 0 22px; }
-  .item { display: grid; grid-template-columns: auto 70px 1fr; gap: 6px; padding: 6px 2px; align-items: flex-start; scroll-margin-top: 8px; }
+  .item { display: grid; grid-template-columns: auto 70px 1fr; gap: 6px; padding: 6px 8px; align-items: flex-start; scroll-margin-top: 8px; }
   .item:hover { background: #f0eee5; }
   .item:target { background: #ffe2cc; box-shadow: inset 3px 0 0 #c62a0a; }
   .item .rank { color: #828282; font-size: 11pt; text-align: right; padding-top: 4px; font-variant-numeric: tabular-nums; }
@@ -191,7 +191,7 @@ const html = `<!doctype html>
   .empty { padding: 30px 8px; text-align: center; color: #828282; font-size: 10pt; }
 
   /* Pagination — HN-style "More" link */
-  .more { padding: 12px 4px 16px 38px; font-size: 10pt; }
+  .more { padding: 12px 8px 16px 38px; font-size: 10pt; }
   .more a { color: #828282; }
   .more a:hover { color: #000; text-decoration: underline; }
 
