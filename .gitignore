@@ -8,3 +8,4 @@ results/fetch-log.json
 .env
 .idea/
 .vscode/
+.env*
