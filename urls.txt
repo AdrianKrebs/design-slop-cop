@@ -1,6 +1,6 @@
 # One URL per line. Lines starting with # are ignored.
 # Fetched from hn.algolia.com search_by_date?tags=show_hn
-# Last updated 2026-05-08 with 1366 URLs total.
+# Last updated 2026-05-08 with 1378 URLs total.
 
 https://nilbox.run/?platform=arm_mac
 https://saucybargain.com/
@@ -1368,3 +1368,15 @@ https://www.getbrifly.com/
 https://mybinder.org/v2/gist/gpavanb1/30a27c0592dbb23311f165dae4549309/HEAD?urlpath=voila%2Frender%2Ftoken_thermodynamics.ipynb
 https://www.spec27.ai/launch
 https://ppantry.app/
+https://www.getadb.com/
+https://slidemoji.com/
+https://ai-pilled.com/
+https://lovable.dev/
+https://rag-dr.hanhanwu.com/
+https://howbadis.it
+https://snapmog.com/
+https://useslate.app/
+https://www.raycast.com/tcelestino/definitelytyped
+https://www.arlo.fyi
+https://wi.kifa.st/
+https://crit.md/

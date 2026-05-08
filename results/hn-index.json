@@ -1,8 +1,92 @@
 {
+  "https://www.getadb.com/": {
+    "id": "48065203",
+    "title": "Show HN: GETadb.com – every GET request creates a DB",
+    "points": 1,
+    "author": "nezaj",
+    "createdAt": "2026-05-08T16:17:37Z"
+  },
+  "https://slidemoji.com/": {
+    "id": "48064929",
+    "title": "Show HN: Slidemoji – A Daily Puzzle Game",
+    "points": 1,
+    "author": "niknat",
+    "createdAt": "2026-05-08T15:56:07Z"
+  },
+  "https://ai-pilled.com/": {
+    "id": "48064765",
+    "title": "Show HN: AI Fluency Diagnostic",
+    "points": 1,
+    "author": "chrija",
+    "createdAt": "2026-05-08T15:43:56Z"
+  },
+  "https://lovable.dev/": {
+    "id": "48064642",
+    "title": "Show HN: Inkwell a writer-first newsletter platform,$0 for unlimited subscribers",
+    "points": 1,
+    "author": "yuriaguernsey",
+    "createdAt": "2026-05-08T15:36:13Z"
+  },
+  "https://rag-dr.hanhanwu.com/": {
+    "id": "48064191",
+    "title": "Show HN: I built a playground of interative A/B testing for RAG",
+    "points": 1,
+    "author": "Hanhan2024",
+    "createdAt": "2026-05-08T15:00:56Z"
+  },
+  "https://howbadis.it": {
+    "id": "48064176",
+    "title": "Show HN: Howbadis.it – Paste your vibe-coded app, see what'll break",
+    "points": 2,
+    "author": "emarboeuf",
+    "createdAt": "2026-05-08T14:59:16Z"
+  },
+  "https://snapmog.com/": {
+    "id": "48064082",
+    "title": "Show HN: SnapMog: An Omoggle Alternative without going live",
+    "points": 2,
+    "author": "mixfox",
+    "createdAt": "2026-05-08T14:51:34Z"
+  },
+  "https://useslate.app/": {
+    "id": "48063757",
+    "title": "Show HN: Slate – agentic pre-production studio for solo Youtubers",
+    "points": 2,
+    "author": "jcfontecha",
+    "createdAt": "2026-05-08T14:28:23Z"
+  },
+  "https://www.raycast.com/tcelestino/definitelytyped": {
+    "id": "48063056",
+    "title": "Show HN: DefinitelyTyped Search – Raycast extension for TypeScript types",
+    "points": 1,
+    "author": "zigzeira",
+    "createdAt": "2026-05-08T13:45:03Z"
+  },
+  "https://www.arlo.fyi": {
+    "id": "48062633",
+    "title": "Show HN: Arlo – Your AI Chief of Staff: Kill 80% of the noise. Focus on the 20%.",
+    "points": 3,
+    "author": "uziiuzair",
+    "createdAt": "2026-05-08T13:14:19Z"
+  },
+  "https://wi.kifa.st/": {
+    "id": "48062561",
+    "title": "Show HN: Wi.kifa.st",
+    "points": 1,
+    "author": "jasoncartwright",
+    "createdAt": "2026-05-08T13:09:13Z"
+  },
+  "https://crit.md/": {
+    "id": "48062402",
+    "title": "Show HN: Crit – local review tool for agent plans and code diffs",
+    "points": 9,
+    "author": "tomasz-tomczyk",
+    "createdAt": "2026-05-08T12:56:51Z"
+  },
   "https://www.nanocorp.so": {
     "id": "48062033",
     "title": "Show HN: NanoCorp – Create autonomous companies run by AI",
-    "points": 3,
+    "points": 4,
     "author": "AdrienBA",
     "createdAt": "2026-05-08T12:19:56Z"
   },
@@ -16,14 +100,14 @@
   "https://faultsense.com": {
     "id": "48061752",
     "title": "Show HN: Turn E2E tests into observability signals",
-    "points": 1,
+    "points": 3,
     "author": "mitchm",
     "createdAt": "2026-05-08T11:46:30Z"
   },
   "https://dashresume.com/": {
     "id": "48061195",
     "title": "Show HN: DashResume, a resume builder with ATS scoring, and AI job desc matching",
-    "points": 2,
+    "points": 3,
     "author": "nicereads",
     "createdAt": "2026-05-08T10:33:35Z"
   },
@@ -37,7 +121,7 @@
   "https://www.karaqu.com/guest/billiard": {
     "id": "48060938",
     "title": "Show HN: 8-Ball Game in Browser",
-    "points": 1,
+    "points": 2,
     "author": "hbi99",
     "createdAt": "2026-05-08T09:58:23Z"
   },
@@ -51,7 +135,7 @@
   "https://airplane-ai.franzai.com/": {
     "id": "48060815",
     "title": "Show HN: Airplane AI – Local NDA Safe AI Powered by Gemma",
-    "points": 1,
+    "points": 3,
     "author": "franze",
     "createdAt": "2026-05-08T09:40:24Z"
   },
@@ -65,7 +149,7 @@
   "https://corsproxy.io/": {
     "id": "48060243",
     "title": "Show HN: Corsproxy – Fix CORS Errors Instantly – Free for Development",
-    "points": 3,
+    "points": 5,
     "author": "mariusbolik",
     "createdAt": "2026-05-08T08:21:41Z"
   },
@@ -79,7 +163,7 @@
   "https://undsh.com/": {
     "id": "48059844",
     "title": "Show HN: I instructed AI to create tool to clean AI-generated text: undsh.com",
-    "points": 3,
+    "points": 5,
     "author": "kkarpkkarp",
     "createdAt": "2026-05-08T07:27:42Z"
   },
@@ -114,7 +198,7 @@
   "https://selvedge.sh/": {
     "id": "48057104",
     "title": "Show HN: Selvedge – an MCP server that captures why AI agents change code",
-    "points": 3,
+    "points": 4,
     "author": "masondelan",
     "createdAt": "2026-05-08T00:51:45Z"
   },
@@ -149,7 +233,7 @@
   "https://disputron.ai": {
     "id": "48055702",
     "title": "Show HN: Disputron – AI small claims court for petty disputes",
-    "points": 5,
+    "points": 6,
     "author": "etaheri",
     "createdAt": "2026-05-07T22:00:02Z"
   },
@@ -205,7 +289,7 @@
   "https://mykanji.app/": {
     "id": "48053531",
     "title": "Show HN: DAG-based Kanji learning through components",
-    "points": 2,
+    "points": 3,
     "author": "barisozmen",
     "createdAt": "2026-05-07T19:13:58Z"
   },
@@ -646,14 +730,14 @@
   "http://halupedia.com/": {
     "id": "48038257",
     "title": "Show HN: Hallucinopedia",
-    "points": 297,
+    "points": 299,
     "author": "bstrama",
     "createdAt": "2026-05-06T16:37:52Z"
   },
   "https://play.templatical.com": {
     "id": "48038019",
     "title": "Show HN: I built an open-source email builder, alternative to Beefree/Unlayer",
-    "points": 155,
+    "points": 156,
     "author": "oahmadov",
     "createdAt": "2026-05-06T16:20:00Z"
   },
@@ -667,7 +751,7 @@
   "https://tilde.run/": {
     "id": "48037724",
     "title": "Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem",
-    "points": 193,
+    "points": 196,
     "author": "ozkatz",
     "createdAt": "2026-05-06T15:58:34Z"
   },
@@ -940,7 +1024,7 @@
   "https://paletteinspiration.com/": {
     "id": "48026342",
     "title": "Show HN: Explore color palettes inspired by 3000 master painter artworks",
-    "points": 209,
+    "points": 211,
     "author": "ouli",
     "createdAt": "2026-05-05T18:13:14Z"
   },
@@ -1486,7 +1570,7 @@
   "https://privapdf.net": {
     "id": "48008836",
     "title": "Show HN:Privacy-First Pdf Converter",
-    "points": 6,
+    "points": 7,
     "author": "omertt27",
     "createdAt": "2026-05-04T13:55:23Z"
   },
@@ -2032,7 +2116,7 @@
   "https://mathstick.github.io": {
     "id": "47983485",
     "title": "Show HN: Stop playing my matchstick puzzles, start building your own in seconds",
-    "points": 36,
+    "points": 37,
     "author": "trangram",
     "createdAt": "2026-05-02T05:04:39Z"
   },

@@ -152,7 +152,7 @@ const html = `<!doctype html>
 
   /* List — HN-style ranked rows */
   .list { padding: 2px 0 22px; }
-  .item { display: grid; grid-template-columns: 26px 80px 1fr; gap: 8px; padding: 6px 4px; align-items: flex-start; scroll-margin-top: 8px; }
+  .item { display: grid; grid-template-columns: 38px 80px 1fr; gap: 8px; padding: 6px 4px; align-items: flex-start; scroll-margin-top: 8px; }
   .item:hover { background: #f0eee5; }
   .item:target { background: #ffe2cc; box-shadow: inset 3px 0 0 #c62a0a; }
   .item .rank { color: #828282; font-size: 11pt; text-align: right; padding-top: 4px; font-variant-numeric: tabular-nums; }
@@ -189,6 +189,11 @@ const html = `<!doctype html>
   .active-banner .sort a:hover { color: #000; }
 
   .empty { padding: 30px 8px; text-align: center; color: #828282; font-size: 10pt; }
+
+  /* Pagination — HN-style "More" link */
+  .more { padding: 12px 4px 16px 50px; font-size: 10pt; }
+  .more a { color: #828282; }
+  .more a:hover { color: #000; text-decoration: underline; }
 
   /* Footer */
   .footer { padding: 18px 10px 30px; font-size: 9pt; color: #828282; text-align: center; border-top: 1px solid #e5e5dc; margin-top: 10px; }
@@ -255,6 +260,7 @@ const html = `<!doctype html>
 <div class="active-banner" id="banner"></div>
 
 <div class="list" id="grid"></div>
+<div class="more" id="more"></div>
 
 <div class="footer">
   Generated ${new Date().toISOString().slice(0, 10)} · <a href="https://github.com/AdrianKrebs/ai-design-checker" target="_blank">github.com/AdrianKrebs/ai-design-checker</a>
@@ -269,27 +275,30 @@ const TIER_CLASS = { Heavy: 'tier-heavy', Mild: 'tier-mild', Clean: 'tier-clean'
 const TIER_DISPLAY = { Heavy: 'Heavy AI', Mild: 'Mild AI', Clean: 'Clean' };
 
 const SORT_KEYS = new Set(['date', 'score', 'points', 'flagged']);
+const PAGE_SIZE = 30;
 function parseHash() {
   const h = (location.hash || '').replace(/^#/, '');
   // Site permalink (#site-<slug>) — keep the native anchor scroll, force All view
-  if (h.startsWith('site-')) return { tier: null, pattern: null, sort: 'date' };
+  if (h.startsWith('site-')) return { tier: null, pattern: null, sort: 'date', page: 1 };
   const [tierPart, queryPart] = h.split('?');
   const tk = tierPart.toLowerCase();
   const tier = tk in TIER_HASH ? TIER_HASH[tk] : null;
   const params = new URLSearchParams(queryPart || '');
   const p = params.get('p') || null;
   const s = params.get('sort');
-  return { tier, pattern: p, sort: SORT_KEYS.has(s) ? s : 'date' };
+  const pg = parseInt(params.get('page') || '1', 10);
+  return { tier, pattern: p, sort: SORT_KEYS.has(s) ? s : 'date', page: Number.isFinite(pg) && pg >= 1 ? pg : 1 };
 }
-function buildHash(tier, pattern, sort) {
+function buildHash(tier, pattern, sort, page) {
   const base = tier ? tier.toLowerCase() : 'all';
   const params = new URLSearchParams();
   if (pattern) params.set('p', pattern);
   if (sort && sort !== 'date') params.set('sort', sort);
+  if (page && page > 1) params.set('page', String(page));
   const q = params.toString();
   return '#' + base + (q ? '?' + q : '');
 }
-let { tier: activeTier, pattern: activePattern, sort: activeSort } = parseHash();
+let { tier: activeTier, pattern: activePattern, sort: activeSort, page: activePage } = parseHash();
 function stripShowHN(t) { return String(t || '').replace(/^Show HN[:：]\\s*/i, ''); }
 
 function renderFreq() {
@@ -368,13 +377,19 @@ function renderGrid() {
     if (activePattern && !s.flagged.includes(activePattern)) return false;
     return true;
   }));
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if (activePage > totalPages) activePage = totalPages;
+  const startIdx = (activePage - 1) * PAGE_SIZE;
+  const pageSlice = filtered.slice(startIdx, startIdx + PAGE_SIZE);
   renderBanner(filtered.length);
+  renderMore(activePage, totalPages, filtered.length);
   if (!filtered.length) {
     document.getElementById('grid').innerHTML = '<div class="empty">no sites match.</div>';
     return;
   }
   const shotBase = data.cdnBase || 'screenshots';
-  document.getElementById('grid').innerHTML = filtered.map((s, i) => {
+  document.getElementById('grid').innerHTML = pageSlice.map((s, i) => {
+    const absoluteRank = startIdx + i + 1;
     const tierCls = TIER_CLASS[s.tier] || '';
     const domain = domainOf(s.url);
     const hnLink = s.hnId
@@ -392,7 +407,7 @@ function renderGrid() {
     const anchorId = 'site-' + s.slug;
     return \`
 <div class="item" id="\${escape(anchorId)}">
-  <div class="rank"><a href="#\${escape(anchorId)}" title="permalink to this entry">\${i + 1}.</a></div>
+  <div class="rank"><a href="#\${escape(anchorId)}" title="permalink to this entry">\${absoluteRank}.</a></div>
   \${shot}
   <div class="body">
     <div class="title-line">
@@ -407,17 +422,36 @@ function renderGrid() {
   }).join('');
 }
 
-function setFilter(tier, pattern, sort) {
+function renderMore(page, totalPages, totalCount) {
+  const more = document.getElementById('more');
+  if (!more) return;
+  if (page >= totalPages || totalCount === 0) {
+    more.innerHTML = '';
+    return;
+  }
+  const nextHash = buildHash(activeTier, activePattern, activeSort, page + 1);
+  more.innerHTML = \`<a href="\${nextHash}" id="more-link">More</a>\`;
+  document.getElementById('more-link').addEventListener('click', e => {
+    e.preventDefault();
+    setFilter(activeTier, activePattern, activeSort, page + 1, /*scrollTop*/ true);
+  });
+}
+
+function setFilter(tier, pattern, sort, page, scrollTop) {
+  const filtersChanged = (tier !== activeTier) || (pattern !== activePattern) || (sort && sort !== activeSort);
   activeTier = tier;
   activePattern = pattern;
   if (sort) activeSort = sort;
-  const newHash = buildHash(activeTier, activePattern, activeSort);
+  // Reset to page 1 when the filter or sort changes; otherwise honor the requested page
+  activePage = filtersChanged ? 1 : (page || 1);
+  const newHash = buildHash(activeTier, activePattern, activeSort, activePage);
   if (location.hash !== newHash) {
     history.replaceState(null, '', newHash);
   }
   syncTopbar();
   renderFreq();
   renderGrid();
+  if (scrollTop) window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
 function escape(s) {
@@ -465,6 +499,7 @@ window.addEventListener('hashchange', () => {
   activeTier = parsed.tier;
   activePattern = parsed.pattern;
   activeSort = parsed.sort;
+  activePage = parsed.page;
   syncTopbar();
   renderFreq();
   renderGrid();
