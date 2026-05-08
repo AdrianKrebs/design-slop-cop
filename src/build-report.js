@@ -152,13 +152,13 @@ const html = `<!doctype html>
 
   /* List — HN-style ranked rows */
   .list { padding: 2px 0 22px; }
-  .item { display: grid; grid-template-columns: 38px 80px 1fr; gap: 8px; padding: 6px 4px; align-items: flex-start; scroll-margin-top: 8px; }
+  .item { display: grid; grid-template-columns: auto 70px 1fr; gap: 6px; padding: 6px 2px; align-items: flex-start; scroll-margin-top: 8px; }
   .item:hover { background: #f0eee5; }
   .item:target { background: #ffe2cc; box-shadow: inset 3px 0 0 #c62a0a; }
   .item .rank { color: #828282; font-size: 11pt; text-align: right; padding-top: 4px; font-variant-numeric: tabular-nums; }
   .item .rank a { color: #828282; text-decoration: none; }
   .item .rank a:hover { color: #c62a0a; }
-  .item .shot { width: 80px; height: 52px; background: #fff; border: 1px solid #d5d5cc; overflow: hidden; display: block; flex-shrink: 0; }
+  .item .shot { width: 70px; height: 46px; background: #fff; border: 1px solid #d5d5cc; overflow: hidden; display: block; flex-shrink: 0; }
   .item .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
   .item.no-shot .shot { visibility: hidden; }
   .item .body { line-height: 1.55; min-width: 0; }
@@ -191,7 +191,7 @@ const html = `<!doctype html>
   .empty { padding: 30px 8px; text-align: center; color: #828282; font-size: 10pt; }
 
   /* Pagination — HN-style "More" link */
-  .more { padding: 12px 4px 16px 50px; font-size: 10pt; }
+  .more { padding: 12px 4px 16px 38px; font-size: 10pt; }
   .more a { color: #828282; }
   .more a:hover { color: #000; text-decoration: underline; }
 
@@ -245,7 +245,7 @@ const html = `<!doctype html>
 </div>
 
 <div class="subline">
-  <p>Show HN submissions scored against 16 deterministic AI design patterns &nbsp;·&nbsp;
+  <p>Show HN submissions scored against deterministic AI design patterns &nbsp;·&nbsp;
     <a class="tier-link tier-heavy" data-tier="Heavy" href="#heavy" title="Heavy AI · 5+ patterns flagged · click to filter">Heavy AI <b>${tierCount.Heavy}</b> (${(100 * tierCount.Heavy / total).toFixed(0)}%)</a> ·
     <a class="tier-link tier-mild" data-tier="Mild" href="#mild" title="Mild AI · 2–4 patterns flagged · click to filter">Mild AI <b>${tierCount.Mild}</b> (${(100 * tierCount.Mild / total).toFixed(0)}%)</a> ·
     <a class="tier-link tier-clean" data-tier="Clean" href="#clean" title="Clean · 0–1 patterns flagged · click to filter">Clean <b>${tierCount.Clean}</b> (${(100 * tierCount.Clean / total).toFixed(0)}%)</a>
@@ -323,7 +323,7 @@ function syncTopbar() {
 }
 
 function sortLinksHTML() {
-  const items = [['date','newest'], ['score','score'], ['points','points'], ['flagged','flag count']];
+  const items = [['date','newest'], ['score','score'], ['points','points'], ['flagged','pattern count']];
   const links = items.map(([k, label]) => {
     const cls = k === activeSort ? 'active' : '';
     return \`<a class="\${cls}" data-sort="\${k}" href="#">\${label}</a>\`;
@@ -415,7 +415,7 @@ function renderGrid() {
       <span class="domain">(\${escape(domain)})</span>
     </div>
     <div class="subtext">
-      <span class="tier \${tierCls}">\${TIER_DISPLAY[s.tier] || s.tier}</span>\${s.flagged.length > 0 ? ' · ' + s.flagged.length + '/' + s.total + ' flagged' : ''}\${pts}\${posted ? ' · ' + posted : ''}\${hnLink}\${pats ? '<span class="flags">' + pats + '</span>' : ''}
+      <span class="tier \${tierCls}">\${TIER_DISPLAY[s.tier] || s.tier}</span>\${s.flagged.length > 0 ? ' · ' + s.flagged.length + ' pattern' + (s.flagged.length === 1 ? '' : 's') : ''}\${pts}\${posted ? ' · ' + posted : ''}\${hnLink}\${pats ? '<span class="flags">' + pats + '</span>' : ''}
     </div>
   </div>
 </div>\`;
