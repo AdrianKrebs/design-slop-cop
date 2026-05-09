@@ -560,8 +560,8 @@
     "postedAt": "2026-05-02T17:33:34Z"
   },
   {
-    "id": "48060887",
-    "title": "Show HN: The agent which teaches you while you build",
+    "id": "48069590",
+    "title": "Show HN: Contral – the agent which will teach you while you build with AI",
     "url": "https://contral.ai",
     "score": 44,
     "flagged": [
@@ -575,8 +575,8 @@
     ],
     "flaggedCount": 7,
     "slug": "contral.ai",
-    "points": 3,
-    "postedAt": "2026-05-08T09:50:56Z"
+    "points": 5,
+    "postedAt": "2026-05-08T22:34:29Z"
   },
   {
     "id": "47994233",
@@ -1054,22 +1054,22 @@
     "postedAt": "2026-05-03T13:13:05Z"
   },
   {
-    "id": "48063757",
-    "title": "Show HN: Slate – agentic pre-production studio for solo Youtubers",
-    "url": "https://useslate.app/",
+    "id": "48068659",
+    "title": "Show HN: I built a translator for SPANGLISH and mixed-language text",
+    "url": "https://spanglishtranslator.net",
     "score": 38,
     "flagged": [
       "slop_fonts",
+      "gradients",
       "shadcn_signature",
       "glassmorphism",
       "icon_card_grid",
-      "numbered_steps",
       "faq_accordion"
     ],
     "flaggedCount": 6,
-    "slug": "useslate.app",
-    "points": 2,
-    "postedAt": "2026-05-08T14:28:23Z"
+    "slug": "spanglishtranslator.net",
+    "points": 1,
+    "postedAt": "2026-05-08T20:54:24Z"
   },
   {
     "id": "47846681",
@@ -1972,6 +1972,24 @@
     "postedAt": "2026-04-21T17:15:51Z"
   },
   {
+    "id": "48063757",
+    "title": "Show HN: Slate – agentic pre-production studio for solo Youtubers",
+    "url": "https://useslate.app/",
+    "score": 38,
+    "flagged": [
+      "slop_fonts",
+      "shadcn_signature",
+      "glassmorphism",
+      "icon_card_grid",
+      "numbered_steps",
+      "faq_accordion"
+    ],
+    "flaggedCount": 6,
+    "slug": "useslate.app",
+    "points": 3,
+    "postedAt": "2026-05-08T14:28:23Z"
+  },
+  {
     "id": "48054313",
     "title": "Show HN: Veris – Agent sandboxes with simulated external services",
     "url": "https://veris.ai/sandbox",
@@ -2078,6 +2096,40 @@
     "slug": "workingasync.io",
     "points": 2,
     "postedAt": "2026-04-20T13:41:15Z"
+  },
+  {
+    "id": "48070469",
+    "title": "Show HN: AI-native tech assessments (end of LeetCode)",
+    "url": "https://www.openround.ai/",
+    "score": 31,
+    "flagged": [
+      "slop_fonts",
+      "gradients",
+      "shadcn_signature",
+      "center_aligned_hero",
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 5,
+    "slug": "openround.ai",
+    "points": 2,
+    "postedAt": "2026-05-09T00:28:24Z"
+  },
+  {
+    "id": "48069945",
+    "title": "Show HN: I mirrored war.gov's UAP archive in pure Rail with verifiable bytes",
+    "url": "https://ledatic.org/aliens",
+    "score": 31,
+    "flagged": [
+      "slop_fonts",
+      "accent_stripe",
+      "all_caps_headings",
+      "perma_dark_mode",
+      "hero_eyebrow_pill"
+    ],
+    "flaggedCount": 5,
+    "slug": "ledatic.org_aliens",
+    "points": 3,
+    "postedAt": "2026-05-08T23:16:01Z"
   },
   {
     "id": "48038779",

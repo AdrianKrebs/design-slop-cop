@@ -1,29 +1,94 @@
 [
   {
-    "id": "48064765",
-    "title": "Show HN: AI Fluency Diagnostic",
-    "url": "https://ai-pilled.com/",
+    "id": "48072243",
+    "title": "Show HN: Know Any Good Jokes?",
+    "url": "https://6jokes.com",
     "score": 6,
     "flagged": [
-      "numbered_steps"
+      "sidebar_emoji"
     ],
     "flaggedCount": 1,
-    "slug": "ai-pilled.com",
+    "slug": "6jokes.com",
     "points": 1,
-    "postedAt": "2026-05-08T15:43:56Z"
+    "postedAt": "2026-05-09T06:02:19Z"
   },
   {
-    "id": "48064176",
-    "title": "Show HN: Howbadis.it – Paste your vibe-coded app, see what'll break",
-    "url": "https://howbadis.it",
+    "id": "48068896",
+    "title": "Show HN: The independent guide to agent orchestrators",
+    "url": "https://agentmgmt.dev/",
+    "score": 6,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "agentmgmt.dev",
+    "points": 8,
+    "postedAt": "2026-05-08T21:17:58Z"
+  },
+  {
+    "id": "48068696",
+    "title": "Show HN: Bowbuilds, a configurator and tuning toolkit for compound archers",
+    "url": "https://bowbuilds.com",
     "score": 6,
     "flagged": [
       "slop_fonts"
     ],
     "flaggedCount": 1,
-    "slug": "howbadis.it",
-    "points": 2,
-    "postedAt": "2026-05-08T14:59:16Z"
+    "slug": "bowbuilds.com",
+    "points": 3,
+    "postedAt": "2026-05-08T20:57:51Z"
+  },
+  {
+    "id": "48067612",
+    "title": "Show HN: tltv – Federation protocol for 24/7 TV channels",
+    "url": "https://timelooptv.org/",
+    "score": 6,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "timelooptv.org",
+    "points": 5,
+    "postedAt": "2026-05-08T19:28:53Z"
+  },
+  {
+    "id": "48067343",
+    "title": "Show HN: Automation ROI calculator for repetitive admin workflows",
+    "url": "https://tinyopsstudio.com/automation-roi-calculator",
+    "score": 6,
+    "flagged": [
+      "accent_stripe"
+    ],
+    "flaggedCount": 1,
+    "slug": "tinyopsstudio.com_automation-roi-calculator",
+    "points": 5,
+    "postedAt": "2026-05-08T19:06:07Z"
+  },
+  {
+    "id": "48065983",
+    "title": "Show HN: We built a tool that generates 3D objects with editable, separate parts",
+    "url": "https://nova3d.xyz/",
+    "score": 6,
+    "flagged": [
+      "gradients"
+    ],
+    "flaggedCount": 1,
+    "slug": "nova3d.xyz",
+    "points": 6,
+    "postedAt": "2026-05-08T17:11:05Z"
+  },
+  {
+    "id": "48065381",
+    "title": "Show HN: Rejected by YC",
+    "url": "https://rejectedbyyc-ten.vercel.app/",
+    "score": 6,
+    "flagged": [
+      "icon_card_grid"
+    ],
+    "flaggedCount": 1,
+    "slug": "rejectedbyyc-ten.vercel.app",
+    "points": 4,
+    "postedAt": "2026-05-08T16:31:04Z"
   },
   {
     "id": "47769539",
@@ -154,6 +219,19 @@
     "slug": "ai-lab-azure-pi.vercel.app",
     "points": 1,
     "postedAt": "2026-04-15T19:21:57Z"
+  },
+  {
+    "id": "48064765",
+    "title": "Show HN: AI Fluency Diagnostic",
+    "url": "https://ai-pilled.com/",
+    "score": 6,
+    "flagged": [
+      "numbered_steps"
+    ],
+    "flaggedCount": 1,
+    "slug": "ai-pilled.com",
+    "points": 2,
+    "postedAt": "2026-05-08T15:43:56Z"
   },
   {
     "id": "47804215",
@@ -364,7 +442,7 @@
     "postedAt": "2026-04-30T22:17:08Z"
   },
   {
-    "id": "47887755",
+    "id": "48071986",
     "title": "Show HN: My New Projects Website",
     "url": "https://apps.weichart.de",
     "score": 6,
@@ -373,8 +451,8 @@
     ],
     "flaggedCount": 1,
     "slug": "apps.weichart.de",
-    "points": 2,
-    "postedAt": "2026-04-24T09:26:26Z"
+    "points": 1,
+    "postedAt": "2026-05-09T05:06:29Z"
   },
   {
     "id": "48033724",
@@ -1491,7 +1569,7 @@
     ],
     "flaggedCount": 1,
     "slug": "halupedia.com",
-    "points": 299,
+    "points": 302,
     "postedAt": "2026-05-06T16:37:52Z"
   },
   {
@@ -1610,6 +1688,19 @@
     "slug": "hormuztrail.com",
     "points": 3,
     "postedAt": "2026-04-15T16:19:55Z"
+  },
+  {
+    "id": "48064176",
+    "title": "Show HN: Howbadis.it – Paste your vibe-coded app, see what'll break",
+    "url": "https://howbadis.it",
+    "score": 6,
+    "flagged": [
+      "slop_fonts"
+    ],
+    "flaggedCount": 1,
+    "slug": "howbadis.it",
+    "points": 3,
+    "postedAt": "2026-05-08T14:59:16Z"
   },
   {
     "id": "47752687",
@@ -3965,59 +4056,48 @@
     "postedAt": "2026-04-14T13:12:51Z"
   },
   {
-    "id": "48065203",
-    "title": "Show HN: GETadb.com – every GET request creates a DB",
-    "url": "https://www.getadb.com/",
+    "id": "48071638",
+    "title": "Show HN: Best Old School UFO Website",
+    "url": "http://www.ufoevidence.org/",
     "score": 0,
     "flagged": [],
     "flaggedCount": 0,
-    "slug": "getadb.com",
-    "points": 1,
-    "postedAt": "2026-05-08T16:17:37Z"
+    "slug": "ufoevidence.org",
+    "points": 6,
+    "postedAt": "2026-05-09T03:47:31Z"
   },
   {
-    "id": "48064929",
-    "title": "Show HN: Slidemoji – A Daily Puzzle Game",
-    "url": "https://slidemoji.com/",
+    "id": "48070526",
+    "title": "Show HN: Launch and Run Companies on Autopilot",
+    "url": "https://lakyus.com/live",
     "score": 0,
     "flagged": [],
     "flaggedCount": 0,
-    "slug": "slidemoji.com",
+    "slug": "lakyus.com_live",
     "points": 1,
-    "postedAt": "2026-05-08T15:56:07Z"
+    "postedAt": "2026-05-09T00:36:34Z"
   },
   {
-    "id": "48064191",
-    "title": "Show HN: I built a playground of interative A/B testing for RAG",
-    "url": "https://rag-dr.hanhanwu.com/",
+    "id": "48069669",
+    "title": "Show HN: Blober.io – The Only App That Connects to GoPro Cloud",
+    "url": "https://blober.io/kb/articles/gopro-cloud-transfer-backup-download/",
     "score": 0,
     "flagged": [],
     "flaggedCount": 0,
-    "slug": "rag-dr.hanhanwu.com",
-    "points": 1,
-    "postedAt": "2026-05-08T15:00:56Z"
+    "slug": "blober.io_kb_articles_gopro-cloud-transfer-backup-download",
+    "points": 3,
+    "postedAt": "2026-05-08T22:45:36Z"
   },
   {
-    "id": "48062561",
-    "title": "Show HN: Wi.kifa.st",
-    "url": "https://wi.kifa.st/",
+    "id": "48065297",
+    "title": "Show HN: Rubberduck – Software design agent where you make the decisions",
+    "url": "https://userubberduck.com/",
     "score": 0,
     "flagged": [],
     "flaggedCount": 0,
-    "slug": "wi.kifa.st",
-    "points": 1,
-    "postedAt": "2026-05-08T13:09:13Z"
-  },
-  {
-    "id": "48062402",
-    "title": "Show HN: Crit – local review tool for agent plans and code diffs",
-    "url": "https://crit.md/",
-    "score": 0,
-    "flagged": [],
-    "flaggedCount": 0,
-    "slug": "crit.md",
-    "points": 9,
-    "postedAt": "2026-05-08T12:56:51Z"
+    "slug": "userubberduck.com",
+    "points": 2,
+    "postedAt": "2026-05-08T16:24:42Z"
   },
   {
     "id": "48057039",
@@ -4137,7 +4217,7 @@
     "flagged": [],
     "flaggedCount": 0,
     "slug": "aion.quest",
-    "points": 9,
+    "points": 10,
     "postedAt": "2026-05-06T21:12:32Z"
   },
   {
@@ -4581,6 +4661,17 @@
     "postedAt": "2026-05-02T20:54:11Z"
   },
   {
+    "id": "48062402",
+    "title": "Show HN: Crit – local review tool for agent plans and code diffs",
+    "url": "https://crit.md/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "crit.md",
+    "points": 10,
+    "postedAt": "2026-05-08T12:56:51Z"
+  },
+  {
     "id": "48007175",
     "title": "Show HN: Cryptick – free and open-source alternative to Minute Cryptic",
     "url": "https://cryptick.wildvale.co.uk/",
@@ -4742,7 +4833,7 @@
     "flagged": [],
     "flaggedCount": 0,
     "slug": "doodlemate.com",
-    "points": 10,
+    "points": 12,
     "postedAt": "2026-05-06T17:06:34Z"
   },
   {
@@ -5019,6 +5110,17 @@
     "slug": "gascraft.ai",
     "points": 2,
     "postedAt": "2026-04-11T23:15:51Z"
+  },
+  {
+    "id": "48065203",
+    "title": "Show HN: GETadb.com – every GET request creates a DB",
+    "url": "https://www.getadb.com/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "getadb.com",
+    "points": 35,
+    "postedAt": "2026-05-08T16:17:37Z"
   },
   {
     "id": null,
@@ -5945,6 +6047,17 @@
     "postedAt": "2026-04-20T01:13:02Z"
   },
   {
+    "id": "48064191",
+    "title": "Show HN: I built a playground of interative A/B testing for RAG",
+    "url": "https://rag-dr.hanhanwu.com/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "rag-dr.hanhanwu.com",
+    "points": 2,
+    "postedAt": "2026-05-08T15:00:56Z"
+  },
+  {
     "id": "48053140",
     "title": "Show HN: Real-time world model demo",
     "url": "https://www.reactor.inc/",
@@ -6196,6 +6309,17 @@
     "slug": "sklad.dev",
     "points": 2,
     "postedAt": "2026-04-23T12:59:44Z"
+  },
+  {
+    "id": "48064929",
+    "title": "Show HN: Slidemoji – A Daily Puzzle Game",
+    "url": "https://slidemoji.com/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "slidemoji.com",
+    "points": 1,
+    "postedAt": "2026-05-08T15:56:07Z"
   },
   {
     "id": "47939096",
@@ -6680,6 +6804,17 @@
     "slug": "whatwesee.space",
     "points": 1,
     "postedAt": "2026-05-05T12:55:36Z"
+  },
+  {
+    "id": "48062561",
+    "title": "Show HN: Wi.kifa.st",
+    "url": "https://wi.kifa.st/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "wi.kifa.st",
+    "points": 2,
+    "postedAt": "2026-05-08T13:09:13Z"
   },
   {
     "id": "47973443",

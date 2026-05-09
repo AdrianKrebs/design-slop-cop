@@ -218,7 +218,6 @@ const html = `<!doctype html>
   }
   @media (max-width: 480px) {
     .topbar .filter { font-size: 9pt; padding: 0 2px; }
-    .topbar .filter .filter-ai { display: none; }
     .freq-row { grid-template-columns: 80px 1fr 28px; gap: 4px; }
   }
 </style>
@@ -231,9 +230,9 @@ const html = `<!doctype html>
     <span class="brand"><a href="https://github.com/AdrianKrebs/ai-design-checker" target="_blank">AI Design Checker</a></span>
     <a class="filter" data-tier="" href="#all">All<span class="filter-count"> (${total})</span></a>
     <span class="sep">|</span>
-    <a class="filter" data-tier="Heavy" href="#heavy">Heavy<span class="filter-ai"> AI</span><span class="filter-count"> (${tierCount.Heavy})</span></a>
+    <a class="filter" data-tier="Heavy" href="#heavy">Slop<span class="filter-count"> (${tierCount.Heavy})</span></a>
     <span class="sep">|</span>
-    <a class="filter" data-tier="Mild" href="#mild">Mild<span class="filter-ai"> AI</span><span class="filter-count"> (${tierCount.Mild})</span></a>
+    <a class="filter" data-tier="Mild" href="#mild">Medium<span class="filter-count"> (${tierCount.Mild})</span></a>
     <span class="sep">|</span>
     <a class="filter" data-tier="Clean" href="#clean">Clean<span class="filter-count"> (${tierCount.Clean})</span></a>
     <span class="right">
@@ -246,8 +245,8 @@ const html = `<!doctype html>
 
 <div class="subline">
   <p>Show HN submissions scored against deterministic AI design patterns &nbsp;·&nbsp;
-    <a class="tier-link tier-heavy" data-tier="Heavy" href="#heavy" title="Heavy AI · 5+ patterns flagged · click to filter">Heavy AI <b>${tierCount.Heavy}</b> (${(100 * tierCount.Heavy / total).toFixed(0)}%)</a> ·
-    <a class="tier-link tier-mild" data-tier="Mild" href="#mild" title="Mild AI · 2–4 patterns flagged · click to filter">Mild AI <b>${tierCount.Mild}</b> (${(100 * tierCount.Mild / total).toFixed(0)}%)</a> ·
+    <a class="tier-link tier-heavy" data-tier="Heavy" href="#heavy" title="Slop · 5+ patterns flagged · click to filter">Slop <b>${tierCount.Heavy}</b> (${(100 * tierCount.Heavy / total).toFixed(0)}%)</a> ·
+    <a class="tier-link tier-mild" data-tier="Mild" href="#mild" title="Medium · 2–4 patterns flagged · click to filter">Medium <b>${tierCount.Mild}</b> (${(100 * tierCount.Mild / total).toFixed(0)}%)</a> ·
     <a class="tier-link tier-clean" data-tier="Clean" href="#clean" title="Clean · 0–1 patterns flagged · click to filter">Clean <b>${tierCount.Clean}</b> (${(100 * tierCount.Clean / total).toFixed(0)}%)</a>
   </p>
 </div>
@@ -272,7 +271,7 @@ const data = ${JSON.stringify(data)};
 const patternLabel = Object.fromEntries(data.patternMeta.map(p => [p.id, p.shortLabel || p.label || p.id]));
 const TIER_HASH = { heavy: 'Heavy', mild: 'Mild', clean: 'Clean', all: null, '': null };
 const TIER_CLASS = { Heavy: 'tier-heavy', Mild: 'tier-mild', Clean: 'tier-clean' };
-const TIER_DISPLAY = { Heavy: 'Heavy AI', Mild: 'Mild AI', Clean: 'Clean' };
+const TIER_DISPLAY = { Heavy: 'Slop', Mild: 'Medium', Clean: 'Clean' };
 
 const SORT_KEYS = new Set(['date', 'score', 'points', 'flagged']);
 const PAGE_SIZE = 30;

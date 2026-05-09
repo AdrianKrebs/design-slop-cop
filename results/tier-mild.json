@@ -1,35 +1,19 @@
 [
   {
-    "id": "48064642",
-    "title": "Show HN: Inkwell a writer-first newsletter platform,$0 for unlimited subscribers",
-    "url": "https://lovable.dev/",
+    "id": "48071546",
+    "title": "Show HN: Ovlt – Lightweight Auth Server That Runs in ~20MB RAM",
+    "url": "https://www.ovlt.tech/",
     "score": 25,
     "flagged": [
       "gradients",
-      "shadcn_signature",
-      "glassmorphism",
-      "stat_banner_row"
+      "colored_glows",
+      "perma_dark_mode",
+      "hero_eyebrow_pill"
     ],
     "flaggedCount": 4,
-    "slug": "lovable.dev",
-    "points": 1,
-    "postedAt": "2026-05-08T15:36:13Z"
-  },
-  {
-    "id": "48064082",
-    "title": "Show HN: SnapMog: An Omoggle Alternative without going live",
-    "url": "https://snapmog.com/",
-    "score": 25,
-    "flagged": [
-      "shadcn_signature",
-      "all_caps_headings",
-      "icon_card_grid",
-      "faq_accordion"
-    ],
-    "flaggedCount": 4,
-    "slug": "snapmog.com",
-    "points": 2,
-    "postedAt": "2026-05-08T14:51:34Z"
+    "slug": "ovlt.tech",
+    "points": 4,
+    "postedAt": "2026-05-09T03:28:50Z"
   },
   {
     "id": "48028931",
@@ -540,7 +524,7 @@
     ],
     "flaggedCount": 4,
     "slug": "disputron.ai",
-    "points": 6,
+    "points": 8,
     "postedAt": "2026-05-07T22:00:02Z"
   },
   {
@@ -1152,6 +1136,22 @@
     "postedAt": "2026-05-02T09:12:39Z"
   },
   {
+    "id": "48064642",
+    "title": "Show HN: Inkwell a writer-first newsletter platform,$0 for unlimited subscribers",
+    "url": "https://lovable.dev/",
+    "score": 25,
+    "flagged": [
+      "gradients",
+      "shadcn_signature",
+      "glassmorphism",
+      "stat_banner_row"
+    ],
+    "flaggedCount": 4,
+    "slug": "lovable.dev",
+    "points": 1,
+    "postedAt": "2026-05-08T15:36:13Z"
+  },
+  {
     "id": "47822270",
     "title": "Show HN: Make Video from Photo for Free",
     "url": "https://makevideofromphoto.com/",
@@ -1260,7 +1260,7 @@
     ],
     "flaggedCount": 4,
     "slug": "nanocorp.so",
-    "points": 4,
+    "points": 7,
     "postedAt": "2026-05-08T12:19:56Z"
   },
   {
@@ -1728,6 +1728,22 @@
     "postedAt": "2026-04-14T15:07:41Z"
   },
   {
+    "id": "48064082",
+    "title": "Show HN: SnapMog: An Omoggle Alternative without going live",
+    "url": "https://snapmog.com/",
+    "score": 25,
+    "flagged": [
+      "shadcn_signature",
+      "all_caps_headings",
+      "icon_card_grid",
+      "faq_accordion"
+    ],
+    "flaggedCount": 4,
+    "slug": "snapmog.com",
+    "points": 4,
+    "postedAt": "2026-05-08T14:51:34Z"
+  },
+  {
     "id": "47930996",
     "title": "Show HN: Gate – AI workers handle dev tickets in a visual workspace",
     "url": "https://soliddark.net/gate",
@@ -1932,7 +1948,7 @@
     ],
     "flaggedCount": 4,
     "slug": "tilde.run",
-    "points": 196,
+    "points": 197,
     "postedAt": "2026-05-06T15:58:34Z"
   },
   {
@@ -2174,6 +2190,51 @@
     "slug": "ytmap.xyz",
     "points": 6,
     "postedAt": "2026-04-10T17:25:30Z"
+  },
+  {
+    "id": "48069649",
+    "title": "Show HN: Sigment framework beating Vanilla JavaScript in row selection",
+    "url": "https://sigment.dev/",
+    "score": 19,
+    "flagged": [
+      "center_aligned_hero",
+      "perma_dark_mode",
+      "icon_card_grid"
+    ],
+    "flaggedCount": 3,
+    "slug": "sigment.dev",
+    "points": 4,
+    "postedAt": "2026-05-08T22:42:21Z"
+  },
+  {
+    "id": "48069350",
+    "title": "Show HN: Signegy - free in-browser PDF toolkit, no signup",
+    "url": "https://signegy.com/",
+    "score": 19,
+    "flagged": [
+      "icon_card_grid",
+      "numbered_steps",
+      "hero_eyebrow_pill"
+    ],
+    "flaggedCount": 3,
+    "slug": "signegy.com",
+    "points": 3,
+    "postedAt": "2026-05-08T22:06:00Z"
+  },
+  {
+    "id": "48066026",
+    "title": "Show HN: PostDew – LinkedIn posts that don't sound like AI",
+    "url": "https://www.postdew.com/",
+    "score": 19,
+    "flagged": [
+      "shadcn_signature",
+      "perma_dark_mode",
+      "hero_eyebrow_pill"
+    ],
+    "flaggedCount": 3,
+    "slug": "postdew.com",
+    "points": 2,
+    "postedAt": "2026-05-08T17:13:45Z"
   },
   {
     "id": "48002451",
@@ -5341,32 +5402,60 @@
     "postedAt": "2026-04-16T15:56:20Z"
   },
   {
-    "id": "48063056",
-    "title": "Show HN: DefinitelyTyped Search – Raycast extension for TypeScript types",
-    "url": "https://www.raycast.com/tcelestino/definitelytyped",
+    "id": "48072988",
+    "title": "Show HN: Digits – Encrypted calls from gutted vintage desk phones",
+    "url": "https://digits.family",
     "score": 13,
     "flagged": [
-      "gradients",
-      "perma_dark_mode"
+      "perma_dark_mode",
+      "icon_card_grid"
     ],
     "flaggedCount": 2,
-    "slug": "raycast.com_tcelestino_definitelytyped",
+    "slug": "digits.family",
     "points": 1,
-    "postedAt": "2026-05-08T13:45:03Z"
+    "postedAt": "2026-05-09T08:07:41Z"
   },
   {
-    "id": "48062633",
-    "title": "Show HN: Arlo – Your AI Chief of Staff: Kill 80% of the noise. Focus on the 20%.",
-    "url": "https://www.arlo.fyi",
+    "id": "48070022",
+    "title": "Show HN: CADara – I made an open-source in-browser CAD",
+    "url": "https://cadara.app",
     "score": 13,
     "flagged": [
-      "gradients",
-      "perma_dark_mode"
+      "slop_fonts",
+      "glassmorphism"
     ],
     "flaggedCount": 2,
-    "slug": "arlo.fyi",
+    "slug": "cadara.app",
+    "points": 21,
+    "postedAt": "2026-05-08T23:26:49Z"
+  },
+  {
+    "id": "48069001",
+    "title": "Show HN: Vibe code your agents without vibe coding your agent",
+    "url": "https://deepeval.com/docs/vibe-coding",
+    "score": 13,
+    "flagged": [
+      "slop_fonts",
+      "accent_stripe"
+    ],
+    "flaggedCount": 2,
+    "slug": "deepeval.com_docs_vibe-coding",
+    "points": 6,
+    "postedAt": "2026-05-08T21:28:34Z"
+  },
+  {
+    "id": "48066909",
+    "title": "Show HN: Openloom – Turn Loom links into transcripts and frames an LLM can watch",
+    "url": "https://www.useopenloom.com/",
+    "score": 13,
+    "flagged": [
+      "slop_fonts",
+      "shadcn_signature"
+    ],
+    "flaggedCount": 2,
+    "slug": "useopenloom.com",
     "points": 3,
-    "postedAt": "2026-05-08T13:14:19Z"
+    "postedAt": "2026-05-08T18:25:45Z"
   },
   {
     "id": "48048596",
@@ -5703,6 +5792,20 @@
     "slug": "arc-ui-skeleton.vercel.app",
     "points": 2,
     "postedAt": "2026-04-17T18:59:40Z"
+  },
+  {
+    "id": "48062633",
+    "title": "Show HN: Arlo – Your AI Chief of Staff: Kill 80% of the noise. Focus on the 20%.",
+    "url": "https://www.arlo.fyi",
+    "score": 13,
+    "flagged": [
+      "gradients",
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 2,
+    "slug": "arlo.fyi",
+    "points": 3,
+    "postedAt": "2026-05-08T13:14:19Z"
   },
   {
     "id": "48023626",
@@ -7437,7 +7540,7 @@
     ],
     "flaggedCount": 2,
     "slug": "paletteinspiration.com",
-    "points": 211,
+    "points": 212,
     "postedAt": "2026-05-05T18:13:14Z"
   },
   {
@@ -7521,7 +7624,7 @@
     ],
     "flaggedCount": 2,
     "slug": "play.templatical.com",
-    "points": 156,
+    "points": 158,
     "postedAt": "2026-05-06T16:20:00Z"
   },
   {
@@ -7691,6 +7794,20 @@
     "slug": "ragnerock.com",
     "points": 13,
     "postedAt": "2026-04-28T16:33:55Z"
+  },
+  {
+    "id": "48063056",
+    "title": "Show HN: DefinitelyTyped Search – Raycast extension for TypeScript types",
+    "url": "https://www.raycast.com/tcelestino/definitelytyped",
+    "score": 13,
+    "flagged": [
+      "gradients",
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 2,
+    "slug": "raycast.com_tcelestino_definitelytyped",
+    "points": 1,
+    "postedAt": "2026-05-08T13:45:03Z"
   },
   {
     "id": "47731307",

@@ -1,6 +1,6 @@
 # One URL per line. Lines starting with # are ignored.
 # Fetched from hn.algolia.com search_by_date?tags=show_hn
-# Last updated 2026-05-08 with 1378 URLs total.
+# Last updated 2026-05-09 with 1401 URLs total.
 
 https://nilbox.run/?platform=arm_mac
 https://saucybargain.com/
@@ -1380,3 +1380,26 @@ https://www.raycast.com/tcelestino/definitelytyped
 https://www.arlo.fyi
 https://wi.kifa.st/
 https://crit.md/
+https://digits.family
+https://githubv6.com/
+https://6jokes.com
+http://www.ufoevidence.org/
+https://www.ovlt.tech/
+https://lakyus.com/live
+https://www.openround.ai/
+https://cadara.app
+https://ledatic.org/aliens
+https://blober.io/kb/articles/gopro-cloud-transfer-backup-download/
+https://sigment.dev/
+https://signegy.com/
+https://deepeval.com/docs/vibe-coding
+https://agentmgmt.dev/
+https://bowbuilds.com
+https://spanglishtranslator.net
+https://timelooptv.org/
+https://tinyopsstudio.com/automation-roi-calculator
+https://www.useopenloom.com/
+https://www.postdew.com/
+https://nova3d.xyz/
+https://rejectedbyyc-ten.vercel.app/
+https://userubberduck.com/

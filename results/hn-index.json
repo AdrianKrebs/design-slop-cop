@@ -1,8 +1,183 @@
 {
+  "https://digits.family": {
+    "id": "48072988",
+    "title": "Show HN: Digits – Encrypted calls from gutted vintage desk phones",
+    "points": 1,
+    "author": "justinlindh",
+    "createdAt": "2026-05-09T08:07:41Z"
+  },
+  "https://githubv6.com/": {
+    "id": "48072345",
+    "title": "Show HN: I made an IPv6 proxy for GitHub",
+    "points": 3,
+    "author": "immibis2",
+    "createdAt": "2026-05-09T06:19:25Z"
+  },
+  "https://6jokes.com": {
+    "id": "48072243",
+    "title": "Show HN: Know Any Good Jokes?",
+    "points": 1,
+    "author": "dobodob",
+    "createdAt": "2026-05-09T06:02:19Z"
+  },
+  "https://apps.weichart.de": {
+    "id": "48071986",
+    "title": "Show HN: My New Projects Website",
+    "points": 1,
+    "author": "surrTurr",
+    "createdAt": "2026-05-09T05:06:29Z"
+  },
+  "http://www.ufoevidence.org/": {
+    "id": "48071638",
+    "title": "Show HN: Best Old School UFO Website",
+    "points": 6,
+    "author": "techteach00",
+    "createdAt": "2026-05-09T03:47:31Z"
+  },
+  "https://www.ovlt.tech/": {
+    "id": "48071546",
+    "title": "Show HN: Ovlt – Lightweight Auth Server That Runs in ~20MB RAM",
+    "points": 4,
+    "author": "Shrpp",
+    "createdAt": "2026-05-09T03:28:50Z"
+  },
+  "https://lakyus.com/live": {
+    "id": "48070526",
+    "title": "Show HN: Launch and Run Companies on Autopilot",
+    "points": 1,
+    "author": "edonnie",
+    "createdAt": "2026-05-09T00:36:34Z"
+  },
+  "https://www.openround.ai/": {
+    "id": "48070469",
+    "title": "Show HN: AI-native tech assessments (end of LeetCode)",
+    "points": 2,
+    "author": "vetted_so",
+    "createdAt": "2026-05-09T00:28:24Z"
+  },
+  "https://cadara.app": {
+    "id": "48070022",
+    "title": "Show HN: CADara – I made an open-source in-browser CAD",
+    "points": 21,
+    "author": "ttouch",
+    "createdAt": "2026-05-08T23:26:49Z"
+  },
+  "https://ledatic.org/aliens": {
+    "id": "48069945",
+    "title": "Show HN: I mirrored war.gov's UAP archive in pure Rail with verifiable bytes",
+    "points": 3,
+    "author": "zem0g",
+    "createdAt": "2026-05-08T23:16:01Z"
+  },
+  "https://blober.io/kb/articles/gopro-cloud-transfer-backup-download/": {
+    "id": "48069669",
+    "title": "Show HN: Blober.io – The Only App That Connects to GoPro Cloud",
+    "points": 3,
+    "author": "mckabue",
+    "createdAt": "2026-05-08T22:45:36Z"
+  },
+  "https://sigment.dev/": {
+    "id": "48069649",
+    "title": "Show HN: Sigment framework beating Vanilla JavaScript in row selection",
+    "points": 4,
+    "author": "nivben27",
+    "createdAt": "2026-05-08T22:42:21Z"
+  },
+  "https://contral.ai": {
+    "id": "48069590",
+    "title": "Show HN: Contral – the agent which will teach you while you build with AI",
+    "points": 5,
+    "author": "samagragune",
+    "createdAt": "2026-05-08T22:34:29Z"
+  },
+  "https://signegy.com/": {
+    "id": "48069350",
+    "title": "Show HN: Signegy - free in-browser PDF toolkit, no signup",
+    "points": 3,
+    "author": "DiligentPeasant",
+    "createdAt": "2026-05-08T22:06:00Z"
+  },
+  "https://deepeval.com/docs/vibe-coding": {
+    "id": "48069001",
+    "title": "Show HN: Vibe code your agents without vibe coding your agent",
+    "points": 6,
+    "author": "jeffreyip",
+    "createdAt": "2026-05-08T21:28:34Z"
+  },
+  "https://agentmgmt.dev/": {
+    "id": "48068896",
+    "title": "Show HN: The independent guide to agent orchestrators",
+    "points": 8,
+    "author": "manume",
+    "createdAt": "2026-05-08T21:17:58Z"
+  },
+  "https://bowbuilds.com": {
+    "id": "48068696",
+    "title": "Show HN: Bowbuilds, a configurator and tuning toolkit for compound archers",
+    "points": 3,
+    "author": "whereismyreleas",
+    "createdAt": "2026-05-08T20:57:51Z"
+  },
+  "https://spanglishtranslator.net": {
+    "id": "48068659",
+    "title": "Show HN: I built a translator for SPANGLISH and mixed-language text",
+    "points": 1,
+    "author": "Odeh13",
+    "createdAt": "2026-05-08T20:54:24Z"
+  },
+  "https://timelooptv.org/": {
+    "id": "48067612",
+    "title": "Show HN: tltv – Federation protocol for 24/7 TV channels",
+    "points": 5,
+    "author": "tltv",
+    "createdAt": "2026-05-08T19:28:53Z"
+  },
+  "https://tinyopsstudio.com/automation-roi-calculator": {
+    "id": "48067343",
+    "title": "Show HN: Automation ROI calculator for repetitive admin workflows",
+    "points": 5,
+    "author": "tinyopsstudio",
+    "createdAt": "2026-05-08T19:06:07Z"
+  },
+  "https://www.useopenloom.com/": {
+    "id": "48066909",
+    "title": "Show HN: Openloom – Turn Loom links into transcripts and frames an LLM can watch",
+    "points": 3,
+    "author": "skramzy",
+    "createdAt": "2026-05-08T18:25:45Z"
+  },
+  "https://www.postdew.com/": {
+    "id": "48066026",
+    "title": "Show HN: PostDew – LinkedIn posts that don't sound like AI",
+    "points": 2,
+    "author": "okchildhood",
+    "createdAt": "2026-05-08T17:13:45Z"
+  },
+  "https://nova3d.xyz/": {
+    "id": "48065983",
+    "title": "Show HN: We built a tool that generates 3D objects with editable, separate parts",
+    "points": 6,
+    "author": "baigy",
+    "createdAt": "2026-05-08T17:11:05Z"
+  },
+  "https://rejectedbyyc-ten.vercel.app/": {
+    "id": "48065381",
+    "title": "Show HN: Rejected by YC",
+    "points": 4,
+    "author": "leonagano",
+    "createdAt": "2026-05-08T16:31:04Z"
+  },
+  "https://userubberduck.com/": {
+    "id": "48065297",
+    "title": "Show HN: Rubberduck – Software design agent where you make the decisions",
+    "points": 2,
+    "author": "acolytic",
+    "createdAt": "2026-05-08T16:24:42Z"
+  },
   "https://www.getadb.com/": {
     "id": "48065203",
     "title": "Show HN: GETadb.com – every GET request creates a DB",
-    "points": 1,
+    "points": 35,
     "author": "nezaj",
     "createdAt": "2026-05-08T16:17:37Z"
   },
@@ -16,7 +191,7 @@
   "https://ai-pilled.com/": {
     "id": "48064765",
     "title": "Show HN: AI Fluency Diagnostic",
-    "points": 1,
+    "points": 2,
     "author": "chrija",
     "createdAt": "2026-05-08T15:43:56Z"
   },
@@ -30,28 +205,28 @@
   "https://rag-dr.hanhanwu.com/": {
     "id": "48064191",
     "title": "Show HN: I built a playground of interative A/B testing for RAG",
-    "points": 1,
+    "points": 2,
     "author": "Hanhan2024",
     "createdAt": "2026-05-08T15:00:56Z"
   },
   "https://howbadis.it": {
     "id": "48064176",
     "title": "Show HN: Howbadis.it – Paste your vibe-coded app, see what'll break",
-    "points": 2,
+    "points": 3,
     "author": "emarboeuf",
     "createdAt": "2026-05-08T14:59:16Z"
   },
   "https://snapmog.com/": {
     "id": "48064082",
     "title": "Show HN: SnapMog: An Omoggle Alternative without going live",
-    "points": 2,
+    "points": 4,
     "author": "mixfox",
     "createdAt": "2026-05-08T14:51:34Z"
   },
   "https://useslate.app/": {
     "id": "48063757",
     "title": "Show HN: Slate – agentic pre-production studio for solo Youtubers",
-    "points": 2,
+    "points": 3,
     "author": "jcfontecha",
     "createdAt": "2026-05-08T14:28:23Z"
   },
@@ -72,21 +247,21 @@
   "https://wi.kifa.st/": {
     "id": "48062561",
     "title": "Show HN: Wi.kifa.st",
-    "points": 1,
+    "points": 2,
     "author": "jasoncartwright",
     "createdAt": "2026-05-08T13:09:13Z"
   },
   "https://crit.md/": {
     "id": "48062402",
     "title": "Show HN: Crit – local review tool for agent plans and code diffs",
-    "points": 9,
+    "points": 10,
     "author": "tomasz-tomczyk",
     "createdAt": "2026-05-08T12:56:51Z"
   },
   "https://www.nanocorp.so": {
     "id": "48062033",
     "title": "Show HN: NanoCorp – Create autonomous companies run by AI",
-    "points": 4,
+    "points": 7,
     "author": "AdrienBA",
     "createdAt": "2026-05-08T12:19:56Z"
   },
@@ -124,13 +299,6 @@
     "points": 2,
     "author": "hbi99",
     "createdAt": "2026-05-08T09:58:23Z"
-  },
-  "https://contral.ai": {
-    "id": "48060887",
-    "title": "Show HN: The agent which teaches you while you build",
-    "points": 3,
-    "author": "samagragune",
-    "createdAt": "2026-05-08T09:50:56Z"
   },
   "https://airplane-ai.franzai.com/": {
     "id": "48060815",
@@ -233,7 +401,7 @@
   "https://disputron.ai": {
     "id": "48055702",
     "title": "Show HN: Disputron – AI small claims court for petty disputes",
-    "points": 6,
+    "points": 8,
     "author": "etaheri",
     "createdAt": "2026-05-07T22:00:02Z"
   },
@@ -660,7 +828,7 @@
   "https://aion.quest/": {
     "id": "48041926",
     "title": "Show HN: I built a game where AI agents compete to ship code",
-    "points": 9,
+    "points": 10,
     "author": "xkoda",
     "createdAt": "2026-05-06T21:12:32Z"
   },
@@ -716,7 +884,7 @@
   "https://doodlemate.com/": {
     "id": "48038654",
     "title": "Show HN: DoodleMate: Animate Your Child's Hand Drawings Without Generative AI",
-    "points": 10,
+    "points": 12,
     "author": "hjessmith",
     "createdAt": "2026-05-06T17:06:34Z"
   },
@@ -730,14 +898,14 @@
   "http://halupedia.com/": {
     "id": "48038257",
     "title": "Show HN: Hallucinopedia",
-    "points": 299,
+    "points": 302,
     "author": "bstrama",
     "createdAt": "2026-05-06T16:37:52Z"
   },
   "https://play.templatical.com": {
     "id": "48038019",
     "title": "Show HN: I built an open-source email builder, alternative to Beefree/Unlayer",
-    "points": 156,
+    "points": 158,
     "author": "oahmadov",
     "createdAt": "2026-05-06T16:20:00Z"
   },
@@ -751,7 +919,7 @@
   "https://tilde.run/": {
     "id": "48037724",
     "title": "Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem",
-    "points": 196,
+    "points": 197,
     "author": "ozkatz",
     "createdAt": "2026-05-06T15:58:34Z"
   },
@@ -1024,7 +1192,7 @@
   "https://paletteinspiration.com/": {
     "id": "48026342",
     "title": "Show HN: Explore color palettes inspired by 3000 master painter artworks",
-    "points": 211,
+    "points": 212,
     "author": "ouli",
     "createdAt": "2026-05-05T18:13:14Z"
   },
@@ -4471,13 +4639,6 @@
     "points": 1,
     "author": "jmagland",
     "createdAt": "2026-04-24T10:39:27Z"
-  },
-  "https://apps.weichart.de": {
-    "id": "47887755",
-    "title": "Show HN: My New Projects Website",
-    "points": 2,
-    "author": "surrTurr",
-    "createdAt": "2026-04-24T09:26:26Z"
   },
   "https://www.matrimonybio.com/": {
     "id": "47886949",
