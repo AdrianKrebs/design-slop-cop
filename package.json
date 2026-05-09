@@ -7,10 +7,10 @@
   "homepage": "https://github.com/AdrianKrebs/ai-design-checker",
   "repository": { "type": "git", "url": "https://github.com/AdrianKrebs/ai-design-checker.git" },
   "bin": {
-    "ai-design-checker": "./cli.js"
+    "ai-design-checker": "./check.js"
   },
   "files": [
-    "cli.js",
+    "check.js",
     "src/",
     "README.md",
     "LICENSE"

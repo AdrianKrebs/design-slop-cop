@@ -14,7 +14,7 @@ Manual verification across ~150 labeled sites suggests ~5–10% false positives.
 git clone https://github.com/AdrianKrebs/ai-design-checker
 cd ai-design-checker && npm install
 
-node cli.js https://news.ycombinator.com/
+node check.js https://news.ycombinator.com/
 ```
 
 ```
