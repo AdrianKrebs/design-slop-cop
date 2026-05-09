@@ -3,7 +3,7 @@
 A tool to score any website for common AI design patterns.
 Basis for the [blog post](https://www.adriankrebs.ch/blog/design-slop/) and the HN discussion ["Scoring Show HN submissions for AI design patterns"](https://news.ycombinator.com/item?id=47864393).
 
-The scorer loads each site in a headless browser, analyzes the DOM, and reports which of 16 deterministic AI design patterns are found.
+The tool loads each site in a headless browser, analyzes the DOM, and reports which of 16 deterministic AI design patterns are found.
 Manual verification across ~150 labeled sites suggests ~5–10% false positives. Still, take it with a grain of salt :)
 
 ![Browseable results report — tier filters, pattern frequency, and a card grid of every analyzed site](docs/report.png)
