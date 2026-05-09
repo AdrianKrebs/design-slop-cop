@@ -7,8 +7,8 @@
 
 export default {
   id: 'hero_eyebrow_pill',
-  label: 'Badge above the headline',
-  shortLabel: 'Badge above headline',
+  label: 'Headline badge (pill above the H1)',
+  shortLabel: 'Headline badge',
   description: 'Pill badge floating above the H1. "INTRODUCING", "PRECISION HEALTH INTELLIGENCE", "Mint for AI usage".',
   category: 'layout',
   thresholds: {
