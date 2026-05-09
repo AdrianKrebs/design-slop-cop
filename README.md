@@ -88,7 +88,7 @@ Results go to `results/`:
 | 5 | All-caps headings | ≥ 3 uppercase H-tags |
 | 6 | Gradients | linear/radial/conic-gradient + `background-clip: text` |
 | 7 | Colored glow | Saturated `box-shadow` blur ≥ 15 px |
-| 8 | Eyebrow pill | Small badge above the H1 |
+| 8 | Badge above headline | Small pill or label sitting above the H1 |
 | 9 | Accent stripe | Colored left/top stripe on a card with a heading |
 | 10 | Icon-card grid | 3–12 cards: icon-in-badge + title + blurb |
 | 11 | Numbered steps | "1·2·3" digits in styled badges |
