@@ -8,21 +8,29 @@ Manual verification across ~150 labeled sites suggests ~5–10% false positives.
 
 ![Browseable results report — tier filters, pattern frequency, and a card grid of every analyzed site](docs/report.png)
 
-## Install & run
+## Install
 
 ```bash
 git clone https://github.com/AdrianKrebs/ai-design-checker
 cd ai-design-checker && npm install
-
-node check.js https://news.ycombinator.com/
 ```
 
-```
+Requires Node 18+.
+
+## Check a single URL
+
+A clean site (no AI design patterns triggered):
+
+```bash
+$ node check.js https://news.ycombinator.com/
 https://news.ycombinator.com/
 Clean · score 0/100 · 0/16 patterns
 ```
 
-```
+A heavy one (6 patterns triggered):
+
+```bash
+$ node check.js https://engagemii.com/aeo
 https://engagemii.com/aeo
 Heavy · score 38/100 · 6/16 patterns
 
@@ -35,9 +43,24 @@ Triggered:
   • FAQ
 ```
 
-`--json` for machine-readable output. Requires Node 18+.
+Add `--json` for machine-readable output:
 
-To update an existing clone, `git pull` from inside the directory.
+```bash
+$ node check.js https://engagemii.com/aeo --json
+{
+  "url": "https://engagemii.com/aeo",
+  "score": 38,
+  "tierLabel": "Heavy",
+  "patternsFlagged": 6,
+  "patternsTotal": 16,
+  "patterns": [
+    { "id": "purple_accent", "label": "Vibe purple", "triggered": true, "evidence": {...} },
+    ...
+  ]
+}
+```
+
+To update an existing clone, `git pull` inside the directory.
 
 ## Run the full corpus
 
