@@ -8,8 +8,8 @@
 import { PATTERNS } from './patterns/index.js';
 
 const TIER_THRESHOLDS = {
-  heavy: 5, // 5+ patterns triggered → Heavy
-  mild:  2  // 2–4 patterns triggered → Mild
+  heavy: 4, // 4+ patterns triggered → Heavy (Slop)
+  mild:  2  // 2–3 patterns triggered → Mild (Medium)
   //       <2 patterns → Clean
 };
 

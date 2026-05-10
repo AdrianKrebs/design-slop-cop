@@ -245,8 +245,8 @@ const html = `<!doctype html>
 
 <div class="subline">
   <p>Show HN submissions scored against deterministic AI design patterns &nbsp;·&nbsp;
-    <a class="tier-link tier-heavy" data-tier="Heavy" href="#heavy" title="Slop · 5+ patterns flagged · click to filter">Slop <b>${tierCount.Heavy}</b> (${(100 * tierCount.Heavy / total).toFixed(0)}%)</a> ·
-    <a class="tier-link tier-mild" data-tier="Mild" href="#mild" title="Medium · 2–4 patterns flagged · click to filter">Medium <b>${tierCount.Mild}</b> (${(100 * tierCount.Mild / total).toFixed(0)}%)</a> ·
+    <a class="tier-link tier-heavy" data-tier="Heavy" href="#heavy" title="Slop · 4+ patterns flagged · click to filter">Slop <b>${tierCount.Heavy}</b> (${(100 * tierCount.Heavy / total).toFixed(0)}%)</a> ·
+    <a class="tier-link tier-mild" data-tier="Mild" href="#mild" title="Medium · 2–3 patterns flagged · click to filter">Medium <b>${tierCount.Mild}</b> (${(100 * tierCount.Mild / total).toFixed(0)}%)</a> ·
     <a class="tier-link tier-clean" data-tier="Clean" href="#clean" title="Clean · 0–1 patterns flagged · click to filter">Clean <b>${tierCount.Clean}</b> (${(100 * tierCount.Clean / total).toFixed(0)}%)</a>
   </p>
 </div>
