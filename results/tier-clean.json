@@ -1,100 +1,22 @@
 [
   {
-    "id": "48072243",
-    "title": "Show HN: Know Any Good Jokes?",
-    "url": "https://6jokes.com",
-    "score": 6,
-    "flagged": [
-      "sidebar_emoji"
-    ],
-    "flaggedCount": 1,
-    "slug": "6jokes.com",
-    "points": 1,
-    "postedAt": "2026-05-09T06:02:19Z"
-  },
-  {
-    "id": "48068896",
-    "title": "Show HN: The independent guide to agent orchestrators",
-    "url": "https://agentmgmt.dev/",
-    "score": 6,
-    "flagged": [
-      "perma_dark_mode"
-    ],
-    "flaggedCount": 1,
-    "slug": "agentmgmt.dev",
-    "points": 8,
-    "postedAt": "2026-05-08T21:17:58Z"
-  },
-  {
-    "id": "48068696",
-    "title": "Show HN: Bowbuilds, a configurator and tuning toolkit for compound archers",
-    "url": "https://bowbuilds.com",
-    "score": 6,
-    "flagged": [
-      "slop_fonts"
-    ],
-    "flaggedCount": 1,
-    "slug": "bowbuilds.com",
-    "points": 3,
-    "postedAt": "2026-05-08T20:57:51Z"
-  },
-  {
-    "id": "48067612",
-    "title": "Show HN: tltv – Federation protocol for 24/7 TV channels",
-    "url": "https://timelooptv.org/",
-    "score": 6,
+    "id": "48048596",
+    "title": "Show HN: Jobs – A transparent job stack where companies pay to rank",
+    "url": "https://www.100jobs.page",
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
     "flaggedCount": 1,
-    "slug": "timelooptv.org",
-    "points": 5,
-    "postedAt": "2026-05-08T19:28:53Z"
-  },
-  {
-    "id": "48067343",
-    "title": "Show HN: Automation ROI calculator for repetitive admin workflows",
-    "url": "https://tinyopsstudio.com/automation-roi-calculator",
-    "score": 6,
-    "flagged": [
-      "accent_stripe"
-    ],
-    "flaggedCount": 1,
-    "slug": "tinyopsstudio.com_automation-roi-calculator",
-    "points": 5,
-    "postedAt": "2026-05-08T19:06:07Z"
-  },
-  {
-    "id": "48065983",
-    "title": "Show HN: We built a tool that generates 3D objects with editable, separate parts",
-    "url": "https://nova3d.xyz/",
-    "score": 6,
-    "flagged": [
-      "gradients"
-    ],
-    "flaggedCount": 1,
-    "slug": "nova3d.xyz",
-    "points": 6,
-    "postedAt": "2026-05-08T17:11:05Z"
-  },
-  {
-    "id": "48065381",
-    "title": "Show HN: Rejected by YC",
-    "url": "https://rejectedbyyc-ten.vercel.app/",
-    "score": 6,
-    "flagged": [
-      "icon_card_grid"
-    ],
-    "flaggedCount": 1,
-    "slug": "rejectedbyyc-ten.vercel.app",
-    "points": 4,
-    "postedAt": "2026-05-08T16:31:04Z"
+    "slug": "100jobs.page",
+    "points": 2,
+    "postedAt": "2026-05-07T12:32:52Z"
   },
   {
     "id": "47769539",
     "title": "Show HN: 404 – a localhost proxy that substitutes your device fingerprint",
     "url": "https://404privacy.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -104,10 +26,23 @@
     "postedAt": "2026-04-14T18:40:09Z"
   },
   {
+    "id": "48072243",
+    "title": "Show HN: Know Any Good Jokes?",
+    "url": "https://6jokes.com",
+    "score": 7,
+    "flagged": [
+      "sidebar_emoji"
+    ],
+    "flaggedCount": 1,
+    "slug": "6jokes.com",
+    "points": 1,
+    "postedAt": "2026-05-09T06:02:19Z"
+  },
+  {
     "id": "47986319",
     "title": "Show HN: A Local-only URL shortener",
     "url": "https://9ev.in/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "purple_accent"
     ],
@@ -117,10 +52,23 @@
     "postedAt": "2026-05-02T13:39:51Z"
   },
   {
+    "id": "47888759",
+    "title": "Show HN: I built an AI alternative to NoBroker/MagicBricks that never calls you",
+    "url": "https://www.abodex.space/",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "abodex.space",
+    "points": 2,
+    "postedAt": "2026-04-24T11:33:37Z"
+  },
+  {
     "id": "47872500",
     "title": "Show HN: CreepJS Browser Fingerprinting",
     "url": "https://abrahamjuliot.github.io/creepjs/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -133,7 +81,7 @@
     "id": "47922796",
     "title": "Show HN: Music from Your Git History",
     "url": "https://adamf.github.io/rebass/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -146,7 +94,7 @@
     "id": "47730322",
     "title": "Show HN: An offline, privacy-first Pomodoro timer with 18 ambient soundscapes",
     "url": "https://www.adribyte-studio.com/mobile-apps/focusscape",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -156,23 +104,10 @@
     "postedAt": "2026-04-11T13:17:50Z"
   },
   {
-    "id": "47778627",
-    "title": "Show HN: Afterplay Store – buy new retro games and play instantly in the browser",
-    "url": "https://afterplay.io/play/store",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "afterplay.io_play_store",
-    "points": 2,
-    "postedAt": "2026-04-15T13:22:39Z"
-  },
-  {
     "id": "48052476",
     "title": "Show HN: Agent-data – a CLI for giving agents real-time, structured data",
     "url": "https://agent-data.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -185,7 +120,7 @@
     "id": "47989464",
     "title": "Show HN: Which public repos are friendliest to an AI coding agent?",
     "url": "https://www.agentfriendlycode.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -195,10 +130,36 @@
     "postedAt": "2026-05-02T19:14:21Z"
   },
   {
+    "id": "47762953",
+    "title": "Show HN: I analyzed 591 agentic engineering jobs: LangChain dominates at 22%",
+    "url": "https://agentic-engineering-jobs.com/langchain-job-market-2026",
+    "score": 7,
+    "flagged": [
+      "faq_accordion"
+    ],
+    "flaggedCount": 1,
+    "slug": "agentic-engineering-jobs.com_langchain-job-market-2026",
+    "points": 1,
+    "postedAt": "2026-04-14T08:45:43Z"
+  },
+  {
+    "id": "48068896",
+    "title": "Show HN: The independent guide to agent orchestrators",
+    "url": "https://agentmgmt.dev/",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "agentmgmt.dev",
+    "points": 8,
+    "postedAt": "2026-05-08T21:17:58Z"
+  },
+  {
     "id": "48010204",
     "title": "Show HN: Bonsai 1.7B ternary model at 442T/s on M4 Max",
     "url": "https://agents2agents.ai/bonsai",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "stat_banner_row"
     ],
@@ -211,7 +172,7 @@
     "id": "47783938",
     "title": "Show HN: I built a browser idle game about training AI models",
     "url": "https://ai-lab-azure-pi.vercel.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -224,7 +185,7 @@
     "id": "48064765",
     "title": "Show HN: AI Fluency Diagnostic",
     "url": "https://ai-pilled.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -237,7 +198,7 @@
     "id": "47804215",
     "title": "Show HN: AICW Summarize – widget for asking AI about current page (open-source)",
     "url": "https://aicw.io/aicw-summarize",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -250,7 +211,7 @@
     "id": "47858442",
     "title": "Show HN: Aide – A customizable Android assistant (voice, choose your provider)",
     "url": "https://aideassistant.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -263,7 +224,7 @@
     "id": "47756892",
     "title": "Show HN: I benchmarked Gemma 4 E2B – the 2B model beat the 12B on multi-turn",
     "url": "https://aiexplr.com/post/gemma-4-e2b-benchmark",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -276,7 +237,7 @@
     "id": "47721796",
     "title": "Show HN: Pyre Agents – An Elixir-Orchestrated Runtime for Python Agents",
     "url": "https://akashyap.ai/pyre-agents-an-elixir-orchestrated-runtime-for-python-agents/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -286,10 +247,23 @@
     "postedAt": "2026-04-10T18:20:27Z"
   },
   {
+    "id": "47793166",
+    "title": "Show HN: Run AI tool calls in your user's environment and access local data",
+    "url": "https://www.alien.dev/docs/quickstart",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "alien.dev_docs_quickstart",
+    "points": 2,
+    "postedAt": "2026-04-16T14:05:26Z"
+  },
+  {
     "id": "47932680",
     "title": "Show HN: Elon Musk trial against Sam Altman to reveal OpenAI power struggle",
     "url": "https://www.aljazeera.com/economy/2026/4/27/elon-musk-trial-against-sam-altman-to-reveal-openai-power-struggle",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -299,10 +273,23 @@
     "postedAt": "2026-04-28T10:50:44Z"
   },
   {
+    "id": "47754922",
+    "title": "Show HN: CRXcavator, but Better",
+    "url": "https://amibeingpwned.com",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "amibeingpwned.com",
+    "points": 2,
+    "postedAt": "2026-04-13T17:00:02Z"
+  },
+  {
     "id": "47913089",
     "title": "Show HN: Cutout is an email alias proxy built on Cloudflare Workers",
     "url": "https://ananthb.github.io/cutout/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -315,7 +302,7 @@
     "id": "47731535",
     "title": "Show HN: When Clocks Drift Apart",
     "url": "https://animeshchouhan.com/time/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -325,10 +312,23 @@
     "postedAt": "2026-04-11T15:43:29Z"
   },
   {
+    "id": "47765139",
+    "title": "Show HN: Answer 9 questions, get a Matter firmware with safe boundaries",
+    "url": "https://anna.software/main",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "anna.software_main",
+    "points": 3,
+    "postedAt": "2026-04-14T13:04:00Z"
+  },
+  {
     "id": "47859347",
     "title": "Show HN: Minimal visual chess openings explorer",
     "url": "https://aperturasdeajedrez.com.ar/en/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -341,7 +341,7 @@
     "id": "47766479",
     "title": "Show HN: API Changelog Tracker",
     "url": "https://apipulse.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -354,7 +354,7 @@
     "id": "47864411",
     "title": "Show HN: Momentum – showcase what you're shipping",
     "url": "https://app.heytangent.com/momentum/tangent",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -364,23 +364,23 @@
     "postedAt": "2026-04-22T14:45:44Z"
   },
   {
-    "id": "48037283",
-    "title": "Show HN: Accept crypto payment in your business (only 1% fee, feedback welcome)",
-    "url": "https://app.paycoinly.xyz/login",
-    "score": 6,
+    "id": "47827698",
+    "title": "Show HN: Qapir – Generate API tests automatically from docs",
+    "url": "https://app.qapir.io/",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "center_aligned_hero"
     ],
     "flaggedCount": 1,
-    "slug": "app.paycoinly.xyz_login",
-    "points": 1,
-    "postedAt": "2026-05-06T15:21:32Z"
+    "slug": "app.qapir.io",
+    "points": 3,
+    "postedAt": "2026-04-19T21:14:05Z"
   },
   {
     "id": "47862115",
     "title": "Show HN: Res.Publica democracy dashboard, Germany's political data as React app",
     "url": "https://app.respublica.media/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "stat_banner_row"
     ],
@@ -390,36 +390,49 @@
     "postedAt": "2026-04-22T11:35:40Z"
   },
   {
-    "id": "47803684",
-    "title": "Show HN: Soforce – Describe a process, get a free automation plan from our team",
-    "url": "https://app.soforce.ai",
-    "score": 6,
+    "id": "48009166",
+    "title": "Show HN: Rudel – Claude Code / Codex sessions reveals 9 types of AI coder",
+    "url": "https://app.rudel.ai/wrapped",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "gradients"
     ],
     "flaggedCount": 1,
-    "slug": "app.soforce.ai",
-    "points": 1,
-    "postedAt": "2026-04-17T08:23:40Z"
+    "slug": "app.rudel.ai_wrapped",
+    "points": 5,
+    "postedAt": "2026-05-04T14:22:20Z"
   },
   {
-    "id": "47716947",
-    "title": "Show HN: Zenovay, Web analytics with performance monitoring and revenue insights",
-    "url": "https://app.zenovay.com/share/a1d7d3e7aeb24437871562f463eada27",
-    "score": 6,
+    "id": "47809992",
+    "title": "Show HN: Co-op: Your 24/7 Digital Intern",
+    "url": "https://app.subconscious.dev/",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "slop_fonts"
     ],
     "flaggedCount": 1,
-    "slug": "app.zenovay.com_share_a1d7d3e7aeb24437871562f463eada27",
-    "points": 1,
-    "postedAt": "2026-04-10T12:16:31Z"
+    "slug": "app.subconscious.dev",
+    "points": 3,
+    "postedAt": "2026-04-17T20:05:50Z"
+  },
+  {
+    "id": "47792173",
+    "title": "Show HN: The all-in-one workspace for all your projects",
+    "url": "https://app.thinky.so",
+    "score": 7,
+    "flagged": [
+      "purple_accent"
+    ],
+    "flaggedCount": 1,
+    "slug": "app.thinky.so",
+    "points": 2,
+    "postedAt": "2026-04-16T12:43:16Z"
   },
   {
     "id": "47757527",
     "title": "Show HN: YouTube and Apple Podcast Transcripts",
     "url": "https://www.appblit.com/scribe",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -432,7 +445,7 @@
     "id": "47968964",
     "title": "Show HN: Code on the Go, an IDE for Android with On-Device Debugging (GPLv3)",
     "url": "https://www.appdevforall.org/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -445,7 +458,7 @@
     "id": "48071986",
     "title": "Show HN: My New Projects Website",
     "url": "https://apps.weichart.de",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -455,10 +468,23 @@
     "postedAt": "2026-05-09T05:06:29Z"
   },
   {
+    "id": "47911419",
+    "title": "Show HN: Store, play and stream your iOS/macOS videos on your smart TV with Kino",
+    "url": "https://appwared.com/apps/kino",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "appwared.com_apps_kino",
+    "points": 2,
+    "postedAt": "2026-04-26T16:14:26Z"
+  },
+  {
     "id": "48033724",
     "title": "Show HN: Yumi – Your workspace for AI chat, notes, and research",
     "url": "https://askyumi.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -471,7 +497,7 @@
     "id": "47754924",
     "title": "Show HN: Asthi – Damn good asset tracker",
     "url": "https://www.asthi.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -484,7 +510,7 @@
     "id": "47756943",
     "title": "Show HN: BallotGuessr – Guess the 2024 election margin from a Street View photo",
     "url": "https://ballotguessr.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -497,7 +523,7 @@
     "id": "47865778",
     "title": "Show HN: ShellTalk brings deterministic text-to-bash",
     "url": "https://barrasso.me/posts/2026-04-22-text-to-bash-with-shell-talk/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -510,7 +536,7 @@
     "id": "47862557",
     "title": "Show HN: Infinite Lofi Radio Station Composed Live by Claude Code",
     "url": "https://beats.softwaresoftware.dev",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -520,23 +546,10 @@
     "postedAt": "2026-04-22T12:22:09Z"
   },
   {
-    "id": "47775750",
-    "title": "Show HN: Friday Deploy – a browser-based SIM you probably won't survive",
-    "url": "https://bentbrainstudio.com/friday-deploy/game/",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "bentbrainstudio.com_friday-deploy_game",
-    "points": 1,
-    "postedAt": "2026-04-15T07:24:02Z"
-  },
-  {
     "id": "47934349",
     "title": "Show HN: Extract Biomedical Knowledge from Multi-Modal Data Using Biovista Vizit",
     "url": "https://www.biovista.com/vizit/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -549,7 +562,7 @@
     "id": "47792924",
     "title": "Show HN: AgentPulse: Real-Time Observability Dashboard for Claude Code and Codex",
     "url": "https://blog.jaystuart.dev/agentpulse-a-real-time-dashboard-for-claude-code-and-codex-sessions/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -562,7 +575,7 @@
     "id": "47876071",
     "title": "Show HN: Turning a Gaussian Splat into a videogame",
     "url": "https://blog.playcanvas.com/turning-a-gaussian-splat-into-a-videogame/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -575,7 +588,7 @@
     "id": "47914928",
     "title": "Show HN: I built a 2010s microblogging site with SolidJS and .NET Core",
     "url": "https://bojan.social",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -588,7 +601,7 @@
     "id": "47733510",
     "title": "Show HN: Share how you hear yourself (on-device)",
     "url": "https://bone-conduction-imitator.vercel.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -598,23 +611,10 @@
     "postedAt": "2026-04-11T20:00:49Z"
   },
   {
-    "id": "47984653",
-    "title": "Show HN: From Beats to Notes and Beyond",
-    "url": "https://bookerapp.replit.app/book/fom/from-temporal-structure",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "bookerapp.replit.app_book_fom_from-temporal-structure",
-    "points": 1,
-    "postedAt": "2026-05-02T08:50:30Z"
-  },
-  {
     "id": "47777233",
     "title": "Show HN: Borrowdesk.org – An ecosystem landscape for DeFi / Crypto borrowing",
     "url": "https://borrowdesk.org",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -624,10 +624,23 @@
     "postedAt": "2026-04-15T10:44:31Z"
   },
   {
+    "id": "48068696",
+    "title": "Show HN: Bowbuilds, a configurator and tuning toolkit for compound archers",
+    "url": "https://bowbuilds.com",
+    "score": 7,
+    "flagged": [
+      "slop_fonts"
+    ],
+    "flaggedCount": 1,
+    "slug": "bowbuilds.com",
+    "points": 3,
+    "postedAt": "2026-05-08T20:57:51Z"
+  },
+  {
     "id": "47805167",
     "title": "Show HN: Zmx – run local code agents on remote machines",
     "url": "https://bower.sh/zmx-ai-portal",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -640,7 +653,7 @@
     "id": "47732960",
     "title": "Show HN: A living Vancouver. Connor is walking dogs at the SPCA this morning",
     "url": "https://brasilia-phi.vercel.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -653,7 +666,7 @@
     "id": "47850688",
     "title": "Show HN: Verified Deep Learning with Lean 4",
     "url": "https://brettkoonce.github.io/lean4-mlir/blueprint/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -666,7 +679,7 @@
     "id": "47962629",
     "title": "Show HN: You can now run Gemini CLI in the browser",
     "url": "https://browsercode.io",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -676,10 +689,23 @@
     "postedAt": "2026-04-30T13:59:58Z"
   },
   {
+    "id": "47774508",
+    "title": "Show HN: BSCS Bench – College CS Curriculum AI Benchmark",
+    "url": "https://www.bscsbench.com/",
+    "score": 7,
+    "flagged": [
+      "numbered_steps"
+    ],
+    "flaggedCount": 1,
+    "slug": "bscsbench.com",
+    "points": 1,
+    "postedAt": "2026-04-15T03:51:34Z"
+  },
+  {
     "id": "48024366",
     "title": "Show HN: Screen recordings from customers for support – no install required",
     "url": "https://www.bugtrotter.io/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -692,7 +718,7 @@
     "id": "47743339",
     "title": "Show HN: Buildermark – See how much code is by your agents (open source, local)",
     "url": "https://buildermark.dev",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -705,7 +731,7 @@
     "id": "47932720",
     "title": "Show HN: Building a Real Agent, Step-by-Step",
     "url": "https://building-an-agent.pagey.site/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -718,7 +744,7 @@
     "id": "47791750",
     "title": "Show HN: BunnyLogs – Logs Collector",
     "url": "https://bunnylogs.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -731,7 +757,7 @@
     "id": "47729938",
     "title": "Show HN: Bunqueue – Saga workflow engine for Bun with embedded SQLite",
     "url": "https://bunqueue.dev/guide/workflow/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -741,23 +767,10 @@
     "postedAt": "2026-04-11T12:19:15Z"
   },
   {
-    "id": "47880377",
-    "title": "Show HN: Visage, privacy-friendly web analytics for self-hosters",
-    "url": "https://www.butterhost.ing/visage",
-    "score": 6,
-    "flagged": [
-      "slop_fonts"
-    ],
-    "flaggedCount": 1,
-    "slug": "butterhost.ing_visage",
-    "points": 1,
-    "postedAt": "2026-04-23T19:22:00Z"
-  },
-  {
     "id": "48014939",
     "title": "Show HN: ByAllo – the online bookstore that runs itself",
     "url": "https://byallo.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -770,7 +783,7 @@
     "id": "47755853",
     "title": "Show HN: A calculator to expose the hidden infrastructural costs behind RAG",
     "url": "https://bytecalculators.com/rag-cost-calculator",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -780,10 +793,23 @@
     "postedAt": "2026-04-13T18:12:49Z"
   },
   {
+    "id": "48070022",
+    "title": "Show HN: CADara – I made an open-source in-browser CAD",
+    "url": "https://cadara.app",
+    "score": 7,
+    "flagged": [
+      "glassmorphism"
+    ],
+    "flaggedCount": 1,
+    "slug": "cadara.app",
+    "points": 21,
+    "postedAt": "2026-05-08T23:26:49Z"
+  },
+  {
     "id": "47716201",
     "title": "Show HN: Creating OCD versions of a yearly calendar",
     "url": "https://calendar-architect.pages.dev",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -796,7 +822,7 @@
     "id": "47764864",
     "title": "Show HN: Get Hired with AI, a free book I wrote on using LLMs for a job search",
     "url": "https://www.careervectorhq.com/book/get-hired-with-ai.html",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -809,7 +835,7 @@
     "id": "47866461",
     "title": "Show HN: A Swift Payment message validator built from Swift Standard rules",
     "url": "https://cbprstar.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -822,7 +848,7 @@
     "id": "47850907",
     "title": "Show HN: Daemons – we pivoted from building agents to cleaning up after them",
     "url": "https://charlielabs.ai/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -832,23 +858,10 @@
     "postedAt": "2026-04-21T16:16:41Z"
   },
   {
-    "id": "47917834",
-    "title": "Show HN: ChatForm – Create an AI chat form in 1 minute",
-    "url": "https://chatform.000ooo.ooo/",
-    "score": 6,
-    "flagged": [
-      "slop_fonts"
-    ],
-    "flaggedCount": 1,
-    "slug": "chatform.000ooo.ooo",
-    "points": 1,
-    "postedAt": "2026-04-27T04:56:35Z"
-  },
-  {
     "id": "47989026",
     "title": "Show HN: Vim and centaur chess inspired app, where you choose from top moves",
     "url": "https://chess-cheaters.vercel.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -861,7 +874,7 @@
     "id": "47892766",
     "title": "Show HN: Porting Open3D to Python without writing a LoC",
     "url": "https://chico.dev/Mirror-Bridge-Open3D-71-Lines/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -874,7 +887,7 @@
     "id": "47931266",
     "title": "Show HN: An Agent-First Collaboration Platform Inspired by Karpathy's AgentHub",
     "url": "https://community.computer/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -887,7 +900,7 @@
     "id": "48053703",
     "title": "Show HN: Super Mega SFF Story Ideator",
     "url": "https://compellingsciencefiction.com/super-mega-sff-story-ideator/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -897,10 +910,23 @@
     "postedAt": "2026-05-07T19:28:16Z"
   },
   {
+    "id": "47837377",
+    "title": "Show HN: Seltz – The fastest, high quality, search API for AI agents",
+    "url": "https://console.seltz.ai/login",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "console.seltz.ai_login",
+    "points": 5,
+    "postedAt": "2026-04-20T17:12:38Z"
+  },
+  {
     "id": "47932372",
     "title": "Show HN: Scan your OSS projects for vulnerabilities",
     "url": "https://console.zeroquarry.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -910,10 +936,23 @@
     "postedAt": "2026-04-28T09:56:19Z"
   },
   {
+    "id": "47917519",
+    "title": "Show HN: Free On-Brand AI Ad Maker",
+    "url": "https://www.context.dev/free-tools/ad-maker",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "context.dev_free-tools_ad-maker",
+    "points": 1,
+    "postedAt": "2026-04-27T03:44:52Z"
+  },
+  {
     "id": "47808016",
     "title": "Show HN: Corvi Careers – privacy first job search with resume matching",
     "url": "https://corvi.careers/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -926,7 +965,7 @@
     "id": "47720247",
     "title": "Show HN: Corvo – Free portfolio analytics with MonteCarlo simulation and AI chat",
     "url": "https://corvo.capital/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -936,10 +975,23 @@
     "postedAt": "2026-04-10T16:10:06Z"
   },
   {
+    "id": "47975933",
+    "title": "Show HN: Council – Run Claude, Codex and Gemini against the same prompt",
+    "url": "https://council.armstr.ng/",
+    "score": 7,
+    "flagged": [
+      "gradients"
+    ],
+    "flaggedCount": 1,
+    "slug": "council.armstr.ng",
+    "points": 2,
+    "postedAt": "2026-05-01T15:28:54Z"
+  },
+  {
     "id": "47847848",
     "title": "Show HN: Flight Risk: Can you break an AI agent?",
     "url": "https://ctf.demo.lorikeetcx.ai/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -952,7 +1004,7 @@
     "id": "47750827",
     "title": "Show HN: Turn your cat into a Cubism Cat via an app",
     "url": "https://cubismcat.damjanski.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -962,10 +1014,23 @@
     "postedAt": "2026-04-13T12:06:52Z"
   },
   {
+    "id": "48036795",
+    "title": "Show HN: Curl.md – URL to Markdown for Agents",
+    "url": "https://curl.md/",
+    "score": 7,
+    "flagged": [
+      "faq_accordion"
+    ],
+    "flaggedCount": 1,
+    "slug": "curl.md",
+    "points": 4,
+    "postedAt": "2026-05-06T14:36:49Z"
+  },
+  {
     "id": "47936034",
     "title": "Show HN: CV Mirror – see what 5 ATS parsers do to your CV",
     "url": "https://cv-mirror-web.vercel.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -975,10 +1040,23 @@
     "postedAt": "2026-04-28T15:38:09Z"
   },
   {
+    "id": "47899651",
+    "title": "Show HN: Unfold – A paper folding puzzle game with worldwide rankings",
+    "url": "https://www.dailyunfold.com/",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "dailyunfold.com",
+    "points": 2,
+    "postedAt": "2026-04-25T08:09:21Z"
+  },
+  {
     "id": "48008329",
     "title": "Show HN: Turn your cat pic into a dancing cat video",
     "url": "https://dancingcats.damjanski.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -988,23 +1066,10 @@
     "postedAt": "2026-05-04T13:14:12Z"
   },
   {
-    "id": "47738922",
-    "title": "Show HN: OIFI Databook: An intelligence database of Iran's power structure",
-    "url": "https://databook.oifi.org",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "databook.oifi.org",
-    "points": 1,
-    "postedAt": "2026-04-12T12:34:44Z"
-  },
-  {
     "id": "47961985",
     "title": "Show HN: DD Photos – static photo albums, now with Docker and 1-command deploy",
     "url": "https://ddphotos.donohoe.info",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1017,7 +1082,7 @@
     "id": "47997507",
     "title": "Show HN: Deckades – Was Star Wars released before or after the first Email?",
     "url": "https://deckades.app/daily",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -1030,7 +1095,7 @@
     "id": "47757351",
     "title": "Show HN: Deconflict – Open-source WiFi planner with physics-based walls",
     "url": "https://deconflict.pages.dev",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1043,7 +1108,7 @@
     "id": "47987944",
     "title": "Show HN: Writing a deep-research agent from scratch",
     "url": "https://deep-research-agent.pagey.site",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -1056,7 +1121,7 @@
     "id": "47946847",
     "title": "Show HN: Despatch – Project management for systems thinking, not just software",
     "url": "https://despatch-demo.vercel.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1069,7 +1134,7 @@
     "id": "47828144",
     "title": "Show HN: Developerpod, K-Cups for Code",
     "url": "https://developerpod.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -1079,23 +1144,23 @@
     "postedAt": "2026-04-19T22:18:35Z"
   },
   {
-    "id": "47853007",
-    "title": "Show HN: DataFrey – MCP server for Snowflake with text-to-SQL agent",
-    "url": "https://docs.datafrey.ai",
-    "score": 6,
+    "id": "47741581",
+    "title": "Show HN: Give your AI agent a preview link for files and diff",
+    "url": "https://diff4.com/",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "icon_card_grid"
     ],
     "flaggedCount": 1,
-    "slug": "docs.datafrey.ai",
+    "slug": "diff4.com",
     "points": 1,
-    "postedAt": "2026-04-21T19:01:49Z"
+    "postedAt": "2026-04-12T16:29:03Z"
   },
   {
     "id": "47891655",
     "title": "Show HN: Tarot Down Detector – a status page as a tarot reading",
     "url": "https://down.artemistarot.app/tarot-down-detector",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -1108,7 +1173,7 @@
     "id": "47878307",
     "title": "Show HN: Dual Condition – a cognitive theory of why prompts work",
     "url": "https://dualcondition.com/analyze",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -1121,7 +1186,7 @@
     "id": "47791344",
     "title": "Show HN: I built this to help me learn Duo in Crimson Desert",
     "url": "https://duodegen.vercel.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1131,10 +1196,23 @@
     "postedAt": "2026-04-16T11:05:51Z"
   },
   {
+    "id": "47881081",
+    "title": "Show HN: Twitter for Voice Notes",
+    "url": "https://earful.world/?q=&tab=all",
+    "score": 7,
+    "flagged": [
+      "slop_fonts"
+    ],
+    "flaggedCount": 1,
+    "slug": "earful.world",
+    "points": 2,
+    "postedAt": "2026-04-23T20:07:30Z"
+  },
+  {
     "id": "47826926",
     "title": "Show HN: EIDWTimes – Predicting airport wait times with ML for a school project",
     "url": "https://eidwtimes.xyz/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1147,7 +1225,7 @@
     "id": "47971806",
     "title": "Show HN: Kencode – Compact Kotlin serialization for URLs and labels",
     "url": "https://eignex.com/posts/kencode-packing-data-for-strict-limits/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -1160,7 +1238,7 @@
     "id": "47922406",
     "title": "Show HN: Explain Like I'm Five for ArXiv Papers",
     "url": "https://eli.voxos.ai/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -1173,7 +1251,7 @@
     "id": "47861659",
     "title": "Show NH: Elytro – self-custodial agent wallet",
     "url": "https://elytro.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -1183,10 +1261,23 @@
     "postedAt": "2026-04-22T10:46:48Z"
   },
   {
+    "id": "47790270",
+    "title": "Show HN: I built Emailbottle – AI email assistant, no inbox access",
+    "url": "https://emailbottle.com",
+    "score": 7,
+    "flagged": [
+      "faq_accordion"
+    ],
+    "flaggedCount": 1,
+    "slug": "emailbottle.com",
+    "points": 3,
+    "postedAt": "2026-04-16T08:31:06Z"
+  },
+  {
     "id": "47826103",
     "title": "Show HN: A drop-in, open-source replacement for YouTube embed iframes",
     "url": "https://embedlite.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1199,7 +1290,7 @@
     "id": "47933913",
     "title": "Show HN: Photorealistic GPT Image 2 animal hybrids",
     "url": "https://www.emergentmind.com/hybridarium",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -1212,7 +1303,7 @@
     "id": "47996062",
     "title": "Show HN: Event-Sourced Domain Modeling",
     "url": "https://www.esdm.io",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1225,7 +1316,7 @@
     "id": "47839798",
     "title": "Show HN: Explain The Law – Simplified legislation and executive orders using AI",
     "url": "https://explainthelaw.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1238,7 +1329,7 @@
     "id": "48060678",
     "title": "Show HN: I built a dead simple App Store screenshot maker",
     "url": "https://ezscreenshots.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1251,7 +1342,7 @@
     "id": "47849681",
     "title": "Show HN: F0rtune500 – No one can prove you *didn't* work at these companies",
     "url": "https://f0rtune500.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -1261,23 +1352,23 @@
     "postedAt": "2026-04-21T14:54:05Z"
   },
   {
-    "id": "47747093",
-    "title": "Show HN: What worked for me with AI prompts",
-    "url": "https://factverse2.gumroad.com/l/arrlsk",
-    "score": 6,
+    "id": "47934460",
+    "title": "Show HN: Face Lift, a memory game about faces",
+    "url": "https://facelift.drpz.xyz",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "hero_eyebrow_pill"
     ],
     "flaggedCount": 1,
-    "slug": "factverse2.gumroad.com_l_arrlsk",
-    "points": 1,
-    "postedAt": "2026-04-13T03:07:06Z"
+    "slug": "facelift.drpz.xyz",
+    "points": 3,
+    "postedAt": "2026-04-28T13:40:59Z"
   },
   {
     "id": "47735418",
     "title": "Show HN: Fastsleep.app (Dark UI)",
     "url": "https://fastsleep.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -1290,7 +1381,7 @@
     "id": "48012618",
     "title": "Show HN: I built a personal finance projection tool after outgrowing Excel",
     "url": "https://fignis.io/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -1303,7 +1394,7 @@
     "id": "47772986",
     "title": "Show HN: Financial Web Tools – decision-focused calculators",
     "url": "https://financialwebtools.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -1313,23 +1404,10 @@
     "postedAt": "2026-04-14T23:52:29Z"
   },
   {
-    "id": "47847743",
-    "title": "Show HN: We replaced 5 ML models with 1 shared encoder on an $11/month VPS",
-    "url": "https://fittohire.com",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "fittohire.com",
-    "points": 3,
-    "postedAt": "2026-04-21T12:19:08Z"
-  },
-  {
     "id": "47996208",
     "title": "Show HN: Flop Map – a 3D globe of every known AI compute cluster",
     "url": "https://flopmap.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -1342,7 +1420,7 @@
     "id": "47842551",
     "title": "Show HN: Mimi in the browser – hear the semantic/acoustic split",
     "url": "https://www.frisson-labs.com/mimi-codec",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -1352,23 +1430,10 @@
     "postedAt": "2026-04-20T23:33:43Z"
   },
   {
-    "id": "47784163",
-    "title": "Show HN: Frontpedia, an open source front end resource site",
-    "url": "https://frontpedia.com",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "frontpedia.com",
-    "points": 3,
-    "postedAt": "2026-04-15T19:39:51Z"
-  },
-  {
     "id": "47938666",
     "title": "Show HN: I mapped the latest UK fuel prices by county",
     "url": "https://fuelfox.uk/regional",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1378,36 +1443,36 @@
     "postedAt": "2026-04-28T18:42:03Z"
   },
   {
-    "id": "47849521",
-    "title": "Show HN: An AI workflow to automate your LinkedIn job search",
-    "url": "https://gabidev.gumroad.com/l/grasshopper",
-    "score": 6,
+    "id": "47977694",
+    "title": "Show HN: AI CAD Harness",
+    "url": "https://fusion.adam.new/install",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "center_aligned_hero"
     ],
     "flaggedCount": 1,
-    "slug": "gabidev.gumroad.com_l_grasshopper",
-    "points": 2,
-    "postedAt": "2026-04-21T14:44:20Z"
+    "slug": "fusion.adam.new_install",
+    "points": 99,
+    "postedAt": "2026-05-01T17:43:53Z"
   },
   {
-    "id": "47808041",
-    "title": "Show HN: Vibe-coding video games with Claude",
-    "url": "https://gamevibe.us/2-hangman",
-    "score": 6,
+    "id": "47833268",
+    "title": "Show HN: GalaxyBrain – an information operating system powered by local files",
+    "url": "https://galaxybrain.com",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "perma_dark_mode"
     ],
     "flaggedCount": 1,
-    "slug": "gamevibe.us_2-hangman",
-    "points": 4,
-    "postedAt": "2026-04-17T17:00:46Z"
+    "slug": "galaxybrain.com",
+    "points": 3,
+    "postedAt": "2026-04-20T12:25:11Z"
   },
   {
     "id": "47920991",
     "title": "Show HN: PM tool where you describe your project and the workspace builds itself",
     "url": "https://www.getchimerical.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1417,23 +1482,10 @@
     "postedAt": "2026-04-27T12:57:40Z"
   },
   {
-    "id": "47805078",
-    "title": "Show HN: Generate a realistic handwriting animation from any text",
-    "url": "https://getmycursive.com/",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "getmycursive.com",
-    "points": 2,
-    "postedAt": "2026-04-17T12:15:44Z"
-  },
-  {
     "id": "47923457",
     "title": "Show HN: Slatewave – a single color palette across terminals, editors, and apps",
     "url": "https://getslatewave.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -1446,7 +1498,7 @@
     "id": "47998856",
     "title": "Show HN: GitHub Commits Leaderboard",
     "url": "https://ghcommits.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1456,36 +1508,36 @@
     "postedAt": "2026-05-03T16:53:33Z"
   },
   {
-    "id": "47956840",
-    "title": "Show HN: Serra – A Magic: The Gathering life counter using DRM/KMS",
-    "url": "https://git.sr.ht/~cmt/serra",
-    "score": 6,
+    "id": "47804947",
+    "title": "Show HN: My fun laugh inducing/team building app, for dev or sales teams for ex",
+    "url": "https://gifoftheweek.com",
+    "score": 7,
     "flagged": [
-      "slop_fonts"
+      "all_caps_headings"
     ],
     "flaggedCount": 1,
-    "slug": "git.sr.ht__cmt_serra",
-    "points": 2,
-    "postedAt": "2026-04-30T01:11:26Z"
+    "slug": "gifoftheweek.com",
+    "points": 1,
+    "postedAt": "2026-04-17T11:57:02Z"
   },
   {
-    "id": "48021163",
-    "title": "Show HN: Instantly understand any GitHub repo",
-    "url": "https://gitdiagram.com",
-    "score": 6,
+    "id": "47975415",
+    "title": "Show HN: GitLeak – A GitHub OSINT tool for emails, timezones, and activity",
+    "url": "https://gitleak.io",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "center_aligned_hero"
     ],
     "flaggedCount": 1,
-    "slug": "gitdiagram.com",
+    "slug": "gitleak.io",
     "points": 2,
-    "postedAt": "2026-05-05T11:46:54Z"
+    "postedAt": "2026-05-01T14:48:20Z"
   },
   {
     "id": "47721469",
     "title": "Show HN: Direction – a 4-week course for people afraid of shipping AI slop",
     "url": "https://www.givedirection.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -1498,7 +1550,7 @@
     "id": "47934718",
     "title": "Show HN: Givemesearch: live web search grounding for coding agents (free alpha)",
     "url": "https://givemesearch.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -1511,7 +1563,7 @@
     "id": "47962828",
     "title": "Show HN: Golang binaries built for your users depending on their arch and system",
     "url": "https://goblin.run",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -1521,10 +1573,23 @@
     "postedAt": "2026-04-30T14:13:33Z"
   },
   {
+    "id": "47801925",
+    "title": "Show HN: A collection of GPT-IMAGE-2 prompts from X(Twitter)",
+    "url": "https://gptimage2.one/awesome-gpt-image-2-prompts",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "gptimage2.one_awesome-gpt-image-2-prompts",
+    "points": 2,
+    "postedAt": "2026-04-17T02:35:16Z"
+  },
+  {
     "id": "47718639",
     "title": "Show HN: HackerBuddy – security breach alerts in 2 sentences",
     "url": "https://hackerbuddy.dev/launch",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1537,7 +1602,7 @@
     "id": "47934521",
     "title": "Show HN: Hahooh – Give AI agents the power to build their own MCP tools",
     "url": "https://hahooh.xyz/download",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -1547,23 +1612,10 @@
     "postedAt": "2026-04-28T13:45:02Z"
   },
   {
-    "id": "47874981",
-    "title": "Show HN: An elegant HN client with built-in translation",
-    "url": "https://haiker.app/en",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "haiker.app_en",
-    "points": 5,
-    "postedAt": "2026-04-23T12:31:56Z"
-  },
-  {
     "id": "48038257",
     "title": "Show HN: Hallucinopedia",
     "url": "http://halupedia.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -1573,10 +1625,23 @@
     "postedAt": "2026-05-06T16:37:52Z"
   },
   {
+    "id": "47923250",
+    "title": "Show HN: Happy Horse Video Generator",
+    "url": "https://happyhorse-ai.site/",
+    "score": 7,
+    "flagged": [
+      "faq_accordion"
+    ],
+    "flaggedCount": 1,
+    "slug": "happyhorse-ai.site",
+    "points": 1,
+    "postedAt": "2026-04-27T15:54:11Z"
+  },
+  {
     "id": "47807269",
     "title": "Show HN: Dark Mode for Hacker News",
     "url": "https://hckrnight.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1589,7 +1654,7 @@
     "id": "47742490",
     "title": "Show HN: A proactive AI agent on iMessage that texts you before you even ask",
     "url": "https://hemesh.tech/builds/summer-ai.html",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -1602,7 +1667,7 @@
     "id": "47975663",
     "title": "Show HN: Herald – Local-first terminal email client",
     "url": "https://herald-mail.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1612,23 +1677,10 @@
     "postedAt": "2026-05-01T15:06:01Z"
   },
   {
-    "id": "47873966",
-    "title": "Show HN: Built a daily game where you sort historical events chronologically",
-    "url": "https://hisorty.app/",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "hisorty.app",
-    "points": 74,
-    "postedAt": "2026-04-23T10:14:46Z"
-  },
-  {
     "id": "47799791",
     "title": "Show HN: Honeymux, a TUI wrapper for tmux that simplifies agent-driven workflows",
     "url": "https://hmx.dev",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1641,7 +1693,7 @@
     "id": "47766149",
     "title": "Show HN: Mobile Hacker News Reader – real time, dark mode",
     "url": "https://hn.brae.workers.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -1654,7 +1706,7 @@
     "id": "47990708",
     "title": "Show HN: State of the Art of Coding Models, According to Hacker News Commenters",
     "url": "https://hnup.date/hn-sota",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1667,7 +1719,7 @@
     "id": "48022377",
     "title": "Show HN: I built AI agents to surface the best AI tools and news weekly",
     "url": "https://hooked.news/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -1680,7 +1732,7 @@
     "id": "47781289",
     "title": "Show HN: Hormuz Trail - Oregon Trail parody/black-box AI coding exercise",
     "url": "https://hormuztrail.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -1693,7 +1745,7 @@
     "id": "48064176",
     "title": "Show HN: Howbadis.it – Paste your vibe-coded app, see what'll break",
     "url": "https://howbadis.it",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -1706,7 +1758,7 @@
     "id": "47752687",
     "title": "Show HN: _hyperscript 0.9.90",
     "url": "https://hyperscript.org/posts/2026-03-29-hyperscript-0.9.90-is-released/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "accent_stripe"
     ],
@@ -1719,7 +1771,7 @@
     "id": "48020249",
     "title": "Show HN: Got tired of paying $100/mo for SEO tools, so I built an alternative",
     "url": "https://idiotproofseo.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -1729,10 +1781,23 @@
     "postedAt": "2026-05-05T09:57:29Z"
   },
   {
+    "id": "47791875",
+    "title": "Show HN: Ilha – a UI library that fits in an AI context window",
+    "url": "https://ilha.build/",
+    "score": 7,
+    "flagged": [
+      "hero_eyebrow_pill"
+    ],
+    "flaggedCount": 1,
+    "slug": "ilha.build",
+    "points": 23,
+    "postedAt": "2026-04-16T12:13:46Z"
+  },
+  {
     "id": "48056811",
     "title": "Show HN: An OTel exporter that posts the cause to your incident channel",
     "url": "https://incidentary.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1745,7 +1810,7 @@
     "id": "47949793",
     "title": "Show HN: Commit cherry-picking by copy-and-paste in a Mac GUI",
     "url": "https://indieapps.space/@Retcon/116482957501196309",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1758,7 +1823,7 @@
     "id": "47750975",
     "title": "Show HN: The Infinite Tolkien – endless narration of Middle-earth",
     "url": "http://infinitetolkien.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "colored_glows"
     ],
@@ -1768,23 +1833,36 @@
     "postedAt": "2026-04-13T12:24:39Z"
   },
   {
-    "id": "47793322",
-    "title": "Show HN: Sentinel – LLM browser automation using 10x fewer tokens",
-    "url": "https://www.isoldex.ai/",
-    "score": 6,
+    "id": "47751727",
+    "title": "Show HN: Is Claude Nerfed Today?",
+    "url": "https://isitnerfed.vercel.app",
+    "score": 7,
     "flagged": [
-      "slop_fonts"
+      "hero_eyebrow_pill"
     ],
     "flaggedCount": 1,
-    "slug": "isoldex.ai",
+    "slug": "isitnerfed.vercel.app",
+    "points": 4,
+    "postedAt": "2026-04-13T13:32:47Z"
+  },
+  {
+    "id": "47833405",
+    "title": "Show HN: Business idea validator – what will kill it, not just what sounds good",
+    "url": "https://ismyideaanygood.vercel.app",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "ismyideaanygood.vercel.app",
     "points": 1,
-    "postedAt": "2026-04-16T14:17:44Z"
+    "postedAt": "2026-04-20T12:37:52Z"
   },
   {
     "id": "48012600",
     "title": "Show HN: Isonq – PDF/DXF and STEP to shop quoting",
     "url": "https://isonq.com/demo",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -1797,7 +1875,7 @@
     "id": "47949376",
     "title": "Show HN: Is Opus Ok Today?",
     "url": "https://isopusok.today/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1810,7 +1888,7 @@
     "id": "47829018",
     "title": "Show HN: I Spy AI – Detect AI-Generated Images, with an MCP Server",
     "url": "https://www.ispyai.io/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1823,7 +1901,7 @@
     "id": "47814937",
     "title": "Show HN: Link Shortener – Itlinks.me",
     "url": "https://itlinks.me",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "purple_accent"
     ],
@@ -1836,7 +1914,7 @@
     "id": "47968440",
     "title": "Show HN: A dashboard for the closest trains in New York City",
     "url": "https://j91680545-byte.github.io/mta-dashboard/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "colored_glows"
     ],
@@ -1849,7 +1927,7 @@
     "id": "47764383",
     "title": "Show HN: Host, share, promote and track release artifacts via your coding agent",
     "url": "https://jfrog.com/fly/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -1862,7 +1940,7 @@
     "id": "47848510",
     "title": "Show HN: Jiggle: speed up the download by jiggling the mouse",
     "url": "https://jiggle.conradgodfrey.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1875,7 +1953,7 @@
     "id": "47820485",
     "title": "Show HN: Jitter Done – a simple tool to understand your caffeine metabolism",
     "url": "https://jitterdone.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1888,7 +1966,7 @@
     "id": "47878624",
     "title": "Show HN: JustFYI – a paywall detector for \"free\" online tools",
     "url": "https://justfyi.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -1898,10 +1976,23 @@
     "postedAt": "2026-04-23T17:29:34Z"
   },
   {
+    "id": "47964274",
+    "title": "Show HN: Just Math It. Learn math interactively",
+    "url": "https://justmathit.com",
+    "score": 7,
+    "flagged": [
+      "icon_card_grid"
+    ],
+    "flaggedCount": 1,
+    "slug": "justmathit.com",
+    "points": 2,
+    "postedAt": "2026-04-30T15:47:48Z"
+  },
+  {
     "id": "48053166",
     "title": "Show HN: A local-only image filter editor and batch processor in the browser",
     "url": "https://kaliedarik.github.io/sc-filter-builder/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1911,23 +2002,10 @@
     "postedAt": "2026-05-07T18:43:22Z"
   },
   {
-    "id": "47945828",
-    "title": "SHOW HN: 50k+ Shopify Store Database Leads with Niche Segmentation",
-    "url": "https://kanbauser.gumroad.com/l/shopifyleads",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "kanbauser.gumroad.com_l_shopifyleads",
-    "points": 1,
-    "postedAt": "2026-04-29T08:57:51Z"
-  },
-  {
     "id": "47825112",
     "title": "Show HN: Find jobs and know your fit before you apply",
     "url": "https://karriero.net/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "purple_accent"
     ],
@@ -1940,7 +2018,7 @@
     "id": "47970245",
     "title": "Show HN: KeeWebX – KeePass that runs from a double-clicked HTML file",
     "url": "https://keewebx.app/app?demo=1",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1953,7 +2031,7 @@
     "id": "47718819",
     "title": "Show HN: Agents that do the work and show it – kern",
     "url": "https://kern-ai.com/?release=v0.25.0",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -1966,7 +2044,7 @@
     "id": "48034633",
     "title": "Show HN: Killed by Apple – a graveyard of discontinued Apple products",
     "url": "https://killedbyapple.theden.sh/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -1979,7 +2057,7 @@
     "id": "47780622",
     "title": "Show HN: MCP server gives your agent a budget (save tokens, get smarter results)",
     "url": "https://l6e.ai",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -1992,7 +2070,7 @@
     "id": "47920008",
     "title": "Show HN: OpenAI Privacy Filter running 100% locally in the browser WebGPU",
     "url": "https://labs.montevive.ai/openai-privacy-demo/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -2005,7 +2083,7 @@
     "id": "48024967",
     "title": "Show HN: An interactive AI tutorial I wrote for my 11-year-old",
     "url": "https://learnai.robennals.org/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2018,7 +2096,7 @@
     "id": "47876116",
     "title": "Show HN: Nimble.css minimal classless CSS library for great-looking default HTML",
     "url": "https://leftium.github.io/nimble.css/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2031,7 +2109,7 @@
     "id": "47787491",
     "title": "Show HN: Gave Claude a casino bankroll – it gambles till it's too broke to think",
     "url": "https://letaigamble.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2044,7 +2122,7 @@
     "id": "47896163",
     "title": "Show HN: I've built a nice home server OS",
     "url": "https://lightwhale.asklandd.dk/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "faq_accordion"
     ],
@@ -2057,7 +2135,7 @@
     "id": "47780234",
     "title": "Show HN: I built on-device TTS app because I run out of audiobooks on a flight",
     "url": "https://loudreader.io",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -2070,7 +2148,7 @@
     "id": "47779762",
     "title": "Show HN: Love Spreadsheets – App Builder for Your Excel and Google Sheets",
     "url": "https://www.lovespreadsheets.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2083,7 +2161,7 @@
     "id": "47774393",
     "title": "Show HN: Lumon, browser agents as interactive sprites",
     "url": "https://lumon-live.netlify.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -2096,7 +2174,7 @@
     "id": "47980955",
     "title": "Show HN: Fast, privacy-first macOS configuration bootstrapper for (MDM) Macs",
     "url": "https://mac.olegkoval.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2109,7 +2187,7 @@
     "id": "47778368",
     "title": "Show HN: Agent first social media scheduling",
     "url": "https://mallary.ai/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -2119,36 +2197,10 @@
     "postedAt": "2026-04-15T12:58:17Z"
   },
   {
-    "id": "48032269",
-    "title": "Show HN: How smart is your geography knowledge?",
-    "url": "https://map.mikira.id/",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "map.mikira.id",
-    "points": 2,
-    "postedAt": "2026-05-06T04:44:38Z"
-  },
-  {
-    "id": "47873004",
-    "title": "Show HN: We made 3M jobs searchable on a globe to visualize labor markets",
-    "url": "https://map.rezi.ai/index.html",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "map.rezi.ai_index.html",
-    "points": 2,
-    "postedAt": "2026-04-23T07:18:52Z"
-  },
-  {
     "id": "47893644",
     "title": "Show HN: Markant – A Dedicated Markdown Reader",
     "url": "https://markant.md/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -2161,7 +2213,7 @@
     "id": "47852111",
     "title": "Show HN: New way to explore code in vs. code ( vs. code extension)",
     "url": "https://marketplace.visualstudio.com/items?itemName=AhmedRakan.structura-v2",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "faq_accordion"
     ],
@@ -2174,7 +2226,7 @@
     "id": "48036182",
     "title": "Show HN: NFC tags are good material for pranks on Android",
     "url": "https://mastodon.social/@maxwellito/116524250100439866",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "purple_accent"
     ],
@@ -2187,7 +2239,7 @@
     "id": "47983485",
     "title": "Show HN: Stop playing my matchstick puzzles, start building your own in seconds",
     "url": "https://mathstick.github.io",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -2200,7 +2252,7 @@
     "id": "48052737",
     "title": "Show HN: Chrome new prompt API demo",
     "url": "https://matmercer.github.io/prompt-api-demo/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2213,7 +2265,7 @@
     "id": "47868032",
     "title": "Show HN: Ghost Pepper Meet local meeting transcription and diarization",
     "url": "https://matthartman.github.io/ghost-pepper/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2226,7 +2278,7 @@
     "id": "47962698",
     "title": "Show HN: I built an AI that operates WordPress for you",
     "url": "https://matticpilot.fcoterroba.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -2236,23 +2288,10 @@
     "postedAt": "2026-04-30T14:04:17Z"
   },
   {
-    "id": "47771448",
-    "title": "Show HN: Three backtested quant strategies as Jupyter notebooks",
-    "url": "https://mattitude8861.gumroad.com/l/QuantStrategyTemplatesBundle",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "mattitude8861.gumroad.com_l_QuantStrategyTemplatesBundle",
-    "points": 1,
-    "postedAt": "2026-04-14T20:59:12Z"
-  },
-  {
     "id": "48015871",
     "title": "Show HN: AI that responds in Star Wars crawl style",
     "url": "https://may-the-4th-gpt.vercel.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -2265,7 +2304,7 @@
     "id": "47773437",
     "title": "Show HN: An edge MCP file system with a 50ms undo button for AI agents",
     "url": "https://mcp.undisk.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "colored_glows"
     ],
@@ -2278,7 +2317,7 @@
     "id": "48024102",
     "title": "Show HN: I built an API for agents visiting my personal website",
     "url": "https://mczaykowski.com/articles/smallest-ax-surface",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2291,7 +2330,7 @@
     "id": "47835411",
     "title": "Show HN: Mediator.ai – Using Nash bargaining and LLMs to systematize fairness",
     "url": "https://mediator.ai/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -2304,7 +2343,7 @@
     "id": "48022998",
     "title": "Show HN: A live counter of human lifetime burned in your meetings",
     "url": "https://meetingburn.sillyprod.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -2314,10 +2353,23 @@
     "postedAt": "2026-05-05T14:30:11Z"
   },
   {
+    "id": "48019862",
+    "title": "Show HN: Memex, Claude memory via local RAG (MCP, offline embeddings)",
+    "url": "https://memex-cli.vercel.app/",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "memex-cli.vercel.app",
+    "points": 1,
+    "postedAt": "2026-05-05T09:02:14Z"
+  },
+  {
     "id": "48050135",
     "title": "Show HN: I Built Paul Graham's Math/Logic CAPTCHA Idea for Social Media",
     "url": "https://mentwire.com/sample",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2330,7 +2382,7 @@
     "id": "47791628",
     "title": "Show HN: Claudectl-local LLM brain that learns to auto-pilot ClaudeCode sessions",
     "url": "https://mercurialsolo.github.io/claudectl/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2343,7 +2395,7 @@
     "id": "47965960",
     "title": "Show HN: Milkdrop Visualizations with WASM+WebGPU [TW: flashing lights]",
     "url": "https://milkdrop.mahae.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -2356,7 +2408,7 @@
     "id": "47780713",
     "title": "Show HN: ShaderPad – Get Creative with Shaders",
     "url": "https://misery.co/shaderpad/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -2369,7 +2421,7 @@
     "id": "47764735",
     "title": "Show HN: Which AI model is best for real data analysis?",
     "url": "https://mljar.com/analysis/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -2382,7 +2434,7 @@
     "id": "47859244",
     "title": "Show HN: ModelX – Prediction Exchange for LLMs",
     "url": "https://model-x.up.railway.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2395,7 +2447,7 @@
     "id": "47778156",
     "title": "Show HN: Monogate – EML operator family, hybrid framework, 108-node sin(x)",
     "url": "https://www.monogate.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2405,10 +2457,36 @@
     "postedAt": "2026-04-15T12:33:56Z"
   },
   {
+    "id": "47768193",
+    "title": "Show HN: Motioncard – tiny POC app for in-browser video rendering (Remotion)",
+    "url": "https://www.motioncard.app/",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "motioncard.app",
+    "points": 2,
+    "postedAt": "2026-04-14T16:58:51Z"
+  },
+  {
+    "id": "47796266",
+    "title": "Show HN: Mulligan Labs – multiplayer Magic: The Gathering in the browser",
+    "url": "https://mulligan-labs.com/",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "mulligan-labs.com",
+    "points": 3,
+    "postedAt": "2026-04-16T16:58:29Z"
+  },
+  {
     "id": "47960034",
     "title": "Show HN: Token Thermodynamics",
     "url": "https://mybinder.org/v2/gist/gpavanb1/30a27c0592dbb23311f165dae4549309/HEAD?urlpath=voila%2Frender%2Ftoken_thermodynamics.ipynb",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -2421,7 +2499,7 @@
     "id": "47925469",
     "title": "Show HN: MyMood.tools, a 3 axis mood tracker",
     "url": "https://mymood.tools/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2434,7 +2512,7 @@
     "id": "47779308",
     "title": "Show HN: Netscope – Inspect HAR Files on Your Desktop",
     "url": "https://netscopeapp.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2447,7 +2525,7 @@
     "id": "47740777",
     "title": "Show HN: 7 Years of Tropospheric NO₂",
     "url": "https://no2.libmap.org/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -2460,7 +2538,7 @@
     "id": "47765454",
     "title": "Show HN: Nobulex – Prove what your AI agent did, cryptographically (live demo)",
     "url": "https://nobulex.com/playground",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2470,10 +2548,23 @@
     "postedAt": "2026-04-14T13:33:56Z"
   },
   {
+    "id": "47761684",
+    "title": "Show HN: One-command deploys from your terminal with CreateOS CLI",
+    "url": "https://nodeops.network/createos/docs/CLI/Overview",
+    "score": 7,
+    "flagged": [
+      "numbered_steps"
+    ],
+    "flaggedCount": 1,
+    "slug": "nodeops.network_createos_docs_CLI_Overview",
+    "points": 8,
+    "postedAt": "2026-04-14T05:41:49Z"
+  },
+  {
     "id": "47837161",
     "title": "Show HN: Noise.widgita.xyz – a zero-back end noise map for anywhere in the world",
     "url": "https://noise.widgita.xyz/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -2486,7 +2577,7 @@
     "id": "47805647",
     "title": "Show HN: Noodlist – Letterboxd for Instant Ramen",
     "url": "https://noodl.ist/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -2496,23 +2587,36 @@
     "postedAt": "2026-04-17T13:22:04Z"
   },
   {
-    "id": "47873593",
-    "title": "Show HN: Nova by civai, a platform for managed AI agents",
-    "url": "https://nova.civai.co/",
-    "score": 6,
+    "id": "47790580",
+    "title": "Show HN: Nostr.blog – I got banned from Threads, so I built a Nostr onboarding",
+    "url": "https://nostr.blog",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "center_aligned_hero"
     ],
     "flaggedCount": 1,
-    "slug": "nova.civai.co",
+    "slug": "nostr.blog",
     "points": 2,
-    "postedAt": "2026-04-23T09:00:52Z"
+    "postedAt": "2026-04-16T09:14:33Z"
+  },
+  {
+    "id": "48065983",
+    "title": "Show HN: We built a tool that generates 3D objects with editable, separate parts",
+    "url": "https://nova3d.xyz/",
+    "score": 7,
+    "flagged": [
+      "gradients"
+    ],
+    "flaggedCount": 1,
+    "slug": "nova3d.xyz",
+    "points": 6,
+    "postedAt": "2026-05-08T17:11:05Z"
   },
   {
     "id": "48052027",
     "title": "Show HN: Bundlebase – Docker for Data",
     "url": "https://nvoxland.github.io/bundlebase/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2525,7 +2629,7 @@
     "id": "48044096",
     "title": "Show HN: Web client analyzing prediction market outcomes",
     "url": "https://o-u.ai",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -2535,10 +2639,23 @@
     "postedAt": "2026-05-07T00:57:31Z"
   },
   {
+    "id": "48022476",
+    "title": "Show HN: Octopus Code Review is now free for OSI-licensed repos",
+    "url": "https://octopus-review.ai/login?callbackUrl=%2Fopen-source",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "octopus-review.ai_login",
+    "points": 6,
+    "postedAt": "2026-05-05T13:43:11Z"
+  },
+  {
     "id": "47978340",
     "title": "Show HN: Omar – A TUI for managing 100 coding agents",
     "url": "https://omar.tech",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2551,7 +2668,7 @@
     "id": "47878096",
     "title": "Show HN: Omens AI filters my feeds so I spend 0 minutes doomscrolling",
     "url": "https://omens.online",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2561,10 +2678,36 @@
     "postedAt": "2026-04-23T16:53:13Z"
   },
   {
+    "id": "47855284",
+    "title": "Show HN: Almanac MCP, turn Claude Code into a Deep Research agent",
+    "url": "https://www.openalmanac.org/",
+    "score": 7,
+    "flagged": [
+      "gradients"
+    ],
+    "flaggedCount": 1,
+    "slug": "openalmanac.org",
+    "points": 14,
+    "postedAt": "2026-04-21T22:12:41Z"
+  },
+  {
+    "id": "48014199",
+    "title": "Show HN: Plain English automation that fixes itself when it breaks",
+    "url": "https://www.operator23.com/",
+    "score": 7,
+    "flagged": [
+      "gradients"
+    ],
+    "flaggedCount": 1,
+    "slug": "operator23.com",
+    "points": 4,
+    "postedAt": "2026-05-04T20:03:14Z"
+  },
+  {
     "id": "47767392",
     "title": "Show HN: A Birth Control Pill Reminder for Couples",
     "url": "https://paircare.love/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2577,7 +2720,7 @@
     "id": "48009463",
     "title": "Show HN: Looq, the capabilities macOS Quick Look should have shipped with",
     "url": "https://parcse.com/looq",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2590,7 +2733,7 @@
     "id": "47981910",
     "title": "Show HN: Passages – Read long-form articles on you E-Ink",
     "url": "https://www.passages.ink/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -2603,7 +2746,7 @@
     "id": "47857376",
     "title": "Show HN: PayClaw – Give your AI agent a wallet it can spend",
     "url": "https://www.payclaw.me/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -2613,10 +2756,23 @@
     "postedAt": "2026-04-22T01:09:41Z"
   },
   {
+    "id": "47963803",
+    "title": "Show HN: I made a Chrome extension for sharing news article quotes as images",
+    "url": "https://www.peekd.app/",
+    "score": 7,
+    "flagged": [
+      "gradients"
+    ],
+    "flaggedCount": 1,
+    "slug": "peekd.app",
+    "points": 5,
+    "postedAt": "2026-04-30T15:15:45Z"
+  },
+  {
     "id": "47944044",
     "title": "Show HN: Docktor – I put live window previews and widgets on the macOS 26 Dock",
     "url": "https://petercsauer.github.io/docktor-releases/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2629,7 +2785,7 @@
     "id": "47853228",
     "title": "Show HN: Spectrum – Deploy AI Agents to iMessage, WhatsApp, Telegram, and More",
     "url": "https://photon.codes/spectrum",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -2642,7 +2798,7 @@
     "id": "47985210",
     "title": "Show HN: Piruetas – A self-hosted diary app I built for my girlfriend",
     "url": "https://piruet.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2655,7 +2811,7 @@
     "id": "47733597",
     "title": "Show HN: PlaneFeed – scroll live flights like TikTok",
     "url": "https://planefeed.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2668,7 +2824,7 @@
     "id": "47921283",
     "title": "Show HN: Plate – The fastest way to run projects without becoming a PM tool",
     "url": "https://plate.to",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2678,23 +2834,23 @@
     "postedAt": "2026-04-27T13:25:41Z"
   },
   {
-    "id": "47863906",
-    "title": "Show HN: CatchAll – slowest web search API that outperforms everything on recall",
-    "url": "https://platform.newscatcherapi.com/catchall/try",
-    "score": 6,
+    "id": "47901830",
+    "title": "Show HN: PlayDrop – A home for vibe coded browser games",
+    "url": "https://www.playdrop.ai",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "perma_dark_mode"
     ],
     "flaggedCount": 1,
-    "slug": "platform.newscatcherapi.com_catchall_try",
-    "points": 7,
-    "postedAt": "2026-04-22T14:09:08Z"
+    "slug": "playdrop.ai",
+    "points": 4,
+    "postedAt": "2026-04-25T14:33:49Z"
   },
   {
     "id": "47774359",
     "title": "Show HN: Playra 2026 link",
     "url": "https://playra-app.vercel.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -2704,10 +2860,23 @@
     "postedAt": "2026-04-15T03:27:39Z"
   },
   {
+    "id": "47914369",
+    "title": "Show HN: Tiao, A two-player turn-based board game",
+    "url": "https://playtiao.com",
+    "score": 7,
+    "flagged": [
+      "gradients"
+    ],
+    "flaggedCount": 1,
+    "slug": "playtiao.com",
+    "points": 77,
+    "postedAt": "2026-04-26T20:59:07Z"
+  },
+  {
     "id": "47944106",
     "title": "Show HN: Plonk.world – Daily Geography Game",
     "url": "https://plonk.world/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2720,7 +2889,7 @@
     "id": "47813346",
     "title": "Show HN: Podads – An Ad Blocker for Your Podcasts",
     "url": "https://podads.yet-to-be.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -2733,7 +2902,7 @@
     "id": "48006535",
     "title": "Show HN: Pokelingo – guess the Pokémon from its Pokédex entry in target language",
     "url": "https://pokelingo.io/en/riddle/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -2746,7 +2915,7 @@
     "id": "47819271",
     "title": "Show HN: I built a tool that reads 2000 health studies a day so you dont have to",
     "url": "https://www.polivora.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "faq_accordion"
     ],
@@ -2759,7 +2928,7 @@
     "id": "47914821",
     "title": "Show HN: Polynya – Turn your Postgres into workspaces for AI",
     "url": "https://polynya.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2769,10 +2938,23 @@
     "postedAt": "2026-04-26T21:35:15Z"
   },
   {
+    "id": "47807152",
+    "title": "Show HN: Preseason – see which developer tools each LLM picks",
+    "url": "https://www.preseason.ai",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "preseason.ai",
+    "points": 1,
+    "postedAt": "2026-04-17T15:42:45Z"
+  },
+  {
     "id": "47740358",
     "title": "Show HN: Millions of websites crawled for LLMs to rebuild the pricing pages",
     "url": "https://pricepage.lol/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -2785,7 +2967,7 @@
     "id": "47796109",
     "title": "Show HN: We beat Google, Cognition, Claude Code at codebase docs generation",
     "url": "https://prode.ai/blogs/we-benchmarked-ai-code-documentation-tools-prode-scored-highest",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "stat_banner_row"
     ],
@@ -2795,36 +2977,23 @@
     "postedAt": "2026-04-16T16:47:19Z"
   },
   {
-    "id": "47823575",
-    "title": "Show HN: Proposly – AI-generated client proposals for freelancers",
-    "url": "https://proposly.org",
-    "score": 6,
+    "id": "47931214",
+    "title": "Show HN: Built a local-first way to make AI context reusable across tools",
+    "url": "https://www.proxvanta.com/",
+    "score": 7,
     "flagged": [
-      "slop_fonts"
+      "gradients"
     ],
     "flaggedCount": 1,
-    "slug": "proposly.org",
+    "slug": "proxvanta.com",
     "points": 1,
-    "postedAt": "2026-04-19T11:40:08Z"
-  },
-  {
-    "id": "47759116",
-    "title": "Show HN: Skill files made this AI Workout Builder Good",
-    "url": "https://proximafitness.com/",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "proximafitness.com",
-    "points": 3,
-    "postedAt": "2026-04-13T23:04:39Z"
+    "postedAt": "2026-04-28T06:55:29Z"
   },
   {
     "id": "47968112",
     "title": "Show HN: Pu.sh – a full coding-agent harness in 400 lines of shell",
     "url": "https://pu.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2837,7 +3006,7 @@
     "id": "47984720",
     "title": "Show HN: PythonStarter – now with Bitcoin Lightning payments",
     "url": "https://pythonstarter.co/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2850,7 +3019,7 @@
     "id": "48042872",
     "title": "Show HN: Center-ish, 50 experiments related to centering content on a webpage",
     "url": "https://www.quaxio.com/centerish/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -2863,7 +3032,7 @@
     "id": "47832250",
     "title": "Show HN: Radio4000",
     "url": "https://radio4000.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "purple_accent"
     ],
@@ -2876,7 +3045,7 @@
     "id": "47792341",
     "title": "Show HN: Projects in 25 Weeks Challenge",
     "url": "https://randomdailyurls.com/25-projects/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -2889,7 +3058,7 @@
     "id": "47868925",
     "title": "Show HN: I built a map of the GeminiNet",
     "url": "https://rbtms.github.io/gemini_map/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2902,7 +3071,7 @@
     "id": "47829395",
     "title": "Show HN: I built a spaced-repetition vocab app tied to the books you read",
     "url": "https://read.erictyrrell.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2915,7 +3084,7 @@
     "id": "47826529",
     "title": "Show HN: Free PDF redactor that runs client-side",
     "url": "https://redactpdf.net",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2928,7 +3097,7 @@
     "id": "47791449",
     "title": "Show HN: I'm building Eigen, a self-hosted Google Workspace alternative",
     "url": "https://reindernijhoff.net/2026/04/eigen-six-months-later/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2938,10 +3107,23 @@
     "postedAt": "2026-04-16T11:18:36Z"
   },
   {
+    "id": "48065381",
+    "title": "Show HN: Rejected by YC",
+    "url": "https://rejectedbyyc-ten.vercel.app/",
+    "score": 7,
+    "flagged": [
+      "icon_card_grid"
+    ],
+    "flaggedCount": 1,
+    "slug": "rejectedbyyc-ten.vercel.app",
+    "points": 4,
+    "postedAt": "2026-05-08T16:31:04Z"
+  },
+  {
     "id": "47751824",
     "title": "Show HN: Remy, an AI agent that compiles annotated Markdown into full-stack apps",
     "url": "https://remy.msagent.ai/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -2954,7 +3136,7 @@
     "id": "47801309",
     "title": "Show HN: Free API and widget to look up US representatives",
     "url": "https://repscontact.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2967,7 +3149,7 @@
     "id": "48035599",
     "title": "Show HN: Tracking market shifts before they become obvious",
     "url": "https://www.researchterminal.ai",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -2980,7 +3162,7 @@
     "id": "47931937",
     "title": "Show HN: A free crypto trade journal with cycle support and CSV import",
     "url": "https://retired.today/log",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -2993,7 +3175,7 @@
     "id": "47866438",
     "title": "Show HN: Clawrium – A CLI for managing AI agent fleet across multiple instances",
     "url": "https://ric03uec.github.io/clawrium/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3006,7 +3188,7 @@
     "id": "47945955",
     "title": "Show HN: Rip.so – a graveyard for dead internet things",
     "url": "https://rip.so",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3019,7 +3201,7 @@
     "id": "48012653",
     "title": "Show HN: USD Accounts for Pakistani Freelancers",
     "url": "https://www.rizqfinance.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -3032,7 +3214,7 @@
     "id": "47794678",
     "title": "Show HN: rlvrbook",
     "url": "https://rlvrbook.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -3042,10 +3224,23 @@
     "postedAt": "2026-04-16T15:28:01Z"
   },
   {
+    "id": "48022494",
+    "title": "Show HN: I got tired of refreshing HN, so I made it refresh itself",
+    "url": "https://rnkflow.com/",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "rnkflow.com",
+    "points": 1,
+    "postedAt": "2026-05-05T13:45:22Z"
+  },
+  {
     "id": "47739883",
     "title": "Show HN: ReverseYC",
     "url": "https://rocketplace.org/reverseyc",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3055,23 +3250,23 @@
     "postedAt": "2026-04-12T14:11:50Z"
   },
   {
-    "id": "47805834",
-    "title": "Show HN: Using an AI agent to refine a ML model for Zephyr RTOS",
-    "url": "https://rufilla.com/the-mlforge-proof-of-concept/",
-    "score": 6,
+    "id": "47764750",
+    "title": "Show HN: SafeInstall – local install-time guardrails for NPM/pnpm/bun",
+    "url": "https://www.safeinstall.dev/",
+    "score": 7,
     "flagged": [
-      "slop_fonts"
+      "perma_dark_mode"
     ],
     "flaggedCount": 1,
-    "slug": "rufilla.com_the-mlforge-proof-of-concept",
-    "points": 1,
-    "postedAt": "2026-04-17T13:38:40Z"
+    "slug": "safeinstall.dev",
+    "points": 2,
+    "postedAt": "2026-04-14T12:28:40Z"
   },
   {
     "id": "47724793",
     "title": "Show HN: The Universe in One Chart",
     "url": "https://saminloes.com/one-chart/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3084,7 +3279,7 @@
     "id": "47769214",
     "title": "Show HN: Rubik's Cube solve analyzer – Bluetooth and CFOP/Roux phase breakdown",
     "url": "https://sansword.github.io/sans_cube/#solve--2",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3097,7 +3292,7 @@
     "id": "48039552",
     "title": "Show HN: I rebuilt Ello because I missed it that much",
     "url": "https://www.sayallo.xyz/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3107,36 +3302,23 @@
     "postedAt": "2026-05-06T18:12:45Z"
   },
   {
-    "id": "48051626",
-    "title": "Show HN: Serial – an open source RSS reader for YouTube",
-    "url": "https://serial.tube/welcome",
-    "score": 6,
+    "id": "47929845",
+    "title": "Show HN: New readme badge builder (need feedback)",
+    "url": "https://www.shieldcn.dev/showcase",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "slop_fonts"
     ],
     "flaggedCount": 1,
-    "slug": "serial.tube_welcome",
-    "points": 2,
-    "postedAt": "2026-05-07T16:47:21Z"
-  },
-  {
-    "id": "48049576",
-    "title": "Show HN: After 15 years of lifting and spreadsheets, I built my own workout app",
-    "url": "https://www.setsweat.com",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "setsweat.com",
-    "points": 2,
-    "postedAt": "2026-05-07T14:00:25Z"
+    "slug": "shieldcn.dev_showcase",
+    "points": 1,
+    "postedAt": "2026-04-28T02:25:02Z"
   },
   {
     "id": "47901503",
     "title": "Show HN: I built a free email security checker for small businesses",
     "url": "https://shielddeskhq.com/checker",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -3149,7 +3331,7 @@
     "id": "47761449",
     "title": "Show HN: Shloka Artha [Word-by-Word Meanings for Shlokas]",
     "url": "https://shlokartha.in/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3159,23 +3341,10 @@
     "postedAt": "2026-04-14T05:07:04Z"
   },
   {
-    "id": "47984752",
-    "title": "Show HN: Shutt – Turn Strava activities into shareable photo/video posts",
-    "url": "https://shutt.run",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "shutt.run",
-    "points": 2,
-    "postedAt": "2026-05-02T09:10:04Z"
-  },
-  {
     "id": "47901737",
     "title": "Show HN: Sig – personal & team knowledge base built from your work conversations",
     "url": "https://sig-ai.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -3188,7 +3357,7 @@
     "id": "47723010",
     "title": "Show HN: Economy AI agents form teams, run missions, earn commissions",
     "url": "https://www.signomy.xyz/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3201,7 +3370,7 @@
     "id": "47954074",
     "title": "Show HN: SimDrive – a browser racing game with your phone as the controller:D",
     "url": "https://simdrive.xyz/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -3211,23 +3380,23 @@
     "postedAt": "2026-04-29T20:24:49Z"
   },
   {
-    "id": "48034931",
-    "title": "Show HN: Free OSS Contact Form Forwarder",
-    "url": "https://www.simplecontactform.org",
-    "score": 6,
+    "id": "48009799",
+    "title": "Show HN: Visual SSL TLS Handshake Visualizer",
+    "url": "https://www.sitesecurityscore.com/tools/ssl-tls-handshake-checker",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "perma_dark_mode"
     ],
     "flaggedCount": 1,
-    "slug": "simplecontactform.org",
-    "points": 1,
-    "postedAt": "2026-05-06T11:20:39Z"
+    "slug": "sitesecurityscore.com_tools_ssl-tls-handshake-checker",
+    "points": 3,
+    "postedAt": "2026-05-04T15:19:23Z"
   },
   {
     "id": "47770400",
     "title": "Show HN: Sk.illmd.com, a forum for talking about and showing off agent skills",
     "url": "https://skillmd.discourse.group/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3237,23 +3406,10 @@
     "postedAt": "2026-04-14T19:37:39Z"
   },
   {
-    "id": "47717687",
-    "title": "Show HN: I build skillstui – TUI to search-install agent skills from skills.sh",
-    "url": "https://skillstui.sh",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "skillstui.sh",
-    "points": 2,
-    "postedAt": "2026-04-10T13:15:51Z"
-  },
-  {
     "id": "48037383",
     "title": "Show HN: Skymap – a 3D galaxy catalog explorer in the browser via WebGPU",
     "url": "https://skymap.rulkens.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -3263,10 +3419,23 @@
     "postedAt": "2026-05-06T15:29:16Z"
   },
   {
+    "id": "47821744",
+    "title": "Show HN: SnapReceipts Snap a receipt, split the bill instantly",
+    "url": "https://snapreceipts.fyi/",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "snapreceipts.fyi",
+    "points": 3,
+    "postedAt": "2026-04-19T04:15:20Z"
+  },
+  {
     "id": "47984614",
     "title": "Show HN: Large Scale Article Extract of Newspapers 1730s-1960s",
     "url": "https://snewpapers.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -3276,10 +3445,23 @@
     "postedAt": "2026-05-02T08:42:45Z"
   },
   {
+    "id": "47755116",
+    "title": "Show HN: Access X, Reddit, Threads and all social media data from a single API",
+    "url": "https://www.socialcrawl.dev/",
+    "score": 7,
+    "flagged": [
+      "icon_card_grid"
+    ],
+    "flaggedCount": 1,
+    "slug": "socialcrawl.dev",
+    "points": 5,
+    "postedAt": "2026-04-13T17:15:21Z"
+  },
+  {
     "id": "47737288",
     "title": "Show HN: Attempting to Design a Minimalistic Website",
     "url": "https://soham-saha.github.io/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3289,10 +3471,23 @@
     "postedAt": "2026-04-12T08:24:48Z"
   },
   {
+    "id": "48034898",
+    "title": "Show HN: I built an app to learn anything I want during my school breaks",
+    "url": "https://www.sophros.me",
+    "score": 7,
+    "flagged": [
+      "numbered_steps"
+    ],
+    "flaggedCount": 1,
+    "slug": "sophros.me",
+    "points": 1,
+    "postedAt": "2026-05-06T11:15:43Z"
+  },
+  {
     "id": "47772806",
     "title": "Show HN: Spectre: A systems design-by-contract language, self hosted compiler",
     "url": "https://spectrelang.org",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3305,7 +3500,7 @@
     "id": "47784814",
     "title": "Show HN: sports.errors.garden",
     "url": "https://sports.errors.garden",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3315,23 +3510,10 @@
     "postedAt": "2026-04-15T20:29:58Z"
   },
   {
-    "id": "48013271",
-    "title": "Show HN: Spinal – Prod aware code review and validation",
-    "url": "https://sre.spinal-labs.com/login?next=%2Findex.html",
-    "score": 6,
-    "flagged": [
-      "shadcn_signature"
-    ],
-    "flaggedCount": 1,
-    "slug": "sre.spinal-labs.com_login",
-    "points": 1,
-    "postedAt": "2026-05-04T18:57:20Z"
-  },
-  {
     "id": "48045897",
     "title": "Show HN: StackSense – AI/data/systems engineering knowledge graph",
     "url": "https://www.stacksense.cc/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "glassmorphism"
     ],
@@ -3341,10 +3523,23 @@
     "postedAt": "2026-05-07T05:52:51Z"
   },
   {
+    "id": "47784889",
+    "title": "Show HN: Stagewise Reads Files Without Depending on the Model API",
+    "url": "https://stagewise.io/news/file-transformation-pipeline",
+    "score": 7,
+    "flagged": [
+      "glassmorphism"
+    ],
+    "flaggedCount": 1,
+    "slug": "stagewise.io_news_file-transformation-pipeline",
+    "points": 1,
+    "postedAt": "2026-04-15T20:36:44Z"
+  },
+  {
     "id": "47974235",
     "title": "Show HN: Stanzio, AI presentation tool that designs each slide as real HTML",
     "url": "https://stanzio.fly.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -3357,7 +3552,7 @@
     "id": "47850715",
     "title": "Show HN: Four years of my CS degree, typeset in LaTeX (850 pages)",
     "url": "https://starikov.co/academia-notes/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "sidebar_emoji"
     ],
@@ -3367,10 +3562,36 @@
     "postedAt": "2026-04-21T16:04:51Z"
   },
   {
+    "id": "47936303",
+    "title": "Show HN: I built a search engine for llms.txt sites",
+    "url": "https://statespace.com/",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "statespace.com",
+    "points": 3,
+    "postedAt": "2026-04-28T16:02:05Z"
+  },
+  {
+    "id": "47742370",
+    "title": "Show HN: A better way to compare job offers than just salary",
+    "url": "https://stayorqu.it/true-compensation",
+    "score": 7,
+    "flagged": [
+      "glassmorphism"
+    ],
+    "flaggedCount": 1,
+    "slug": "stayorqu.it_true-compensation",
+    "points": 2,
+    "postedAt": "2026-04-12T17:43:28Z"
+  },
+  {
     "id": "47813403",
     "title": "Show HN: A site for stopping work slop",
     "url": "https://stopnoslop.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3383,7 +3604,7 @@
     "id": "47881677",
     "title": "Show HN: Object Storage Vendors – Compared",
     "url": "https://storage.mixpeek.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -3396,7 +3617,7 @@
     "id": "47870432",
     "title": "Show HN: Algorithmic String Art, accessible to all",
     "url": "https://string-loom.pages.dev",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -3409,7 +3630,7 @@
     "id": "47830779",
     "title": "Show HN: Real time Apple Notes sync to cloud",
     "url": "https://sublimated.com/sublimated/landing.md",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -3422,7 +3643,7 @@
     "id": "47875182",
     "title": "Show HN: Suparagent AI- Alternative to Manus and Genspark",
     "url": "https://suparagent.ai/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3435,7 +3656,7 @@
     "id": "47923916",
     "title": "Show HN: Sverklo – local-first MCP code intelligence (and the runs we lose)",
     "url": "https://sverklo.com/research/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3445,10 +3666,23 @@
     "postedAt": "2026-04-27T16:40:58Z"
   },
   {
+    "id": "48040048",
+    "title": "Show HN: I built a personalized portfolio builder for your values",
+    "url": "https://sylphfinance.com/get-started",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "sylphfinance.com_get-started",
+    "points": 1,
+    "postedAt": "2026-05-06T18:49:54Z"
+  },
+  {
     "id": "47790607",
     "title": "Show HN: Stop Using LangChain",
     "url": "https://synapsekit.github.io/synapsekit-docs/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3458,10 +3692,36 @@
     "postedAt": "2026-04-16T09:18:13Z"
   },
   {
+    "id": "47924388",
+    "title": "Show HN: AI agents are having a public meetup tonight 7pm PT",
+    "url": "https://talagent.net/promo/opening-day",
+    "score": 7,
+    "flagged": [
+      "slop_fonts"
+    ],
+    "flaggedCount": 1,
+    "slug": "talagent.net_promo_opening-day",
+    "points": 1,
+    "postedAt": "2026-04-27T17:14:16Z"
+  },
+  {
+    "id": "47728849",
+    "title": "Show HN: Keyboard First Email Client",
+    "url": "https://tallyman.io",
+    "score": 7,
+    "flagged": [
+      "numbered_steps"
+    ],
+    "flaggedCount": 1,
+    "slug": "tallyman.io",
+    "points": 7,
+    "postedAt": "2026-04-11T08:58:36Z"
+  },
+  {
     "id": "47922781",
     "title": "Show HN: I made a website to clean up recipe websites",
     "url": "https://tangled.org/dunkirk.sh/pear",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -3474,7 +3734,7 @@
     "id": "47850337",
     "title": "Show HN: My Silly Sun Server",
     "url": "https://technically.kakwalab.ovh/posts/silly-sun-server-intro/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3487,7 +3747,7 @@
     "id": "47873473",
     "title": "Show HN: Autonomous coin-flipping machine with on-device CV",
     "url": "https://www.terencegrover.com/section/physicalart/4",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3500,7 +3760,7 @@
     "id": "47920219",
     "title": "Show HN: TermToMD past in choppy terminal output get clean Markdown",
     "url": "https://termtomd.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3513,7 +3773,7 @@
     "id": "47794057",
     "title": "Show HN: A tool to calculate LLM model API costs when coding",
     "url": "https://the-designengineer.com/model-cost-estimator/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -3526,7 +3786,7 @@
     "id": "47941987",
     "title": "Show HN: InterviewDen – Free voice AI mock interviews for SWE, IB, quant, more",
     "url": "https://theinterviewden.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -3539,7 +3799,7 @@
     "id": "47798958",
     "title": "Show HN: The Public Tab – See every federal dollar flowing through your district",
     "url": "https://thepublictab.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -3549,23 +3809,36 @@
     "postedAt": "2026-04-16T20:19:13Z"
   },
   {
-    "id": "47859759",
-    "title": "Show HN: Vibe Coding Games in Minutes",
-    "url": "https://thornwood.bsct.so/",
-    "score": 6,
+    "id": "47928468",
+    "title": "Show HN : Tickword – Chain the words. Dont let the clock catch you",
+    "url": "https://tickword.com/en",
+    "score": 7,
     "flagged": [
-      "slop_fonts"
+      "glassmorphism"
     ],
     "flaggedCount": 1,
-    "slug": "thornwood.bsct.so",
-    "points": 1,
-    "postedAt": "2026-04-22T06:20:48Z"
+    "slug": "tickword.com_en",
+    "points": 3,
+    "postedAt": "2026-04-27T23:02:01Z"
+  },
+  {
+    "id": "48067612",
+    "title": "Show HN: tltv – Federation protocol for 24/7 TV channels",
+    "url": "https://timelooptv.org/",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "timelooptv.org",
+    "points": 5,
+    "postedAt": "2026-05-08T19:28:53Z"
   },
   {
     "id": "48049846",
     "title": "Show HN: Flow Timer – A simple sequential timer without bloat for timeboxing",
     "url": "https://timer.bryanhogan.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3575,23 +3848,23 @@
     "postedAt": "2026-05-07T14:21:40Z"
   },
   {
-    "id": "47889317",
-    "title": "Show HN: A standalone YouTube Music popup for OBS (no plugins required)",
-    "url": "https://timexo.gumroad.com/l/playlistplayer",
-    "score": 6,
+    "id": "48067343",
+    "title": "Show HN: Automation ROI calculator for repetitive admin workflows",
+    "url": "https://tinyopsstudio.com/automation-roi-calculator",
+    "score": 7,
     "flagged": [
-      "shadcn_signature"
+      "accent_stripe"
     ],
     "flaggedCount": 1,
-    "slug": "timexo.gumroad.com_l_playlistplayer",
-    "points": 1,
-    "postedAt": "2026-04-24T12:31:55Z"
+    "slug": "tinyopsstudio.com_automation-roi-calculator",
+    "points": 5,
+    "postedAt": "2026-05-08T19:06:07Z"
   },
   {
     "id": "47763748",
     "title": "Show HN: Tmux-grid – a visual layout builder for tmux",
     "url": "https://tmux-grid.itzami.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3601,10 +3874,23 @@
     "postedAt": "2026-04-14T10:32:19Z"
   },
   {
+    "id": "47834347",
+    "title": "Show HN: Actual Claude Tokenizer",
+    "url": "https://tokenizer.robkopel.me",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "tokenizer.robkopel.me",
+    "points": 3,
+    "postedAt": "2026-04-20T13:51:25Z"
+  },
+  {
     "id": "47733479",
     "title": "Show HN: A Better Internet",
     "url": "https://tomclancy.info/pages/abi-a-better-internet.html",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3617,7 +3903,7 @@
     "id": "47926128",
     "title": "Show HN: What happens when you load a webpage (Interactive)",
     "url": "https://toolkit.whysonil.dev/how-it-works/internet-timeline/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -3630,7 +3916,7 @@
     "id": "48035569",
     "title": "Show HN: Toposonico, a music recommender you can navigate",
     "url": "https://toposonico.com/#lon=-2.2852&lat=-7.0984&z=8.45&entity=album&rowid=4939391",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3643,7 +3929,7 @@
     "id": "47962091",
     "title": "Show HN: Trent – Contextual architectural security reviews inside Claude Code",
     "url": "https://trent.ai/solutions/claude-code-security/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3656,7 +3942,7 @@
     "id": "48049024",
     "title": "Show HN: Learn a Language Through Trivia",
     "url": "https://trivia.lmny.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3666,10 +3952,36 @@
     "postedAt": "2026-05-07T13:13:36Z"
   },
   {
+    "id": "48028638",
+    "title": "Show HN: Rival AI – AI compliance agents and regulatory corpus",
+    "url": "https://tryrival.ai",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "tryrival.ai",
+    "points": 2,
+    "postedAt": "2026-05-05T21:11:15Z"
+  },
+  {
+    "id": "47981746",
+    "title": "Show HN: TTS Studio: AI-Powered Text-to-Speech Tool",
+    "url": "https://tts.haroun.dev/",
+    "score": 7,
+    "flagged": [
+      "center_aligned_hero"
+    ],
+    "flaggedCount": 1,
+    "slug": "tts.haroun.dev",
+    "points": 3,
+    "postedAt": "2026-05-01T23:35:33Z"
+  },
+  {
     "id": "47760032",
     "title": "Show HN: teletext, a ceefax-inspired live news ticker",
     "url": "https://ttxt.org",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3682,7 +3994,7 @@
     "id": "47920028",
     "title": "Show HN: Tunemark – Bookmark moments in songs on Android",
     "url": "https://tunemark.app",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "faq_accordion"
     ],
@@ -3695,7 +4007,7 @@
     "id": "48016429",
     "title": "Show HN: Yames – A distraction-free desktop metronome built with Rust and Tauri",
     "url": "https://turutupa.github.io/yames/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3708,7 +4020,7 @@
     "id": "48035484",
     "title": "Show HN: Typewryte – Type through classics to read more deeply",
     "url": "https://www.typewryte.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -3721,7 +4033,7 @@
     "id": "47960112",
     "title": "Show HN: Bin collection calendars for the entire UK",
     "url": "https://ukbinday.co.uk/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3734,7 +4046,7 @@
     "id": "48059844",
     "title": "Show HN: I instructed AI to create tool to clean AI-generated text: undsh.com",
     "url": "https://undsh.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3747,7 +4059,7 @@
     "id": "47870690",
     "title": "Show HN: DeckWeaver – Create AI-powered Google Slides presentations in minutes",
     "url": "https://usedeckweaver.com/login",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3760,7 +4072,7 @@
     "id": "48014644",
     "title": "Show HN: Gitbar – A menu bar app for GitHub PRs and issues",
     "url": "https://usegitbar.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -3770,10 +4082,23 @@
     "postedAt": "2026-05-04T20:38:38Z"
   },
   {
+    "id": "47765329",
+    "title": "Show HN: Linkshot – Auto-generate OG images from your live site via API",
+    "url": "https://uselinkshot.com",
+    "score": 7,
+    "flagged": [
+      "faq_accordion"
+    ],
+    "flaggedCount": 1,
+    "slug": "uselinkshot.com",
+    "points": 2,
+    "postedAt": "2026-04-14T13:22:33Z"
+  },
+  {
     "id": "47895093",
     "title": "Show HN: Nimbus – Browser with Claude Code UX",
     "url": "https://usenimbus.app/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -3786,7 +4111,7 @@
     "id": "47720349",
     "title": "Show HN: Deconstructing a Black Hole in a Fragment Shader",
     "url": "https://vaidikv.github.io/deconstructing-a-black-hole/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3799,7 +4124,7 @@
     "id": "47730540",
     "title": "Show HN: We scanned uscis.gov for third-party trackers. The results are jarring",
     "url": "https://varlog.in/posts/uscis-who-is-watching/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -3809,23 +4134,23 @@
     "postedAt": "2026-04-11T13:43:21Z"
   },
   {
-    "id": "47732461",
-    "title": "Show HN: Self-hostable STT service with a Deepgram-compatible listen API",
-    "url": "https://vedgupta.in/projects/whisper-api/",
-    "score": 6,
+    "id": "48022892",
+    "title": "Show HN: Vask – Pusher-compatible WebSockets on Cloudflare, no fan-out fees",
+    "url": "https://vask.dev",
+    "score": 7,
     "flagged": [
-      "slop_fonts"
+      "faq_accordion"
     ],
     "flaggedCount": 1,
-    "slug": "vedgupta.in_projects_whisper-api",
-    "points": 2,
-    "postedAt": "2026-04-11T17:40:42Z"
+    "slug": "vask.dev",
+    "points": 5,
+    "postedAt": "2026-05-05T14:20:39Z"
   },
   {
     "id": "47901865",
     "title": "Show HN: I built a free LLMs.txt generator",
     "url": "https://veerhost.com/llms-txt-generator/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3838,7 +4163,7 @@
     "id": "47812341",
     "title": "Show HN: I made a calculator that works over disjoint sets of intervals",
     "url": "https://victorpoughon.github.io/interval-calculator/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "center_aligned_hero"
     ],
@@ -3851,7 +4176,7 @@
     "id": "47906759",
     "title": "Show HN: Draw Together Online",
     "url": "https://vidzert.com/draw-together",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "purple_accent"
     ],
@@ -3864,7 +4189,7 @@
     "id": "47719667",
     "title": "Show HN: I made a clicker game about the PKM rabbit hole",
     "url": "https://viermal.be/cortex/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3877,7 +4202,7 @@
     "id": "47800548",
     "title": "Show HN: A free Instagram email downloader",
     "url": "https://virev.ai/instagram-email-finder",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -3890,7 +4215,7 @@
     "id": "47872628",
     "title": "Show HN: Linux Desktops in the Browser",
     "url": "https://vmpixel.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "slop_fonts"
     ],
@@ -3900,10 +4225,23 @@
     "postedAt": "2026-04-23T05:54:27Z"
   },
   {
+    "id": "47948780",
+    "title": "Show HN: I wrote a landing page for LLMs instead of humans",
+    "url": "https://voltplan.app/llms",
+    "score": 7,
+    "flagged": [
+      "all_caps_headings"
+    ],
+    "flaggedCount": 1,
+    "slug": "voltplan.app_llms",
+    "points": 1,
+    "postedAt": "2026-04-29T14:15:18Z"
+  },
+  {
     "id": "47917600",
     "title": "Show HN: Vibe Check – Client-side invisible Unicode steganography scanner",
     "url": "https://websationflow.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3916,7 +4254,7 @@
     "id": "47865594",
     "title": "Show HN: A free tool for non-technical folks to easily publish a website",
     "url": "https://weejur.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3929,7 +4267,7 @@
     "id": "47745144",
     "title": "Show HN: Vapephone",
     "url": "https://wefumevapes.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "all_caps_headings"
     ],
@@ -3942,7 +4280,7 @@
     "id": "47996281",
     "title": "Show HN: I built my site as a Windows 95 experience (2025)",
     "url": "https://wes.dev/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -3955,7 +4293,7 @@
     "id": "47972188",
     "title": "Show HN: WeSearch – Anonymous news aggregator with no algorithm, 700 sources",
     "url": "https://wesearch.press/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -3965,10 +4303,23 @@
     "postedAt": "2026-05-01T07:41:05Z"
   },
   {
+    "id": "47996123",
+    "title": "Show HN: I built a web builder after 6 years of trying",
+    "url": "https://whale.kiraaziz.club",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "whale.kiraaziz.club",
+    "points": 3,
+    "postedAt": "2026-05-03T12:07:35Z"
+  },
+  {
     "id": "47722850",
     "title": "Show HN: Whirligig",
     "url": "https://whirligig.live",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "numbered_steps"
     ],
@@ -3981,7 +4332,7 @@
     "id": "47765420",
     "title": "Show HN: Who'Studios – A Social Design Platform",
     "url": "https://www.whostudios.com/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -3991,10 +4342,23 @@
     "postedAt": "2026-04-14T13:30:40Z"
   },
   {
+    "id": "47777931",
+    "title": "Show HN: WorkProtocol – Where AI agents do real work for real pay",
+    "url": "https://workprotocol.ai/hn",
+    "score": 7,
+    "flagged": [
+      "faq_accordion"
+    ],
+    "flaggedCount": 1,
+    "slug": "workprotocol.ai_hn",
+    "points": 1,
+    "postedAt": "2026-04-15T12:04:41Z"
+  },
+  {
     "id": "48057646",
     "title": "Show HN: WordPress WebSocket Relay in Rust with Yjs CRDT Provider for WP 7.0",
     "url": "https://wpsignal.io/",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -4007,7 +4371,7 @@
     "id": "47931503",
     "title": "Show HN: Financial Database API for Vibe Coders",
     "url": "https://xfinlink.com",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "perma_dark_mode"
     ],
@@ -4020,7 +4384,7 @@
     "id": "47764277",
     "title": "Show HN: Voight-Kampff Machine: Diagnostics of the \"Is\" vs. \"Wish\" Clash",
     "url": "https://zenodo.org/records/19538276",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "hero_eyebrow_pill"
     ],
@@ -4030,10 +4394,23 @@
     "postedAt": "2026-04-14T11:39:05Z"
   },
   {
+    "id": "48007158",
+    "title": "Show HN: Zerminal – a terminal-first Zed fork for AI coding agents",
+    "url": "https://zerminal.dev",
+    "score": 7,
+    "flagged": [
+      "icon_card_grid"
+    ],
+    "flaggedCount": 1,
+    "slug": "zerminal.dev",
+    "points": 5,
+    "postedAt": "2026-05-04T11:10:11Z"
+  },
+  {
     "id": "47996331",
     "title": "Show HN: Parrot – a fun, skeuomorphic audio recorder to hear yourself",
     "url": "https://www.zkhrv.com/parrot",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "gradients"
     ],
@@ -4043,10 +4420,23 @@
     "postedAt": "2026-05-03T12:34:55Z"
   },
   {
+    "id": "47931161",
+    "title": "Show HN: zot – Yet another coding agent harness",
+    "url": "https://www.zot.sh",
+    "score": 7,
+    "flagged": [
+      "perma_dark_mode"
+    ],
+    "flaggedCount": 1,
+    "slug": "zot.sh",
+    "points": 7,
+    "postedAt": "2026-04-28T06:48:02Z"
+  },
+  {
     "id": "47765226",
     "title": "Show HN: The opensource, reliable, scalable Agentic AI framework under 10MB",
     "url": "https://zuver.cc",
-    "score": 6,
+    "score": 7,
     "flagged": [
       "icon_card_grid"
     ],
@@ -4054,50 +4444,6 @@
     "slug": "zuver.cc",
     "points": 3,
     "postedAt": "2026-04-14T13:12:51Z"
-  },
-  {
-    "id": "48071638",
-    "title": "Show HN: Best Old School UFO Website",
-    "url": "http://www.ufoevidence.org/",
-    "score": 0,
-    "flagged": [],
-    "flaggedCount": 0,
-    "slug": "ufoevidence.org",
-    "points": 6,
-    "postedAt": "2026-05-09T03:47:31Z"
-  },
-  {
-    "id": "48070526",
-    "title": "Show HN: Launch and Run Companies on Autopilot",
-    "url": "https://lakyus.com/live",
-    "score": 0,
-    "flagged": [],
-    "flaggedCount": 0,
-    "slug": "lakyus.com_live",
-    "points": 1,
-    "postedAt": "2026-05-09T00:36:34Z"
-  },
-  {
-    "id": "48069669",
-    "title": "Show HN: Blober.io – The Only App That Connects to GoPro Cloud",
-    "url": "https://blober.io/kb/articles/gopro-cloud-transfer-backup-download/",
-    "score": 0,
-    "flagged": [],
-    "flaggedCount": 0,
-    "slug": "blober.io_kb_articles_gopro-cloud-transfer-backup-download",
-    "points": 3,
-    "postedAt": "2026-05-08T22:45:36Z"
-  },
-  {
-    "id": "48065297",
-    "title": "Show HN: Rubberduck – Software design agent where you make the decisions",
-    "url": "https://userubberduck.com/",
-    "score": 0,
-    "flagged": [],
-    "flaggedCount": 0,
-    "slug": "userubberduck.com",
-    "points": 2,
-    "postedAt": "2026-05-08T16:24:42Z"
   },
   {
     "id": "48057039",
@@ -4175,6 +4521,17 @@
     "slug": "advisory-search.hritik.sh",
     "points": 2,
     "postedAt": "2026-05-04T14:09:02Z"
+  },
+  {
+    "id": "47778627",
+    "title": "Show HN: Afterplay Store – buy new retro games and play instantly in the browser",
+    "url": "https://afterplay.io/play/store",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "afterplay.io_play_store",
+    "points": 2,
+    "postedAt": "2026-04-15T13:22:39Z"
   },
   {
     "id": "47950752",
@@ -4287,6 +4644,17 @@
     "postedAt": "2026-04-27T22:03:50Z"
   },
   {
+    "id": "47863112",
+    "title": "Show HN: ClickMVP – Deterministic full-stack code generation (no LLMs)",
+    "url": "https://app.clickmvp.com/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "app.clickmvp.com",
+    "points": 1,
+    "postedAt": "2026-04-22T13:13:28Z"
+  },
+  {
     "id": "47753093",
     "title": "Show HN: Git-native solution for documenting software architecture",
     "url": "https://app.maniok.io",
@@ -4298,6 +4666,39 @@
     "postedAt": "2026-04-13T15:06:34Z"
   },
   {
+    "id": "48037283",
+    "title": "Show HN: Accept crypto payment in your business (only 1% fee, feedback welcome)",
+    "url": "https://app.paycoinly.xyz/login",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "app.paycoinly.xyz_login",
+    "points": 1,
+    "postedAt": "2026-05-06T15:21:32Z"
+  },
+  {
+    "id": "47803684",
+    "title": "Show HN: Soforce – Describe a process, get a free automation plan from our team",
+    "url": "https://app.soforce.ai",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "app.soforce.ai",
+    "points": 1,
+    "postedAt": "2026-04-17T08:23:40Z"
+  },
+  {
+    "id": "47716947",
+    "title": "Show HN: Zenovay, Web analytics with performance monitoring and revenue insights",
+    "url": "https://app.zenovay.com/share/a1d7d3e7aeb24437871562f463eada27",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "app.zenovay.com_share_a1d7d3e7aeb24437871562f463eada27",
+    "points": 1,
+    "postedAt": "2026-04-10T12:16:31Z"
+  },
+  {
     "id": "47838836",
     "title": "Show HN: A document snapshot solution to counter backups with name \"Final_final\"",
     "url": "https://apps.microsoft.com/detail/9nsd7jd58g17?hl=en-US&gl=US",
@@ -4307,6 +4708,17 @@
     "slug": "apps.microsoft.com_detail_9nsd7jd58g17",
     "points": 2,
     "postedAt": "2026-04-20T18:49:14Z"
+  },
+  {
+    "id": "47809345",
+    "title": "Show HN: Arc Browser UI Skeleton (Next.js)",
+    "url": "https://arc-ui-skeleton.vercel.app/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "arc-ui-skeleton.vercel.app",
+    "points": 2,
+    "postedAt": "2026-04-17T18:59:40Z"
   },
   {
     "id": "47738013",
@@ -4408,6 +4820,17 @@
     "postedAt": "2026-04-21T04:04:20Z"
   },
   {
+    "id": "47775750",
+    "title": "Show HN: Friday Deploy – a browser-based SIM you probably won't survive",
+    "url": "https://bentbrainstudio.com/friday-deploy/game/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "bentbrainstudio.com_friday-deploy_game",
+    "points": 1,
+    "postedAt": "2026-04-15T07:24:02Z"
+  },
+  {
     "id": "47916958",
     "title": "Show HN: Friendly prediction markets to turn trips into a running tournament",
     "url": "https://bets.bernikins.com/",
@@ -4439,6 +4862,17 @@
     "slug": "bizlect.com",
     "points": 1,
     "postedAt": "2026-04-18T07:41:30Z"
+  },
+  {
+    "id": "48069669",
+    "title": "Show HN: Blober.io – The Only App That Connects to GoPro Cloud",
+    "url": "https://blober.io/kb/articles/gopro-cloud-transfer-backup-download/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "blober.io_kb_articles_gopro-cloud-transfer-backup-download",
+    "points": 3,
+    "postedAt": "2026-05-08T22:45:36Z"
   },
   {
     "id": "47871810",
@@ -4496,6 +4930,17 @@
     "postedAt": "2026-04-30T13:20:16Z"
   },
   {
+    "id": "47984653",
+    "title": "Show HN: From Beats to Notes and Beyond",
+    "url": "https://bookerapp.replit.app/book/fom/from-temporal-structure",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "bookerapp.replit.app_book_fom_from-temporal-structure",
+    "points": 1,
+    "postedAt": "2026-05-02T08:50:30Z"
+  },
+  {
     "id": "48037182",
     "title": "Show HN: Prospero Is Superpowers for Writing",
     "url": "https://brianguthrie.com/p/prospero/",
@@ -4505,6 +4950,17 @@
     "slug": "brianguthrie.com_p_prospero",
     "points": 4,
     "postedAt": "2026-05-06T15:11:34Z"
+  },
+  {
+    "id": "47880377",
+    "title": "Show HN: Visage, privacy-friendly web analytics for self-hosters",
+    "url": "https://www.butterhost.ing/visage",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "butterhost.ing_visage",
+    "points": 1,
+    "postedAt": "2026-04-23T19:22:00Z"
   },
   {
     "id": "47765331",
@@ -4571,6 +5027,17 @@
     "slug": "chaaga.com",
     "points": 2,
     "postedAt": "2026-04-11T15:04:04Z"
+  },
+  {
+    "id": "47917834",
+    "title": "Show HN: ChatForm – Create an AI chat form in 1 minute",
+    "url": "https://chatform.000ooo.ooo/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "chatform.000ooo.ooo",
+    "points": 1,
+    "postedAt": "2026-04-27T04:56:35Z"
   },
   {
     "id": "47825276",
@@ -4705,6 +5172,17 @@
     "postedAt": "2026-04-16T11:59:57Z"
   },
   {
+    "id": "47738922",
+    "title": "Show HN: OIFI Databook: An intelligence database of Iran's power structure",
+    "url": "https://databook.oifi.org",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "databook.oifi.org",
+    "points": 1,
+    "postedAt": "2026-04-12T12:34:44Z"
+  },
+  {
     "id": "47770704",
     "title": "Show HN: Visualize any population as a grid of 100K-capacity stadiums (Three.js)",
     "url": "https://davkap92.github.io/crowdscale/",
@@ -4791,6 +5269,17 @@
     "slug": "doallthethings.app",
     "points": 27,
     "postedAt": "2026-04-10T11:41:31Z"
+  },
+  {
+    "id": "47853007",
+    "title": "Show HN: DataFrey – MCP server for Snowflake with text-to-SQL agent",
+    "url": "https://docs.datafrey.ai",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "docs.datafrey.ai",
+    "points": 1,
+    "postedAt": "2026-04-21T19:01:49Z"
   },
   {
     "id": "47876489",
@@ -4969,6 +5458,17 @@
     "postedAt": "2026-05-06T21:42:04Z"
   },
   {
+    "id": "47747093",
+    "title": "Show HN: What worked for me with AI prompts",
+    "url": "https://factverse2.gumroad.com/l/arrlsk",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "factverse2.gumroad.com_l_arrlsk",
+    "points": 1,
+    "postedAt": "2026-04-13T03:07:06Z"
+  },
+  {
     "id": "47848659",
     "title": "Show HN: Family Tree Maker",
     "url": "https://family-tree-maker.mnapoli.fr/",
@@ -4989,6 +5489,17 @@
     "slug": "figpack.org",
     "points": 1,
     "postedAt": "2026-04-24T10:39:27Z"
+  },
+  {
+    "id": "47847743",
+    "title": "Show HN: We replaced 5 ML models with 1 shared encoder on an $11/month VPS",
+    "url": "https://fittohire.com",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "fittohire.com",
+    "points": 3,
+    "postedAt": "2026-04-21T12:19:08Z"
   },
   {
     "id": "47786116",
@@ -5013,6 +5524,17 @@
     "postedAt": "2026-05-03T18:42:30Z"
   },
   {
+    "id": "47963785",
+    "title": "Show HN: Flocklist, minimalist graph-based task tracker",
+    "url": "https://flocklist.app/?onboarding=true",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "flocklist.app",
+    "points": 6,
+    "postedAt": "2026-04-30T15:14:42Z"
+  },
+  {
     "id": "47873807",
     "title": "Show HN: Floors – DJ mix discovery built around a music knowledge graph",
     "url": "https://floors.music/",
@@ -5033,6 +5555,17 @@
     "slug": "forkle.co.uk",
     "points": 4,
     "postedAt": "2026-05-01T10:16:11Z"
+  },
+  {
+    "id": "47924747",
+    "title": "Show HN: Find people researching areas similar to you (HuggingFace)",
+    "url": "https://foryu.me/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "foryu.me",
+    "points": 2,
+    "postedAt": "2026-04-27T17:40:47Z"
   },
   {
     "id": "47869016",
@@ -5079,6 +5612,17 @@
     "postedAt": "2026-05-07T06:35:54Z"
   },
   {
+    "id": "47784163",
+    "title": "Show HN: Frontpedia, an open source front end resource site",
+    "url": "https://frontpedia.com",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "frontpedia.com",
+    "points": 3,
+    "postedAt": "2026-04-15T19:39:51Z"
+  },
+  {
     "id": "47774659",
     "title": "Show HN: Fz.ax – Four thousand weeks of your life, as hexagons",
     "url": "https://fz.ax",
@@ -5090,6 +5634,17 @@
     "postedAt": "2026-04-15T04:23:55Z"
   },
   {
+    "id": "47849521",
+    "title": "Show HN: An AI workflow to automate your LinkedIn job search",
+    "url": "https://gabidev.gumroad.com/l/grasshopper",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "gabidev.gumroad.com_l_grasshopper",
+    "points": 2,
+    "postedAt": "2026-04-21T14:44:20Z"
+  },
+  {
     "id": "47807518",
     "title": "Show HN: I made a anonymous gallery / Anti Social Media",
     "url": "https://galleryanonima.com/",
@@ -5099,6 +5654,17 @@
     "slug": "galleryanonima.com",
     "points": 1,
     "postedAt": "2026-04-17T16:14:34Z"
+  },
+  {
+    "id": "47808041",
+    "title": "Show HN: Vibe-coding video games with Claude",
+    "url": "https://gamevibe.us/2-hangman",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "gamevibe.us_2-hangman",
+    "points": 4,
+    "postedAt": "2026-04-17T17:00:46Z"
   },
   {
     "id": "47734804",
@@ -5123,6 +5689,17 @@
     "postedAt": "2026-05-08T16:17:37Z"
   },
   {
+    "id": "47876724",
+    "title": "Show HN: Core – open-source AI butler that clears your backlog without you",
+    "url": "https://www.getcore.me/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "getcore.me",
+    "points": 3,
+    "postedAt": "2026-04-23T15:14:25Z"
+  },
+  {
     "id": null,
     "title": "https://gethiretoday.com/",
     "url": "https://gethiretoday.com/",
@@ -5132,6 +5709,17 @@
     "slug": "gethiretoday.com",
     "points": null,
     "postedAt": null
+  },
+  {
+    "id": "47805078",
+    "title": "Show HN: Generate a realistic handwriting animation from any text",
+    "url": "https://getmycursive.com/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "getmycursive.com",
+    "points": 2,
+    "postedAt": "2026-04-17T12:15:44Z"
   },
   {
     "id": "47972881",
@@ -5156,6 +5744,17 @@
     "postedAt": "2026-05-01T14:52:07Z"
   },
   {
+    "id": "47956840",
+    "title": "Show HN: Serra – A Magic: The Gathering life counter using DRM/KMS",
+    "url": "https://git.sr.ht/~cmt/serra",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "git.sr.ht__cmt_serra",
+    "points": 2,
+    "postedAt": "2026-04-30T01:11:26Z"
+  },
+  {
     "id": "47748973",
     "title": "Show HN: GitBalance – a GitHub-style graph to balance work and health",
     "url": "https://gitbalance.com",
@@ -5165,6 +5764,17 @@
     "slug": "gitbalance.com",
     "points": 1,
     "postedAt": "2026-04-13T07:43:26Z"
+  },
+  {
+    "id": "48021163",
+    "title": "Show HN: Instantly understand any GitHub repo",
+    "url": "https://gitdiagram.com",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "gitdiagram.com",
+    "points": 2,
+    "postedAt": "2026-05-05T11:46:54Z"
   },
   {
     "id": "47745300",
@@ -5178,6 +5788,17 @@
     "postedAt": "2026-04-12T22:41:25Z"
   },
   {
+    "id": "47874981",
+    "title": "Show HN: An elegant HN client with built-in translation",
+    "url": "https://haiker.app/en",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "haiker.app_en",
+    "points": 5,
+    "postedAt": "2026-04-23T12:31:56Z"
+  },
+  {
     "id": "47772707",
     "title": "Show HN: I built a self-improving autonomous AI agent that runs 24/7",
     "url": "https://hergimuci.gumroad.com/l/ai-agent-blueprint",
@@ -5187,6 +5808,17 @@
     "slug": "hergimuci.gumroad.com_l_ai-agent-blueprint",
     "points": 1,
     "postedAt": "2026-04-14T23:18:26Z"
+  },
+  {
+    "id": "47873966",
+    "title": "Show HN: Built a daily game where you sort historical events chronologically",
+    "url": "https://hisorty.app/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "hisorty.app",
+    "points": 74,
+    "postedAt": "2026-04-23T10:14:46Z"
   },
   {
     "id": "47780474",
@@ -5288,6 +5920,17 @@
     "postedAt": "2026-04-29T16:43:39Z"
   },
   {
+    "id": "48011875",
+    "title": "Show HN: [inerrata] – Collective and Causal Knowledge Layer for Coding Agents",
+    "url": "https://www.inerrata.ai",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "inerrata.ai",
+    "points": 1,
+    "postedAt": "2026-05-04T17:27:52Z"
+  },
+  {
     "id": "47808473",
     "title": "Show HN: EX LIBRIS – a library-crawling RPG made with a 2000s engine",
     "url": "http://www.inpatientpress.net/inpatient-interactive/2026/4/16/ex-libris",
@@ -5308,6 +5951,17 @@
     "slug": "isitartstudio.com",
     "points": 2,
     "postedAt": "2026-04-27T21:15:46Z"
+  },
+  {
+    "id": "47793322",
+    "title": "Show HN: Sentinel – LLM browser automation using 10x fewer tokens",
+    "url": "https://www.isoldex.ai/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "isoldex.ai",
+    "points": 1,
+    "postedAt": "2026-04-16T14:17:44Z"
   },
   {
     "id": "47977704",
@@ -5398,6 +6052,17 @@
     "postedAt": "2026-04-11T12:17:29Z"
   },
   {
+    "id": "47945828",
+    "title": "SHOW HN: 50k+ Shopify Store Database Leads with Niche Segmentation",
+    "url": "https://kanbauser.gumroad.com/l/shopifyleads",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "kanbauser.gumroad.com_l_shopifyleads",
+    "points": 1,
+    "postedAt": "2026-04-29T08:57:51Z"
+  },
+  {
     "id": "48046739",
     "title": "Show HN: Keysee – deterministic identicons for public keys",
     "url": "https://keysee.io/ui",
@@ -5462,6 +6127,17 @@
     "slug": "labs.tiffzhang.com_count",
     "points": 2,
     "postedAt": "2026-04-15T16:45:24Z"
+  },
+  {
+    "id": "48070526",
+    "title": "Show HN: Launch and Run Companies on Autopilot",
+    "url": "https://lakyus.com/live",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "lakyus.com_live",
+    "points": 1,
+    "postedAt": "2026-05-09T00:36:34Z"
   },
   {
     "id": "47996975",
@@ -5585,6 +6261,28 @@
     "postedAt": "2026-04-13T11:21:25Z"
   },
   {
+    "id": "48032269",
+    "title": "Show HN: How smart is your geography knowledge?",
+    "url": "https://map.mikira.id/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "map.mikira.id",
+    "points": 2,
+    "postedAt": "2026-05-06T04:44:38Z"
+  },
+  {
+    "id": "47873004",
+    "title": "Show HN: We made 3M jobs searchable on a globe to visualize labor markets",
+    "url": "https://map.rezi.ai/index.html",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "map.rezi.ai_index.html",
+    "points": 2,
+    "postedAt": "2026-04-23T07:18:52Z"
+  },
+  {
     "id": "47766773",
     "title": "Show HN: Free browser-based vector tile inspector – paste any MVT/PBF URL",
     "url": "https://marinecharts.io/tools/vector-tile-inspector",
@@ -5616,6 +6314,17 @@
     "slug": "mathworks.com_help_images_optical-system-design-and-analysis.html",
     "points": 2,
     "postedAt": "2026-05-03T23:01:15Z"
+  },
+  {
+    "id": "47771448",
+    "title": "Show HN: Three backtested quant strategies as Jupyter notebooks",
+    "url": "https://mattitude8861.gumroad.com/l/QuantStrategyTemplatesBundle",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "mattitude8861.gumroad.com_l_QuantStrategyTemplatesBundle",
+    "points": 1,
+    "postedAt": "2026-04-14T20:59:12Z"
   },
   {
     "id": "47939767",
@@ -5684,6 +6393,17 @@
     "postedAt": "2026-05-06T12:51:18Z"
   },
   {
+    "id": "47750946",
+    "title": "Show HN: Turn your favorite YouTube channels into a streaming experience",
+    "url": "https://minitube.tv",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "minitube.tv",
+    "points": 6,
+    "postedAt": "2026-04-13T12:20:46Z"
+  },
+  {
     "id": "47738461",
     "title": "Show HN: Minnow – minimal now pages via chat",
     "url": "https://minnow.social/",
@@ -5704,6 +6424,17 @@
     "slug": "modolap.com",
     "points": 4,
     "postedAt": "2026-04-12T12:51:03Z"
+  },
+  {
+    "id": "47953676",
+    "title": "Show HN: An attempt to grow a mind – building software with an inner life",
+    "url": "https://www.momentbymoment.app/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "momentbymoment.app",
+    "points": 15,
+    "postedAt": "2026-04-29T19:57:04Z"
   },
   {
     "id": "47794003",
@@ -5849,6 +6580,17 @@
     "postedAt": "2026-04-21T22:55:49Z"
   },
   {
+    "id": "47873593",
+    "title": "Show HN: Nova by civai, a platform for managed AI agents",
+    "url": "https://nova.civai.co/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "nova.civai.co",
+    "points": 2,
+    "postedAt": "2026-04-23T09:00:52Z"
+  },
+  {
     "id": "47837829",
     "title": "Show HN: Poor's Man Shaders",
     "url": "https://nullonerror.org/2025/07/29/poor-s-man-shaders/",
@@ -5959,6 +6701,28 @@
     "postedAt": "2026-04-17T12:38:48Z"
   },
   {
+    "id": "47863906",
+    "title": "Show HN: CatchAll – slowest web search API that outperforms everything on recall",
+    "url": "https://platform.newscatcherapi.com/catchall/try",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "platform.newscatcherapi.com_catchall_try",
+    "points": 7,
+    "postedAt": "2026-04-22T14:09:08Z"
+  },
+  {
+    "id": "48038019",
+    "title": "Show HN: I built an open-source email builder, alternative to Beefree/Unlayer",
+    "url": "https://play.templatical.com",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "play.templatical.com",
+    "points": 158,
+    "postedAt": "2026-05-06T16:20:00Z"
+  },
+  {
     "id": "47767797",
     "title": "Show HN: Plotline, an open-source initiative to help you own your health data",
     "url": "https://plotline.care/",
@@ -6014,6 +6778,17 @@
     "postedAt": "2026-04-24T15:26:02Z"
   },
   {
+    "id": "47823575",
+    "title": "Show HN: Proposly – AI-generated client proposals for freelancers",
+    "url": "https://proposly.org",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "proposly.org",
+    "points": 1,
+    "postedAt": "2026-04-19T11:40:08Z"
+  },
+  {
     "id": "47872996",
     "title": "Show HN: Protovoters -- Free, accessible voter files for democracy",
     "url": "https://protovoters.org",
@@ -6023,6 +6798,17 @@
     "slug": "protovoters.org",
     "points": 2,
     "postedAt": "2026-04-23T07:17:43Z"
+  },
+  {
+    "id": "47759116",
+    "title": "Show HN: Skill files made this AI Workout Builder Good",
+    "url": "https://proximafitness.com/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "proximafitness.com",
+    "points": 3,
+    "postedAt": "2026-04-13T23:04:39Z"
   },
   {
     "id": "47770792",
@@ -6102,6 +6888,17 @@
     "postedAt": "2026-05-06T13:57:24Z"
   },
   {
+    "id": "47731307",
+    "title": "Show HN: Recursive-Mode for Coding Agents",
+    "url": "https://recursive-mode.dev/introduction",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "recursive-mode.dev_introduction",
+    "points": 6,
+    "postedAt": "2026-04-11T15:12:23Z"
+  },
+  {
     "id": "47987097",
     "title": "Show HN: RegularMonk – a web app that helps me use my phone less",
     "url": "https://www.regularmonk.com/hello",
@@ -6177,6 +6974,17 @@
     "slug": "rsstokindle.com",
     "points": 2,
     "postedAt": "2026-05-03T14:59:15Z"
+  },
+  {
+    "id": "47805834",
+    "title": "Show HN: Using an AI agent to refine a ML model for Zephyr RTOS",
+    "url": "https://rufilla.com/the-mlforge-proof-of-concept/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "rufilla.com_the-mlforge-proof-of-concept",
+    "points": 1,
+    "postedAt": "2026-04-17T13:38:40Z"
   },
   {
     "id": "48059012",
@@ -6256,6 +7064,28 @@
     "postedAt": "2026-04-25T04:11:02Z"
   },
   {
+    "id": "48051626",
+    "title": "Show HN: Serial – an open source RSS reader for YouTube",
+    "url": "https://serial.tube/welcome",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "serial.tube_welcome",
+    "points": 2,
+    "postedAt": "2026-05-07T16:47:21Z"
+  },
+  {
+    "id": "48049576",
+    "title": "Show HN: After 15 years of lifting and spreadsheets, I built my own workout app",
+    "url": "https://www.setsweat.com",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "setsweat.com",
+    "points": 2,
+    "postedAt": "2026-05-07T14:00:25Z"
+  },
+  {
     "id": "47783061",
     "title": "Show HN: The Simpsons Hit and Run Running in the Browser (WASM/WebGL)",
     "url": "https://shar-wasm.cjoseph.workers.dev/?skipmovie",
@@ -6265,6 +7095,17 @@
     "slug": "shar-wasm.cjoseph.workers.dev",
     "points": 5,
     "postedAt": "2026-04-15T18:19:58Z"
+  },
+  {
+    "id": "47984752",
+    "title": "Show HN: Shutt – Turn Strava activities into shareable photo/video posts",
+    "url": "https://shutt.run",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "shutt.run",
+    "points": 2,
+    "postedAt": "2026-05-02T09:10:04Z"
   },
   {
     "id": "47861189",
@@ -6289,6 +7130,17 @@
     "postedAt": "2026-04-26T00:03:57Z"
   },
   {
+    "id": "48034931",
+    "title": "Show HN: Free OSS Contact Form Forwarder",
+    "url": "https://www.simplecontactform.org",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "simplecontactform.org",
+    "points": 1,
+    "postedAt": "2026-05-06T11:20:39Z"
+  },
+  {
     "id": "47973559",
     "title": "Show HN: Site Mogging",
     "url": "https://sitemogging.com",
@@ -6298,6 +7150,17 @@
     "slug": "sitemogging.com",
     "points": 70,
     "postedAt": "2026-05-01T11:32:48Z"
+  },
+  {
+    "id": "47717687",
+    "title": "Show HN: I build skillstui – TUI to search-install agent skills from skills.sh",
+    "url": "https://skillstui.sh",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "skillstui.sh",
+    "points": 2,
+    "postedAt": "2026-04-10T13:15:51Z"
   },
   {
     "id": "47875222",
@@ -6399,6 +7262,17 @@
     "postedAt": "2026-04-27T20:37:25Z"
   },
   {
+    "id": "48013271",
+    "title": "Show HN: Spinal – Prod aware code review and validation",
+    "url": "https://sre.spinal-labs.com/login?next=%2Findex.html",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "sre.spinal-labs.com_login",
+    "points": 1,
+    "postedAt": "2026-05-04T18:57:20Z"
+  },
+  {
     "id": "47996270",
     "title": "Show HN: I built my product to be right to repair friendly",
     "url": "https://stefan.schueller.net/posts/how-to-not-end-up-in-a-louis-rossmann-video/",
@@ -6485,6 +7359,17 @@
     "slug": "suprastructure.net",
     "points": 1,
     "postedAt": "2026-04-26T02:37:24Z"
+  },
+  {
+    "id": "47835532",
+    "title": "Show HN: Open load forecasts that beat US grid operators on 6 of 7 RTOs",
+    "url": "https://surgeforecast.com",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "surgeforecast.com",
+    "points": 4,
+    "postedAt": "2026-04-20T15:14:17Z"
   },
   {
     "id": "47765292",
@@ -6586,6 +7471,17 @@
     "postedAt": "2026-05-02T20:20:36Z"
   },
   {
+    "id": "47859759",
+    "title": "Show HN: Vibe Coding Games in Minutes",
+    "url": "https://thornwood.bsct.so/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "thornwood.bsct.so",
+    "points": 1,
+    "postedAt": "2026-04-22T06:20:48Z"
+  },
+  {
     "id": "47993369",
     "title": "Show HN: Hangman Game",
     "url": "https://threej.in/games/talha37-12-hangman-game/index.html",
@@ -6606,6 +7502,17 @@
     "slug": "tiagosimoes.github.io_tiltbump",
     "points": 2,
     "postedAt": "2026-04-21T07:40:54Z"
+  },
+  {
+    "id": "47889317",
+    "title": "Show HN: A standalone YouTube Music popup for OBS (no plugins required)",
+    "url": "https://timexo.gumroad.com/l/playlistplayer",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "timexo.gumroad.com_l_playlistplayer",
+    "points": 1,
+    "postedAt": "2026-04-24T12:31:55Z"
   },
   {
     "id": "47865127",
@@ -6696,6 +7603,17 @@
     "postedAt": "2026-04-20T18:21:38Z"
   },
   {
+    "id": "48071638",
+    "title": "Show HN: Best Old School UFO Website",
+    "url": "http://www.ufoevidence.org/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "ufoevidence.org",
+    "points": 6,
+    "postedAt": "2026-05-09T03:47:31Z"
+  },
+  {
     "id": "47923695",
     "title": "Show HN: Unusual Wikipedia",
     "url": "https://unusualwiki.nk412.com/",
@@ -6705,6 +7623,28 @@
     "slug": "unusualwiki.nk412.com",
     "points": 41,
     "postedAt": "2026-04-27T16:27:15Z"
+  },
+  {
+    "id": "48066909",
+    "title": "Show HN: Openloom – Turn Loom links into transcripts and frames an LLM can watch",
+    "url": "https://www.useopenloom.com/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "useopenloom.com",
+    "points": 3,
+    "postedAt": "2026-05-08T18:25:45Z"
+  },
+  {
+    "id": "48065297",
+    "title": "Show HN: Rubberduck – Software design agent where you make the decisions",
+    "url": "https://userubberduck.com/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "userubberduck.com",
+    "points": 2,
+    "postedAt": "2026-05-08T16:24:42Z"
   },
   {
     "id": "48011707",
@@ -6727,6 +7667,17 @@
     "slug": "vacant.alltuner.com",
     "points": 2,
     "postedAt": "2026-05-04T15:37:31Z"
+  },
+  {
+    "id": "47732461",
+    "title": "Show HN: Self-hostable STT service with a Deepgram-compatible listen API",
+    "url": "https://vedgupta.in/projects/whisper-api/",
+    "score": 0,
+    "flagged": [],
+    "flaggedCount": 0,
+    "slug": "vedgupta.in_projects_whisper-api",
+    "points": 2,
+    "postedAt": "2026-04-11T17:40:42Z"
   },
   {
     "id": "47826104",

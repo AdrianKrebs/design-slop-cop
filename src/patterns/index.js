@@ -4,7 +4,6 @@
 import slopFonts from './slop-fonts.js';
 import purpleAccent from './purple-accent.js';
 import gradients from './gradients.js';
-import shadcnSignature from './shadcn-signature.js';
 import accentStripe from './accent-stripe.js';
 import glassmorphism from './glassmorphism.js';
 import coloredGlows from './colored-glows.js';
@@ -22,7 +21,6 @@ export const PATTERNS = [
   slopFonts,
   purpleAccent,
   gradients,
-  shadcnSignature,
   accentStripe,
   glassmorphism,
   coloredGlows,

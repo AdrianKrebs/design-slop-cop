@@ -3,7 +3,7 @@
 A tool to score any website for common AI design patterns.
 Basis for the [blog post](https://www.adriankrebs.ch/blog/design-slop/) and the HN discussion ["Scoring Show HN submissions for AI design patterns"](https://news.ycombinator.com/item?id=47864393).
 
-The tool loads each site in a headless browser, analyzes the DOM, and reports which of 16 deterministic AI design patterns are found.
+The tool loads each site in a headless browser, analyzes the DOM, and reports which of 15 deterministic AI design patterns are found.
 Manual verification across ~150 labeled sites suggests ~5–10% false positives. Still, take it with a grain of salt :)
 
 ![Browseable results report — tier filters, pattern frequency, and a card grid of every analyzed site](docs/report.png)
@@ -24,7 +24,7 @@ A clean site (no AI design patterns triggered):
 ```bash
 $ node check.js https://news.ycombinator.com/
 https://news.ycombinator.com/
-Clean · score 0/100 · 0/16 patterns
+Clean · score 0/100 · 0/15 patterns
 ```
 
 A heavy one (6 patterns triggered):
@@ -32,14 +32,14 @@ A heavy one (6 patterns triggered):
 ```bash
 $ node check.js https://engagemii.com/aeo
 https://engagemii.com/aeo
-Heavy · score 38/100 · 6/16 patterns
+Heavy · score 40/100 · 6/15 patterns
 
 Triggered:
   • Vibe purple
   • Gradients
   • Perma dark
   • 1·2·3 steps
-  • Eyebrow pill
+  • Headline badge
   • FAQ
 ```
 
@@ -49,10 +49,10 @@ Add `--json` for machine-readable output:
 $ node check.js https://engagemii.com/aeo --json
 {
   "url": "https://engagemii.com/aeo",
-  "score": 38,
+  "score": 40,
   "tierLabel": "Heavy",
   "patternsFlagged": 6,
-  "patternsTotal": 16,
+  "patternsTotal": 15,
   "patterns": [
     { "id": "purple_accent", "label": "Vibe purple", "triggered": true, "evidence": {...} },
     ...
@@ -81,7 +81,7 @@ Results go to `results/`:
 
 | # | Pattern | Tell |
 |---|---|---|
-| 1 | Templated fonts | Space Grotesk, Instrument Serif, Geist, Syne — fine in isolation, default-stack tell |
+| 1 | Templated display font | Space Grotesk, Instrument Serif, Syne, Fraunces — fine in isolation, default-stack tell when used as the page heading |
 | 2 | Centered hero | H1 centered + Inter as primary font |
 | 3 | VibeCode purple | Filled violet/indigo CTAs |
 | 4 | Perma dark | Dark template, or muted grey body text on dark |
@@ -95,8 +95,7 @@ Results go to `results/`:
 | 12 | Stat banner | "10K+ users · 99.9% uptime · 4.9★" |
 | 13 | FAQ accordion | "Frequently asked questions" with ≥ 3 Q/A items |
 | 14 | Emoji nav | ≥ 40 % of nav links prefixed with an emoji |
-| 15 | shadcn signature | CSS vars (`--background`), `data-slot`, Lucide, Radix attrs |
-| 16 | Glassmorphism | `backdrop-filter: blur(...)` on a translucent panel |
+| 15 | Glassmorphism | `backdrop-filter: blur(...)` on a translucent panel |
 
 The full rule for each pattern lives in `src/patterns/<id>.js`.
 

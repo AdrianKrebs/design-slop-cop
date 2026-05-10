@@ -8,7 +8,6 @@ export const SLOP_FONT_PREFIXES = [
   'Sora',
   'Young Serif',
   'Bodoni',
-  'Geist',
   'Syne'
 ];
 

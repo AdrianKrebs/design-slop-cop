@@ -1,13 +1,18 @@
-// Templated display fonts — Space Grotesk, Instrument Serif, Geist, Syne
+// Templated display fonts — Space Grotesk, Instrument Serif, Syne, Fraunces
 // and friends. These fonts are fine in isolation; the tell is that they
-// show up as defaults across shadcn / v0 / Vercel-template starter pages
-// without intentional pairing. Reads the font analysis on ctx.fonts.
+// show up as defaults across v0 / template starter pages without intentional
+// pairing. Reads the font analysis on ctx.fonts.
 
 const TEMPLATED_HEADING_FONTS = [
   'Space Grotesk', 'Instrument Serif', 'Fraunces',
   'Bricolage Grotesque', 'Sora', 'Young Serif',
-  'Bodoni', 'Geist', 'Syne'
+  'Bodoni', 'Syne'
 ];
+
+function isTemplatedFont(name) {
+  if (!name) return false;
+  return TEMPLATED_HEADING_FONTS.some(f => name === f || name.startsWith(f + ' '));
+}
 
 export default {
   // Pattern id unchanged for backwards compat with dataset/labels.jsonl.
@@ -29,14 +34,18 @@ export default {
 
   score: function (signal, T) {
     if (!signal || !signal.detected || !signal.detected.length) return { triggered: false };
-    const totalPct = signal.detected.reduce((a, b) => a + b.pct, 0);
+    // Filter cached detections through the current list so removing a font
+    // (e.g. Geist) takes effect on rescore without re-extracting every URL.
+    const detected = signal.detected.filter(x => isTemplatedFont(x.name));
+    const totalPct = detected.reduce((a, b) => a + b.pct, 0);
     const heading = signal.headingFont;
-    const headingSlop = heading && TEMPLATED_HEADING_FONTS.some(f => heading === f || heading.startsWith(f + ' '));
+    const headingSlop = isTemplatedFont(heading);
     if (totalPct < T.minTotalPct && !headingSlop) return { triggered: false };
+    if (!detected.length && !headingSlop) return { triggered: false };
     return {
       triggered: true,
       evidence: {
-        fonts: signal.detected.map(x => `${x.name} (${x.pct}%)`),
+        fonts: detected.map(x => `${x.name} (${x.pct}%)`),
         heading
       }
     };
