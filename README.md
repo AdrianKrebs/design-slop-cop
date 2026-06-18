@@ -3,7 +3,7 @@
 A tool to score any website for common AI design patterns.
 Basis for the [blog post](https://www.adriankrebs.ch/blog/design-slop/) and the HN discussion ["Scoring Show HN submissions for AI design patterns"](https://news.ycombinator.com/item?id=47864393).
 
-The tool loads each site in a headless browser, analyzes the DOM, and reports which of 15 deterministic AI design patterns are found.
+The tool loads each site in a headless browser, analyzes the DOM, and reports which of 16 deterministic AI design patterns are found.
 Manual verification across ~150 labeled sites suggests ~5–10% false positives. Still, take it with a grain of salt :)
 
 ## Install
@@ -22,21 +22,22 @@ A clean site (no AI design patterns triggered):
 ```bash
 $ node check.js https://news.ycombinator.com/
 https://news.ycombinator.com/
-Clean · score 0/100 · 0/15 patterns
+Clean · score 0/100 · 0/16 patterns
 ```
 
-A heavy one (6 patterns triggered):
+A heavy one (7 patterns triggered):
 
 ```bash
 $ node check.js https://engagemii.com/aeo
 https://engagemii.com/aeo
-Heavy · score 40/100 · 6/15 patterns
+Heavy · score 44/100 · 7/16 patterns
 
 Triggered:
   • Vibe purple
   • Gradients
   • Perma dark
   • 1·2·3 steps
+  • Stat banner
   • Headline badge
   • FAQ
 ```
@@ -47,10 +48,10 @@ Add `--json` for machine-readable output:
 $ node check.js https://engagemii.com/aeo --json
 {
   "url": "https://engagemii.com/aeo",
-  "score": 40,
+  "score": 44,
   "tierLabel": "Heavy",
-  "patternsFlagged": 6,
-  "patternsTotal": 15,
+  "patternsFlagged": 7,
+  "patternsTotal": 16,
   "patterns": [
     { "id": "purple_accent", "label": "Vibe purple", "triggered": true, "evidence": {...} },
     ...
@@ -87,23 +88,24 @@ Results go to `results/`:
 
 ## Patterns
 
-| # | Pattern | Tell |
+| # | Pattern | The tell |
 |---|---|---|
-| 1 | Templated display font | Space Grotesk, Instrument Serif, Syne, Fraunces — fine in isolation, default-stack tell when used as the page heading |
-| 2 | Centered hero | H1 centered + Inter as primary font |
-| 3 | VibeCode purple | Filled violet/indigo CTAs |
-| 4 | Perma dark | Dark template, or muted grey body text on dark |
-| 5 | All-caps headings | ≥ 3 uppercase H-tags |
-| 6 | Gradients | linear/radial/conic-gradient + `background-clip: text` |
-| 7 | Colored glow | Saturated `box-shadow` blur ≥ 15 px |
-| 8 | Headline badge | Small pill or label sitting above the H1 |
-| 9 | Accent stripe | Colored left/top stripe on a card with a heading |
-| 10 | Icon-card grid | 3–12 cards: icon-in-badge + title + blurb |
-| 11 | Numbered steps | "1·2·3" digits in styled badges |
-| 12 | Stat banner | "10K+ users · 99.9% uptime · 4.9★" |
-| 13 | FAQ accordion | "Frequently asked questions" with ≥ 3 Q/A items |
-| 14 | Emoji nav | ≥ 40 % of nav links prefixed with an emoji |
-| 15 | Glassmorphism | `backdrop-filter: blur(...)` on a translucent panel |
+| 1 | Templated display fonts | Space Grotesk, Instrument Serif, Geist, Syne, or Fraunces used as the page default |
+| 2 | Hero font mix | One hero word set apart with a second font, an italic, or a different color |
+| 3 | Vibe purple | Indigo/violet accent on CTAs and links |
+| 4 | Gradients | Gradient backgrounds, or gradient-clipped hero text |
+| 5 | Accent stripe | Colored stripe on a card's top or left edge |
+| 6 | Glassmorphism | Backdrop-blur on translucent floating panels |
+| 7 | Colored glow | Saturated `box-shadow` glow on buttons and cards |
+| 8 | Emoji nav | Nav or sidebar items prefixed with emoji |
+| 9 | Centered + Inter | Centered hero set in Inter or a generic sans |
+| 10 | All-caps headings | Section labels and nav set in caps |
+| 11 | Perma dark | Dark background with muted grey body text |
+| 12 | Icon cards | A row of identical icon + title + blurb cards |
+| 13 | Numbered steps | A "1 · 2 · 3" step sequence |
+| 14 | Stat banner | "10K+ users · 99.9% uptime · 4.9★" stat row |
+| 15 | Headline badge | A pill badge floating above the H1 |
+| 16 | FAQ accordion | "Frequently asked questions" with 3+ collapsible Q&As |
 
 The full rule for each pattern lives in `src/patterns/<id>.js`.
 
@@ -128,7 +130,15 @@ The scan UI launches a real browser per URL, so the first scan after starting th
 
 ## Adding a pattern
 
-Drop a file in `src/patterns/<id>.js` and append it to the list in `src/patterns/index.js`. Each pattern exports `{ id, label, shortLabel, description, category, thresholds, extract(ctx), score(signal, T) }`. `extract` is serialized via `Function.prototype.toString()` and runs in the browser — keep it self-contained (only reference `ctx.*`, no closures, no imports). `score` runs in Node and returns `{ triggered: true/false, evidence: ... }`.
+Spotted a tell we miss? Each pattern is one self-contained file. To add one:
+
+1. **Copy the template:** `cp src/patterns/_template.js src/patterns/<your-id>.js`. It documents the full export shape, everything available in `ctx`, and the one gotcha (below).
+2. **Fill in the exports:** `{ id, label, shortLabel, description, category, thresholds, extract(ctx), score(signal, T) }`.
+   - `extract(ctx)` runs **in the browser** (it's serialized with `Function.prototype.toString()`), so keep it self-contained: reference only `ctx.*` — no imports, closures, or outer variables.
+   - `score(signal, T)` runs **in Node** and returns `{ triggered: true|false, evidence: ... }`.
+3. **Register it:** import the file in `src/patterns/index.js` and append it to the `PATTERNS` array (array order = display order).
+4. **Debug it:** `node check.js <a-site-that-should-trigger-it> --pattern=<your-id>` prints the raw signal your `extract` returned and the verdict your `score` returned. Confirm it fires there and stays quiet on clean sites.
+5. **Check accuracy:** `npm run eval` to make sure precision/recall didn't regress, then open a PR.
 
 ## License
 

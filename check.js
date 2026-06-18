@@ -1,21 +1,29 @@
 #!/usr/bin/env node
 // One-shot CLI: takes a URL, prints a scored verdict.
 //
-//   node cli.js https://example.com
-//   node cli.js https://example.com --json
+//   node check.js https://example.com
+//   node check.js https://example.com --json
+//   node check.js https://example.com --pattern=gradients   # debug one pattern
 
 import { chromium } from 'playwright';
 import { buildDetectorSource } from './src/detector.js';
 import { analyzePage } from './src/run.js';
+import { PATTERNS } from './src/patterns/index.js';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 const args = process.argv.slice(2);
 const jsonOnly = args.includes('--json');
+const patternId = args.find(a => a.startsWith('--pattern='))?.slice('--pattern='.length);
 const url = args.find(a => !a.startsWith('--'));
 
 if (!url) {
-  console.error('usage: npx design-slop-cop <url> [--json]');
+  console.error('usage: npx design-slop-cop <url> [--json] [--pattern=<id>]');
+  process.exit(1);
+}
+
+if (patternId && !PATTERNS.some(p => p.id === patternId)) {
+  console.error(`unknown pattern: ${patternId}\nvalid ids: ${PATTERNS.map(p => p.id).join(', ')}`);
   process.exit(1);
 }
 
@@ -37,6 +45,34 @@ await browser.close();
 if (result.error) {
   console.error('error:', result.error);
   process.exit(3);
+}
+
+// --pattern=<id>: focus on a single pattern — show its raw signal (what
+// extract() returned) and its verdict + evidence (what score() returned).
+// This is the fast feedback loop when authoring or debugging one pattern.
+if (patternId) {
+  const scored = result.patterns.find(p => p.id === patternId);
+  const rawSignal = result.raw?.signals?.[patternId] ?? null;
+  if (jsonOnly) {
+    console.log(JSON.stringify({
+      url: result.url, pattern: patternId,
+      triggered: scored.triggered, evidence: scored.evidence, signal: rawSignal
+    }, null, 2));
+    process.exit(0);
+  }
+  const reset = '\x1b[0m', bold = '\x1b[1m', dim = '\x1b[2m';
+  const mark = scored.triggered ? '\x1b[31m● triggered' : '\x1b[32m○ not triggered';
+  console.log();
+  console.log(`${bold}${scored.label}${reset} ${dim}(${patternId})${reset}`);
+  console.log(`${mark}${reset}  on ${result.url}`);
+  console.log();
+  console.log(`${dim}signal (from extract):${reset}`);
+  console.log(JSON.stringify(rawSignal, null, 2));
+  console.log();
+  console.log(`${dim}evidence (from score):${reset}`);
+  console.log(JSON.stringify(scored.evidence ?? null, null, 2));
+  console.log();
+  process.exit(0);
 }
 
 if (jsonOnly) {
