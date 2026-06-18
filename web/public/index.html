@@ -84,9 +84,11 @@
   .loading, .error-row { padding: 16px 0; color: var(--muted); font-size: 16px; display: flex; align-items: center; }
   .error-row { color: var(--heavy); font-weight: 700; }
 
-  .item { display: grid; grid-template-columns: 120px 1fr; gap: 18px; padding: 20px 0; align-items: start; }
-  @media (max-width: 600px) { .item { grid-template-columns: 88px 1fr; gap: 12px; } }
-  .shot { border: 1px solid var(--border); overflow-y: auto; max-height: 220px; cursor: zoom-in; align-self: start; }
+  .item { display: grid; grid-template-columns: 190px 1fr; gap: 22px; padding: 20px 0; align-items: start; }
+  @media (max-width: 600px) { .item { grid-template-columns: 116px 1fr; gap: 14px; } }
+  /* Thumbnail = a clean top-crop of the full-page screenshot (no scrollbar);
+     click to zoom into the whole page. */
+  .shot { border: 1px solid var(--border); overflow: hidden; max-height: 280px; cursor: zoom-in; align-self: start; background: var(--panel); }
   .shot img { width: 100%; display: block; }
   .shot.empty { display: flex; align-items: center; justify-content: center; min-height: 78px; color: var(--muted); font-size: 13px; cursor: default; }
 
