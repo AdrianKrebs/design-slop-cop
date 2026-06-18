@@ -60,6 +60,16 @@ $ node check.js https://engagemii.com/aeo --json
 
 To update an existing clone, `git pull` inside the directory.
 
+## Run the web frontend
+
+The same UI as the public site — paste a URL, get a scored verdict and screenshot:
+
+```bash
+npm start          # → http://localhost:8080
+```
+
+The first scan is slow (it warms up a headless browser); subsequent scans reuse it. `/show` serves the browsable Show HN gallery. To deploy it publicly, see [`DEPLOY.md`](DEPLOY.md).
+
 ## Run the full corpus
 
 For batch analysis (e.g. the bundled `urls.txt` with ~1000 Show HN posts) — same install as above, then:
@@ -107,7 +117,7 @@ tier  = ≥4 Heavy · 2–3 Some · 0–1 Clean
 ## Tools
 
 ```bash
-npm run scan      # → http://localhost:7788  paste a URL, see verdict
+npm run scan      # → http://localhost:7788  minimal dev scanner (see "Run the web frontend" for the full UI)
 npm run label     # → http://localhost:7777  label sites for ground truth
 npm run eval      # precision / recall vs dataset/labels.jsonl (165 labels shipped)
 npm run report    # generate results/index.html — browsable tier-filtered grid
