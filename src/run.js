@@ -40,14 +40,14 @@ export async function analyzePage(browser, url, detectorSource, opts = {}) {
     locale: 'en-US'
   });
   const page = await context.newPage();
-  page.setDefaultTimeout(45000);
+  page.setDefaultTimeout(25000);
   const started = Date.now();
   let loadError = null;
   try {
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
+    await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
   } catch (e) {
     loadError = e.message;
-    try { await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 }); loadError = null; } catch (e2) { loadError = e2.message; }
+    try { await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 }); loadError = null; } catch (e2) { loadError = e2.message; }
   }
   if (loadError) {
     await context.close();
