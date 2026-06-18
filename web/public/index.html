@@ -104,6 +104,12 @@
   .tier.clean { color: var(--clean); background: var(--clean-bg); }
   .item .meta { color: var(--muted); font-size: 15px; margin-top: 4px; }
 
+  /* Shareable "Copy link" action, right-aligned in the title line. */
+  .copy { margin-left: auto; font: 400 15px var(--font); background: none; border: 0; padding: 0; cursor: pointer; color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; white-space: nowrap; }
+  .copy:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
+  .copy:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
+  .copy.copied { color: var(--clean); text-decoration: none; cursor: default; }
+
   /* Detected patterns: a compact list of the tells found. Each name carries a
      hover tooltip with its description; the clean (not-triggered) patterns
      aren't listed (the count in .meta already implies them). */
@@ -184,12 +190,33 @@ document.getElementById('random').addEventListener('click', async () => {
   } catch (e) { /* ignore; user can paste a URL manually */ }
 });
 
-// screenshots are added dynamically, so delegate the zoom click
+// Result cards are added dynamically, so delegate clicks (copy link + zoom).
 results.addEventListener('click', e => {
+  const btn = e.target.closest('.copy');
+  if (btn) {
+    copyLink(btn.dataset.share).then(() => {
+      btn.textContent = 'Copied ✓'; btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy link'; btn.classList.remove('copied'); }, 1500);
+    }).catch(() => {});
+    return;
+  }
   const img = e.target.closest('.shot img');
   if (!img) return;
   zoomImg.src = img.src; zoom.classList.add('open');
 });
+
+function shareUrl(u) { return location.origin + '/?url=' + encodeURIComponent(u); }
+function copyLink(text) {
+  if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+  return new Promise((resolve, reject) => {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+      document.body.removeChild(ta); resolve();
+    } catch (err) { reject(err); }
+  });
+}
 zoom.addEventListener('click', () => zoom.classList.remove('open'));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') zoom.classList.remove('open'); });
 
@@ -215,6 +242,8 @@ form.addEventListener('submit', async e => {
     }
     card.className = 'item';
     card.innerHTML = renderCard(data);
+    // Reflect the latest result in the address bar so it's directly shareable.
+    try { history.replaceState(null, '', '?url=' + encodeURIComponent(data.url)); } catch (_) {}
   } catch (err) {
     card.className = 'error-row';
     card.textContent = 'Network error: ' + err.message;
@@ -235,7 +264,8 @@ function renderCard(data) {
 
   h += '<div class="body">';
   h += '<div class="title-line"><a class="t" href="' + esc(data.url) + '" target="_blank" rel="noopener">' + esc(hostOf(data.url)) + '</a>';
-  h += '<span class="tier ' + tierClass + '">' + esc(tierName) + '</span></div>';
+  h += '<span class="tier ' + tierClass + '">' + esc(tierName) + '</span>';
+  h += '<button class="copy" type="button" data-share="' + esc(shareUrl(data.url)) + '">Copy link</button></div>';
   h += '<div class="meta">' + data.score + '/100 · ' + data.patternsFlagged + ' of ' + data.patternsTotal + ' patterns · ' + timing + '</div>';
 
   if (flagged.length) {
@@ -254,6 +284,11 @@ function renderCard(data) {
 
 function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } }
 function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+
+// Deep link: /?url=example.com pre-fills and runs the scan on load
+// (served instantly from cache if the result is still warm).
+const deepLinkUrl = new URLSearchParams(location.search).get('url');
+if (deepLinkUrl) { urlInput.value = deepLinkUrl; form.requestSubmit(); }
 </script>
 </body>
 </html>
