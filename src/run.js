@@ -47,7 +47,7 @@ export async function analyzePage(browser, url, detectorSource, opts = {}) {
     await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
   } catch (e) {
     loadError = e.message;
-    try { await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 }); loadError = null; } catch (e2) { loadError = e2.message; }
+    try { await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 }); loadError = null; } catch (e2) { loadError = e2.message; }
   }
   if (loadError) {
     await context.close();
