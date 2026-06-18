@@ -105,6 +105,9 @@
   .none { color: var(--clean); font-size: 16px; font-weight: 700; margin-top: 10px; }
   .clean-line { color: var(--muted); font-size: 15px; line-height: 1.55; margin-top: 12px; }
   .clean-line .lbl { color: var(--text); font-weight: 700; }
+  /* Each clean pattern name carries a hover tooltip explaining the tell. */
+  .clean-line .cp { cursor: help; text-decoration: underline dotted; text-decoration-color: var(--border); text-underline-offset: 2px; }
+  .pattern .head strong { cursor: help; }
 
   footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; line-height: 1.55; }
 
@@ -217,7 +220,7 @@ function renderCard(data) {
   if (flagged.length) {
     h += '<div class="flagged">';
     h += flagged.map(p =>
-      '<div class="pattern"><div class="head"><span class="dotmark"></span><strong>' + esc(p.label || p.id) + '</strong></div>' +
+      '<div class="pattern"><div class="head"><span class="dotmark"></span><strong title="' + esc(tip(p)) + '">' + esc(p.label || p.id) + '</strong></div>' +
       (p.description ? '<div class="ev">' + esc(p.description) + '</div>' : '') + '</div>'
     ).join('');
     h += '</div>';
@@ -225,12 +228,14 @@ function renderCard(data) {
     h += '<div class="none">No patterns triggered. Clean.</div>';
   }
   if (clean.length) {
-    h += '<div class="clean-line"><span class="lbl">Clean:</span> ' + clean.map(p => esc(p.label || p.id)).join(', ') + '</div>';
+    h += '<div class="clean-line"><span class="lbl">Clean:</span> ' + clean.map(p => '<span class="cp" title="' + esc(tip(p)) + '">' + esc(p.label || p.id) + '</span>').join(', ') + '</div>';
   }
   h += '</div>';
   return h;
 }
 
+// Tooltip text for a pattern: name + the one-line description of the tell.
+function tip(p) { const name = p.label || p.id; return p.description ? name + ' — ' + p.description : name; }
 function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } }
 function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
 </script>

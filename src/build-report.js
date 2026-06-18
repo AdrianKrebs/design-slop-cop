@@ -58,7 +58,7 @@ const sites = ok.map(r => {
   return tb - ta || b.score - a.score;
 });
 
-const patternMeta = PATTERNS.map(p => ({ id: p.id, shortLabel: p.shortLabel, label: p.label }));
+const patternMeta = PATTERNS.map(p => ({ id: p.id, shortLabel: p.shortLabel, label: p.label, description: p.description }));
 const total = ok.length;
 
 const data = { sites, tierCount, patternCount, patternMeta, total, noImages, cdnBase, generatedAt: new Date().toISOString() };
@@ -325,6 +325,8 @@ const html = `<!doctype html>
 <script>
 const data = ${JSON.stringify(data)};
 const patternLabel = Object.fromEntries(data.patternMeta.map(p => [p.id, p.shortLabel || p.label || p.id]));
+// Tooltip text for a pattern: full label + one-line description of the tell.
+const patternTip = Object.fromEntries(data.patternMeta.map(p => [p.id, (p.label || p.shortLabel || p.id) + (p.description ? ' — ' + p.description : '')]));
 const TIER_HASH = { heavy: 'Heavy', mild: 'Mild', clean: 'Clean', all: null, '': null };
 const TIER_CLASS = { Heavy: 'tier-heavy', Mild: 'tier-mild', Clean: 'tier-clean' };
 const TIER_DISPLAY = { Heavy: 'Heavy', Mild: 'Some', Clean: 'Clean' };
@@ -365,7 +367,7 @@ function renderFreq() {
     const pct = (100 * p.count / data.total).toFixed(0);
     const w = (100 * p.count / max).toFixed(1);
     const active = p.id === activePattern ? ' active' : '';
-    return \`<div class="freq-row\${active}" data-pattern="\${escape(p.id)}" title="\${escape(p.label || p.shortLabel)}"><div class="name">\${escape(p.shortLabel)}</div><div class="bar"><div class="bar-fill" style="width:\${w}%"></div></div><div class="pct">\${pct}%</div></div>\`;
+    return \`<div class="freq-row\${active}" data-pattern="\${escape(p.id)}" title="\${escape(patternTip[p.id] || p.label || p.shortLabel)}"><div class="name">\${escape(p.shortLabel)}</div><div class="bar"><div class="bar-fill" style="width:\${w}%"></div></div><div class="pct">\${pct}%</div></div>\`;
   }).join('');
 }
 
@@ -456,7 +458,7 @@ function renderGrid() {
     const pts = (s.points != null) ? \` · \${s.points} point\${s.points === 1 ? '' : 's'}\` : '';
     const pats = s.flagged.map(id => {
       const cls = id === activePattern ? 'flag active' : 'flag';
-      return \`<a class="\${cls}" data-pattern="\${escape(id)}" href="#">\${escape(patternLabel[id] || id)}</a>\`;
+      return \`<a class="\${cls}" data-pattern="\${escape(id)}" href="#" title="\${escape(patternTip[id] || patternLabel[id] || id)}">\${escape(patternLabel[id] || id)}</a>\`;
     }).join(' · ');
     const shot = data.noImages
       ? '<span class="shot"></span>'
