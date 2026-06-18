@@ -73,14 +73,16 @@
   .examples button:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
   .examples button:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
 
-  /* GOV.UK finder document-list: one row per scan, newest prepended,
-     hairline-separated. Nothing shows until the first scan. */
+  /* GOV.UK finder document-list: one row per scan, newest prepended. Each row
+     carries a TOP hairline (so the list shows one rule at the top and one
+     between rows, last row open-ended); the footer supplies the single closing
+     rule. No doubled hairline above the footer in either populated or empty
+     state. Nothing shows until the first scan. */
   .results { margin-top: 28px; }
-  .results:not(:empty) { border-top: 1px solid var(--border); }
-  .loading, .error-row { padding: 16px 0; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 16px; display: flex; align-items: center; }
+  .loading, .error-row { padding: 16px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 16px; display: flex; align-items: center; }
   .error-row { color: var(--heavy); font-weight: 700; }
 
-  .item { display: grid; grid-template-columns: 120px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--border); align-items: start; }
+  .item { display: grid; grid-template-columns: 120px 1fr; gap: 18px; padding: 20px 0; border-top: 1px solid var(--border); align-items: start; }
   @media (max-width: 600px) { .item { grid-template-columns: 88px 1fr; gap: 12px; } }
   .shot { border: 1px solid var(--border); overflow-y: auto; max-height: 220px; cursor: zoom-in; align-self: start; }
   .shot img { width: 100%; display: block; }
@@ -90,26 +92,37 @@
   .item .title-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; font-size: 19px; line-height: 1.3; }
   .item .title-line a.t { color: var(--link); font-weight: 700; text-decoration: underline; text-underline-offset: 0.15em; }
   .item .title-line a.t:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
+  /* Tier as a GOV.UK Tag: tinted badge, uppercase; the text carries the meaning
+     (not colour alone), per GOV.UK accessibility guidance. */
   .tier { font-weight: 700; font-size: 12px; letter-spacing: .02em; text-transform: uppercase; padding: 2px 8px 1px; white-space: nowrap; }
   .tier.heavy { color: var(--heavy); background: var(--heavy-bg); }
   .tier.mild  { color: var(--mild);  background: var(--mild-bg); }
   .tier.clean { color: var(--clean); background: var(--clean-bg); }
   .item .meta { color: var(--muted); font-size: 15px; margin-top: 4px; }
 
-  .flagged { margin-top: 12px; }
-  .pattern { padding: 8px 0; border-top: 1px solid var(--border); font-size: 16px; }
-  .pattern .head { display: flex; align-items: baseline; gap: 11px; }
-  .pattern .head strong { font-weight: 700; }
-  .dotmark { width: 8px; height: 8px; background: var(--heavy); flex-shrink: 0; position: relative; top: 1px; }
-  .ev { color: var(--muted); font-size: 15px; line-height: 1.45; margin: 3px 0 0 19px; }
-  .none { color: var(--clean); font-size: 16px; font-weight: 700; margin-top: 10px; }
-  .clean-line { color: var(--muted); font-size: 15px; line-height: 1.55; margin-top: 12px; }
-  .clean-line .lbl { color: var(--text); font-weight: 700; }
-  /* Each clean pattern name carries a hover tooltip explaining the tell. */
-  .clean-line .cp { cursor: help; text-decoration: underline dotted; text-decoration-color: var(--border); text-underline-offset: 2px; }
-  .pattern .head strong { cursor: help; }
+  /* Detected patterns: a compact list of the tells found — names always
+     visible; the clean (not-triggered) patterns aren't listed (the count in
+     .meta already implies them). */
+  .patterns { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+  .pattern { display: flex; align-items: baseline; gap: 11px; font-size: 17px; font-weight: 700; line-height: 1.35; }
+  .dotmark { width: 8px; height: 8px; background: var(--heavy); flex-shrink: 0; position: relative; top: 6px; }
+  .none { color: var(--clean); font-size: 17px; font-weight: 700; margin: 16px 0 0; }
 
-  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; line-height: 1.55; }
+  /* "What these mean": GOV.UK Details disclosure — keyboard/touch/screen-reader
+     accessible, unlike a hover tooltip. Descriptions revealed only on demand. */
+  .why { margin-top: 16px; }
+  .why > summary { display: inline-flex; align-items: center; gap: 8px; width: fit-content; color: var(--link); font-size: 16px; text-decoration: underline; text-underline-offset: 0.15em; cursor: pointer; list-style: none; }
+  .why > summary::-webkit-details-marker { display: none; }
+  .why > summary::before { content: ''; width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 7px; border-color: transparent transparent transparent currentColor; transition: transform .1s ease; }
+  .why[open] > summary::before { transform: rotate(90deg); }
+  .why > summary:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
+  .why > summary:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
+  .why-list { margin: 12px 0 2px; padding: 2px 0 2px 16px; border-left: 4px solid var(--border); }
+  .why-list > div { padding: 6px 0; }
+  .why-list dt { font-weight: 700; font-size: 16px; }
+  .why-list dd { margin: 3px 0 0; color: var(--muted); font-size: 15px; line-height: 1.45; }
+
+  footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; line-height: 1.55; }
 
   .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--text); border-radius: 50%; animation: spin .7s linear infinite; margin-right: 9px; }
   @keyframes spin { to { transform: rotate(360deg); } }
@@ -205,7 +218,6 @@ function renderCard(data) {
   const tierClass = (data.tierLabel || data.tier || '').toLowerCase();
   const tierName = { Heavy: 'Heavy', Mild: 'Some', Clean: 'Clean' }[data.tierLabel] || data.tierLabel || data.tier;
   const flagged = data.patterns.filter(p => p.triggered);
-  const clean = data.patterns.filter(p => !p.triggered);
   const timing = data.cached ? 'cached' : (data.elapsedMs / 1000).toFixed(1) + 's';
 
   let h = data.screenshot
@@ -218,24 +230,24 @@ function renderCard(data) {
   h += '<div class="meta">' + data.score + '/100 · ' + data.patternsFlagged + ' of ' + data.patternsTotal + ' patterns · ' + timing + '</div>';
 
   if (flagged.length) {
-    h += '<div class="flagged">';
-    h += flagged.map(p =>
-      '<div class="pattern"><div class="head"><span class="dotmark"></span><strong title="' + esc(tip(p)) + '">' + esc(p.label || p.id) + '</strong></div>' +
-      (p.description ? '<div class="ev">' + esc(p.description) + '</div>' : '') + '</div>'
-    ).join('');
-    h += '</div>';
+    // Names always visible (the tells found); descriptions revealed on demand
+    // via a GOV.UK Details disclosure — accessible, unlike a hover tooltip.
+    h += '<ul class="patterns">';
+    h += flagged.map(p => '<li class="pattern"><span class="dotmark"></span>' + esc(p.label || p.id) + '</li>').join('');
+    h += '</ul>';
+    const withDesc = flagged.filter(p => p.description);
+    if (withDesc.length) {
+      h += '<details class="why"><summary>What ' + (flagged.length === 1 ? 'this pattern means' : 'these patterns mean') + '</summary><dl class="why-list">';
+      h += withDesc.map(p => '<div><dt>' + esc(p.label || p.id) + '</dt><dd>' + esc(p.description) + '</dd></div>').join('');
+      h += '</dl></details>';
+    }
   } else {
-    h += '<div class="none">No patterns triggered. Clean.</div>';
-  }
-  if (clean.length) {
-    h += '<div class="clean-line"><span class="lbl">Clean:</span> ' + clean.map(p => '<span class="cp" title="' + esc(tip(p)) + '">' + esc(p.label || p.id) + '</span>').join(', ') + '</div>';
+    h += '<p class="none">No AI design patterns triggered. Clean.</p>';
   }
   h += '</div>';
   return h;
 }
 
-// Tooltip text for a pattern: name + the one-line description of the tell.
-function tip(p) { const name = p.label || p.id; return p.description ? name + ' — ' + p.description : name; }
 function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } }
 function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
 </script>
