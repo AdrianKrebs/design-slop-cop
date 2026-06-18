@@ -102,29 +102,17 @@
   .tier.clean { color: var(--clean); background: var(--clean-bg); }
   .item .meta { color: var(--muted); font-size: 15px; margin-top: 4px; }
 
-  /* Detected patterns: a compact list of the tells found — names always
-     visible; the clean (not-triggered) patterns aren't listed (the count in
-     .meta already implies them). */
+  /* Detected patterns: a compact list of the tells found. Each name carries a
+     hover tooltip with its description; the clean (not-triggered) patterns
+     aren't listed (the count in .meta already implies them). */
   .patterns { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
-  /* Square marker as a pseudo-element pinned to the first text line, so it
-     stays aligned with the heading regardless of wrapping. */
-  .pattern { position: relative; padding-left: 20px; font-size: 17px; font-weight: 700; line-height: 1.4; }
-  .pattern::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 8px; height: 8px; margin-top: -4px; background: var(--heavy); }
+  /* Flex row: square marker + name. The marker's margin-top centers it on the
+     first text line (line box height − marker height, halved), so it stays
+     aligned with the heading even when the name wraps. */
+  .pattern { display: flex; align-items: flex-start; gap: 11px; font-size: 17px; font-weight: 700; line-height: 1.4; }
+  .pattern::before { content: ""; flex: 0 0 8px; width: 8px; height: 8px; margin-top: calc((1.4em - 8px) / 2); background: var(--heavy); }
+  .pname { cursor: help; text-decoration: underline dotted; text-decoration-color: var(--border); text-underline-offset: 3px; }
   .none { color: var(--clean); font-size: 17px; font-weight: 700; margin: 16px 0 0; }
-
-  /* "What these mean": GOV.UK Details disclosure — keyboard/touch/screen-reader
-     accessible, unlike a hover tooltip. Descriptions revealed only on demand. */
-  .why { margin-top: 16px; }
-  .why > summary { display: inline-flex; align-items: center; gap: 8px; width: fit-content; color: var(--link); font-size: 16px; text-decoration: underline; text-underline-offset: 0.15em; cursor: pointer; list-style: none; }
-  .why > summary::-webkit-details-marker { display: none; }
-  .why > summary::before { content: ''; width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 7px; border-color: transparent transparent transparent currentColor; transition: transform .1s ease; }
-  .why[open] > summary::before { transform: rotate(90deg); }
-  .why > summary:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
-  .why > summary:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
-  .why-list { margin: 12px 0 2px; padding: 2px 0 2px 16px; border-left: 4px solid var(--border); }
-  .why-list > div { padding: 6px 0; }
-  .why-list dt { font-weight: 700; font-size: 16px; }
-  .why-list dd { margin: 3px 0 0; color: var(--muted); font-size: 15px; line-height: 1.45; }
 
   /* margin-top:auto pins the footer to the bottom of the viewport when content
      is short; collapses to 0 when results overflow (the last row's own padding
@@ -237,17 +225,12 @@ function renderCard(data) {
   h += '<div class="meta">' + data.score + '/100 · ' + data.patternsFlagged + ' of ' + data.patternsTotal + ' patterns · ' + timing + '</div>';
 
   if (flagged.length) {
-    // Names always visible (the tells found); descriptions revealed on demand
-    // via a GOV.UK Details disclosure — accessible, unlike a hover tooltip.
+    // The tells found; hover a name (dotted underline) for its description.
     h += '<ul class="patterns">';
-    h += flagged.map(p => '<li class="pattern">' + esc(p.label || p.id) + '</li>').join('');
+    h += flagged.map(p =>
+      '<li class="pattern"><span class="pname"' + (p.description ? ' title="' + esc(p.description) + '"' : '') + '>' + esc(p.label || p.id) + '</span></li>'
+    ).join('');
     h += '</ul>';
-    const withDesc = flagged.filter(p => p.description);
-    if (withDesc.length) {
-      h += '<details class="why"><summary>What ' + (flagged.length === 1 ? 'this pattern means' : 'these patterns mean') + '</summary><dl class="why-list">';
-      h += withDesc.map(p => '<div><dt>' + esc(p.label || p.id) + '</dt><dd>' + esc(p.description) + '</dd></div>').join('');
-      h += '</dl></details>';
-    }
   } else {
     h += '<p class="none">No AI design patterns triggered. Clean.</p>';
   }
