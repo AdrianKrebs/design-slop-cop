@@ -86,7 +86,7 @@ if (jsonOnly) {
 }
 
 const tierColor = { Heavy: '\x1b[31m', Mild: '\x1b[33m', Clean: '\x1b[32m' }[result.tierLabel] || '';
-const tierName = { Heavy: 'Heavy', Mild: 'Some', Clean: 'Clean' }[result.tierLabel] || result.tierLabel;
+const tierName = { Heavy: 'High slop', Mild: 'Medium slop', Clean: 'Low slop' }[result.tierLabel] || result.tierLabel;
 const reset = '\x1b[0m';
 const dim = '\x1b[2m';
 const bold = '\x1b[1m';

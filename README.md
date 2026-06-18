@@ -23,7 +23,7 @@ A clean site (no AI design patterns triggered):
 ```bash
 $ node check.js https://news.ycombinator.com/
 https://news.ycombinator.com/
-Clean · score 0/100 · 0/16 patterns
+Low slop · score 0/100 · 0/16 patterns
 ```
 
 A heavy one (7 patterns triggered):
@@ -31,7 +31,7 @@ A heavy one (7 patterns triggered):
 ```bash
 $ node check.js https://engagemii.com/aeo
 https://engagemii.com/aeo
-Heavy · score 44/100 · 7/16 patterns
+High slop · score 44/100 · 7/16 patterns
 
 Triggered:
   • Vibe purple
@@ -113,8 +113,8 @@ The full rule for each pattern lives in `src/patterns/<id>.js`.
 ## Score
 
 ```
-score = round(100 × patternsFlagged / patternsTotal)
-tier  = ≥4 Heavy · 2–3 Some · 0–1 Clean
+score      = round(100 × patternsFlagged / patternsTotal)
+slop level = ≥4 High · 2–3 Medium · 0–1 Low
 ```
 
 ## Tools

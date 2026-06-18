@@ -297,12 +297,12 @@ const html = `<!doctype html>
   <div class="finder">
     <aside class="finder-side">
       <div class="facet">
-        <h2 class="facet-h">Tier</h2>
+        <h2 class="facet-h">Slop level</h2>
         <ul class="facet-list">
           <li><a class="filter" data-tier="" href="#all">All <span class="fc">${total}</span></a></li>
-          <li><a class="filter" data-tier="Heavy" href="#heavy">Heavy <span class="fc">${tierCount.Heavy} (${(100 * tierCount.Heavy / total).toFixed(0)}%)</span></a></li>
-          <li><a class="filter" data-tier="Mild" href="#mild">Some <span class="fc">${tierCount.Mild} (${(100 * tierCount.Mild / total).toFixed(0)}%)</span></a></li>
-          <li><a class="filter" data-tier="Clean" href="#clean">Clean <span class="fc">${tierCount.Clean} (${(100 * tierCount.Clean / total).toFixed(0)}%)</span></a></li>
+          <li><a class="filter" data-tier="Heavy" href="#heavy">High <span class="fc">${tierCount.Heavy} (${(100 * tierCount.Heavy / total).toFixed(0)}%)</span></a></li>
+          <li><a class="filter" data-tier="Mild" href="#mild">Medium <span class="fc">${tierCount.Mild} (${(100 * tierCount.Mild / total).toFixed(0)}%)</span></a></li>
+          <li><a class="filter" data-tier="Clean" href="#clean">Low <span class="fc">${tierCount.Clean} (${(100 * tierCount.Clean / total).toFixed(0)}%)</span></a></li>
         </ul>
       </div>
       <details class="freq facet">
@@ -330,7 +330,7 @@ const patternLabel = Object.fromEntries(data.patternMeta.map(p => [p.id, p.short
 const patternTip = Object.fromEntries(data.patternMeta.map(p => [p.id, (p.label || p.shortLabel || p.id) + (p.description ? ' — ' + p.description : '')]));
 const TIER_HASH = { heavy: 'Heavy', mild: 'Mild', clean: 'Clean', all: null, '': null };
 const TIER_CLASS = { Heavy: 'tier-heavy', Mild: 'tier-mild', Clean: 'tier-clean' };
-const TIER_DISPLAY = { Heavy: 'Heavy', Mild: 'Some', Clean: 'Clean' };
+const TIER_DISPLAY = { Heavy: 'High', Mild: 'Medium', Clean: 'Low' };
 
 const SORT_KEYS = new Set(['date', 'score', 'points', 'flagged']);
 const PAGE_SIZE = 30;

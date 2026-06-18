@@ -223,7 +223,7 @@ form.addEventListener('submit', async e => {
 
 function renderCard(data) {
   const tierClass = (data.tierLabel || data.tier || '').toLowerCase();
-  const tierName = { Heavy: 'Heavy', Mild: 'Some', Clean: 'Clean' }[data.tierLabel] || data.tierLabel || data.tier;
+  const tierName = { Heavy: 'High slop', Mild: 'Medium slop', Clean: 'Low slop' }[data.tierLabel] || data.tierLabel || data.tier;
   const flagged = data.patterns.filter(p => p.triggered);
   const timing = data.cached ? 'cached' : (data.elapsedMs / 1000).toFixed(1) + 's';
 
