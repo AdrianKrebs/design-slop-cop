@@ -1,0 +1,45 @@
+# Fly.io config for the public Design Slop Cop.
+# `fly launch` will prompt to pick/confirm the app name and region; edit here too.
+
+app = "design-slop-cop"
+primary_region = "iad"   # Ashburn. Pick one near you/your audience (e.g. "fra", "lhr").
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "8080"
+  # Scans that may run at once PER machine. Each headless page wants ~0.5–1 GB.
+  # Keep in step with the VM memory below.
+  SCAN_CONCURRENCY = "2"
+  MAX_QUEUE = "12"
+  RATE_PER_MIN = "12"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  # Scale-to-zero to save money when idle. Keep 1 warm so the first HN visitor
+  # doesn't eat a container cold start; set to 0 if you want zero idle cost.
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  # Each request is heavy (a whole browser scan), so route on REQUEST count and
+  # keep the limits low — Fly starts more machines from the pool once a machine
+  # is at its soft limit, and stops routing to it past the hard limit.
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 2
+    hard_limit = 4
+
+  [[http_service.checks]]
+    method = "get"
+    path = "/healthz"
+    interval = "15s"
+    timeout = "3s"
+    grace_period = "20s"
+
+# Headless Chromium is RAM-hungry. 2 GB comfortably holds ~2 concurrent pages.
+[[vm]]
+  size = "shared-cpu-2x"
+  memory = "2gb"

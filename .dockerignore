@@ -1,0 +1,17 @@
+# Keep the build context tiny — results/ alone is ~1.5 GB.
+node_modules
+results
+dataset
+docs
+tools
+scripts
+urls.txt
+*.log
+.git
+.idea
+.vscode
+.env*
+.DS_Store
+**/.DS_Store
+README.md
+LICENSE

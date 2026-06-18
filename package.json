@@ -1,0 +1,32 @@
+{
+  "name": "design-slop-cop",
+  "version": "0.1.0",
+  "description": "Score landing pages against 16 deterministic AI design patterns",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/AdrianKrebs/design-slop-cop",
+  "repository": { "type": "git", "url": "https://github.com/AdrianKrebs/design-slop-cop.git" },
+  "bin": {
+    "design-slop-cop": "./check.js"
+  },
+  "files": [
+    "check.js",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "start":       "node web/server.mjs",
+    "web":         "node web/server.mjs",
+    "analyze":     "node src/run.js",
+    "fetch":       "node src/fetch-showhn.js",
+    "report":      "node src/build-report.js",
+    "label":       "node tools/label/server.mjs",
+    "scan":        "node tools/scan/server.mjs",
+    "eval":        "node tools/eval.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
