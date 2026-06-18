@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚨</text></svg>">
 <title>Design Slop Cop: how AI-generated is this website?</title>
 <meta name="description" content="Paste a URL. We load it in a real browser and score it against deterministic AI design patterns like vibe purple, gradients, FAQ accordions, and 1·2·3 steps.">
 <meta property="og:title" content="Design Slop Cop">
@@ -29,13 +30,13 @@
     --clean: #005a30;  --clean-bg: #cce2d8;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 400 18px/1.5 var(--font); }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 400 18px/1.5 var(--font); min-height: 100vh; display: flex; flex-direction: column; }
 
   a { color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
   a:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
   a:focus { outline: 3px solid transparent; color: #0b0c0c; background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px #0b0c0c; text-decoration: none; }
 
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px 80px; }
+  .wrap { max-width: 760px; width: 100%; margin: 0 auto; padding: 0 24px 40px; flex: 1 0 auto; display: flex; flex-direction: column; }
 
   /* GOV.UK-style black masthead: black bar, white wordmark, nav link right. */
   .topbar { background: var(--text); }
@@ -73,16 +74,17 @@
   .examples button:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
   .examples button:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
 
-  /* GOV.UK finder document-list: one row per scan, newest prepended. Each row
-     carries a TOP hairline (so the list shows one rule at the top and one
-     between rows, last row open-ended); the footer supplies the single closing
-     rule. No doubled hairline above the footer in either populated or empty
-     state. Nothing shows until the first scan. */
+  /* GOV.UK finder document-list: one row per scan, newest prepended. Rows are
+     separated from each other by a hairline (border on every row except the
+     first), so there's no rule above the first card and none at all in the
+     empty state. The footer supplies the single closing rule. Nothing shows
+     until the first scan. */
   .results { margin-top: 28px; }
-  .loading, .error-row { padding: 16px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 16px; display: flex; align-items: center; }
+  .results > * + * { border-top: 1px solid var(--border); }
+  .loading, .error-row { padding: 16px 0; color: var(--muted); font-size: 16px; display: flex; align-items: center; }
   .error-row { color: var(--heavy); font-weight: 700; }
 
-  .item { display: grid; grid-template-columns: 120px 1fr; gap: 18px; padding: 20px 0; border-top: 1px solid var(--border); align-items: start; }
+  .item { display: grid; grid-template-columns: 120px 1fr; gap: 18px; padding: 20px 0; align-items: start; }
   @media (max-width: 600px) { .item { grid-template-columns: 88px 1fr; gap: 12px; } }
   .shot { border: 1px solid var(--border); overflow-y: auto; max-height: 220px; cursor: zoom-in; align-self: start; }
   .shot img { width: 100%; display: block; }
@@ -104,8 +106,10 @@
      visible; the clean (not-triggered) patterns aren't listed (the count in
      .meta already implies them). */
   .patterns { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
-  .pattern { display: flex; align-items: baseline; gap: 11px; font-size: 17px; font-weight: 700; line-height: 1.35; }
-  .dotmark { width: 8px; height: 8px; background: var(--heavy); flex-shrink: 0; position: relative; top: 6px; }
+  /* Square marker as a pseudo-element pinned to the first text line, so it
+     stays aligned with the heading regardless of wrapping. */
+  .pattern { position: relative; padding-left: 20px; font-size: 17px; font-weight: 700; line-height: 1.4; }
+  .pattern::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 8px; height: 8px; margin-top: -4px; background: var(--heavy); }
   .none { color: var(--clean); font-size: 17px; font-weight: 700; margin: 16px 0 0; }
 
   /* "What these mean": GOV.UK Details disclosure — keyboard/touch/screen-reader
@@ -122,7 +126,10 @@
   .why-list dt { font-weight: 700; font-size: 16px; }
   .why-list dd { margin: 3px 0 0; color: var(--muted); font-size: 15px; line-height: 1.45; }
 
-  footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; line-height: 1.55; }
+  /* margin-top:auto pins the footer to the bottom of the viewport when content
+     is short; collapses to 0 when results overflow (the last row's own padding
+     keeps a gap above the rule). One rule, always at the bottom. */
+  footer { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; line-height: 1.55; }
 
   .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--text); border-radius: 50%; animation: spin .7s linear infinite; margin-right: 9px; }
   @keyframes spin { to { transform: rotate(360deg); } }
@@ -233,7 +240,7 @@ function renderCard(data) {
     // Names always visible (the tells found); descriptions revealed on demand
     // via a GOV.UK Details disclosure — accessible, unlike a hover tooltip.
     h += '<ul class="patterns">';
-    h += flagged.map(p => '<li class="pattern"><span class="dotmark"></span>' + esc(p.label || p.id) + '</li>').join('');
+    h += flagged.map(p => '<li class="pattern">' + esc(p.label || p.id) + '</li>').join('');
     h += '</ul>';
     const withDesc = flagged.filter(p => p.description);
     if (withDesc.length) {
