@@ -6,7 +6,7 @@ export default {
   id: 'glassmorphism',
   label: 'Glassmorphism',
   shortLabel: 'Glass',
-  description: 'Backdrop-blur on floating panels.',
+  description: "Frosted, blurred translucent panels.",
   category: 'css',
   thresholds: {
     minBlurPx: 2,

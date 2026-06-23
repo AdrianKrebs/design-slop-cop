@@ -4,7 +4,7 @@ export default {
   id: 'sidebar_emoji',
   label: 'Sidebar/nav with emoji icons',
   shortLabel: 'Emoji nav',
-  description: 'Nav or sidebar items with emoji icons.',
+  description: "Navigation links prefixed with emoji.",
   category: 'layout',
   thresholds: {
     sidebarRatio: 0.4,        // ≥40% of sidebar links must contain emoji

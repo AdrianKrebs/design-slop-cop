@@ -5,7 +5,7 @@ export default {
   id: 'stat_banner_row',
   label: 'Stat banner row (10K+ users · 99.9% uptime …)',
   shortLabel: 'Stat banner',
-  description: '"10K+ users · 99.9% uptime · 4.9★". Padding as social proof.',
+  description: "A row of big stats like 10K+ users or 99.9% uptime.",
   category: 'layout',
   thresholds: {
     minKids: 3, maxKids: 6,

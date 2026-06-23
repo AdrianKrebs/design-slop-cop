@@ -12,7 +12,7 @@ export default {
   id: 'center_aligned_hero',
   label: 'Centered hero set in Inter / generic sans',
   shortLabel: 'Centered + Inter',
-  description: 'Centered anything is fine. Centered Inter is the tell.',
+  description: "A centered hero set in Inter or a default sans-serif.",
   category: 'layout',
   thresholds: {
     minAboveFoldRatio: 0.6,

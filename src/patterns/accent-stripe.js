@@ -8,7 +8,7 @@ export default {
   id: 'accent_stripe',
   label: 'Accent stripe on cards (top or left edge)',
   shortLabel: 'Accent stripe',
-  description: 'Colored accent stripe on cards, on the top or left edge.',
+  description: "A colored stripe along the top or left edge of cards.",
   category: 'layout',
   thresholds: {
     minBorderPx: 2,

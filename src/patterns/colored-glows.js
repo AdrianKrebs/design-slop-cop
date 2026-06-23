@@ -5,7 +5,7 @@ export default {
   id: 'colored_glows',
   label: 'Large colored glows / colored box-shadows',
   shortLabel: 'Colored glow',
-  description: 'Saturated box-shadow glow on buttons and cards.',
+  description: "A colored glow behind buttons or cards.",
   category: 'colors',
   thresholds: {
     minBlurPx: 15,

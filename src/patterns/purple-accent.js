@@ -5,7 +5,7 @@ export default {
   id: 'purple_accent',
   label: 'VibeCode Purple accent',
   shortLabel: 'Vibe purple',
-  description: 'Indigo or violet accent on CTAs and links.',
+  description: "Indigo or violet accent on buttons and links.",
   category: 'colors',
   thresholds: {
     minFilledAccent: 1

@@ -5,7 +5,7 @@ export default {
   id: 'numbered_steps',
   label: 'Numbered step sequence (1, 2, 3 …)',
   shortLabel: '1·2·3 steps',
-  description: 'A landing page pretending to be an onboarding flow.',
+  description: "A numbered 1, 2, 3 step sequence.",
   category: 'layout',
   thresholds: {
     minFontSize: 14,

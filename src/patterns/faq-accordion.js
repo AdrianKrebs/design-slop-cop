@@ -15,7 +15,7 @@ export default {
   id: 'faq_accordion',
   label: 'Generic FAQ accordion at the bottom of the page',
   shortLabel: 'FAQ',
-  description: '"Frequently asked questions" with 3+ collapsible Q&A items near the bottom.',
+  description: "A collapsible FAQ section near the bottom.",
   category: 'layout',
   thresholds: {
     minItems: 3,

@@ -9,7 +9,7 @@ export default {
   id: 'hero_eyebrow_pill',
   label: 'Headline badge (pill above the H1)',
   shortLabel: 'Headline badge',
-  description: 'Pill badge floating above the H1. "INTRODUCING", "PRECISION HEALTH INTELLIGENCE", "Mint for AI usage".',
+  description: "A small pill label above the headline.",
   category: 'layout',
   thresholds: {
     abovePillPx: 220,

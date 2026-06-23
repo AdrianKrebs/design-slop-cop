@@ -11,7 +11,7 @@ export default {
   id: 'perma_dark_mode',
   label: 'Perma dark mode look (dark bg + muted grey text)',
   shortLabel: 'Perma dark',
-  description: 'Dark bg, medium-grey body text, all-caps section labels.',
+  description: "Dark background with muted grey body text.",
   category: 'colors',
   thresholds: {
     bodyMinFs: 12,

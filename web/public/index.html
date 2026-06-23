@@ -110,28 +110,17 @@
   .copy:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
   .copy.copied { color: var(--clean); text-decoration: none; cursor: default; }
 
-  /* Detected patterns: a compact list of the tells found. Each name carries a
-     hover tooltip with its description; the clean (not-triggered) patterns
-     aren't listed (the count in .meta already implies them). */
-  .patterns { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
-  /* Flex row: square marker + name. The marker's margin-top centers it on the
-     first text line (line box height − marker height, halved), so it stays
-     aligned with the heading even when the name wraps. */
-  .pattern { display: flex; align-items: flex-start; gap: 11px; font-size: 17px; font-weight: 700; line-height: 1.4; }
+  /* Detected patterns: the tells found, each with an always-visible one-line
+     definition below it (GOV.UK: explain specialist terms in plain English at
+     the point of use, not behind hover). Clean patterns aren't listed. */
+  .patterns { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  /* Flex row: square marker + text block. The marker's margin-top centers it on
+     the first text line (line box height − marker height, halved). */
+  .pattern { display: flex; align-items: flex-start; gap: 11px; font-size: 17px; line-height: 1.4; }
   .pattern::before { content: ""; flex: 0 0 8px; width: 8px; height: 8px; margin-top: calc((1.4em - 8px) / 2); background: var(--heavy); }
-  /* Instant tooltip: a styled box on hover/focus (native title is slow and
-     keyboard-unreachable). tabindex on the name makes it focusable too. */
-  .pname { position: relative; cursor: help; text-decoration: underline dotted; text-decoration-color: var(--border); text-underline-offset: 3px; }
-  .pname:focus { outline: 3px solid var(--focus); outline-offset: 1px; }
-  .pname[data-tip]:hover::after, .pname[data-tip]:focus::after {
-    content: attr(data-tip);
-    position: absolute; left: 0; top: calc(100% + 8px); z-index: 30;
-    width: max-content; max-width: 340px;
-    font: 400 14px/1.45 var(--font);
-    color: #fff; background: var(--text);
-    padding: 8px 11px;
-    box-shadow: 0 2px 6px rgba(0,0,0,.25);
-  }
+  .pbody { min-width: 0; }
+  .pname { font-weight: 700; }
+  .pdesc { font-weight: 400; font-size: 15px; line-height: 1.4; color: var(--muted); margin-top: 2px; }
   .none { color: var(--clean); font-size: 17px; font-weight: 700; margin: 16px 0 0; }
 
   /* margin-top:auto pins the footer to the bottom of the viewport when content
@@ -268,10 +257,11 @@ function renderCard(data) {
   h += '<div class="meta">' + data.patternsFlagged + '/' + data.patternsTotal + ' patterns · ' + timing + '</div>';
 
   if (flagged.length) {
-    // The tells found; hover a name (dotted underline) for its description.
+    // The tells found, each with its plain-language definition shown inline.
     h += '<ul class="patterns">';
     h += flagged.map(p =>
-      '<li class="pattern"><span class="pname"' + (p.description ? ' tabindex="0" data-tip="' + esc(p.description) + '"' : '') + '>' + esc(p.label || p.id) + '</span></li>'
+      '<li class="pattern"><div class="pbody"><div class="pname">' + esc(p.label || p.id) + '</div>' +
+      (p.description ? '<div class="pdesc">' + esc(p.description) + '</div>' : '') + '</div></li>'
     ).join('');
     h += '</ul>';
   } else {

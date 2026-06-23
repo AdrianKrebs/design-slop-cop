@@ -7,7 +7,7 @@ export default {
   id: 'gradients',
   label: 'Gradient-heavy backgrounds / gradient text on hero',
   shortLabel: 'Gradients',
-  description: "Can't pick a color, so pick two and fade them.",
+  description: "Gradient backgrounds, or gradient-filled headline text.",
   category: 'colors',
   thresholds: {
     minBgGradients: 4

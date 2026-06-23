@@ -10,7 +10,7 @@ export default {
   id: 'hero_font_mix',
   label: 'Two fonts/colors mixed in the hero',
   shortLabel: 'Hero font mix',
-  description: 'Hero headline sets one word apart with a second typeface, an italic, or a different colour/gradient, like the italic "fraud." in "Stop being a fraud."',
+  description: "One headline word set apart with a different font, italic, or color.",
   category: 'fonts',
   thresholds: {
     minFontSize: 32,   // a real hero headline, not body copy
