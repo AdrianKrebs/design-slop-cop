@@ -266,7 +266,7 @@ function renderCard(data) {
   h += '<div class="title-line"><a class="t" href="' + esc(data.url) + '" target="_blank" rel="noopener">' + esc(hostOf(data.url)) + '</a>';
   h += '<span class="tier ' + tierClass + '">' + esc(tierName) + '</span>';
   h += '<button class="copy" type="button" data-share="' + esc(shareUrl(data.url)) + '">Copy link</button></div>';
-  h += '<div class="meta">' + data.patternsFlagged + ' of ' + data.patternsTotal + ' patterns · ' + timing + '</div>';
+  h += '<div class="meta">' + data.patternsFlagged + '/' + data.patternsTotal + ' patterns · ' + timing + '</div>';
 
   if (flagged.length) {
     // The tells found; hover a name (dotted underline) for its description.

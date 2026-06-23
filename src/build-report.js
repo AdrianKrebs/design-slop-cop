@@ -87,8 +87,8 @@ const html = `<!doctype html>
   .wrap { max-width: 1100px; margin: 0 auto; background: #fff; }
 
   /* Topbar — HN orange masthead (Show HN identity); the rest stays GOV.UK */
-  .topbar { background: #ff6600; padding: 12px 16px; }
-  .topbar-inner { display: flex; align-items: baseline; gap: 0; flex-wrap: wrap; line-height: 1.5; }
+  .topbar { background: #ff6600; }
+  .topbar-inner { display: flex; align-items: baseline; gap: 0; flex-wrap: wrap; line-height: 1.5; max-width: 1100px; margin: 0 auto; padding: 12px 16px; }
   .topbar a { color: #0b0c0c; font-weight: 400; font-size: 16px; padding: 0 7px; text-decoration: none; }
   .topbar a:visited { color: #0b0c0c; }
   .topbar a:hover { color: #0b0c0c; text-decoration: underline; text-decoration-thickness: 3px; }
@@ -278,8 +278,6 @@ const html = `<!doctype html>
 </style>
 </head>
 <body>
-<div class="wrap">
-
 <div class="topbar">
   <div class="topbar-inner">
     <span class="brand"><a href="/" title="Back to the checker">Design Slop Cop</a></span>
@@ -290,6 +288,7 @@ const html = `<!doctype html>
     </span>
   </div>
 </div>
+<div class="wrap">
 
 <div class="container">
   <h1 class="page-title">Show HN, scored for AI design patterns</h1>
@@ -475,7 +474,7 @@ function renderGrid() {
       <span class="domain">(\${escape(domain)})</span>
     </div>
     <div class="subtext">
-      <span class="tier \${tierCls}">\${TIER_DISPLAY[s.tier] || s.tier}</span>\${s.flagged.length > 0 ? ' · ' + s.flagged.length + ' pattern' + (s.flagged.length === 1 ? '' : 's') : ''}\${pts}\${posted ? ' · ' + posted : ''}\${hnLink}\${pats ? '<span class="flags">' + pats + '</span>' : ''}
+      <span class="tier \${tierCls}">\${TIER_DISPLAY[s.tier] || s.tier}</span> · \${s.flagged.length}/\${s.total} patterns\${pts}\${posted ? ' · ' + posted : ''}\${hnLink}\${pats ? '<span class="flags">' + pats + '</span>' : ''}
     </div>
   </div>
 </div>\`;
