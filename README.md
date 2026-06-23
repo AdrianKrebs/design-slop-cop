@@ -4,7 +4,7 @@ A tool to score any website for common AI design patterns.
 **Live: [www.slopcop.adriankrebs.ch](https://www.slopcop.adriankrebs.ch)** — paste a URL, get a scored verdict.
 Basis for the [blog post](https://www.adriankrebs.ch/blog/design-slop/) and the HN discussion ["Scoring Show HN submissions for AI design patterns"](https://news.ycombinator.com/item?id=47864393).
 
-The tool loads each site in a headless browser, analyzes the DOM, and reports which of 16 deterministic AI design patterns are found.
+The tool loads each site in a headless browser, analyzes the DOM, and reports which of 14 deterministic AI design patterns are found.
 Manual verification across ~150 labeled sites suggests ~5–10% false positives. Still, take it with a grain of salt :)
 
 ## Install
@@ -23,7 +23,7 @@ A clean site (no AI design patterns triggered):
 ```bash
 $ node check.js https://news.ycombinator.com/
 https://news.ycombinator.com/
-Low slop · score 0/100 · 0/16 patterns
+Low slop · score 0/100 · 0/14 patterns
 ```
 
 A heavy one (7 patterns triggered):
@@ -31,7 +31,7 @@ A heavy one (7 patterns triggered):
 ```bash
 $ node check.js https://engagemii.com/aeo
 https://engagemii.com/aeo
-High slop · score 44/100 · 7/16 patterns
+High slop · score 50/100 · 7/14 patterns
 
 Triggered:
   • Vibe purple
@@ -49,10 +49,10 @@ Add `--json` for machine-readable output:
 $ node check.js https://engagemii.com/aeo --json
 {
   "url": "https://engagemii.com/aeo",
-  "score": 44,
+  "score": 50,
   "tierLabel": "Heavy",
   "patternsFlagged": 7,
-  "patternsTotal": 16,
+  "patternsTotal": 14,
   "patterns": [
     { "id": "purple_accent", "label": "Vibe purple", "triggered": true, "evidence": {...} },
     ...
@@ -74,7 +74,7 @@ The first scan is slow (it warms up a headless browser); subsequent scans reuse 
 
 ## Run the full corpus
 
-For batch analysis (e.g. the bundled `urls.txt` with ~1000 Show HN posts) — same install as above, then:
+For batch analysis (the bundled `urls.txt` ships the latest ~200 Show HN posts) — same install as above, then:
 
 ```bash
 npm run analyze                      # sequential, ~100 min for 1k URLs
@@ -100,13 +100,11 @@ Results go to `results/`:
 | 7 | Colored glow | Saturated `box-shadow` glow on buttons and cards |
 | 8 | Emoji nav | Nav or sidebar items prefixed with emoji |
 | 9 | Centered + Inter | Centered hero set in Inter or a generic sans |
-| 10 | All-caps headings | Section labels and nav set in caps |
-| 11 | Perma dark | Dark background with muted grey body text |
-| 12 | Icon cards | A row of identical icon + title + blurb cards |
-| 13 | Numbered steps | A "1 · 2 · 3" step sequence |
-| 14 | Stat banner | "10K+ users · 99.9% uptime · 4.9★" stat row |
-| 15 | Headline badge | A pill badge floating above the H1 |
-| 16 | FAQ accordion | "Frequently asked questions" with 3+ collapsible Q&As |
+| 10 | Perma dark | Dark background with muted grey body text |
+| 11 | Numbered steps | A "1 · 2 · 3" step sequence |
+| 12 | Stat banner | "10K+ users · 99.9% uptime · 4.9★" stat row |
+| 13 | Headline badge | A pill badge floating above the H1 |
+| 14 | FAQ accordion | "Frequently asked questions" with 3+ collapsible Q&As |
 
 The full rule for each pattern lives in `src/patterns/<id>.js`.
 

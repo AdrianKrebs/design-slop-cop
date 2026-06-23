@@ -10,9 +10,7 @@ import glassmorphism from './glassmorphism.js';
 import coloredGlows from './colored-glows.js';
 import sidebarEmoji from './sidebar-emoji.js';
 import centeredHero from './centered-hero.js';
-import allCapsHeadings from './all-caps-headings.js';
 import permaDarkMode from './perma-dark-mode.js';
-import iconCardGrid from './icon-card-grid.js';
 import numberedSteps from './numbered-steps.js';
 import statBanner from './stat-banner.js';
 import heroEyebrowPill from './hero-eyebrow-pill.js';
@@ -28,9 +26,7 @@ export const PATTERNS = [
   coloredGlows,
   sidebarEmoji,
   centeredHero,
-  allCapsHeadings,
   permaDarkMode,
-  iconCardGrid,
   numberedSteps,
   statBanner,
   heroEyebrowPill,

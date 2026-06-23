@@ -3,7 +3,7 @@
 //
 // Usage:
 //   node tools/eval.mjs                # full report
-//   node tools/eval.mjs --pattern=icon_card_grid   # one pattern, with FP/FN URLs
+//   node tools/eval.mjs --pattern=gradients   # one pattern, with FP/FN URLs
 
 import { readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';

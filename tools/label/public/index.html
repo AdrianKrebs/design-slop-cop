@@ -34,6 +34,17 @@
   .agree-bar button:hover { background: #225f2a; }
   .agree-bar .agree-help { color: #555; font-size: 12px; }
 
+  /* Overall verdict — the primary judgment for this pass. */
+  .verdict-bar { display: flex; gap: 8px; align-items: center; margin: 10px 0 0; flex-wrap: wrap; }
+  .verdict-bar .vlabel { font-weight: 700; font-size: 13px; }
+  .vbtn { font: inherit; font-weight: 600; padding: 7px 14px; border: 1px solid #ccc; background: #fff; cursor: pointer; border-radius: 3px; }
+  .vbtn:hover { background: #f0f0f0; }
+  .vbtn kbd { font-weight: 400; margin-left: 5px; }
+  .vbtn.active[data-v="slop"]       { background: #f6d7d2; border-color: #942514; color: #942514; }
+  .vbtn.active[data-v="borderline"] { background: #fff7bf; border-color: #a07b00; color: #594d00; }
+  .vbtn.active[data-v="clean"]      { background: #cce2d8; border-color: #005a30; color: #005a30; }
+  .verdict-bar .unset { color: #b03a2e; font-size: 12px; }
+
   .pattern { padding: 7px 10px; border-radius: 4px; margin-bottom: 4px; border: 1px solid transparent; cursor: pointer; }
   .pattern.focused { border-color: #1a4dba; background: #f0f5ff; }
   .pattern.disagrees { background: #fff8e1; border-color: #e0c060; }
@@ -70,8 +81,8 @@
   <span id="progress">…</span>
   <span id="status"></span>
   <span class="help">
-    <kbd>←</kbd> <kbd>→</kbd> nav · <kbd>n</kbd> next unlabeled · <kbd>j</kbd> <kbd>k</kbd> focus pattern ·
-    <kbd>1</kbd> present <kbd>2</kbd> not <kbd>3</kbd> skip · <kbd>a</kbd> agree-all · <kbd>s</kbd> save
+    <kbd>z</kbd> slop <kbd>x</kbd> borderline <kbd>c</kbd> clean · <kbd>s</kbd> save &amp; next · <kbd>←</kbd> <kbd>→</kbd> nav · <kbd>n</kbd> next unlabeled<br>
+    optional patterns: <kbd>j</kbd>/<kbd>k</kbd> focus · <kbd>1</kbd> present <kbd>2</kbd> not <kbd>3</kbd> skip · <kbd>a</kbd> agree-all
   </span>
 </header>
 <div class="layout">
@@ -80,6 +91,13 @@
     <div class="panel-head">
       <div class="url" id="url"></div>
       <div class="meta" id="meta"></div>
+      <div class="verdict-bar" id="verdict-bar">
+        <span class="vlabel">Verdict:</span>
+        <button class="vbtn" data-v="slop">Slop<kbd>z</kbd></button>
+        <button class="vbtn" data-v="borderline">Borderline<kbd>x</kbd></button>
+        <button class="vbtn" data-v="clean">Clean<kbd>c</kbd></button>
+        <span class="unset" id="verdict-unset"></span>
+      </div>
       <div class="agree-bar">
         <button id="agree-all" title="Mark every pattern matching the detector's verdict (a)">Agree with detector on all</button>
         <span class="agree-help">use when the detector got every pattern right</span>
@@ -102,6 +120,7 @@ let current = null;
 let labels = {};
 let focused = -1;     // index of currently focused pattern row
 let dirty = false;    // unsaved changes since last save / load
+let verdict = null;   // overall 'slop' | 'borderline' | 'clean' — the primary label
 
 function escapeHtml(s) {
   return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
@@ -122,9 +141,7 @@ function evidenceLine(p) {
     case 'colored_glows':      return e.count + ' colored box-shadow glow(s)';
     case 'sidebar_emoji':      return e.sidebarPattern ? 'sidebar with emoji links' : (e.emojiInNavOrButtons || 0) + ' emoji in nav/buttons';
     case 'center_aligned_hero': return (e.headingFont || '?') + ', ' + (e.heroH1Centered ? 'H1 centered' : 'H1 not centered') + ', ' + r(e.aboveFoldCenterRatio || 0) + '% above-fold centered';
-    case 'all_caps_headings':  return e.allCapsHeadings + ' all-caps headings (' + r(e.ratio) + '%)';
     case 'perma_dark_mode':    return e.pctBelowAAA + '% body text below AAA contrast' + (e.examples && e.examples[0] ? ' · "' + e.examples[0].sample.slice(0, 40) + '"' : '');
-    case 'icon_card_grid':     return e.gridCount + ' grid(s)' + (e.samples && e.samples[0] ? ', e.g. ' + e.samples[0].cards + ' cards @ ' + e.samples[0].cardWidth + 'px' : '');
     case 'numbered_steps':     return 'run of ' + e.runLength + ' ascending numbers';
     case 'stat_banner_row':    return e.count + ' row(s)' + (e.samples && e.samples[0] ? ': ' + (e.samples[0].values || []).join(' · ') : '');
     case 'hero_eyebrow_pill':  return e.samples && e.samples[0] ? '"' + e.samples[0].text + '" (' + e.samples[0].bg + ')' : '';
@@ -145,9 +162,20 @@ async function loadSites() {
 
 function draftKey(slug) { return 'draft:' + slug; }
 
+function renderVerdict() {
+  document.querySelectorAll('.vbtn').forEach(b => b.classList.toggle('active', b.dataset.v === verdict));
+  document.getElementById('verdict-unset').textContent = verdict ? '' : '← pick one';
+}
+function setVerdict(v) {
+  verdict = v;
+  dirty = true;
+  saveDraft();
+  renderVerdict();
+}
+
 function saveDraft() {
   if (!current) return;
-  const draft = { labels, notes: document.getElementById('notes').value, savedAt: Date.now() };
+  const draft = { labels, verdict, notes: document.getElementById('notes').value, savedAt: Date.now() };
   localStorage.setItem(draftKey(current.slug), JSON.stringify(draft));
   document.getElementById('draft-note').textContent = 'draft saved ' + new Date().toLocaleTimeString();
   dirty = false;
@@ -240,13 +268,16 @@ async function show() {
 
   // Load order: localStorage draft (most recent) > previous server label > empty.
   labels = {};
+  verdict = null;
   const draft = loadDraft(site.slug);
   if (draft) {
     Object.assign(labels, draft.labels || {});
+    verdict = draft.verdict || null;
     document.getElementById('notes').value = draft.notes || '';
     document.getElementById('draft-note').textContent = 'draft from ' + new Date(draft.savedAt).toLocaleTimeString();
   } else if (current.previousLabels) {
     Object.assign(labels, current.previousLabels.labels || {});
+    verdict = current.previousLabels.verdict || null;
     document.getElementById('notes').value = current.previousLabels.notes || '';
     document.getElementById('draft-note').textContent = 'loaded saved label from ' + new Date(current.previousLabels.timestamp).toLocaleString();
   } else {
@@ -256,6 +287,7 @@ async function show() {
   focused = 0;
   dirty = false;
   renderPatterns();
+  renderVerdict();
 }
 
 async function save() {
@@ -263,6 +295,7 @@ async function save() {
   const rec = {
     slug: sites[i].slug,
     url: current.url,
+    verdict,
     labels: { ...labels },
     notes: document.getElementById('notes').value
   };
@@ -303,6 +336,7 @@ document.getElementById('next-unlabeled').onclick = async () => {
 };
 document.getElementById('save').onclick = save;
 document.getElementById('agree-all').onclick = agreeAll;
+document.querySelectorAll('.vbtn').forEach(b => b.addEventListener('click', () => setVerdict(b.dataset.v)));
 
 // Notes auto-saves drafts on blur
 document.getElementById('notes').addEventListener('input', () => { dirty = true; saveDraft(); });
@@ -329,6 +363,9 @@ window.addEventListener('keydown', e => {
     }
     return;
   }
+  if (e.key === 'z') { setVerdict('slop'); return; }
+  if (e.key === 'x') { setVerdict('borderline'); return; }
+  if (e.key === 'c') { setVerdict('clean'); return; }
   if (e.key === 'a') { agreeAll(); return; }
   if (e.key === 's') { e.preventDefault(); save(); return; }
   if (e.key === 'j' || e.key === 'ArrowDown') {
