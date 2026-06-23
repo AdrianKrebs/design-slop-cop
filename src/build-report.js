@@ -87,14 +87,14 @@ const html = `<!doctype html>
   .wrap { max-width: 1100px; margin: 0 auto; background: #fff; }
 
   /* Topbar — HN orange masthead (Show HN identity); the rest stays GOV.UK */
-  .topbar { background: #ff6600; padding: 10px 16px; }
+  .topbar { background: #ff6600; padding: 12px 16px; }
   .topbar-inner { display: flex; align-items: baseline; gap: 0; flex-wrap: wrap; line-height: 1.5; }
-  .topbar a { color: #0b0c0c; font-weight: 400; font-size: 15px; padding: 0 7px; text-decoration: none; }
+  .topbar a { color: #0b0c0c; font-weight: 400; font-size: 16px; padding: 0 7px; text-decoration: none; }
   .topbar a:visited { color: #0b0c0c; }
   .topbar a:hover { color: #0b0c0c; text-decoration: underline; text-decoration-thickness: 3px; }
   .topbar a:focus { color: #0b0c0c; background: #fd0; box-shadow: 0 -2px #fd0, 0 4px #0b0c0c; text-decoration: none; }
   .topbar .sep { color: rgba(0,0,0,.4); padding: 0; }
-  .topbar .brand a { font-weight: 700; padding-right: 10px; padding-left: 0; }
+  .topbar .brand a { font-weight: 700; font-size: 17px; padding-right: 10px; padding-left: 0; }
   .topbar .right { margin-left: auto; }
   .topbar a.topsel { color: #fff; font-weight: 700; text-decoration: underline; text-decoration-thickness: 3px; }
 
