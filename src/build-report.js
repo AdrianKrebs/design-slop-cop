@@ -141,9 +141,8 @@ const html = `<!doctype html>
   .freq-row { display: grid; grid-template-columns: 100px 1fr 32px; gap: 8px; align-items: center; line-height: 1.7; cursor: pointer; padding: 2px 4px; }
   .freq-row:hover { background: #f3f2f1; }
   .freq-row.active { background: #f3f2f1; }
-  .freq-row.active .fl { color: #1d70b8; font-weight: 700; }
-  .freq-row .name { color: #0b0c0c; display: flex; flex-direction: column; gap: 1px; }
-  .freq-desc { font-size: 12px; font-weight: 400; color: #505a5f; line-height: 1.35; }
+  .freq-row.active .name { color: #1d70b8; font-weight: 700; }
+  .freq-row .name { color: #0b0c0c; }
   .freq-row .bar { height: 7px; background: #e8e8e8; }
   .freq-row .bar-fill { height: 100%; background: #505a5f; }
   .freq-row.active .bar-fill { background: #1d70b8; }
@@ -247,7 +246,7 @@ const html = `<!doctype html>
   /* pattern frequency becomes the "Pattern" facet in the sidebar */
   .finder-side .freq { padding: 0; border-bottom: 0; }
   .finder-side .freq-grid { grid-template-columns: 1fr; column-gap: 0; row-gap: 0; }
-  .finder-side .freq-row { grid-template-columns: minmax(0,1fr) 44px 32px; gap: 6px; padding: 5px 0; align-items: start; }
+  .finder-side .freq-row { grid-template-columns: minmax(0,1fr) 44px 32px; gap: 6px; padding: 3px 0; }
 
   .finder-results { min-width: 0; }
   .intro { color: #505a5f; font-size: 16px; line-height: 1.5; margin: 0 0 14px; }
@@ -326,7 +325,7 @@ const html = `<!doctype html>
 <script>
 const data = ${JSON.stringify(data)};
 const patternLabel = Object.fromEntries(data.patternMeta.map(p => [p.id, p.shortLabel || p.label || p.id]));
-// One-line plain definition per pattern, shown under each name in the facet.
+// One-line plain definition per pattern, shown as a hover tooltip.
 const patternDesc = Object.fromEntries(data.patternMeta.map(p => [p.id, p.description || '']));
 const TIER_HASH = { heavy: 'Heavy', mild: 'Mild', clean: 'Clean', all: null, '': null };
 const TIER_CLASS = { Heavy: 'tier-heavy', Mild: 'tier-mild', Clean: 'tier-clean' };
@@ -368,7 +367,7 @@ function renderFreq() {
     const pct = (100 * p.count / data.total).toFixed(0);
     const w = (100 * p.count / max).toFixed(1);
     const active = p.id === activePattern ? ' active' : '';
-    return \`<div class="freq-row\${active}" data-pattern="\${escape(p.id)}"><div class="name"><span class="fl">\${escape(p.shortLabel)}</span>\${patternDesc[p.id] ? '<span class="freq-desc">' + escape(patternDesc[p.id]) + '</span>' : ''}</div><div class="bar"><div class="bar-fill" style="width:\${w}%"></div></div><div class="pct">\${pct}%</div></div>\`;
+    return \`<div class="freq-row\${active}" data-pattern="\${escape(p.id)}" title="\${escape(patternDesc[p.id] || p.shortLabel)}"><div class="name">\${escape(p.shortLabel)}</div><div class="bar"><div class="bar-fill" style="width:\${w}%"></div></div><div class="pct">\${pct}%</div></div>\`;
   }).join('');
 }
 
@@ -459,7 +458,7 @@ function renderGrid() {
     const pts = (s.points != null) ? \` · \${s.points} point\${s.points === 1 ? '' : 's'}\` : '';
     const pats = s.flagged.map(id => {
       const cls = id === activePattern ? 'flag active' : 'flag';
-      return \`<a class="\${cls}" data-pattern="\${escape(id)}" href="#">\${escape(patternLabel[id] || id)}</a>\`;
+      return \`<a class="\${cls}" data-pattern="\${escape(id)}" href="#" title="\${escape(patternDesc[id] || patternLabel[id] || id)}">\${escape(patternLabel[id] || id)}</a>\`;
     }).join(' · ');
     const shot = data.noImages
       ? '<span class="shot"></span>'
