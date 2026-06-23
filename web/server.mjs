@@ -33,6 +33,7 @@ import { analyzePage } from '../src/run.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = join(__dirname, 'public');
 const INDEX_HTML = join(PUBLIC, 'index.html');
+const ICON = join(PUBLIC, 'icon.png');
 // Pre-built, self-contained gallery of classified Show HN sites (screenshots
 // served from the CDN). Rebuild with `node src/build-report.js --cdn-base=… --out=web/report.html`.
 const REPORT_HTML = join(__dirname, 'report.html');
@@ -182,6 +183,13 @@ const server = createServer(async (req, res) => {
     const url = new URL(req.url, `http://${req.headers.host}`);
 
     if (req.method === 'GET' && url.pathname === '/healthz') return send(res, 200, 'text/plain', 'ok');
+
+    if (req.method === 'GET' && url.pathname === '/icon.png') {
+      const buf = await readFile(ICON).catch(() => null);
+      if (!buf) return send(res, 404, 'text/plain', 'no icon');
+      res.writeHead(200, { 'content-type': 'image/png', 'cache-control': 'public, max-age=604800' });
+      return res.end(buf);
+    }
 
     if (req.method === 'GET' && url.pathname === '/api/random') {
       if (!SHOWHN_URLS.length) return send(res, 503, JSON_MIME, JSON.stringify({ error: 'no sample available' }));

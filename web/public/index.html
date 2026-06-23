@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚨</text></svg>">
+<link rel="icon" type="image/png" href="/icon.png">
 <title>Design Slop Cop: how AI-generated is this website?</title>
 <meta name="description" content="Paste a URL. We load it in a real browser and score it against deterministic AI design patterns like vibe purple, gradients, FAQ accordions, and 1·2·3 steps.">
 <meta property="og:title" content="Design Slop Cop">
@@ -40,7 +40,8 @@
 
   /* GOV.UK-style black masthead: black bar, white wordmark, nav link right. */
   .topbar { background: var(--text); }
-  .topbar .inner { max-width: 760px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: baseline; gap: 16px; }
+  .topbar .inner { max-width: 760px; margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; gap: 10px; }
+  .topbar .logo { width: 28px; height: 28px; display: block; flex: none; }
   .topbar b { color: #fff; font-weight: 700; font-size: 17px; }
   .topbar nav { margin-left: auto; }
   .topbar nav a { color: #fff; font-size: 16px; text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
@@ -149,7 +150,7 @@
 </head>
 <body>
 
-<div class="topbar"><div class="inner"><b>Design Slop Cop</b><nav><a href="/show">Latest Show HN, scored</a></nav></div></div>
+<div class="topbar"><div class="inner"><img class="logo" src="/icon.png" alt="" width="28" height="28"><b>Design Slop Cop</b><nav><a href="/show">Latest Show HN, scored</a></nav></div></div>
 
 <div class="wrap">
   <h1>How AI-generated is this website?</h1>

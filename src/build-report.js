@@ -68,7 +68,7 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚨</text></svg>">
+<link rel="icon" type="image/png" href="/icon.png">
 <title>Design Slop Cop · Show HN submissions scored for AI design patterns</title>
 <style>
   /* GOV.UK Design System styling — Arial, black masthead, blue underlined
@@ -95,6 +95,8 @@ const html = `<!doctype html>
   .topbar a:focus { color: #0b0c0c; background: #fd0; box-shadow: 0 -2px #fd0, 0 4px #0b0c0c; text-decoration: none; }
   .topbar .sep { color: rgba(0,0,0,.4); padding: 0; }
   .topbar .brand a { font-weight: 700; padding-right: 10px; padding-left: 0; }
+  /* White ring so the orange icon reads on the orange masthead. */
+  .topbar .logo { width: 22px; height: 22px; vertical-align: middle; margin: -2px 7px 0 0; border-radius: 50%; box-shadow: 0 0 0 2px rgba(255,255,255,.9); }
   .topbar .right { margin-left: auto; }
   .topbar a.topsel { color: #fff; font-weight: 700; text-decoration: underline; text-decoration-thickness: 3px; }
 
@@ -282,7 +284,7 @@ const html = `<!doctype html>
 
 <div class="topbar">
   <div class="topbar-inner">
-    <span class="brand"><a href="/" title="Back to the checker">Design Slop Cop</a></span>
+    <span class="brand"><a href="/" title="Back to the checker"><img class="logo" src="/icon.png" alt="" width="22" height="22">Design Slop Cop</a></span>
     <span class="right">
       <a href="https://www.adriankrebs.ch/blog/design-slop/" target="_blank">Methodology</a>
       <span class="sep">|</span>
