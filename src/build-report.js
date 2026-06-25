@@ -151,9 +151,11 @@ const html = `<!doctype html>
   /* Active-pattern banner (replaces search row when pattern is set) */
   .active-banner { padding: 8px 16px; font-size: 14px; color: #505a5f; display: flex; align-items: baseline; gap: 8px; min-height: 1.6em; }
   .active-banner .label { color: #505a5f; }
-  .active-banner .pat-name { color: #1d70b8; font-weight: 700; }
-  .active-banner .clear-btn { color: #1d70b8; cursor: pointer; padding-left: 4px; text-decoration: underline; }
-  .active-banner .clear-btn:hover { text-decoration-thickness: 3px; }
+  /* Active filter as a removable Linear-style pill (click anywhere on it clears). */
+  .active-banner .chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px 3px 13px; border: 1px solid #d4d2cf; border-radius: 9999px; background: #f3f2f1; color: #0b0c0c; font: 700 16px arial, sans-serif; cursor: pointer; transition: background-color .15s ease, border-color .15s ease; }
+  .active-banner .chip:hover { background: #ebeae8; border-color: #c9c7c3; }
+  .active-banner .chip:focus-visible { outline: 3px solid #fd0; outline-offset: 1px; }
+  .active-banner .chip .x { color: #505a5f; font-size: 17px; line-height: 1; margin-top: -1px; }
   .active-banner .count { color: #505a5f; margin-left: auto; }
 
   /* List — ranked rows */
@@ -189,10 +191,13 @@ const html = `<!doctype html>
 
   /* Sort + filter banner */
   .active-banner .sort { color: #505a5f; }
-  .active-banner .sort .label { color: #505a5f; }
-  .active-banner .sort a { color: #1d70b8; padding: 0 4px; }
-  .active-banner .sort a.active { color: #0b0c0c; font-weight: 700; text-decoration: underline; }
-  .active-banner .sort a:hover { text-decoration-thickness: 3px; }
+  .active-banner .sort .label { color: #505a5f; margin-right: 5px; }
+  .active-banner .sortbtn { font: 400 16px arial, sans-serif; color: #505a5f; background: none; border: 0; padding: 4px 9px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; -webkit-tap-highlight-color: transparent; transition: background-color .15s ease, color .15s ease; }
+  .active-banner .sortbtn:hover { background: #f3f2f1; color: #0b0c0c; }
+  .active-banner .sortbtn.active { color: #0b0c0c; font-weight: 700; }
+  .active-banner .sortbtn:focus { outline: none; }
+  .active-banner .sortbtn:focus-visible { outline: 3px solid #fd0; outline-offset: 1px; }
+  .active-banner .sortbtn .arr { font-size: 13px; color: #505a5f; }
 
   .empty { padding: 30px 16px; text-align: center; color: #505a5f; font-size: 16px; }
 
@@ -252,10 +257,9 @@ const html = `<!doctype html>
   .intro { color: #505a5f; font-size: 16px; line-height: 1.5; margin: 0 0 14px; }
 
   /* results header — GOV.UK "N results" count + Sort by row */
-  .active-banner { flex-wrap: wrap; align-items: baseline; gap: 6px 10px; padding: 0 0 12px; margin-bottom: 0; border-bottom: 1px solid #b1b4b6; min-height: 0; }
+  .active-banner { flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 0 0 12px; margin-bottom: 0; border-bottom: 1px solid #b1b4b6; min-height: 0; font-size: 16px; }
   .active-banner .count { order: -1; width: 100%; margin-left: 0; font-weight: 700; font-size: 19px; color: #0b0c0c; }
-  .active-banner .sort { font-size: 16px; }
-  .active-banner .pat-name { color: #1d70b8; }
+  .active-banner .sort { font-size: 16px; display: inline-flex; align-items: center; }
 
   /* document-list items */
   .list { padding: 0 0 24px; }
@@ -343,19 +347,21 @@ function parseHash() {
   const params = new URLSearchParams(queryPart || '');
   const p = params.get('p') || null;
   const s = params.get('sort');
+  const dir = params.get('dir') === 'asc' ? 'asc' : 'desc';
   const pg = parseInt(params.get('page') || '1', 10);
-  return { tier, pattern: p, sort: SORT_KEYS.has(s) ? s : 'date', page: Number.isFinite(pg) && pg >= 1 ? pg : 1 };
+  return { tier, pattern: p, sort: SORT_KEYS.has(s) ? s : 'date', dir, page: Number.isFinite(pg) && pg >= 1 ? pg : 1 };
 }
-function buildHash(tier, pattern, sort, page) {
+function buildHash(tier, pattern, sort, page, dir) {
   const base = tier ? tier.toLowerCase() : 'all';
   const params = new URLSearchParams();
   if (pattern) params.set('p', pattern);
   if (sort && sort !== 'date') params.set('sort', sort);
+  if (dir === 'asc') params.set('dir', 'asc');
   if (page && page > 1) params.set('page', String(page));
   const q = params.toString();
   return '#' + base + (q ? '?' + q : '');
 }
-let { tier: activeTier, pattern: activePattern, sort: activeSort, page: activePage } = parseHash();
+let { tier: activeTier, pattern: activePattern, sort: activeSort, dir: activeDir, page: activePage } = parseHash();
 function stripShowHN(t) { return String(t || '').replace(/^Show HN[:：]\\s*/i, ''); }
 
 function renderFreq() {
@@ -381,10 +387,11 @@ function syncTopbar() {
 
 function sortLinksHTML() {
   const items = [['date','newest'], ['score','score'], ['points','points'], ['flagged','pattern count']];
+  const arrow = activeDir === 'asc' ? '↑' : '↓';
   const links = items.map(([k, label]) => {
-    const cls = k === activeSort ? 'active' : '';
-    return \`<a class="\${cls}" data-sort="\${k}" href="#">\${label}</a>\`;
-  }).join('<span style="color:#ccc;">|</span>');
+    const on = k === activeSort;
+    return \`<button type="button" class="sortbtn\${on ? ' active' : ''}" data-sort="\${k}"\${on ? ' aria-pressed="true"' : ''}>\${label}\${on ? ' <span class="arr">' + arrow + '</span>' : ''}</button>\`;
+  }).join('');
   return \`<span class="sort"><span class="label">sort by:</span>\${links}</span>\`;
 }
 function renderBanner(filteredCount) {
@@ -393,7 +400,7 @@ function renderBanner(filteredCount) {
   let left = '';
   if (activePattern) {
     const label = patternLabel[activePattern] || activePattern;
-    left = \`<span class="label">filtering by pattern:</span> <span class="pat-name">\${escape(label)}</span> <a class="clear-btn" href="#" id="clear-pattern">× clear</a>\`;
+    left = \`<span class="label">filtering by</span> <button class="chip" type="button" id="clear-pattern" title="Clear filter">\${escape(label)} <span class="x">×</span></button>\`;
   }
   // Counts live in the sidebar tier facet now; the results header is just the
   // sort row (+ the active-pattern chip when a pattern filter is on).
@@ -404,10 +411,12 @@ function renderBanner(filteredCount) {
       setFilter(activeTier, null, activeSort);
     });
   }
-  banner.querySelectorAll('.sort a').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      setFilter(activeTier, activePattern, a.dataset.sort);
+  banner.querySelectorAll('.sortbtn').forEach(b => {
+    b.addEventListener('click', () => {
+      const k = b.dataset.sort;
+      // Click the active key to flip direction; a new key starts descending.
+      const dir = (k === activeSort && activeDir === 'desc') ? 'asc' : 'desc';
+      setFilter(activeTier, activePattern, k, 1, false, dir);
     });
   });
 }
@@ -417,16 +426,15 @@ function domainOf(url) {
 }
 
 function sortSites(sites) {
-  const arr = sites.slice();
-  if (activeSort === 'score') {
-    arr.sort((a, b) => b.score - a.score || b.flagged.length - a.flagged.length || timestampOf(b) - timestampOf(a));
-  } else if (activeSort === 'points') {
-    arr.sort((a, b) => (b.points || 0) - (a.points || 0) || b.score - a.score);
-  } else if (activeSort === 'flagged') {
-    arr.sort((a, b) => b.flagged.length - a.flagged.length || b.score - a.score);
-  }
-  // 'date' = server-default sort, already date desc
-  return arr;
+  // Each comparator is written descending; asc just negates the result.
+  const cmp = {
+    date:    (a, b) => timestampOf(b) - timestampOf(a),
+    score:   (a, b) => b.score - a.score || b.flagged.length - a.flagged.length || timestampOf(b) - timestampOf(a),
+    points:  (a, b) => (b.points || 0) - (a.points || 0) || b.score - a.score,
+    flagged: (a, b) => b.flagged.length - a.flagged.length || b.score - a.score,
+  }[activeSort] || (() => 0);
+  const dir = activeDir === 'asc' ? -1 : 1;
+  return sites.slice().sort((a, b) => dir * cmp(a, b));
 }
 function timestampOf(s) { return s.postedAt ? new Date(s.postedAt).getTime() : 0; }
 
@@ -496,14 +504,15 @@ function renderMore(page, totalPages, totalCount) {
   });
 }
 
-function setFilter(tier, pattern, sort, page, scrollTop) {
-  const filtersChanged = (tier !== activeTier) || (pattern !== activePattern) || (sort && sort !== activeSort);
+function setFilter(tier, pattern, sort, page, scrollTop, dir) {
+  const filtersChanged = (tier !== activeTier) || (pattern !== activePattern) || (sort && sort !== activeSort) || (dir && dir !== activeDir);
   activeTier = tier;
   activePattern = pattern;
   if (sort) activeSort = sort;
+  if (dir) activeDir = dir;
   // Reset to page 1 when the filter or sort changes; otherwise honor the requested page
   activePage = filtersChanged ? 1 : (page || 1);
-  const newHash = buildHash(activeTier, activePattern, activeSort, activePage);
+  const newHash = buildHash(activeTier, activePattern, activeSort, activePage, activeDir);
   if (location.hash !== newHash) {
     history.replaceState(null, '', newHash);
   }
@@ -558,6 +567,7 @@ window.addEventListener('hashchange', () => {
   activeTier = parsed.tier;
   activePattern = parsed.pattern;
   activeSort = parsed.sort;
+  activeDir = parsed.dir;
   activePage = parsed.page;
   syncTopbar();
   renderFreq();
