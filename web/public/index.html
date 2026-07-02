@@ -149,7 +149,7 @@
 
   <form class="form" id="form">
     <input type="text" id="url" placeholder="example.com" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus>
-    <button type="submit" id="submit">Scan</button>
+    <button type="submit" id="submit">Score</button>
   </form>
   <div class="examples">
     <button id="random" type="button">Try a random website</button>
@@ -214,18 +214,34 @@ form.addEventListener('submit', async e => {
   if (!url) return;
   submit.disabled = true;
 
+  // Clear stale error rows from earlier attempts — only real results persist.
+  results.querySelectorAll('.error-row').forEach(el => el.remove());
+
   // prepend a loading row so the newest scan sits on top of the list
   const card = document.createElement('div');
   card.className = 'loading';
-  card.innerHTML = '<span class="spinner"></span>Scanning ' + esc(url) + '…';
+  card.innerHTML = '<span class="spinner"></span><span class="phase"></span>';
   results.prepend(card);
+
+  // The scan is one request, so we can't get real progress — but stepping the
+  // label through the actual stages (load → settle → DOM → score) reads far
+  // less like a hang than a frozen "Scoring…". Advances, then holds on the last.
+  const host = hostOf(url) || url;
+  const phases = ['Loading ' + host + '…', 'Waiting for fonts & images…', 'Scanning the DOM…', 'Scoring slop…'];
+  const phaseEl = card.querySelector('.phase');
+  let pi = 0;
+  phaseEl.textContent = phases[0];
+  const phaseTimer = setInterval(() => {
+    pi = Math.min(pi + 1, phases.length - 1);
+    phaseEl.textContent = phases[pi];
+  }, 1800);
 
   try {
     const res = await fetch('/api/scan', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url }) });
     const data = await res.json();
     if (!res.ok) {
       card.className = 'error-row';
-      card.textContent = 'Couldn’t scan ' + url + ': ' + (data.error || res.statusText);
+      card.textContent = 'Couldn’t score ' + url + ': ' + (data.error || res.statusText);
       return;
     }
     card.className = 'item';
@@ -236,6 +252,7 @@ form.addEventListener('submit', async e => {
     card.className = 'error-row';
     card.textContent = 'Network error: ' + err.message;
   } finally {
+    clearInterval(phaseTimer);
     submit.disabled = false;
   }
 });

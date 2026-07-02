@@ -5,7 +5,7 @@
 export default {
   id: 'glassmorphism',
   label: 'Glassmorphism',
-  shortLabel: 'Glass',
+  shortLabel: 'Glassmorphism',
   description: "Frosted, blurred translucent panels.",
   category: 'css',
   thresholds: {

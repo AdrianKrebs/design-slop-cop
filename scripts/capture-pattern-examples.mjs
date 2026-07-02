@@ -63,7 +63,7 @@ const EXEMPLARS = {
     }
   },
   glassmorphism: {
-    url: 'https://www.calendarpipe.com', mode: 'element',
+    url: 'https://mimicscribe.app', mode: 'element',
     find: () => {
       // Pick the largest genuinely panel-shaped frosted element, not a thin
       // sticky nav bar (which is the usual first backdrop-blur match).

@@ -9,6 +9,7 @@
 //   node src/build-patterns-page.mjs            # → web/patterns.html
 
 import { readFile, writeFile } from 'node:fs/promises';
+import { statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import { PATTERNS } from './patterns/index.js';
@@ -30,6 +31,11 @@ try {
   for (const r of ok) for (const p of r.patterns || []) if (p.triggered) freq[p.id] = (freq[p.id] || 0) + 1;
 } catch {}
 
+// Short version tag from a crop file's last-modified time, for cache-busting.
+const mtimeTag = file => {
+  try { return Math.floor(statSync(join(ROOT, 'web', file)).mtimeMs).toString(36); } catch { return '0'; }
+};
+
 // The config the page renders from. Editing/reordering here (or in the pattern
 // modules this is derived from) is all it takes to change the page.
 const patterns = PATTERNS.map(p => {
@@ -41,7 +47,9 @@ const patterns = PATTERNS.map(p => {
     pct: total ? Math.round(100 * (freq[p.id] || 0) / total) : null,
     exampleUrl: ex.url || null,
     exampleHost: ex.url ? ex.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : null,
-    img: ex.file ? '/' + ex.file : null,
+    // Cache-bust on the file's mtime: crops are served with a long cache, so a
+    // swapped example needs a fresh URL or returning visitors keep the old one.
+    img: ex.file ? '/' + ex.file + '?v=' + mtimeTag(ex.file) : null,
   };
 });
 
@@ -125,7 +133,7 @@ const html = `<!doctype html>
 </style>
 </head>
 <body>
-<div class="topbar"><div class="inner"><b><a href="/">Design Slop Cop</a></b><nav><a href="/">Scan</a><a href="/show">Gallery</a><a class="sel" href="/patterns">Patterns</a></nav></div></div>
+<div class="topbar"><div class="inner"><b><a href="/">Design Slop Cop</a></b><nav><a href="/">Score</a><a href="/show">Gallery</a><a class="sel" href="/patterns">Patterns</a></nav></div></div>
 
 <div class="wrap">
   <h1>The 14 patterns</h1>
@@ -136,7 +144,7 @@ const html = `<!doctype html>
   <div id="list"></div>
 
   <footer>
-    <a href="/">Scan a site</a> · <a href="/show">Browse the gallery</a> · <a id="submit-foot" href="#" target="_blank" rel="noopener">Submit a new pattern</a> · <a href="${REPO}" target="_blank" rel="noopener">Source on GitHub</a>
+    <a href="/">Score a site</a> · <a href="/show">Browse the gallery</a> · <a id="submit-foot" href="#" target="_blank" rel="noopener">Submit a new pattern</a> · <a href="${REPO}" target="_blank" rel="noopener">Source on GitHub</a>
   </footer>
 </div>
 
