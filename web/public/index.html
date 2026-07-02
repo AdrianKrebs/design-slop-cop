@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="/icon.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%9A%A8</text></svg>">
 <title>Design Slop Cop: how AI-generated is this website?</title>
 <meta name="description" content="Paste a URL. We load it in a real browser and score it against deterministic AI design patterns like vibe purple, gradients, FAQ accordions, and 1·2·3 steps.">
 <meta property="og:title" content="Design Slop Cop">
@@ -42,7 +42,7 @@
   .topbar { background: var(--text); }
   .topbar .inner { max-width: 760px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: baseline; gap: 16px; }
   .topbar b { color: #fff; font-weight: 700; font-size: 17px; }
-  .topbar nav { margin-left: auto; }
+  .topbar nav { margin-left: auto; display: flex; gap: 16px; }
   .topbar nav a { color: #fff; font-size: 16px; text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
   .topbar nav a:hover { text-decoration-thickness: 3px; }
   .topbar nav a:focus { color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; outline: 3px solid transparent; }
@@ -68,7 +68,7 @@
 
   .examples { margin-top: 14px; font-size: 16px; color: var(--muted); }
   .examples button {
-    font: 400 16px var(--font); background: none; border: 0; padding: 0; margin-left: 12px; cursor: pointer;
+    font: 400 16px var(--font); background: none; border: 0; padding: 0; cursor: pointer;
     color: var(--link); text-decoration: underline; text-underline-offset: 0.15em;
   }
   .examples button:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
@@ -110,26 +110,17 @@
   .copy:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
   .copy.copied { color: var(--clean); text-decoration: none; cursor: default; }
 
-  /* Detected patterns: the tells found. Each name has an info button (ⓘ) that
-     toggles a plain-language definition — a "toggletip": click/tap/Enter to open,
-     Esc or outside-click to close (works on mouse, keyboard and touch; the
-     definition is announced via a role=status live region). */
+  /* Detected patterns: the tells found. Each is a bold name that links to its
+     entry on the /patterns reference page (definition + a real example), so the
+     result card stays a clean, scannable list. */
   .patterns { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
-  /* Flex row: square marker + text block. The marker's margin-top centers it on
-     the first text line (line box height − marker height, halved). */
+  /* Flex row: square marker + name. The marker's margin-top centers it on the
+     text line (line box height − marker height, halved). */
   .pattern { display: flex; align-items: flex-start; gap: 11px; font-size: 17px; line-height: 1.4; }
   .pattern::before { content: ""; flex: 0 0 8px; width: 8px; height: 8px; margin-top: calc((1.4em - 8px) / 2); background: var(--heavy); }
-  .pbody { min-width: 0; position: relative; }
-  .pname { font-weight: 700; }
-  .tipwrap { display: inline-block; }
-  /* Linear-style: subtle ghost info button, soft hover tint, snappy transition. */
-  .info { margin-left: 6px; width: 24px; height: 24px; padding: 0; border: 0; border-radius: 50%; background: var(--panel); color: var(--muted); font: 600 12px/1 var(--font); cursor: pointer; vertical-align: 1px; transition: background-color .15s ease, color .15s ease; }
-  .info:hover { background: #e6e5e3; color: var(--text); }
-  .info:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
-  /* Bubble anchored to the text block's left so it opens within the card.
-     Linear-style: rounded corners, soft layered shadow, near-black surface. */
-  .tip { display: none; position: absolute; left: 0; top: calc(100% + 6px); z-index: 30; width: max-content; max-width: 300px; font: 400 13px/1.45 var(--font); color: #fff; background: #15161a; padding: 7px 10px; border-radius: 7px; box-shadow: 0 8px 24px rgba(0,0,0,.16), 0 2px 6px rgba(0,0,0,.10); }
-  .tipwrap.open .tip { display: block; }
+  .pname { font-weight: 700; color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
+  .pname:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
+  .pname:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
   .none { color: var(--clean); font-size: 17px; font-weight: 700; margin: 16px 0 0; }
 
   /* margin-top:auto pins the footer to the bottom of the viewport when content
@@ -147,7 +138,7 @@
 </head>
 <body>
 
-<div class="topbar"><div class="inner"><b>Design Slop Cop</b><nav><a href="/show">Gallery</a></nav></div></div>
+<div class="topbar"><div class="inner"><b>Design Slop Cop</b><nav><a href="/patterns">Patterns</a><a href="/show">Gallery</a></nav></div></div>
 
 <div class="wrap">
   <h1>How AI-generated is this website?</h1>
@@ -251,7 +242,9 @@ form.addEventListener('submit', async e => {
 
 function renderCard(data) {
   const tierClass = (data.tierLabel || data.tier || '').toLowerCase();
-  const tierName = { Heavy: 'High slop', Mild: 'Medium slop', Clean: 'Low slop' }[data.tierLabel] || data.tierLabel || data.tier;
+  const tierName = data.patternsFlagged === 0
+    ? 'No slop'
+    : { Heavy: 'High slop', Mild: 'Medium slop', Clean: 'Low slop' }[data.tierLabel] || data.tierLabel || data.tier;
   const flagged = data.patterns.filter(p => p.triggered);
   const timing = data.cached ? 'cached' : (data.elapsedMs / 1000).toFixed(1) + 's';
 
@@ -266,12 +259,11 @@ function renderCard(data) {
   h += '<div class="meta">' + data.patternsFlagged + '/' + data.patternsTotal + ' patterns · ' + timing + '</div>';
 
   if (flagged.length) {
-    // The tells found; an info button (ⓘ) toggles each definition (toggletip).
+    // The tells found; each name links to its entry on the /patterns reference
+    // page (definition + example), so the card itself stays a clean list.
     h += '<ul class="patterns">';
     h += flagged.map(p =>
-      '<li class="pattern"><div class="pbody"><span class="pname">' + esc(p.label || p.id) + '</span>' +
-      (p.description ? '<span class="tipwrap"><button class="info" type="button" aria-expanded="false" aria-label="Explain ' + esc(p.label || p.id) + '" data-tip="' + esc(p.description) + '">i</button><span class="tip" role="status"></span></span>' : '') +
-      '</div></li>'
+      '<li class="pattern"><a class="pname" href="/patterns#' + esc(p.id) + '">' + esc(p.shortLabel || p.label || p.id) + '</a></li>'
     ).join('');
     h += '</ul>';
   } else {
@@ -284,30 +276,11 @@ function renderCard(data) {
 function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } }
 function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
 
-// Pattern info buttons are toggletips: click / tap / Enter opens, Esc or an
-// outside click closes. The definition is written into a role=status live
-// region so screen readers announce it on open. Works on mouse, keyboard, touch.
-function closeTips(except) {
-  document.querySelectorAll('.tipwrap.open').forEach(w => {
-    if (w === except) return;
-    w.classList.remove('open');
-    w.querySelector('.tip').textContent = '';
-    w.querySelector('.info').setAttribute('aria-expanded', 'false');
-  });
-}
-document.addEventListener('click', e => {
-  const btn = e.target.closest('.info');
-  if (btn) {
-    const wrap = btn.parentElement, tip = wrap.querySelector('.tip');
-    const wasOpen = wrap.classList.contains('open');
-    closeTips(wrap);
-    if (wasOpen) { wrap.classList.remove('open'); tip.textContent = ''; btn.setAttribute('aria-expanded', 'false'); }
-    else { tip.textContent = btn.dataset.tip; wrap.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
-    return;
-  }
-  if (!e.target.closest('.tip')) closeTips();
+// Cmd/Ctrl+Enter fires the scan from anywhere on the page (Enter already
+// submits when the input is focused; this covers the rest).
+document.addEventListener('keydown', e => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') { e.preventDefault(); form.requestSubmit(); }
 });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeTips(); });
 
 // Deep link: /?url=example.com pre-fills and runs the scan on load
 // (served instantly from cache if the result is still warm).

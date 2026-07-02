@@ -68,7 +68,7 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="/icon.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%9A%A8</text></svg>">
 <title>Design Slop Cop · Show HN submissions scored for AI design patterns</title>
 <style>
   /* GOV.UK Design System styling — Arial, black masthead, blue underlined
@@ -286,6 +286,8 @@ const html = `<!doctype html>
   <div class="topbar-inner">
     <span class="brand"><a href="/" title="Back to the checker">Design Slop Cop</a></span>
     <span class="right">
+      <a href="/patterns">Patterns</a>
+      <span class="sep">|</span>
       <a href="https://www.adriankrebs.ch/blog/design-slop/" target="_blank">Methodology</a>
       <span class="sep">|</span>
       <a href="https://github.com/AdrianKrebs/design-slop-cop" target="_blank">Github</a>
@@ -482,7 +484,7 @@ function renderGrid() {
       <span class="domain">(\${escape(domain)})</span>
     </div>
     <div class="subtext">
-      <span class="tier \${tierCls}">\${TIER_DISPLAY[s.tier] || s.tier}</span> · \${s.flagged.length}/\${s.total} patterns\${pts}\${posted ? ' · ' + posted : ''}\${hnLink}\${pats ? '<span class="flags">' + pats + '</span>' : ''}
+      <span class="tier \${tierCls}">\${s.flagged.length === 0 ? 'None' : (TIER_DISPLAY[s.tier] || s.tier)}</span> · \${s.flagged.length}/\${s.total} patterns\${pts}\${posted ? ' · ' + posted : ''}\${hnLink}\${pats ? '<span class="flags">' + pats + '</span>' : ''}
     </div>
   </div>
 </div>\`;

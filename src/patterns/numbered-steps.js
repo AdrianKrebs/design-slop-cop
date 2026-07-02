@@ -5,7 +5,7 @@ export default {
   id: 'numbered_steps',
   label: 'Numbered step sequence (1, 2, 3 …)',
   shortLabel: '1·2·3 steps',
-  description: "A numbered 1, 2, 3 step sequence.",
+  description: "The numbered how-it-works step row.",
   category: 'layout',
   thresholds: {
     minFontSize: 14,

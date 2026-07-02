@@ -1,0 +1,72 @@
+{
+  "slop_fonts": {
+    "url": "https://puzzlelair.com/",
+    "mode": "hero",
+    "file": "pattern-examples/slop_fonts.jpg"
+  },
+  "hero_font_mix": {
+    "url": "https://clevercrow.io",
+    "mode": "hero",
+    "file": "pattern-examples/hero_font_mix.jpg"
+  },
+  "purple_accent": {
+    "url": "https://golemui.com",
+    "mode": "hero",
+    "file": "pattern-examples/purple_accent.jpg"
+  },
+  "gradients": {
+    "url": "https://www.absurdlyoptimized.com/recipes/pancakes/",
+    "mode": "hero",
+    "file": "pattern-examples/gradients.jpg"
+  },
+  "center_aligned_hero": {
+    "url": "https://startupwiki.tech/",
+    "mode": "hero",
+    "file": "pattern-examples/center_aligned_hero.jpg"
+  },
+  "perma_dark_mode": {
+    "url": "https://selforg-npa.github.io/",
+    "mode": "hero",
+    "file": "pattern-examples/perma_dark_mode.jpg"
+  },
+  "hero_eyebrow_pill": {
+    "url": "https://noteika.com",
+    "mode": "hero",
+    "file": "pattern-examples/hero_eyebrow_pill.jpg"
+  },
+  "sidebar_emoji": {
+    "url": "https://brevio.pro",
+    "mode": "hero",
+    "file": "pattern-examples/sidebar_emoji.jpg"
+  },
+  "accent_stripe": {
+    "url": "https://llm-wiki.net/",
+    "mode": "element",
+    "file": "pattern-examples/accent_stripe.jpg"
+  },
+  "glassmorphism": {
+    "url": "https://www.calendarpipe.com",
+    "mode": "element",
+    "file": "pattern-examples/glassmorphism.jpg"
+  },
+  "colored_glows": {
+    "url": "https://vioevo.com",
+    "mode": "element",
+    "file": "pattern-examples/colored_glows.jpg"
+  },
+  "numbered_steps": {
+    "url": "https://margaine.com/hunch",
+    "mode": "element",
+    "file": "pattern-examples/numbered_steps.jpg"
+  },
+  "stat_banner_row": {
+    "url": "https://golemui.com",
+    "mode": "element",
+    "file": "pattern-examples/stat_banner_row.jpg"
+  },
+  "faq_accordion": {
+    "url": "https://places.is",
+    "mode": "element",
+    "file": "pattern-examples/faq_accordion.jpg"
+  }
+}
