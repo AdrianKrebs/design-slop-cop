@@ -9,3 +9,4 @@ results/fetch-log.json
 .idea/
 .vscode/
 .env*
+results/hero-eval/

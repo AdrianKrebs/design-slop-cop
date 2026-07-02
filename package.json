@@ -1,7 +1,7 @@
 {
   "name": "design-slop-cop",
   "version": "0.1.0",
-  "description": "Score landing pages against 16 deterministic AI design patterns",
+  "description": "Score landing pages against 14 deterministic AI design patterns",
   "type": "module",
   "license": "MIT",
   "homepage": "https://github.com/AdrianKrebs/design-slop-cop",
@@ -22,11 +22,16 @@
     "analyze":     "node src/run.js",
     "fetch":       "node src/fetch-showhn.js",
     "report":      "node src/build-report.js",
+    "capture-examples": "node scripts/capture-pattern-examples.mjs",
+    "patterns":    "node src/build-patterns-page.mjs",
     "label":       "node tools/label/server.mjs",
     "scan":        "node tools/scan/server.mjs",
     "eval":        "node tools/eval.mjs"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
-    "playwright": "^1.49.0"
+    "playwright": "^1.59.1"
   }
 }

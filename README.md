@@ -1,7 +1,7 @@
 # Design Slop Cop
 
 A tool to score any website for common AI design patterns.
-**Live: [www.slopcop.adriankrebs.ch](https://www.slopcop.adriankrebs.ch)** — paste a URL, get a scored verdict.
+**Live: [slopcop.adriankrebs.ch](https://slopcop.adriankrebs.ch)** — paste a URL, get a scored verdict.
 Basis for the [blog post](https://www.adriankrebs.ch/blog/design-slop/) and the HN discussion ["Scoring Show HN submissions for AI design patterns"](https://news.ycombinator.com/item?id=47864393).
 
 The tool loads each site in a headless browser, analyzes the DOM, and reports which of 14 deterministic AI design patterns are found.
@@ -64,13 +64,20 @@ To update an existing clone, `git pull` inside the directory.
 
 ## Run the web frontend
 
-The same UI as the live site at [www.slopcop.adriankrebs.ch](https://www.slopcop.adriankrebs.ch) — paste a URL, get a scored verdict and screenshot:
+The same UI as the live site at [slopcop.adriankrebs.ch](https://slopcop.adriankrebs.ch) — paste a URL, get a scored verdict and screenshot:
 
 ```bash
 npm start          # → http://localhost:8080
 ```
 
-The first scan is slow (it warms up a headless browser); subsequent scans reuse it. `/show` serves the browsable Show HN gallery. To deploy it publicly, see [`DEPLOY.md`](DEPLOY.md).
+The first scan is slow (it warms up a headless browser); subsequent scans reuse it. `/show` serves the browsable Show HN gallery, and `/patterns` is the reference page for all 14 patterns (definition + a real example of each). To deploy it publicly, see [`DEPLOY.md`](DEPLOY.md).
+
+The patterns page is pre-built and self-contained (example crops embedded as data URIs). To regenerate it:
+
+```bash
+npm run capture-examples   # re-shoot one example crop per pattern → web/pattern-examples.json
+npm run patterns           # build web/patterns.html from those crops
+```
 
 ## Run the full corpus
 
