@@ -1,4 +1,487 @@
 {
+  "https://oculor.ai": {
+    "id": "48762704",
+    "title": "Show HN: Oculor: find warm intro paths to investors",
+    "points": 1,
+    "author": "fredrussias",
+    "createdAt": "2026-07-02T15:01:02Z"
+  },
+  "https://ai-creed.dev/projects/ai-14all/": {
+    "id": "48762647",
+    "title": "Show HN: AI-14all – All you (or your AI agents) need for coding",
+    "points": 1,
+    "author": "vuphanse",
+    "createdAt": "2026-07-02T14:57:04Z"
+  },
+  "https://loopflow.live": {
+    "id": "48762390",
+    "title": "Show HN: LoopFlow – plain-English loops that run coding agents until tests pass",
+    "points": 1,
+    "author": "forgeapp",
+    "createdAt": "2026-07-02T14:42:46Z"
+  },
+  "https://mailmemories.com": {
+    "id": "48762000",
+    "title": "Show HN: Mail Memories – A desktop app to rescue photos from Gmail",
+    "points": 13,
+    "author": "ltiger",
+    "createdAt": "2026-07-02T14:16:57Z"
+  },
+  "https://app-stage.clutchprotocol.io": {
+    "id": "48761784",
+    "title": "Show HN: Decentralized ride-sharing with on-chain settlement",
+    "points": 1,
+    "author": "mehran_mazhar",
+    "createdAt": "2026-07-02T14:01:49Z"
+  },
+  "https://pgblame.com": {
+    "id": "48761754",
+    "title": "Show HN: Pgblame – which Vercel deploy slowed your Postgres?",
+    "points": 1,
+    "author": "liberzon",
+    "createdAt": "2026-07-02T14:00:01Z"
+  },
+  "https://matchshot.app/": {
+    "id": "48761749",
+    "title": "Show HN: MatchShot – I built an AI tool that audits your dating profile photos",
+    "points": 3,
+    "author": "Z4cki",
+    "createdAt": "2026-07-02T13:59:57Z"
+  },
+  "https://www.emaginasion.com/": {
+    "id": "48761664",
+    "title": "Show HN: Chauffeur",
+    "points": 1,
+    "author": "dmaginas",
+    "createdAt": "2026-07-02T13:53:17Z"
+  },
+  "https://seoagent.com": {
+    "id": "48761586",
+    "title": "Show HN: SEOAgent – Missing SEO system of record for AI coding workflows",
+    "points": 1,
+    "author": "Sharanxxxx",
+    "createdAt": "2026-07-02T13:47:13Z"
+  },
+  "https://www.zerofs.net/": {
+    "id": "48761493",
+    "title": "Show HN: ZeroFS – A log-structured filesystem for S3",
+    "points": 47,
+    "author": "Eikon",
+    "createdAt": "2026-07-02T13:41:11Z"
+  },
+  "https://stegoimage.pages.dev/": {
+    "id": "48761449",
+    "title": "Show HN: Image steganography tool – Hide any file inside a PNG image",
+    "points": 2,
+    "author": "coder_xyz",
+    "createdAt": "2026-07-02T13:38:55Z"
+  },
+  "https://matrix-os.com": {
+    "id": "48761447",
+    "title": "Show HN: Matrix, an open-source cloud computer for coding agents",
+    "points": 1,
+    "author": "hamedmp",
+    "createdAt": "2026-07-02T13:38:47Z"
+  },
+  "https://sendmailas.com": {
+    "id": "48761365",
+    "title": "Show HN: Send and receive custom-domain email from your existing Gmail",
+    "points": 1,
+    "author": "mohitgaddam",
+    "createdAt": "2026-07-02T13:33:29Z"
+  },
+  "https://freegraphpaper.net/": {
+    "id": "48761294",
+    "title": "Show HN: A graph paper generator that renders vector PDFs in the browser",
+    "points": 8,
+    "author": "lam_hg94",
+    "createdAt": "2026-07-02T13:29:09Z"
+  },
+  "https://gitcity.natrajx.in/": {
+    "id": "48761074",
+    "title": "Show HN: I turned GitHub contribution history into a driveable 3D city",
+    "points": 4,
+    "author": "rishabhbhartiya",
+    "createdAt": "2026-07-02T13:15:25Z"
+  },
+  "https://www.rowtoglory.com": {
+    "id": "48760674",
+    "title": "Show HN: Row to Glory, a Viking rhythm game to row your way to World Cup 2026",
+    "points": 1,
+    "author": "kman_85",
+    "createdAt": "2026-07-02T12:46:54Z"
+  },
+  "https://devtui.com/": {
+    "id": "48760599",
+    "title": "Show HN: DevTUI – A Swiss-army app for developers",
+    "points": 2,
+    "author": "lunaticman",
+    "createdAt": "2026-07-02T12:40:37Z"
+  },
+  "https://naviadratp.com/": {
+    "id": "48760467",
+    "title": "Show HN: Navia Dratp – an online version of an out-of-print Bandai strategy game",
+    "points": 2,
+    "author": "explosionpunch",
+    "createdAt": "2026-07-02T12:31:32Z"
+  },
+  "https://digga.dev": {
+    "id": "48760450",
+    "title": "Show HN: digga – DNS, RDAP/WHOIS, subdomains and more in one lookup",
+    "points": 2,
+    "author": "maathis",
+    "createdAt": "2026-07-02T12:30:25Z"
+  },
+  "https://www.neuralinverse.com/cloud": {
+    "id": "48760385",
+    "title": "Show HN: Neural Inverse Cloud",
+    "points": 7,
+    "author": "Sanjay05",
+    "createdAt": "2026-07-02T12:25:33Z"
+  },
+  "https://swiftshrink.com/": {
+    "id": "48760161",
+    "title": "Show HN: SwiftShrink – compress an image to an exact KB size, in the browser",
+    "points": 2,
+    "author": "Talha_Asjad",
+    "createdAt": "2026-07-02T12:07:53Z"
+  },
+  "https://debriefr.tv": {
+    "id": "48760128",
+    "title": "Show HN: Debriefr – Discussions that unlock as you watch",
+    "points": 1,
+    "author": "jhedlund",
+    "createdAt": "2026-07-02T12:05:37Z"
+  },
+  "https://www.nextkicklabs.com/p/agentic-ai-security-stack-book-release": {
+    "id": "48760098",
+    "title": "Show HN: A free agentic AI security reference (CC BY-NC-ND 4.0)",
+    "points": 2,
+    "author": "flucktemberg",
+    "createdAt": "2026-07-02T12:02:08Z"
+  },
+  "https://privacymagic.com/about/": {
+    "id": "48760091",
+    "title": "Show HN: Privacy Magic – a Chrome extension to protect your privacy",
+    "points": 1,
+    "author": "arthuredelstein",
+    "createdAt": "2026-07-02T12:01:23Z"
+  },
+  "https://vajba.com/hide-message-in-image/": {
+    "id": "48759923",
+    "title": "Show HN: Hide an encrypted message inside a photo, in the browser",
+    "points": 1,
+    "author": "trivsamt",
+    "createdAt": "2026-07-02T11:46:52Z"
+  },
+  "https://wikicube.vercel.app/wiki/emmett-framework/granian": {
+    "id": "48759919",
+    "title": "Show HN: Wikicube: instant wiki for any GitHub repo",
+    "points": 1,
+    "author": "cpnwaugha",
+    "createdAt": "2026-07-02T11:46:32Z"
+  },
+  "https://jonno.nz/posts/your-show-hn-dies-in-7-hours/": {
+    "id": "48759838",
+    "title": "Show HN: I measured the half-life of 41,301 Show HN launches. It's 7 hours",
+    "points": 10,
+    "author": "jonnonz",
+    "createdAt": "2026-07-02T11:38:20Z"
+  },
+  "https://domternal.dev/": {
+    "id": "48759769",
+    "title": "Show HN: Domternal – headless rich-text editor for Angular/React/Vue/Vanilla",
+    "points": 1,
+    "author": "thomasnowhere",
+    "createdAt": "2026-07-02T11:31:19Z"
+  },
+  "https://mp3totext.ai": {
+    "id": "48759637",
+    "title": "Show HN: MP3toText – Fast, high-accuracy AI audio transcription",
+    "points": 1,
+    "author": "cyk888",
+    "createdAt": "2026-07-02T11:18:07Z"
+  },
+  "https://www.scoremarket.co.uk": {
+    "id": "48759070",
+    "title": "Show HN: ScoreMarket – A digital sheet music marketplace",
+    "points": 1,
+    "author": "anthonydaly",
+    "createdAt": "2026-07-02T10:13:02Z"
+  },
+  "https://ytranscript.com/developers": {
+    "id": "48758976",
+    "title": "Show HN: A YouTube transcript API that survives YouTube's bot war",
+    "points": 1,
+    "author": "nopxuan",
+    "createdAt": "2026-07-02T10:01:42Z"
+  },
+  "https://sophmate.ai": {
+    "id": "48758932",
+    "title": "Show HN: SophMate – AI Copilot for WordPress/WooCommerce",
+    "points": 1,
+    "author": "ahmed_duski",
+    "createdAt": "2026-07-02T09:54:06Z"
+  },
+  "https://sofie.wiki": {
+    "id": "48758409",
+    "title": "Show HN: Get a structured knowledge base instantly from conversations",
+    "points": 1,
+    "author": "tapeo",
+    "createdAt": "2026-07-02T08:46:29Z"
+  },
+  "https://www.mywritingtwin.com": {
+    "id": "48757804",
+    "title": "Show HN: MyWritingTwin: an AI Writing Profile that makes LLMs sound like you",
+    "points": 3,
+    "author": "writingdna",
+    "createdAt": "2026-07-02T07:31:12Z"
+  },
+  "https://noterai.tech": {
+    "id": "48757613",
+    "title": "Show HN: Noter – AI agent dashboard for monitoring coding harnesses locally",
+    "points": 1,
+    "author": "carlobizzaro",
+    "createdAt": "2026-07-02T07:08:16Z"
+  },
+  "https://yvetter438.github.io/LinkedInFeedBlockerWebsite/": {
+    "id": "48757207",
+    "title": "Show HN: LinkedIn Focus Chrome Extension",
+    "points": 2,
+    "author": "ywv",
+    "createdAt": "2026-07-02T06:12:30Z"
+  },
+  "https://shankhan3.gumroad.com/l/dnwmtp": {
+    "id": "48757074",
+    "title": "Show HN: I wrote a Rust book ending with a Redis clone",
+    "points": 7,
+    "author": "zeeshanali0094",
+    "createdAt": "2026-07-02T05:55:16Z"
+  },
+  "https://gethnjobs.com/": {
+    "id": "48756892",
+    "title": "Show HN: Searchable directory of HN Job postings",
+    "points": 3,
+    "author": "hboon",
+    "createdAt": "2026-07-02T05:27:35Z"
+  },
+  "https://www.pdfwix.com/": {
+    "id": "48756854",
+    "title": "Show HN: PDFWix – Browser-Based PDF Tools for Everyday Workflows",
+    "points": 1,
+    "author": "PDFWix",
+    "createdAt": "2026-07-02T05:20:50Z"
+  },
+  "https://matsumotory.github.io/claude-desktop-switcher/": {
+    "id": "48756611",
+    "title": "Show HN: Claude Desktop Switcher for separating the whole Claude Desktop suite",
+    "points": 2,
+    "author": "matsumotory",
+    "createdAt": "2026-07-02T04:34:21Z"
+  },
+  "https://www.margarita.run": {
+    "id": "48756596",
+    "title": "Show HN: Margarita - Programming language for Agents using Markdown-ish syntax",
+    "points": 6,
+    "author": "margarita_dev",
+    "createdAt": "2026-07-02T04:31:51Z"
+  },
+  "https://beta.actions.life": {
+    "id": "48756283",
+    "title": "Show HN: One Page Life Calendar",
+    "points": 1,
+    "author": "eltonlin",
+    "createdAt": "2026-07-02T03:46:29Z"
+  },
+  "https://technokick.com/": {
+    "id": "48755963",
+    "title": "Show HN: Techno Kick",
+    "points": 4,
+    "author": "stagas",
+    "createdAt": "2026-07-02T02:59:17Z"
+  },
+  "https://tenjin.blog/": {
+    "id": "48755742",
+    "title": "Show HN: Tenjin – marketplace where humans and agents buy and sell MD files",
+    "points": 2,
+    "author": "vraspar",
+    "createdAt": "2026-07-02T02:32:25Z"
+  },
+  "https://www.therajoyapp.com": {
+    "id": "48755383",
+    "title": "Show HN: TheraJoy – bilateral stimulation for EMDR using Joy-Cons",
+    "points": 1,
+    "author": "carbonclaw",
+    "createdAt": "2026-07-02T01:39:06Z"
+  },
+  "https://www.agentsessions.dev/": {
+    "id": "48754784",
+    "title": "Show HN: Agent Sessions – A model agnostic Claude managed agents alternative",
+    "points": 2,
+    "author": "iacguy",
+    "createdAt": "2026-07-02T00:09:15Z"
+  },
+  "https://photosignal.app/": {
+    "id": "48754735",
+    "title": "Show HN: I built a photography weather alert system",
+    "points": 2,
+    "author": "ameon",
+    "createdAt": "2026-07-02T00:02:07Z"
+  },
+  "https://banto.tv": {
+    "id": "48754208",
+    "title": "Show HN: Banto – Turn any topic into a live game room in minutes",
+    "points": 2,
+    "author": "douglaspham",
+    "createdAt": "2026-07-01T22:54:09Z"
+  },
+  "https://indiesharktank.vercel.app/": {
+    "id": "48754114",
+    "title": "Show HN: Shark Tank but you pitch your idea to indie hackers",
+    "points": 6,
+    "author": "roozka10",
+    "createdAt": "2026-07-01T22:43:29Z"
+  },
+  "https://www.orgonaut.co/tools/agentic-reorg-simulator/": {
+    "id": "48753823",
+    "title": "Show HN: Simulate what AI agents do to an engineering org (no signup)",
+    "points": 2,
+    "author": "orgonaut",
+    "createdAt": "2026-07-01T22:12:44Z"
+  },
+  "https://expensespy.com": {
+    "id": "48753465",
+    "title": "Show HN: ExpenseSpy – AI receipt scanner that exports to Excel, built solo",
+    "points": 3,
+    "author": "cdogukank",
+    "createdAt": "2026-07-01T21:36:40Z"
+  },
+  "https://zukr.app/": {
+    "id": "48753250",
+    "title": "Show HN: Zukr – offline OCR that flags hidden sugar names on food labels",
+    "points": 1,
+    "author": "peshrus",
+    "createdAt": "2026-07-01T21:18:02Z"
+  },
+  "https://OpenCan.dev": {
+    "id": "48753137",
+    "title": "Show HN: OpenCan – Open-source, self-hostable Canny alternative (AGPL-3.0)",
+    "points": 1,
+    "author": "sriramgopalan",
+    "createdAt": "2026-07-01T21:07:23Z"
+  },
+  "https://www.workerowned.info/": {
+    "id": "48752905",
+    "title": "Show HN: Searchable directory of 22k+ products from worker-owned co-ops",
+    "points": 379,
+    "author": "IESAI_ski",
+    "createdAt": "2026-07-01T20:47:41Z"
+  },
+  "https://hive.gionn.net/": {
+    "id": "48752290",
+    "title": "Show HN: A Replacement of WhatsApp Polls",
+    "points": 1,
+    "author": "gionn",
+    "createdAt": "2026-07-01T19:57:16Z"
+  },
+  "https://www.lovie.co/formation/": {
+    "id": "48752239",
+    "title": "Show HN: I built a company formation tool that works inside your IDE via MCP",
+    "points": 1,
+    "author": "attorney-omer",
+    "createdAt": "2026-07-01T19:54:16Z"
+  },
+  "https://www.gitori.com/play/FBG-106": {
+    "id": "48751687",
+    "title": "Show HN: I made a Space Invaders-style, guitar-driven fretboard learning game",
+    "points": 2,
+    "author": "udit99",
+    "createdAt": "2026-07-01T19:05:58Z"
+  },
+  "https://reloadium.com/reloadium-contacts/": {
+    "id": "48751607",
+    "title": "Show HN: Find contacts who align with your interests",
+    "points": 2,
+    "author": "julienreszka",
+    "createdAt": "2026-07-01T19:00:31Z"
+  },
+  "https://bsky.app/profile/nik.digital/post/3mpm44tpvss2r": {
+    "id": "48751529",
+    "title": "Show HN: I visualized \"Who's Hiring?\" vs. \"Who wants to be hired?\" over time",
+    "points": 1,
+    "author": "NikxDa",
+    "createdAt": "2026-07-01T18:52:34Z"
+  },
+  "https://beepcasts.com/": {
+    "id": "48751384",
+    "title": "Show HN: Beep explicit language in podcasts so you can listen with kids",
+    "points": 1,
+    "author": "zachthewf",
+    "createdAt": "2026-07-01T18:40:57Z"
+  },
+  "https://vitashev.github.io/react-data-grid-benchmark/": {
+    "id": "48751333",
+    "title": "Show HN: A reproducible React data grid benchmark with raw browser samples",
+    "points": 1,
+    "author": "vitashev",
+    "createdAt": "2026-07-01T18:35:59Z"
+  },
+  "https://pieterpost.com/en/send-letter-to-representative/": {
+    "id": "48751036",
+    "title": "Show HN: Send physical letters to U.S. representatives, Civic Mail",
+    "points": 2,
+    "author": "Neddes",
+    "createdAt": "2026-07-01T18:16:07Z"
+  },
+  "https://exitprotocols.com/engineering/libr-state-machine/": {
+    "id": "48750737",
+    "title": "Show HN: LIBR tracing with source ledger rows and byte-exact PDF verification",
+    "points": 4,
+    "author": "cd_mkdir",
+    "createdAt": "2026-07-01T17:55:03Z"
+  },
+  "https://trigora.dev": {
+    "id": "48750404",
+    "title": "Show HN: Trigora – A hosted runtime for event-driven TypeScript workflows",
+    "points": 2,
+    "author": "hypervs",
+    "createdAt": "2026-07-01T17:30:57Z"
+  },
+  "https://meltedinhex.com/posts/analyst-ai-pack/": {
+    "id": "48750336",
+    "title": "Show HN: AnalystAIPack – 118 runnable agent skills for malware analysis and RE",
+    "points": 7,
+    "author": "sdkhere",
+    "createdAt": "2026-07-01T17:27:00Z"
+  },
+  "https://codingagentsurvey.org/": {
+    "id": "48750156",
+    "title": "Show HN: Coding Agent Survey – Which coding agents do you use?",
+    "points": 5,
+    "author": "jacobgold",
+    "createdAt": "2026-07-01T17:13:53Z"
+  },
+  "https://salt-lang.dev": {
+    "id": "48750008",
+    "title": "Show HN: Salt – a systems language with Z3 theorem proving in the compiler",
+    "points": 41,
+    "author": "bneb-dev",
+    "createdAt": "2026-07-01T17:05:29Z"
+  },
+  "https://zenvesto.com/": {
+    "id": "48749639",
+    "title": "Show HN: A Simple Investment Portfolio Tracker",
+    "points": 3,
+    "author": "zenvesto",
+    "createdAt": "2026-07-01T16:42:52Z"
+  },
+  "https://happenstance.ai/sidedoor": {
+    "id": "48749547",
+    "title": "Show HN: Sidedoor – Paste any job, find who in your network can refer you",
+    "points": 4,
+    "author": "welshpony",
+    "createdAt": "2026-07-01T16:37:02Z"
+  },
   "https://addons.mozilla.org/en-US/firefox/addon/hn-keyboard-boost/": {
     "id": "48749490",
     "title": "Show HN: HN Keyboard Boost – Minimal Keyboard Navigation for Hacker News",
@@ -43,22 +526,22 @@
   },
   "https://golemui.com": {
     "id": "48748182",
-    "title": "Show HN: GolemUI – The new paradigm for JavaScript forms",
-    "points": 9,
+    "title": "Show HN: GolemUI – Declarative Form Engine",
+    "points": 44,
     "author": "wtfdeveloper",
     "createdAt": "2026-07-01T15:12:08Z"
   },
   "https://strata.space/show": {
     "id": "48748000",
     "title": "Show HN: Strata, real-time Markdown editor you can mount as a filesystem",
-    "points": 4,
+    "points": 5,
     "author": "xarnx",
     "createdAt": "2026-07-01T15:02:37Z"
   },
   "https://app.instello.app/": {
     "id": "48747870",
     "title": "Show HN: I rebuilt Instagram's feed so every post teaches LeetCode",
-    "points": 4,
+    "points": 5,
     "author": "atomics423",
     "createdAt": "2026-07-01T14:54:57Z"
   },
@@ -72,7 +555,7 @@
   "https://govauctions.app": {
     "id": "48747650",
     "title": "Show HN: GovAuctions.app now in US,UK,CA,AU with deal scores and bid estimates",
-    "points": 2,
+    "points": 3,
     "author": "player_piano",
     "createdAt": "2026-07-01T14:42:12Z"
   },
@@ -135,7 +618,7 @@
   "https://grammar-to-marser.arnedebo.com/": {
     "id": "48746026",
     "title": "Show HN: Grammar-to-marser - Input a PEG/Pest grammar and get a full rust parser",
-    "points": 3,
+    "points": 4,
     "author": "ArneCode",
     "createdAt": "2026-07-01T13:01:13Z"
   },
@@ -177,7 +660,7 @@
   "https://wereadit.com": {
     "id": "48745735",
     "title": "Show HN: Readit, a read-it-later app I built because the others keep dying",
-    "points": 6,
+    "points": 8,
     "author": "mahmoudalwadia",
     "createdAt": "2026-07-01T12:39:33Z"
   },
@@ -219,7 +702,7 @@
   "https://wohnortatlas.de/": {
     "id": "48745439",
     "title": "Show HN: I computed livability for all of Germany by rent, commute, and QoL",
-    "points": 4,
+    "points": 5,
     "author": "ivorius",
     "createdAt": "2026-07-01T12:11:41Z"
   },
@@ -268,7 +751,7 @@
   "https://hackernows.app/": {
     "id": "48744778",
     "title": "Show HN: HackerNows – Native iOS HN Client",
-    "points": 22,
+    "points": 28,
     "author": "maguszin",
     "createdAt": "2026-07-01T10:45:59Z"
   },
@@ -310,14 +793,14 @@
   "https://kandlequiz.trade/": {
     "id": "48743617",
     "title": "Show HN: A Wordle-style daily trading challenge",
-    "points": 2,
+    "points": 3,
     "author": "ssarcandy",
     "createdAt": "2026-07-01T08:07:18Z"
   },
   "https://wasm.chdb.io/": {
     "id": "48743592",
     "title": "Show HN: ChDB-WASM – ClickHouse running in the browser via WebAssembly",
-    "points": 2,
+    "points": 3,
     "author": "auxten",
     "createdAt": "2026-07-01T08:03:33Z"
   },
@@ -485,7 +968,7 @@
   "https://0xff.nu/hex/": {
     "id": "48736055",
     "title": "Show HN: I built an AI agent to yell at me about my ADHD",
-    "points": 5,
+    "points": 6,
     "author": "hxii",
     "createdAt": "2026-06-30T17:24:31Z"
   },
@@ -513,7 +996,7 @@
   "https://formicarium.es": {
     "id": "48735446",
     "title": "Show HN: My 13-year-old built an ant colony tracker",
-    "points": 71,
+    "points": 73,
     "author": "abelgvidal",
     "createdAt": "2026-06-30T16:48:47Z"
   },
@@ -618,7 +1101,7 @@
   "https://curvytron2.com/": {
     "id": "48733433",
     "title": "Show HN: Curvytron 2, I rewrote my browser party game, 10 years later",
-    "points": 2,
+    "points": 12,
     "author": "tom32i",
     "createdAt": "2026-06-30T14:45:19Z"
   },
@@ -691,6 +1174,230 @@
     "points": 4,
     "author": "nastynate",
     "createdAt": "2026-06-30T13:15:39Z"
+  },
+  "https://debategle.com/": {
+    "id": "48732235",
+    "title": "Show HN: Debategle – ranked 1v1 debates judged by an LLM",
+    "points": 3,
+    "author": "sawsymikey",
+    "createdAt": "2026-06-30T13:08:53Z"
+  },
+  "https://tesserae.ink/": {
+    "id": "48732157",
+    "title": "Show HN: Tesserae, self-hosted dashboards for the e-paper panel you own",
+    "points": 3,
+    "author": "xDaftTurtle",
+    "createdAt": "2026-06-30T13:02:02Z"
+  },
+  "https://habitpocket.io/": {
+    "id": "48732142",
+    "title": "Show HN: Habit Pocket – track numbers and times of day, not just checkmarks",
+    "points": 4,
+    "author": "bohdanstefaniuk",
+    "createdAt": "2026-06-30T13:01:14Z"
+  },
+  "https://citeready.sprytools.com/": {
+    "id": "48732134",
+    "title": "Show HN: CiteReady – check if your site can be cited by AI search engines",
+    "points": 3,
+    "author": "grenzfrei",
+    "createdAt": "2026-06-30T13:00:02Z"
+  },
+  "https://h1yapp.com/en/scripting/pwa/totpgenerator/": {
+    "id": "48732133",
+    "title": "Show HN: TOTP generator – SHA1/256/512 30/60/... 6-9 not via SubtleCrypto",
+    "points": 3,
+    "author": "h1yapp",
+    "createdAt": "2026-06-30T13:00:00Z"
+  },
+  "https://voice-ai.dev": {
+    "id": "48732064",
+    "title": "Show HN: I Made an SDK to work with Vapi and Retell without vendor lock in",
+    "points": 2,
+    "author": "marchypolite",
+    "createdAt": "2026-06-30T12:54:41Z"
+  },
+  "https://node-pad.com/": {
+    "id": "48731991",
+    "title": "Show HN: NodePad – AI agent on a canvas instead of a linear chat",
+    "points": 5,
+    "author": "palazski",
+    "createdAt": "2026-06-30T12:47:52Z"
+  },
+  "https://www.reelsgraph.com/": {
+    "id": "48731876",
+    "title": "Show HN: ReelsGraph – movie/TV watchlist and ML-based discovery queue, no signup",
+    "points": 3,
+    "author": "Whiskee",
+    "createdAt": "2026-06-30T12:37:48Z"
+  },
+  "https://www.framein.dev/": {
+    "id": "48731852",
+    "title": "Show HN: Framein – a local work-state layer that keeps AI agents in context",
+    "points": 2,
+    "author": "BonPPa",
+    "createdAt": "2026-06-30T12:36:49Z"
+  },
+  "https://botanica-consulting.github.io/sod/": {
+    "id": "48731704",
+    "title": "Show HN: Sod – Touch ID-Backed SSH Keys Using the Secure Enclave",
+    "points": 2,
+    "author": "botanica_labs",
+    "createdAt": "2026-06-30T12:22:50Z"
+  },
+  "https://forza.kirill.sh/": {
+    "id": "48731655",
+    "title": "Show HN: Apex Copilot, a real-time telemetry HUD and race log for Forza Horizon6",
+    "points": 2,
+    "author": "fodoj",
+    "createdAt": "2026-06-30T12:18:26Z"
+  },
+  "https://apeg.dev/writing/running-gemma4-26b-on-a-cpu/": {
+    "id": "48731643",
+    "title": "Show HN: Running Gemma-4 26B at 124 tokens/SEC on a CPU, no GPU",
+    "points": 10,
+    "author": "arun-prasath",
+    "createdAt": "2026-06-30T12:17:31Z"
+  },
+  "https://entelligentsia.github.io/is-grep-enough/": {
+    "id": "48731519",
+    "title": "Show HN: Is grep enough? A transparent benchmark for agentic code navigation",
+    "points": 3,
+    "author": "bonigv",
+    "createdAt": "2026-06-30T12:06:46Z"
+  },
+  "https://zyraz-io.github.io/ekbatan/": {
+    "id": "48731373",
+    "title": "Show HN: Ekbatan – Java persistence framework for event-driven systems",
+    "points": 2,
+    "author": "unikzforce",
+    "createdAt": "2026-06-30T11:52:13Z"
+  },
+  "https://nenadg.github.io/opencode-configurator/": {
+    "id": "48731370",
+    "title": "Show HN: Drag'n'drop OpenCode Config Generator",
+    "points": 2,
+    "author": "nenadg",
+    "createdAt": "2026-06-30T11:51:52Z"
+  },
+  "https://zenlocks.haogre.com": {
+    "id": "48731030",
+    "title": "Show HN: ZenLocks – A privacy-first, subscription-free iOS screen time blocker",
+    "points": 2,
+    "author": "haogre",
+    "createdAt": "2026-06-30T11:17:45Z"
+  },
+  "https://echorelay.dev/": {
+    "id": "48730644",
+    "title": "Show HN: EchoRelay - Reliable HTTP delivery with retries, fan-out, and more",
+    "points": 5,
+    "author": "miclag",
+    "createdAt": "2026-06-30T10:21:42Z"
+  },
+  "https://www.turnitindetector.ai/": {
+    "id": "48730639",
+    "title": "Show HN: Turnitindetector.ai – Free AI checker for essays, no sign-up",
+    "points": 2,
+    "author": "gigisss",
+    "createdAt": "2026-06-30T10:20:22Z"
+  },
+  "https://www.gpthumanizer.ai/": {
+    "id": "48730635",
+    "title": "Show HN: GPTHumanizer – Free, unlimited AI humanizer for ChatGPT drafts",
+    "points": 2,
+    "author": "gigisss",
+    "createdAt": "2026-06-30T10:19:46Z"
+  },
+  "https://ai-policy-gen.pages.dev": {
+    "id": "48730624",
+    "title": "Show HN: Privacy policy generator for AI apps (LLM disclosure, EU AI Act)",
+    "points": 6,
+    "author": "wyss0513",
+    "createdAt": "2026-06-30T10:18:04Z"
+  },
+  "https://internetvitals.com/": {
+    "id": "48730617",
+    "title": "Show HN: InternetVitals – the internet's vital signs, like a patient monitor",
+    "points": 2,
+    "author": "tkachenko",
+    "createdAt": "2026-06-30T10:16:52Z"
+  },
+  "https://context7-react-chat-widget-demo.vercel.app/": {
+    "id": "48730610",
+    "title": "Show HN: Add AI chat to any docs site with one script tag",
+    "points": 2,
+    "author": "abdush",
+    "createdAt": "2026-06-30T10:15:45Z"
+  },
+  "https://www.archytasdigital.com/": {
+    "id": "48730358",
+    "title": "Show HN: A Free AI Visibility Tracker",
+    "points": 1,
+    "author": "pastamania",
+    "createdAt": "2026-06-30T09:33:57Z"
+  },
+  "https://www.agent-kits.com/agentaz-crosswalk": {
+    "id": "48730140",
+    "title": "Show HN: Crosswalk mapping AI-agent design controls to NIST, ISO 42001, OWASP",
+    "points": 1,
+    "author": "stoicstoic",
+    "createdAt": "2026-06-30T08:57:38Z"
+  },
+  "https://availabilitytracker.app/": {
+    "id": "48730091",
+    "title": "Show HN: Availability Tracker – A Simple Way to Track Items",
+    "points": 1,
+    "author": "jkferland",
+    "createdAt": "2026-06-30T08:52:51Z"
+  },
+  "https://escalateto.me/landing": {
+    "id": "48730073",
+    "title": "Show HN: Escalate – human as a service for your agent",
+    "points": 3,
+    "author": "oleh_vell",
+    "createdAt": "2026-06-30T08:49:41Z"
+  },
+  "https://guokai.dev/minesweeper/": {
+    "id": "48730006",
+    "title": "Show HN: Classic Minesweeper",
+    "points": 12,
+    "author": "hanguokai",
+    "createdAt": "2026-06-30T08:40:09Z"
+  },
+  "https://mocca.run/": {
+    "id": "48729974",
+    "title": "Show HN: Mocca – A Mac email client powered by local AI",
+    "points": 1,
+    "author": "brighbun",
+    "createdAt": "2026-06-30T08:33:41Z"
+  },
+  "https://1shotgen.com/": {
+    "id": "48729839",
+    "title": "Show HN: 1ShotGen – From rough idea to full build prompt in 1 shot",
+    "points": 1,
+    "author": "zachisparanoid",
+    "createdAt": "2026-06-30T08:15:17Z"
+  },
+  "https://tryhello.app": {
+    "id": "48729838",
+    "title": "Show HN: Not Another AI Platform",
+    "points": 1,
+    "author": "hayden_k",
+    "createdAt": "2026-06-30T08:15:14Z"
+  },
+  "https://slimsnap.ai/": {
+    "id": "48729837",
+    "title": "Show HN: SlimSnap – mark a screenshot element, get JSON for your coding agent",
+    "points": 1,
+    "author": "bickov",
+    "createdAt": "2026-06-30T08:15:10Z"
+  },
+  "https://www.supafax.com/": {
+    "id": "48729688",
+    "title": "Show HN: I built an agent that uses email as a file system",
+    "points": 3,
+    "author": "rohanmahen",
+    "createdAt": "2026-06-30T07:50:32Z"
   },
   "https://homebutler.dev/": {
     "id": "48727396",
@@ -2014,13 +2721,6 @@
     "points": 12,
     "author": "nikoladinevski",
     "createdAt": "2026-06-17T08:59:32Z"
-  },
-  "https://stegoimage.pages.dev/": {
-    "id": "48567134",
-    "title": "Show HN: Stego.Image – Hide any file inside a PNG image in the browser",
-    "points": 1,
-    "author": "coder_xyz",
-    "createdAt": "2026-06-17T07:46:38Z"
   },
   "https://sentinel-forecasting.com/mississippi-tutorial/": {
     "id": "48566966",
