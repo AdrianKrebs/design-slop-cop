@@ -1,81 +1,72 @@
-// Template for a new pattern. Copy this file to `src/patterns/<your-id>.js`,
-// fill it in, then import + append it in `src/patterns/index.js`.
+// ───────────────────────────────────────────────────────────────────────────
+//  Add a new AI-design "tell"
+// ───────────────────────────────────────────────────────────────────────────
+//  1. Copy me:      cp src/patterns/_template.js src/patterns/<your-id>.js
+//  2. Edit the fields + the two functions below. There's a tiny WORKING example
+//     in place already — run it first, then adapt it to your tell.
+//  3. Register it:  import your file in src/patterns/index.js and append it to
+//                   the PATTERNS array (array order = display order).
+//  4. Try it:       node check.js <a-site-with-the-tell> --pattern=<your-id>
+//                   Prints the `signal` extract() returned and the `evidence`
+//                   score() returned — your feedback loop while authoring.
+//  5. Check it:     npm run eval   (precision/recall vs the labelled set)
+//  6. Open a PR 🎉
 //
-// Debug it as you go:
-//   node check.js <a-site-that-should-trigger-it> --pattern=<your-id>
-// That prints the raw `signal` your extract() returned and the `evidence`
-// your score() returned — the fast feedback loop while authoring.
+//  ── What makes a good pattern (the bar for merging) ────────────────────────
+//    • Deterministic — decided from the DOM + computed styles, never a guess.
+//    • Common        — point to several Show HN sites that actually have it.
+//    • Precise       — stays QUIET on plain, hand-built sites. Always test on
+//                      news.ycombinator.com and a couple of sites you respect;
+//                      a tell that flags good design is noise, not signal.
+//    • Visible       — a human can see it in the screenshot.
 //
-// ─────────────────────────────────────────────────────────────────────────
-// HOW IT RUNS (read this once — it explains the one real gotcha):
+//  ── The one gotcha ─────────────────────────────────────────────────────────
+//    extract() is serialized with Function.prototype.toString() and run INSIDE
+//    THE PAGE, so it must be self-contained: reference only `ctx.*` and browser
+//    globals (document, getComputedStyle, …). No imports, no closures, no outer
+//    variables — they vanish in the page and you get a ReferenceError at scan
+//    time, not from your linter. Keep the `function` keyword too: method
+//    shorthand (`extract(ctx){}`) doesn't survive serialization. It returns a
+//    plain, JSON-cloneable "signal". score() then runs in NODE and turns that
+//    signal into a verdict.
 //
-//   extract(ctx)  runs IN THE BROWSER. It is serialized with
-//                 Function.prototype.toString() and injected into the page,
-//                 so it MUST be self-contained: reference only `ctx.*` and
-//                 browser globals (document, getComputedStyle, …). NO imports,
-//                 NO closures, NO outer variables — they vanish in the page
-//                 and you get a ReferenceError at scan time, not at lint time.
-//                 It returns a plain "signal" object (must be JSON-cloneable).
+//  ── ctx (precomputed once per page, shared by every pattern) ────────────────
+//    ctx.visible       Element[]      every visible element on the page
+//    ctx.h1            Element|null   the first <h1>
+//    ctx.bodyBg        {r,g,b}        effective <body> background colour
+//    ctx.isDarkMode    boolean        the page reads as dark
+//    ctx.fonts         { topFonts:[{name,chars,pct}], headingFont, slopFontsDetected }
+//    ctx.thresholds    object         your `thresholds` (below) — read them here
+//    helpers:  ctx.parseColor(str) · ctx.rgbToHsl(rgb) · ctx.relativeLuminance(rgb)
+//              ctx.contrastRatio(a,b) · ctx.isPurple(rgb) · ctx.isVisible(el)
+//              ctx.effectiveBg(el) · ctx.countEmoji(str)
 //
-//   score(signal, T)  runs IN NODE afterwards. It reads the signal and your
-//                 thresholds T, and returns { triggered, evidence }.
-//
-// ─────────────────────────────────────────────────────────────────────────
-// WHAT'S IN `ctx` (all precomputed once per page, shared across patterns):
-//
-//   Computed signals:
-//     ctx.visible        Element[]  — all visible elements on the page
-//     ctx.h1             Element|null — the first <h1>
-//     ctx.bodyBg         {r,g,b}    — effective background color of <body>
-//     ctx.bodyLuminance  number     — 0 (black) … 1 (white)
-//     ctx.isDarkMode     boolean    — true when the page reads as dark
-//     ctx.fonts          { topFonts, headingFont, slopFontsDetected }
-//                                   — topFonts: [{name, chars, pct}], sorted
-//     ctx.thresholds     object     — your `thresholds` below (also passed to
-//                                      score() as T; read from here in extract)
-//
-//   Helpers (call them as ctx.<name>(...)):
-//     ctx.parseColor(str)            → {r,g,b,a}
-//     ctx.rgbToHsl({r,g,b})          → {h,s,l}
-//     ctx.relativeLuminance(rgb)     → 0..1
-//     ctx.contrastRatio(rgb1, rgb2)  → number
-//     ctx.isPurple(rgb)              → boolean   (indigo/violet test)
-//     ctx.isVisible(el)              → boolean
-//     ctx.effectiveBg(el)            → {r,g,b}   (walks up for real bg)
-//     ctx.countEmoji(str)            → number
-//
-// Tip: skim a couple of shipped patterns for the house style —
-//   gradients.js (color sniffing), centered-hero.js (uses ctx.fonts),
-//   sidebar-emoji.js (uses ctx.countEmoji).
-// ─────────────────────────────────────────────────────────────────────────
+//  Cribbing welcome: gradients.js (colour sniffing), centered-hero.js (fonts),
+//  sidebar-emoji.js (emoji counting).
+// ───────────────────────────────────────────────────────────────────────────
 
 export default {
-  id: 'my_pattern',                // unique snake_case id; also the filename
-  label: 'Human-readable name',    // shown in the full report
-  shortLabel: 'Short name',        // shown in the CLI / compact lists
-  description: 'One line on what the tell is and why it reads as AI design.',
-  category: 'colors',              // grouping: colors | fonts | layout | content
-  thresholds: {                    // tunables, serialized into the page for you
-    min: 3
-  },
+  id: 'my_pattern',              // unique snake_case id — must match the filename
+  label: 'Human-readable name',  // full name (patterns page, reports)
+  shortLabel: 'Short name',      // compact name (result card, CLI, gallery)
+  description: 'One plain-language line: what the tell is.',
+  category: 'colors',            // colors | fonts | layout | content
+  thresholds: { min: 3 },        // tunables — serialized into the page for extract()
 
-  // Runs in the browser. Return a plain signal object (numbers/strings/bools).
+  // IN THE BROWSER. Inspect the page and return a plain signal object.
+  // EXAMPLE: counts fully pill-shaped elements. Replace with your own tell.
   extract: function (ctx) {
-    const { visible, thresholds } = ctx;
     let count = 0;
-    for (const el of visible) {
-      const cs = getComputedStyle(el);
-      // …inspect `el` / `cs` and accumulate evidence…
-      if (false) count++;
+    for (const el of ctx.visible) {
+      const radius = parseFloat(getComputedStyle(el).borderRadius) || 0;
+      if (radius >= 999) count++;
     }
     return { count };
   },
 
-  // Runs in Node. Decide triggered + attach human-readable evidence.
+  // IN NODE. Turn the signal into a verdict, with evidence a human can read.
   score: function (signal, T) {
-    if (!signal) return { triggered: false };
-    const triggered = signal.count >= T.min;
-    if (!triggered) return { triggered: false };
+    if (!signal || signal.count < T.min) return { triggered: false };
     return { triggered: true, evidence: { count: signal.count } };
   }
 };
