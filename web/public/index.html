@@ -104,16 +104,12 @@
   .tier.clean { color: var(--clean); background: var(--clean-bg); }
   .item .meta { color: var(--muted); font-size: 15px; margin-top: 4px; }
 
-  /* Copy-link action, in the meta row with a visible label (link icon + "Copy
-     link"). Flips to a checkmark + "Link copied" on click. */
-  .copy { display: inline-flex; align-items: center; gap: 5px; vertical-align: -2px; font: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; color: var(--link); }
-  .copy .copy-t { text-decoration: underline; text-underline-offset: 0.15em; }
-  .copy svg { width: 13px; height: 13px; display: block; }
-  .copy:hover { color: var(--link-hover); }
-  .copy:hover .copy-t { text-decoration-thickness: 2px; }
+  /* Copy-link action, in the meta row as a plain text link ("Copy result link")
+     so the intent is unambiguous. Flips to "Copied ✓" on click. */
+  .copy { font: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; white-space: nowrap; }
+  .copy:hover { color: var(--link-hover); text-decoration-thickness: 2px; }
   .copy:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-  .copy.copied { color: var(--clean); cursor: default; }
-  .copy.copied .copy-t { text-decoration: none; }
+  .copy.copied { color: var(--clean); text-decoration: none; cursor: default; }
 
   /* Detected patterns: the tells found. Each is a bold name that links to its
      entry on the /patterns reference page (definition + a real example), so the
@@ -183,17 +179,13 @@ document.getElementById('random').addEventListener('click', async () => {
   } catch (e) { /* ignore; user can paste a URL manually */ }
 });
 
-// Copy-link icon (chain link) and its copied state (checkmark).
-const LINK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9.5 14.5l5-5M11 6.5l1.2-1.2a3.7 3.7 0 0 1 5.3 5.3L16.3 12M12 17.5l-1.2 1.2a3.7 3.7 0 0 1-5.3-5.3L7.7 12"/></svg>';
-const CHECK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>';
-
 // Result cards are added dynamically, so delegate clicks (copy link + zoom).
 results.addEventListener('click', e => {
   const btn = e.target.closest('.copy');
   if (btn) {
     copyLink(btn.dataset.share).then(() => {
-      btn.classList.add('copied'); btn.innerHTML = CHECK_SVG + '<span class="copy-t">Link copied</span>'; btn.setAttribute('aria-label', 'Link copied');
-      setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = LINK_SVG + '<span class="copy-t">Copy link</span>'; btn.setAttribute('aria-label', 'Copy link to this result'); }, 1500);
+      btn.classList.add('copied'); btn.textContent = 'Copied ✓';
+      setTimeout(() => { btn.classList.remove('copied'); btn.textContent = 'Copy result link'; }, 1500);
     }).catch(() => {});
     return;
   }
@@ -285,7 +277,7 @@ function renderCard(data) {
   // so it's clear it copies a shareable link to *this* result — and it never
   // crowds the host + tier badge on a narrow screen.
   h += '<div class="meta">' + data.patternsFlagged + '/' + data.patternsTotal + ' patterns · ' + timing +
-       ' · <button class="copy" type="button" aria-label="Copy link to this result" title="Copy a shareable link to this result" data-share="' + esc(shareUrl(data.url)) + '">' + LINK_SVG + '<span class="copy-t">Copy link</span></button></div>';
+       ' · <button class="copy" type="button" title="Copy a shareable link to this result" data-share="' + esc(shareUrl(data.url)) + '">Copy result link</button></div>';
 
   if (flagged.length) {
     // The tells found; each name links to its entry on the /patterns reference
