@@ -40,22 +40,22 @@ export async function analyzePage(browser, url, detectorSource, opts = {}) {
     locale: 'en-US'
   });
   const page = await context.newPage();
-  page.setDefaultTimeout(25000);
+  page.setDefaultTimeout(20000);
   const started = Date.now();
-  let loadError = null;
+  // Gate on domcontentloaded — fast (~1-3s) and reliable. Using networkidle as
+  // the gate is a trap: analytics/chat/websocket sites never go idle, so it
+  // burns the full timeout every time and holds the scan slot for tens of
+  // seconds, cascading into queue timeouts under load.
   try {
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20000 });
   } catch (e) {
-    loadError = e.message;
-    try { await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 }); loadError = null; } catch (e2) { loadError = e2.message; }
-  }
-  if (loadError) {
     await context.close();
-    return { url, error: loadError, elapsedMs: Date.now() - started };
+    return { url, error: e.message, elapsedMs: Date.now() - started };
   }
-  // Let animations, fonts, deferred imagery settle
+  // Best-effort settle for lazy imagery/fonts — bounded and never fatal.
+  try { await page.waitForLoadState('networkidle', { timeout: 4000 }); } catch {}
   try { await page.evaluate(() => document.fonts && document.fonts.ready); } catch {}
-  await page.waitForTimeout(1500);
+  await page.waitForTimeout(1000);
   // Disable smooth-scroll so we can reliably reset to top for the screenshot
   try {
     await page.addStyleTag({ content: 'html, body { scroll-behavior: auto !important; }' });

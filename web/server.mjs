@@ -37,6 +37,11 @@ const ICON = join(PUBLIC, 'icon.png');
 // Pre-built, self-contained gallery of classified Show HN sites (screenshots
 // served from the CDN). Rebuild with `node src/build-report.js --cdn-base=… --out=web/report.html`.
 const REPORT_HTML = join(__dirname, 'report.html');
+// Reference page for the 14 patterns (one example crop each). Rebuild with
+// `node scripts/capture-pattern-examples.mjs && node src/build-patterns-page.mjs`.
+const PATTERNS_HTML = join(__dirname, 'patterns.html');
+// The example crops the patterns page references, served as static files.
+const PATTERN_EXAMPLES_DIR = join(__dirname, 'pattern-examples');
 
 // Bundled list of classified Show HN URLs, for the "try a random site" button.
 let SHOWHN_URLS = [];
@@ -52,6 +57,9 @@ const MAX_QUEUE = Number(process.env.MAX_QUEUE) || 12;
 const CACHE_TTL_MS = Number(process.env.CACHE_TTL_MS) || 60 * 60 * 1000; // 1h
 const CACHE_MAX = Number(process.env.CACHE_MAX) || 500;
 const RATE_PER_MIN = Number(process.env.RATE_PER_MIN) || 12;
+// Hard ceiling on how long one scan may hold a slot. A fast scan is ~5-10s;
+// this caps the tail so a slow site can't wedge the queue under load.
+const SCAN_BUDGET_MS = Number(process.env.SCAN_BUDGET_MS) || 30000;
 
 const JSON_MIME = 'application/json; charset=utf-8';
 
@@ -83,6 +91,40 @@ function release() {
   const next = waiters.shift();
   if (next) { queued--; next(true); } // hand the slot straight to a waiter
   else active--;
+}
+
+// Race a promise against a deadline. On timeout it rejects with code 504; the
+// underlying scan keeps running orphaned but self-terminates via its own
+// per-step timeouts and closes its browser context.
+function withTimeout(promise, ms) {
+  let t;
+  const timeout = new Promise((_, rej) => {
+    t = setTimeout(() => { const e = new Error('scan timed out'); e.code = 504; rej(e); }, ms);
+  });
+  return Promise.race([promise, timeout]).finally(() => clearTimeout(t));
+}
+
+// ── in-flight dedup ─────────────────────────────────────────────────────────
+// An HN spike is many people pasting the *same* few URLs. Collapse concurrent
+// requests for one URL onto a single scan so they share a slot and one result.
+const inflight = new Map(); // safe url → Promise<out> (throws {code} on failure)
+function scanDeduped(safe) {
+  const existing = inflight.get(safe);
+  if (existing) return existing;
+  const p = (async () => {
+    const got = await acquire();
+    if (!got) { const e = new Error('busy'); e.code = 503; throw e; }
+    console.log(`[scan] ${safe} (active=${active} queued=${queued})`);
+    try {
+      const out = await withTimeout(runScan(safe), SCAN_BUDGET_MS);
+      if (out.error) { const e = new Error(out.error); e.code = 502; throw e; }
+      cacheSet(safe, out);
+      return out;
+    } finally { release(); }
+  })();
+  inflight.set(safe, p);
+  p.catch(() => {}).finally(() => { if (inflight.get(safe) === p) inflight.delete(safe); });
+  return p;
 }
 
 // ── tiny LRU with TTL ───────────────────────────────────────────────────────
@@ -209,6 +251,21 @@ const server = createServer(async (req, res) => {
       return send(res, 200, 'text/html; charset=utf-8', html);
     }
 
+    if (req.method === 'GET' && (url.pathname === '/patterns' || url.pathname === '/patterns/')) {
+      const html = await readFile(PATTERNS_HTML).catch(() => null);
+      if (!html) return send(res, 404, 'text/plain', 'patterns page not built — run build-patterns-page.js');
+      return send(res, 200, 'text/html; charset=utf-8', html);
+    }
+
+    if (req.method === 'GET' && url.pathname.startsWith('/pattern-examples/')) {
+      const name = url.pathname.slice('/pattern-examples/'.length);
+      if (!/^[a-z0-9_-]+\.jpg$/i.test(name)) return send(res, 404, 'text/plain', 'not found'); // no traversal
+      const buf = await readFile(join(PATTERN_EXAMPLES_DIR, name)).catch(() => null);
+      if (!buf) return send(res, 404, 'text/plain', 'not found');
+      res.writeHead(200, { 'content-type': 'image/jpeg', 'cache-control': 'public, max-age=604800' });
+      return res.end(buf);
+    }
+
     if (req.method === 'POST' && url.pathname === '/api/scan') {
       const ip = clientIp(req);
       if (!rateOk(ip)) return send(res, 429, JSON_MIME, JSON.stringify({ error: 'rate limit — slow down a moment' }));
@@ -225,16 +282,18 @@ const server = createServer(async (req, res) => {
       const cached = cacheGet(safe);
       if (cached) return send(res, 200, JSON_MIME, JSON.stringify({ ...cached, cached: true }));
 
-      const got = await acquire();
-      if (!got) return send(res, 503, JSON_MIME, JSON.stringify({ error: 'busy — too many scans in flight, try again shortly' }));
       try {
-        console.log(`[scan] ${safe} (active=${active} queued=${queued})`);
-        const out = await runScan(safe);
-        if (out.error) return send(res, 502, JSON_MIME, JSON.stringify({ error: out.error, url: safe }));
-        cacheSet(safe, out);
+        const out = await scanDeduped(safe);
         return send(res, 200, JSON_MIME, JSON.stringify(out));
-      } finally {
-        release();
+      } catch (e) {
+        const code = e.code === 503 || e.code === 504 || e.code === 502 ? e.code : 500;
+        const msg = {
+          503: 'busy — too many scans in flight, try again shortly',
+          504: 'scan timed out — the site took too long to load',
+          502: e.message,
+          500: 'scan failed',
+        }[code];
+        return send(res, code, JSON_MIME, JSON.stringify({ error: msg, url: safe }));
       }
     }
 
