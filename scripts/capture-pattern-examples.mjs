@@ -34,7 +34,7 @@ const EXEMPLARS = {
   gradients:           { url: 'https://www.absurdlyoptimized.com/recipes/pancakes/', mode: 'hero' },
   center_aligned_hero: { url: 'https://startupwiki.tech/', mode: 'hero' },
   perma_dark_mode:     { url: 'https://selforg-npa.github.io/', mode: 'hero' },
-  hero_eyebrow_pill:   { url: 'https://noteika.com', mode: 'hero' },
+  hero_eyebrow_pill:   { url: 'https://supaslides.app/', mode: 'hero' },
   sidebar_emoji:       { url: 'https://brevio.pro', mode: 'hero' },
 
   accent_stripe: {
@@ -83,7 +83,7 @@ const EXEMPLARS = {
     }
   },
   colored_glows: {
-    url: 'https://vioevo.com', mode: 'element',
+    url: 'https://www.vioevo.com/', mode: 'element',
     find: () => {
       for (const el of document.querySelectorAll('button, a, div, section')) {
         const cs = getComputedStyle(el); const sh = cs.boxShadow || '';
