@@ -13,6 +13,7 @@ primary_region = 'ams'
   MAX_QUEUE = '12'
   PORT = '8080'
   RATE_PER_MIN = '12'
+  SCAN_BUDGET_MS = '40000'
   SCAN_CONCURRENCY = '2'
 
 [http_service]

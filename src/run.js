@@ -52,31 +52,33 @@ export async function analyzePage(browser, url, detectorSource, opts = {}) {
     await context.close();
     return { url, error: e.message, elapsedMs: Date.now() - started };
   }
-  // Best-effort settle for lazy imagery/fonts — bounded and never fatal.
-  try { await page.waitForLoadState('networkidle', { timeout: 4000 }); } catch {}
+  // Best-effort settle for lazy imagery/fonts — bounded and never fatal. Kept
+  // tight because on a shared-CPU host these waits are pure wall-clock tax.
+  try { await page.waitForLoadState('networkidle', { timeout: 2000 }); } catch {}
   try { await page.evaluate(() => document.fonts && document.fonts.ready); } catch {}
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(500);
   // Disable smooth-scroll so we can reliably reset to top for the screenshot
   try {
     await page.addStyleTag({ content: 'html, body { scroll-behavior: auto !important; }' });
   } catch {}
-  // Scroll to trigger lazy-loaded sections (but return to top)
+  // Scroll to trigger lazy-loaded sections (but return to top). Bounded to a
+  // handful of big steps so a very tall page can't eat the whole scan budget.
   try {
     await page.evaluate(async () => {
       await new Promise(res => {
-        let y = 0;
-        const step = 400;
+        let y = 0, i = 0;
+        const step = 900, maxSteps = 12;
         const id = setInterval(() => {
           window.scrollTo(0, y);
-          y += step;
-          if (y > document.documentElement.scrollHeight) { clearInterval(id); res(); }
-        }, 100);
+          y += step; i++;
+          if (i >= maxSteps || y > document.documentElement.scrollHeight) { clearInterval(id); res(); }
+        }, 60);
       });
     });
   } catch {}
-  await page.waitForTimeout(400);
+  await page.waitForTimeout(250);
   try { await page.evaluate(() => { window.scrollTo(0, 0); document.documentElement.scrollTop = 0; document.body.scrollTop = 0; }); } catch {}
-  await page.waitForTimeout(500);
+  await page.waitForTimeout(250);
 
   let raw;
   try {
@@ -90,7 +92,14 @@ export async function analyzePage(browser, url, detectorSource, opts = {}) {
   // to disk, so the server stays stateless across machines (no shared volume).
   let screenshotBuffer = null;
   if (opts.screenshotBuffer) {
-    try { screenshotBuffer = await page.screenshot({ fullPage: opts.fullPage !== false }); } catch {}
+    // Cap the capture height: a full-page shot of a 15,000px marketing page is
+    // slow to encode on shared CPU and balloons the (inlined) response to
+    // multiple MB. The UI only shows a top-crop thumbnail + zoom, so ~2400px of
+    // context is plenty and keeps the payload small.
+    try {
+      const h = await page.evaluate(() => Math.max(600, Math.min(document.documentElement.scrollHeight || 900, 2400)));
+      screenshotBuffer = await page.screenshot({ clip: { x: 0, y: 0, width: 1440, height: h } });
+    } catch {}
   } else {
     const shotPath = join(screenshotDir, slug + '.png');
     try {
