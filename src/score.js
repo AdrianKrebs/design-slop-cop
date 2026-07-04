@@ -8,9 +8,9 @@
 import { PATTERNS } from './patterns/index.js';
 
 const TIER_THRESHOLDS = {
-  heavy: 4, // 4+ patterns triggered → Heavy (Slop)
-  mild:  2  // 2–3 patterns triggered → Mild (Medium)
-  //       <2 patterns → Clean
+  heavy: 5, // 5+ patterns triggered → Heavy (High)
+  mild:  3  // 3–4 patterns triggered → Mild (Medium)
+  //       1–2 patterns → Clean (Low); 0 → shown as "None" in the UI
 };
 
 function tierFor(patternsFlagged) {
