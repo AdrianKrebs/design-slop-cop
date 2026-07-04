@@ -30,12 +30,16 @@ try {
 const ok = all.filter(r => !r.error);
 const tierCount = { Heavy: 0, Mild: 0, Clean: 0 };
 const patternCount = {};
+const flaggedOf = r => (r.patterns || []).filter(p => p.triggered).length;
 for (const r of ok) {
   tierCount[r.tierLabel || r.tier] = (tierCount[r.tierLabel || r.tier] || 0) + 1;
   for (const p of r.patterns || []) {
     if (p.triggered) patternCount[p.id] = (patternCount[p.id] || 0) + 1;
   }
 }
+// Split the Clean tier into "None" (0 patterns) and "Low" (1–2).
+const noneCount = ok.filter(r => flaggedOf(r) === 0).length;
+const lowCount = tierCount.Clean - noneCount;
 
 // Slim the per-site payload — strip raw signals, keep what the UI renders.
 const sites = ok.map(r => {
@@ -310,7 +314,8 @@ const html = `<!doctype html>
           <li><a class="filter" data-tier="" href="#all">All <span class="fc">${total}</span></a></li>
           <li><a class="filter" data-tier="Heavy" href="#heavy">High <span class="fc">${tierCount.Heavy} (${(100 * tierCount.Heavy / total).toFixed(0)}%)</span></a></li>
           <li><a class="filter" data-tier="Mild" href="#mild">Medium <span class="fc">${tierCount.Mild} (${(100 * tierCount.Mild / total).toFixed(0)}%)</span></a></li>
-          <li><a class="filter" data-tier="Clean" href="#clean">Low <span class="fc">${tierCount.Clean} (${(100 * tierCount.Clean / total).toFixed(0)}%)</span></a></li>
+          <li><a class="filter" data-tier="Clean" href="#low">Low <span class="fc">${lowCount} (${(100 * lowCount / total).toFixed(0)}%)</span></a></li>
+          <li><a class="filter" data-tier="None" href="#none">None <span class="fc">${noneCount} (${(100 * noneCount / total).toFixed(0)}%)</span></a></li>
         </ul>
       </div>
       <details class="freq facet">
@@ -336,7 +341,9 @@ const data = ${JSON.stringify(data)};
 const patternLabel = Object.fromEntries(data.patternMeta.map(p => [p.id, p.shortLabel || p.label || p.id]));
 // One-line plain definition per pattern, shown as a hover tooltip.
 const patternDesc = Object.fromEntries(data.patternMeta.map(p => [p.id, p.description || '']));
-const TIER_HASH = { heavy: 'Heavy', mild: 'Mild', clean: 'Clean', all: null, '': null };
+// Filter values: Heavy/Mild = tier; Clean = Low (1–2 patterns); None = 0 patterns.
+const TIER_HASH = { heavy: 'Heavy', mild: 'Mild', low: 'Clean', clean: 'Clean', none: 'None', all: null, '': null };
+const HASH_OF = { Heavy: 'heavy', Mild: 'mild', Clean: 'low', None: 'none' };
 const TIER_CLASS = { Heavy: 'tier-heavy', Mild: 'tier-mild', Clean: 'tier-clean' };
 const TIER_DISPLAY = { Heavy: 'High', Mild: 'Medium', Clean: 'Low' };
 
@@ -357,7 +364,7 @@ function parseHash() {
   return { tier, pattern: p, sort: SORT_KEYS.has(s) ? s : 'date', dir, page: Number.isFinite(pg) && pg >= 1 ? pg : 1 };
 }
 function buildHash(tier, pattern, sort, page, dir) {
-  const base = tier ? tier.toLowerCase() : 'all';
+  const base = tier ? (HASH_OF[tier] || tier.toLowerCase()) : 'all';
   const params = new URLSearchParams();
   if (pattern) params.set('p', pattern);
   if (sort && sort !== 'date') params.set('sort', sort);
@@ -445,7 +452,10 @@ function timestampOf(s) { return s.postedAt ? new Date(s.postedAt).getTime() : 0
 
 function renderGrid() {
   const filtered = sortSites(data.sites.filter(s => {
-    if (activeTier && s.tier !== activeTier) return false;
+    // None = 0 patterns; Low (Clean) = 1–2; Heavy/Mild by tier.
+    if (activeTier === 'None') { if (s.flagged.length !== 0) return false; }
+    else if (activeTier === 'Clean') { if (s.tier !== 'Clean' || s.flagged.length === 0) return false; }
+    else if (activeTier && s.tier !== activeTier) return false;
     if (activePattern && !s.flagged.includes(activePattern)) return false;
     return true;
   }));
