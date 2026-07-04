@@ -78,15 +78,15 @@ const html = `<!doctype html>
 <meta name="description" content="The 14 deterministic AI design patterns Design Slop Cop looks for — each with a plain-language definition and a real example.">
 <style>
   :root {
-    --font: arial, "Helvetica Neue", Helvetica, sans-serif;
-    --text: #0b0c0c; --muted: #505a5f; --bg: #ffffff; --panel: #f3f2f1;
-    --border: #b1b4b6; --link: #1d70b8; --link-hover: #003078; --focus: #fd0;
+    --font: "Inter Variable", "SF Pro Display", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --text: #23252a; --muted: #6b6f76; --bg: #fcfcfd; --panel: #f5f5f5;
+    --border: #e0e0e0; --link: #6d78d5; --link-hover: #545fc0; --focus: #6d78d5;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 400 18px/1.5 var(--font); }
   a { color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
   a:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
-  a:focus { outline: 3px solid transparent; color: #0b0c0c; background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px #0b0c0c; text-decoration: none; }
+  a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 
   .topbar { background: var(--text); }
   .topbar .inner { max-width: 900px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: baseline; gap: 16px; }
@@ -96,7 +96,7 @@ const html = `<!doctype html>
   .topbar nav a { color: #fff; font-size: 16px; text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
   .topbar nav a.sel { text-decoration-thickness: 3px; }
   .topbar nav a:hover { text-decoration-thickness: 3px; }
-  .topbar nav a:focus { color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; outline: 3px solid transparent; }
+  .topbar nav a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; text-decoration: none; }
 
   .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px 56px; }
   h1 { font-size: clamp(30px, 5vw, 44px); font-weight: 700; line-height: 1.09; margin: 44px 0 14px; }

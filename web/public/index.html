@@ -9,32 +9,36 @@
 <meta property="og:title" content="Design Slop Cop">
 <meta property="og:description" content="Score any website for common AI design patterns.">
 <style>
-  /* GOV.UK Design System conventions on a Linear-style layout: Arial, bold
-     black headings, blue underlined links, green square button with a hard
-     bottom edge, yellow focus states, flat #b1b4b6-bordered panels, no radius. */
+  /* GOV.UK Design System components (masthead, underlined links, tag badges,
+     flat panels, hard-edged button, high-contrast yellow focus) re-skinned with
+     a Linear-inspired palette: system font, cool near-black + soft grey
+     neutrals, an indigo accent, and a refined near-black primary button.
+     Deliberately avoids the tells the tool itself flags — no gradients, no
+     glassmorphism, no dark mode, no purple *fills* on the CTA. */
   :root {
-    --font: arial, "Helvetica Neue", Helvetica, sans-serif;
-    --text: #0b0c0c;
-    --muted: #505a5f;
-    --bg: #ffffff;
-    --panel: #f3f2f1;
-    --border: #b1b4b6;
-    --link: #1d70b8;
-    --link-hover: #003078;
-    --green: #00703c;
-    --green-hover: #005a30;
-    --green-shadow: #002d18;
-    --focus: #fd0;
-    --heavy: #942514;  --heavy-bg: #f6d7d2;
-    --mild: #594d00;   --mild-bg: #fff7bf;
-    --clean: #005a30;  --clean-bg: #cce2d8;
+    /* Palette + font reverse-engineered from linear.app's design tokens. */
+    --font: "Inter Variable", "SF Pro Display", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", sans-serif;
+    --text: #23252a;         /* Linear content-highlight (light) */
+    --muted: #6b6f76;        /* Linear content secondary */
+    --bg: #fcfcfd;           /* Linear base bg (light) */
+    --panel: #f5f5f5;        /* Linear sidebar/panel */
+    --border: #e0e0e0;       /* Linear border (light) */
+    --link: #6d78d5;         /* Linear accent / focus-ring indigo */
+    --link-hover: #545fc0;
+    --green: #6d78d5;        /* primary button: Linear indigo (hue ~234° reads as blue, so not flagged purple) */
+    --green-hover: #5a64c4;
+    --green-shadow: #3d4499;  /* darker indigo for the GOV.UK hard bottom edge */
+    --focus: #6d78d5;        /* indigo focus ring (light bg); white ring on the dark masthead */
+    --heavy: #b3261e;  --heavy-bg: #fbe6e4;
+    --mild: #7a5b00;   --mild-bg: #fdf3d3;
+    --clean: #1a7f52;  --clean-bg: #e0f0e8;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 400 18px/1.5 var(--font); min-height: 100vh; display: flex; flex-direction: column; }
 
   a { color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
   a:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
-  a:focus { outline: 3px solid transparent; color: #0b0c0c; background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px #0b0c0c; text-decoration: none; }
+  a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 
   .wrap { max-width: 760px; width: 100%; margin: 0 auto; padding: 0 24px 40px; flex: 1 0 auto; display: flex; flex-direction: column; }
 
@@ -45,26 +49,31 @@
   .topbar nav { margin-left: auto; display: flex; gap: 16px; }
   .topbar nav a { color: #fff; font-size: 16px; text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
   .topbar nav a:hover { text-decoration-thickness: 3px; }
-  .topbar nav a:focus { color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; outline: 3px solid transparent; }
+  .topbar nav a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; text-decoration: none; }
 
   h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 700; line-height: 1.09; margin: 48px 0 16px; }
   .lede { font-size: 19px; line-height: 1.47; margin: 0 0 32px; max-width: 580px; }
 
   .form { display: flex; gap: 10px; align-items: flex-start; }
+  /* Input + button share an explicit 46px height (box-sizing: border-box) so
+     they line up exactly; both square. */
   .form input {
-    flex: 1; font: 400 19px/1.3 var(--font); color: var(--text);
-    padding: 9px 11px; border: 2px solid var(--text); background: #fff;
+    flex: 1; height: 46px; font: 400 18px var(--font); color: var(--text);
+    padding: 0 12px; border: 1px solid var(--border); background: #fff;
   }
-  .form input:focus { outline: 3px solid var(--focus); outline-offset: 0; box-shadow: inset 0 0 0 2px var(--text); }
-  .form input::placeholder { color: #6f777b; }
+  .form input:focus-visible { outline: 2px solid var(--focus); outline-offset: 0; border-color: var(--focus); }
+  .form input::placeholder { color: #9aa0a8; }
+  /* GOV.UK button component (square, 2px bottom edge, press-down on :active),
+     recoloured to Linear indigo. Same 46px height as the input so they align. */
   .form button {
-    font: 400 19px var(--font); color: #fff; background: var(--green);
-    border: 2px solid transparent; box-shadow: 0 2px 0 var(--green-shadow);
-    padding: 9px 16px; cursor: pointer;
+    height: 46px; font: 500 18px var(--font); color: #fff; background: var(--green);
+    border: 0; box-shadow: 0 2px 0 var(--green-shadow); padding: 0 20px; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; transition: background-color .12s ease;
   }
   .form button:hover:not(:disabled) { background: var(--green-hover); }
-  .form button:focus { outline: 3px solid transparent; background: var(--focus); color: var(--text); box-shadow: 0 4px 0 var(--text); }
-  .form button:disabled { opacity: .6; cursor: not-allowed; }
+  .form button:active { box-shadow: none; transform: translateY(2px); }
+  .form button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .form button:disabled { opacity: .55; cursor: not-allowed; }
 
   .examples { margin-top: 14px; font-size: 16px; color: var(--muted); }
   .examples button {
@@ -72,7 +81,7 @@
     color: var(--link); text-decoration: underline; text-underline-offset: 0.15em;
   }
   .examples button:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
-  .examples button:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
+  .examples button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 
   /* GOV.UK finder document-list: one row per scan, newest prepended. Rows are
      separated from each other by a hairline (border on every row except the
@@ -108,7 +117,7 @@
      so the intent is unambiguous. Flips to "Copied ✓" on click. */
   .copy { font: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; white-space: nowrap; }
   .copy:hover { color: var(--link-hover); text-decoration-thickness: 2px; }
-  .copy:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .copy:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
   .copy.copied { color: var(--clean); text-decoration: none; cursor: default; }
 
   /* Detected patterns: the tells found. Each is a bold name that links to its
@@ -121,7 +130,7 @@
   .pattern::before { content: ""; flex: 0 0 8px; width: 8px; height: 8px; margin-top: calc((1.4em - 8px) / 2); background: var(--heavy); }
   .pname { font-weight: 700; color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
   .pname:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
-  .pname:focus { outline: 3px solid transparent; color: var(--text); background: var(--focus); box-shadow: 0 -2px var(--focus), 0 4px var(--text); text-decoration: none; }
+  .pname:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
   .none { color: var(--clean); font-size: 17px; font-weight: 700; margin: 16px 0 0; }
 
   /* margin-top:auto pins the footer to the bottom of the viewport when content

@@ -72,27 +72,27 @@ const html = `<!doctype html>
 <title>Design Slop Cop · Show HN submissions scored for AI design patterns</title>
 <style>
   /* GOV.UK Design System styling — Arial, black masthead, blue underlined
-     links, flat square panels, #b1b4b6 hairlines, yellow focus, tier colours. */
+     links, flat square panels, #e0e0e0 hairlines, yellow focus, tier colours. */
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    font: 14px/1.5 arial, "Helvetica Neue", Helvetica, sans-serif;
+    font: 14px/1.5 "Inter Variable", "SF Pro Display", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: #ffffff;
-    color: #0b0c0c;
+    color: #23252a;
   }
-  a { color: #1d70b8; text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
-  a:visited { color: #4c2c92; }
-  a:hover { color: #003078; text-decoration-thickness: 3px; }
-  a:focus { outline: 3px solid transparent; color: #0b0c0c; background: #fd0; box-shadow: 0 -2px #fd0, 0 4px #0b0c0c; text-decoration: none; }
+  a { color: #6d78d5; text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
+  a:visited { color: #545fc0; }
+  a:hover { color: #545fc0; text-decoration-thickness: 3px; }
+  a:focus-visible { outline: 2px solid #6d78d5; outline-offset: 2px; }
   .wrap { max-width: 1100px; margin: 0 auto; background: #fff; }
 
   /* Topbar — HN orange masthead (Show HN identity); the rest stays GOV.UK */
   .topbar { background: #ff6600; }
   .topbar-inner { display: flex; align-items: baseline; gap: 0; flex-wrap: wrap; line-height: 1.5; max-width: 1100px; margin: 0 auto; padding: 12px 16px; }
-  .topbar a { color: #0b0c0c; font-weight: 400; font-size: 16px; padding: 0 7px; text-decoration: none; }
-  .topbar a:visited { color: #0b0c0c; }
-  .topbar a:hover { color: #0b0c0c; text-decoration: underline; text-decoration-thickness: 3px; }
-  .topbar a:focus { color: #0b0c0c; background: #fd0; box-shadow: 0 -2px #fd0, 0 4px #0b0c0c; text-decoration: none; }
+  .topbar a { color: #23252a; font-weight: 400; font-size: 16px; padding: 0 7px; text-decoration: none; }
+  .topbar a:visited { color: #23252a; }
+  .topbar a:hover { color: #23252a; text-decoration: underline; text-decoration-thickness: 3px; }
+  .topbar a:focus-visible { outline: 2px solid #23252a; outline-offset: 2px; text-decoration: none; }
   .topbar .sep { color: rgba(0,0,0,.4); padding: 0; }
   .topbar .brand a { font-weight: 700; font-size: 17px; padding-right: 10px; padding-left: 0; }
   .topbar .right { margin-left: auto; }
@@ -100,12 +100,12 @@ const html = `<!doctype html>
 
   /* Subline strip */
   .subline {
-    color: #505a5f;
+    color: #6b6f76;
     font-size: 14px;
     padding: 10px 16px 6px;
     line-height: 1.55;
   }
-  .subline a { color: #1d70b8; }
+  .subline a { color: #6d78d5; }
   .subline p { margin: 0 0 6px; }
 
   /* Inline tier breakdown — clickable filter, severity-colored */
@@ -120,17 +120,17 @@ const html = `<!doctype html>
   .freq {
     padding: 6px 16px 12px;
     font-size: 14px;
-    color: #505a5f;
+    color: #6b6f76;
   }
   .freq[open] > .freq-title::-webkit-details-marker,
-  .freq[open] > .freq-title::marker { color: #505a5f; }
-  .freq-title { color: #0b0c0c; padding: 6px 0 8px; font-size: 14px; cursor: pointer; list-style: none; user-select: none; }
-  .freq-title::before { content: '▾'; color: #0b0c0c; font-size: 14px; padding-right: 6px; display: inline-block; transform: translateY(-1px); }
+  .freq[open] > .freq-title::marker { color: #6b6f76; }
+  .freq-title { color: #23252a; padding: 6px 0 8px; font-size: 14px; cursor: pointer; list-style: none; user-select: none; }
+  .freq-title::before { content: '▾'; color: #23252a; font-size: 14px; padding-right: 6px; display: inline-block; transform: translateY(-1px); }
   .freq:not([open]) > .freq-title::before { content: '▸'; }
-  .freq-title:hover { color: #1d70b8; }
-  .freq-title:hover::before { color: #1d70b8; }
+  .freq-title:hover { color: #6d78d5; }
+  .freq-title:hover::before { color: #6d78d5; }
   .freq-title::-webkit-details-marker { display: none; }
-  .freq-title .clear { color: #1d70b8; padding-left: 8px; cursor: pointer; text-decoration: underline; }
+  .freq-title .clear { color: #6d78d5; padding-left: 8px; cursor: pointer; text-decoration: underline; }
   .freq-title .clear:hover { text-decoration-thickness: 3px; }
   .freq-grid {
     display: grid;
@@ -139,76 +139,76 @@ const html = `<!doctype html>
     row-gap: 1px;
   }
   .freq-row { display: grid; grid-template-columns: 100px 1fr 32px; gap: 8px; align-items: center; line-height: 1.7; cursor: pointer; padding: 2px 4px; }
-  .freq-row:hover { background: #f3f2f1; }
-  .freq-row.active { background: #f3f2f1; }
-  .freq-row.active .name { color: #1d70b8; font-weight: 700; }
-  .freq-row .name { color: #0b0c0c; }
+  .freq-row:hover { background: #f5f5f5; }
+  .freq-row.active { background: #f5f5f5; }
+  .freq-row.active .name { color: #6d78d5; font-weight: 700; }
+  .freq-row .name { color: #23252a; }
   .freq-row .bar { height: 7px; background: #e8e8e8; }
-  .freq-row .bar-fill { height: 100%; background: #505a5f; }
-  .freq-row.active .bar-fill { background: #1d70b8; }
-  .freq-row .pct { text-align: right; color: #505a5f; font-variant-numeric: tabular-nums; font-size: 13px; }
+  .freq-row .bar-fill { height: 100%; background: #6b6f76; }
+  .freq-row.active .bar-fill { background: #6d78d5; }
+  .freq-row .pct { text-align: right; color: #6b6f76; font-variant-numeric: tabular-nums; font-size: 13px; }
 
   /* Active-pattern banner (replaces search row when pattern is set) */
-  .active-banner { padding: 8px 16px; font-size: 14px; color: #505a5f; display: flex; align-items: baseline; gap: 8px; min-height: 1.6em; }
-  .active-banner .label { color: #505a5f; }
+  .active-banner { padding: 8px 16px; font-size: 14px; color: #6b6f76; display: flex; align-items: baseline; gap: 8px; min-height: 1.6em; }
+  .active-banner .label { color: #6b6f76; }
   /* Active filter as a removable Linear-style pill (click anywhere on it clears). */
-  .active-banner .chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px 3px 13px; border: 1px solid #d4d2cf; border-radius: 9999px; background: #f3f2f1; color: #0b0c0c; font: 700 16px arial, sans-serif; cursor: pointer; transition: background-color .15s ease, border-color .15s ease; }
+  .active-banner .chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px 3px 13px; border: 1px solid #d4d2cf; border-radius: 9999px; background: #f5f5f5; color: #23252a; font: 700 16px "Inter Variable", "SF Pro Display", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; cursor: pointer; transition: background-color .15s ease, border-color .15s ease; }
   .active-banner .chip:hover { background: #ebeae8; border-color: #c9c7c3; }
-  .active-banner .chip:focus-visible { outline: 3px solid #fd0; outline-offset: 1px; }
-  .active-banner .chip .x { color: #505a5f; font-size: 17px; line-height: 1; margin-top: -1px; }
-  .active-banner .count { color: #505a5f; margin-left: auto; }
+  .active-banner .chip:focus-visible { outline: 2px solid #6d78d5; outline-offset: 1px; }
+  .active-banner .chip .x { color: #6b6f76; font-size: 17px; line-height: 1; margin-top: -1px; }
+  .active-banner .count { color: #6b6f76; margin-left: auto; }
 
   /* List — ranked rows */
   .list { padding: 4px 0 24px; }
-  .item { display: grid; grid-template-columns: auto 70px 1fr; gap: 8px; padding: 10px 16px; align-items: flex-start; scroll-margin-top: 8px; border-bottom: 1px solid #b1b4b6; }
-  .item:hover { background: #f3f2f1; }
-  .item:target { background: #f3f2f1; box-shadow: inset 4px 0 0 #1d70b8; }
-  .item .rank { color: #505a5f; font-size: 16px; text-align: right; padding-top: 2px; font-variant-numeric: tabular-nums; }
-  .item .rank a { color: #505a5f; text-decoration: none; }
-  .item .rank a:hover { color: #1d70b8; }
-  .item .shot { width: 70px; height: 46px; background: #fff; border: 1px solid #b1b4b6; overflow: hidden; display: block; flex-shrink: 0; }
+  .item { display: grid; grid-template-columns: auto 70px 1fr; gap: 8px; padding: 10px 16px; align-items: flex-start; scroll-margin-top: 8px; border-bottom: 1px solid #e0e0e0; }
+  .item:hover { background: #f5f5f5; }
+  .item:target { background: #f5f5f5; box-shadow: inset 4px 0 0 #6d78d5; }
+  .item .rank { color: #6b6f76; font-size: 16px; text-align: right; padding-top: 2px; font-variant-numeric: tabular-nums; }
+  .item .rank a { color: #6b6f76; text-decoration: none; }
+  .item .rank a:hover { color: #6d78d5; }
+  .item .shot { width: 70px; height: 46px; background: #fff; border: 1px solid #e0e0e0; overflow: hidden; display: block; flex-shrink: 0; }
   .item .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
   .item.no-shot .shot { visibility: hidden; }
   .item .body { line-height: 1.5; min-width: 0; }
   .item .title-line { font-size: 16px; word-break: break-word; }
-  .item .title-line a.t { color: #1d70b8; font-weight: 700; }
-  .item .title-line a.t:visited { color: #4c2c92; }
-  .item .title-line .domain { color: #505a5f; font-size: 13px; padding-left: 6px; }
-  .item .domain a { color: #505a5f; }
-  .item .subtext { color: #505a5f; font-size: 13px; padding-top: 3px; line-height: 1.7; }
-  .item .subtext a { color: #1d70b8; }
+  .item .title-line a.t { color: #6d78d5; font-weight: 700; }
+  .item .title-line a.t:visited { color: #545fc0; }
+  .item .title-line .domain { color: #6b6f76; font-size: 13px; padding-left: 6px; }
+  .item .domain a { color: #6b6f76; }
+  .item .subtext { color: #6b6f76; font-size: 13px; padding-top: 3px; line-height: 1.7; }
+  .item .subtext a { color: #6d78d5; }
   .item .subtext a:hover { text-decoration-thickness: 3px; }
   .item .tier { font-weight: 700; }
   .item .tier-heavy { color: #942514; }
   .item .tier-mild { color: #594d00; }
   .item .tier-clean { color: #005a30; }
-  .item .hn-link { color: #1d70b8; text-decoration: underline; }
+  .item .hn-link { color: #6d78d5; text-decoration: underline; }
   .item .hn-link:hover { text-decoration-thickness: 3px; }
-  .item .flags { color: #505a5f; padding-top: 2px; display: block; }
-  .item .flag { color: #505a5f; cursor: pointer; padding: 4px 2px; margin: -4px 0; text-decoration: underline; }
-  .item .flag:hover { color: #0b0c0c; text-decoration-thickness: 3px; }
+  .item .flags { color: #6b6f76; padding-top: 2px; display: block; }
+  .item .flag { color: #6b6f76; cursor: pointer; padding: 4px 2px; margin: -4px 0; text-decoration: underline; }
+  .item .flag:hover { color: #23252a; text-decoration-thickness: 3px; }
   .item .flag.active { color: #942514; font-weight: 700; }
 
   /* Sort + filter banner */
-  .active-banner .sort { color: #505a5f; }
-  .active-banner .sort .label { color: #505a5f; margin-right: 5px; }
-  .active-banner .sortbtn { font: 400 16px arial, sans-serif; color: #505a5f; background: none; border: 0; padding: 4px 9px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; -webkit-tap-highlight-color: transparent; transition: background-color .15s ease, color .15s ease; }
-  .active-banner .sortbtn:hover { background: #f3f2f1; color: #0b0c0c; }
-  .active-banner .sortbtn.active { color: #0b0c0c; font-weight: 700; }
+  .active-banner .sort { color: #6b6f76; }
+  .active-banner .sort .label { color: #6b6f76; margin-right: 5px; }
+  .active-banner .sortbtn { font: 400 16px "Inter Variable", "SF Pro Display", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #6b6f76; background: none; border: 0; padding: 4px 9px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; -webkit-tap-highlight-color: transparent; transition: background-color .15s ease, color .15s ease; }
+  .active-banner .sortbtn:hover { background: #f5f5f5; color: #23252a; }
+  .active-banner .sortbtn.active { color: #23252a; font-weight: 700; }
   .active-banner .sortbtn:focus { outline: none; }
-  .active-banner .sortbtn:focus-visible { outline: 3px solid #fd0; outline-offset: 1px; }
-  .active-banner .sortbtn .arr { font-size: 13px; color: #505a5f; }
+  .active-banner .sortbtn:focus-visible { outline: 2px solid #6d78d5; outline-offset: 1px; }
+  .active-banner .sortbtn .arr { font-size: 13px; color: #6b6f76; }
 
-  .empty { padding: 30px 16px; text-align: center; color: #505a5f; font-size: 16px; }
+  .empty { padding: 30px 16px; text-align: center; color: #6b6f76; font-size: 16px; }
 
   /* Pagination — "More" link */
   .more { padding: 14px 16px 18px 46px; font-size: 16px; }
-  .more a { color: #1d70b8; }
+  .more a { color: #6d78d5; }
   .more a:hover { text-decoration-thickness: 3px; }
 
   /* Footer */
-  .footer { padding: 20px 16px 32px; font-size: 14px; color: #505a5f; text-align: center; border-top: 1px solid #b1b4b6; margin-top: 12px; }
-  .footer a { color: #1d70b8; }
+  .footer { padding: 20px 16px 32px; font-size: 14px; color: #6b6f76; text-align: center; border-top: 1px solid #e0e0e0; margin-top: 12px; }
+  .footer a { color: #6d78d5; }
 
   @media (max-width: 700px) {
     body { font-size: 14px; }
@@ -234,19 +234,21 @@ const html = `<!doctype html>
 
   /* ── GOV.UK finder layout: left facet sidebar + results column ── */
   .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
-  .page-title { font-size: 32px; font-weight: 700; line-height: 1.09; color: #0b0c0c; margin: 28px 0 22px; }
+  .page-title { font-size: 32px; font-weight: 700; line-height: 1.09; color: #23252a; margin: 28px 0 6px; }
+  .page-sub { color: #6b6f76; font-size: 16px; line-height: 1.5; margin: 0 0 22px; max-width: 620px; }
+  .page-sub a { color: #6d78d5; }
   .finder { display: grid; grid-template-columns: 1fr 2.3fr; gap: 40px; align-items: start; }
   @media (max-width: 700px) { .finder { grid-template-columns: 1fr; gap: 16px; } }
 
   .finder-side { font-size: 16px; }
-  .facet { padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px solid #b1b4b6; }
-  .facet-h { font-size: 16px; font-weight: 700; color: #0b0c0c; margin: 0 0 8px; }
+  .facet { padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px solid #e0e0e0; }
+  .facet-h { font-size: 16px; font-weight: 700; color: #23252a; margin: 0 0 8px; }
   .facet-list { list-style: none; margin: 0; padding: 0; }
   .facet-list li { padding: 3px 0; line-height: 1.4; }
-  .facet-list .filter { color: #1d70b8; text-decoration: underline; text-underline-offset: 0.15em; font-size: 16px; }
+  .facet-list .filter { color: #6d78d5; text-decoration: underline; text-underline-offset: 0.15em; font-size: 16px; }
   .facet-list .filter:hover { text-decoration-thickness: 3px; }
-  .facet-list .filter.topsel { color: #0b0c0c; font-weight: 700; text-decoration: none; }
-  .facet-list .fc { color: #505a5f; }
+  .facet-list .filter.topsel { color: #23252a; font-weight: 700; text-decoration: none; }
+  .facet-list .fc { color: #6b6f76; }
 
   /* pattern frequency becomes the "Pattern" facet in the sidebar */
   .finder-side .freq { padding: 0; border-bottom: 0; }
@@ -254,18 +256,18 @@ const html = `<!doctype html>
   .finder-side .freq-row { grid-template-columns: minmax(0,1fr) 44px 32px; gap: 6px; padding: 3px 0; }
 
   .finder-results { min-width: 0; }
-  .intro { color: #505a5f; font-size: 16px; line-height: 1.5; margin: 0 0 14px; }
+  .intro { color: #6b6f76; font-size: 16px; line-height: 1.5; margin: 0 0 14px; }
 
   /* results header — GOV.UK "N results" count + Sort by row */
-  .active-banner { flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 0 0 12px; margin-bottom: 0; border-bottom: 1px solid #b1b4b6; min-height: 0; font-size: 16px; }
-  .active-banner .count { order: -1; width: 100%; margin-left: 0; font-weight: 700; font-size: 19px; color: #0b0c0c; }
+  .active-banner { flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 0 0 12px; margin-bottom: 0; border-bottom: 1px solid #e0e0e0; min-height: 0; font-size: 16px; }
+  .active-banner .count { order: -1; width: 100%; margin-left: 0; font-weight: 700; font-size: 19px; color: #23252a; }
   .active-banner .sort { font-size: 16px; display: inline-flex; align-items: center; }
 
   /* document-list items */
   .list { padding: 0 0 24px; }
   .item { padding: 16px 0; gap: 12px; }
   .item:hover { background: transparent; }
-  .item:target { background: #f3f2f1; box-shadow: inset 4px 0 0 #1d70b8; }
+  .item:target { background: #f5f5f5; box-shadow: inset 4px 0 0 #6d78d5; }
   .item .title-line a.t { font-size: 19px; }
   .item .subtext { font-size: 14px; }
   .more { padding: 16px 0 8px; }
@@ -276,8 +278,8 @@ const html = `<!doctype html>
   .item .subtext .tier-mild  { color: #594d00; background: #fff7bf; }
   .item .subtext .tier-clean { color: #005a30; background: #cce2d8; }
   /* Flagged patterns: quiet grey tags (still click-to-filter), not a wall of links. */
-  .item .subtext .flag { color: #505a5f; text-decoration: none; }
-  .item .subtext .flag:hover { color: #0b0c0c; text-decoration: underline; }
+  .item .subtext .flag { color: #6b6f76; text-decoration: none; }
+  .item .subtext .flag:hover { color: #23252a; text-decoration: underline; }
   .item .subtext .flag.active { color: #942514; font-weight: 700; }
 </style>
 </head>
@@ -286,18 +288,19 @@ const html = `<!doctype html>
   <div class="topbar-inner">
     <span class="brand"><a href="/" title="Back to the checker">Design Slop Cop</a></span>
     <span class="right">
+      <a href="/">Score</a>
+      <span class="sep">|</span>
+      <a href="/show" class="topsel">Gallery</a>
+      <span class="sep">|</span>
       <a href="/patterns">Patterns</a>
-      <span class="sep">|</span>
-      <a href="https://www.adriankrebs.ch/blog/design-slop/" target="_blank">Methodology</a>
-      <span class="sep">|</span>
-      <a href="https://github.com/AdrianKrebs/design-slop-cop" target="_blank">Github</a>
     </span>
   </div>
 </div>
 <div class="wrap">
 
 <div class="container">
-  <h1 class="page-title">Show HN, scored for AI design patterns</h1>
+  <h1 class="page-title">Gallery</h1>
+  <p class="page-sub">${total} recent <a href="https://news.ycombinator.com/show" target="_blank" rel="noopener">Show HN</a> submissions (where people share what they've built), each scored for AI design patterns.</p>
 
   <div class="finder">
     <aside class="finder-side">
