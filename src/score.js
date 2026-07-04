@@ -8,8 +8,8 @@
 import { PATTERNS } from './patterns/index.js';
 
 const TIER_THRESHOLDS = {
-  heavy: 6, // 6+ patterns triggered → Heavy (High)
-  mild:  3  // 3–5 patterns triggered → Mild (Medium)
+  heavy: 5, // 5+ patterns triggered → Heavy (High)  ≈ 10% of the Show HN corpus
+  mild:  3  // 3–4 patterns triggered → Mild (Medium)
   //       1–2 patterns → Clean (Low, treated as a pass); 0 → "None"
 };
 
