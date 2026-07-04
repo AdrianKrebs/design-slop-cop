@@ -76,7 +76,9 @@ export default {
           if (t.length >= 2) {
             var cs = getComputedStyle(el);
             var fam = (cs.fontFamily || '').split(',')[0].replace(/^['"]|['"]$/g, '').trim();
-            if (!fam || /awesome|material icons|icon/i.test(fam)) continue;
+            // Skip icon fonts and monospace/code fonts — a code snippet in the
+            // hero (e.g. Inter + ui-monospace) is not decorative font-mixing.
+            if (!fam || /awesome|material icons|icon|mono|consolas|menlo|courier/i.test(fam)) continue;
             var st = (cs.fontStyle || '');
             var pt = paintOf(cs);
             runs.push({ fam: fam, style: (st.indexOf('italic') === 0 || st.indexOf('oblique') === 0) ? 'italic' : 'normal', paint: pt.paint, disp: pt.disp });

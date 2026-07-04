@@ -22,7 +22,10 @@ export default {
   description: "Trendy display fonts like Space Grotesk used as the page default.",
   category: 'fonts',
   thresholds: {
-    minTotalPct: 3 // require ≥3% coverage if not used as heading
+    // Require the templated font to be a real default — the heading font, or a
+    // substantial share of body text. A minor accent (e.g. one word at ~6%) is
+    // not "used as the page default" and shouldn't trip this.
+    minTotalPct: 25
   },
 
   extract: function (ctx) {

@@ -53,15 +53,22 @@ export default {
       if (stepNumbers.length >= T.maxStepNumbers) break;
     }
     stepNumbers.sort((a, b) => a.top - b.top || a.left - b.left);
+    // A real step sequence is spatially grouped — a row (similar top, marching
+    // right) or a column (similar left, marching down). Only extend the run when
+    // the next number is adjacent to the previous one; this rejects unrelated
+    // standalone digits scattered across the page (paginators, spinners, stat
+    // values on a component-library demo) that happen to ascend in reading order.
     let runLength = 0;
-    let currentRun = 0;
-    let prev = 0;
+    let run = [];
+    const grouped = (a, b) => {
+      const dx = Math.abs(a.left - b.left), dy = Math.abs(a.top - b.top);
+      return (dy <= 140 && dx <= 600) || (dx <= 140 && dy <= 600);
+    };
     for (const s of stepNumbers) {
-      if (s.num === prev + 1) currentRun++;
-      else if (s.num === 1) currentRun = 1;
-      else if (s.num !== prev) currentRun = 0;
-      runLength = Math.max(runLength, currentRun);
-      prev = s.num;
+      const prev = run[run.length - 1];
+      if (prev && s.num === prev.num + 1 && grouped(s, prev)) run.push(s);
+      else run = s.num === 1 ? [s] : [];
+      if (run.length > runLength) runLength = run.length;
     }
     return {
       runLength,

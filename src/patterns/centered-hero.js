@@ -15,7 +15,8 @@ export default {
   description: "A centered hero set in Inter or a default sans-serif.",
   category: 'layout',
   thresholds: {
-    minAboveFoldRatio: 0.6,
+    minAboveFoldRatio: 0.6,   // "clearly a centered hero" even without a centered H1
+    withH1Ratio: 0.4,         // if the H1 is centered, the hero region must still be broadly centered
     minFontSize: 14
   },
 
@@ -60,9 +61,12 @@ export default {
     const heading = ctxFonts?.headingFont || '';
     const isGeneric = GENERIC_FONTS.some(f => heading === f || heading.startsWith(f + ' '));
     if (!isGeneric) return { triggered: false };
-    if (!signal.heroH1Centered && signal.aboveFoldCenterRatio < T.minAboveFoldRatio) {
-      return { triggered: false };
-    }
+    // A genuinely centered hero, not just a lone centered <h1> on an otherwise
+    // left-aligned page: need broad centering, more of it required when the only
+    // other signal is the centered H1.
+    const centeredEnough = signal.aboveFoldCenterRatio >= T.minAboveFoldRatio ||
+      (signal.heroH1Centered && signal.aboveFoldCenterRatio >= T.withH1Ratio);
+    if (!centeredEnough) return { triggered: false };
     return {
       triggered: true,
       evidence: {

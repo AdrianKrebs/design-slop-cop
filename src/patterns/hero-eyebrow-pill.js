@@ -16,6 +16,7 @@ export default {
     pillMinW: 40, pillMaxW: 600,
     pillMinH: 16, pillMaxH: 56,
     minTextLen: 3, maxTextLen: 80,
+    smallcapsMaxW: 320,  // a no-bg small-caps eyebrow must be compact, not a full-width tagline
     // Faint "ghost pills" with tinted bg / hairline border are common in
     // slop hero sections. The CSS 0.08 alpha round-trips through canvas as
     // ≈ 0.0784, so check at 0.05 to be safe.
@@ -85,7 +86,7 @@ export default {
       const isUppercase = cs.textTransform === 'uppercase' ||
         (text.replace(/[^A-Za-z]/g, '').length >= 3 &&
          text.replace(/[^A-Za-z]/g, '').replace(/[^A-Z]/g, '').length / text.replace(/[^A-Za-z]/g, '').length > 0.85);
-      const isSmallCapsEyebrow = isUppercase && letterSpacing >= 0.5;
+      const isSmallCapsEyebrow = isUppercase && letterSpacing >= 0.5 && r.width <= T.smallcapsMaxW;
       if (!isPill && !isBoxed && !isSmallCapsEyebrow) continue;
 
       samples.push({

@@ -10,6 +10,7 @@ export default {
   category: 'css',
   thresholds: {
     minBlurPx: 2,
+    minBgAlpha: 0.02,                // below this it's a fully-transparent blur utility, not a frosted panel
     maxBgAlpha: 0.9,                 // above this is effectively opaque (was 0.95)
     cardWidthMin: 150,
     cardWidthMax: 820,
@@ -32,7 +33,7 @@ export default {
       const blurPx = parseFloat(m[1]);
       if (blurPx < T.minBlurPx) continue;
       const bg = parseColor(cs.backgroundColor);
-      if (!bg || bg.a >= T.maxBgAlpha) continue;
+      if (!bg || bg.a < T.minBgAlpha || bg.a >= T.maxBgAlpha) continue;
       const r = el.getBoundingClientRect();
       const pos = cs.position;
       const isStickyTop = (pos === 'sticky' || pos === 'fixed') && parseFloat(cs.top || '99') <= T.stickyEdgePx;

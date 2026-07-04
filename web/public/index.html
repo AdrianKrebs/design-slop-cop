@@ -269,9 +269,11 @@ form.addEventListener('submit', async e => {
 
 function renderCard(data) {
   const tierClass = (data.tierLabel || data.tier || '').toLowerCase();
+  // 0 → None, 1–2 → Low (a pass — common modern traits, not "slop"), 3–5 →
+  // Medium, 6+ → High. Matches the gallery's plain severity labels.
   const tierName = data.patternsFlagged === 0
-    ? 'No slop'
-    : { Heavy: 'High slop', Mild: 'Medium slop', Clean: 'Low slop' }[data.tierLabel] || data.tierLabel || data.tier;
+    ? 'None'
+    : { Heavy: 'High', Mild: 'Medium', Clean: 'Low' }[data.tierLabel] || data.tierLabel || data.tier;
   const flagged = data.patterns.filter(p => p.triggered);
   const timing = data.cached ? 'cached' : (data.elapsedMs / 1000).toFixed(1) + 's';
 
