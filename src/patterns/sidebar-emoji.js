@@ -39,7 +39,7 @@ export default {
     }
 
     // Total page emoji count for evidence
-    const totalInPage = countEmoji(document.body.innerText || '');
+    const totalInPage = countEmoji((document.body && document.body.innerText) || '');
 
     return { sidebarPattern, inNavOrButtons, totalInPage };
   },

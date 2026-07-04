@@ -15,10 +15,13 @@ import { PATTERNS } from './patterns/index.js';
 export function buildDetectorSource() {
   const patternCalls = PATTERNS.map(p => {
     const thresholds = JSON.stringify(p.thresholds || {});
-    return `signals[${JSON.stringify(p.id)}] = (${p.extract.toString()})({
+    // Isolate each pattern: a throw in one extract() (e.g. a page with a null
+    // document.body or a broken canvas) must not crash the whole scan. On error
+    // the signal is null and score() treats it as "not triggered".
+    return `try { signals[${JSON.stringify(p.id)}] = (${p.extract.toString()})({
       ...ctxBase,
       thresholds: ${thresholds}
-    });`;
+    }); } catch (e) { signals[${JSON.stringify(p.id)}] = null; }`;
   }).join('\n    ');
 
   return `(() => {
